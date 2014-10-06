@@ -381,6 +381,52 @@
       </dependency>
 
       <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-media</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-profiles</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-domain</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-media</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-profiles</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-rs</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-rs-media</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-rs-media-filter</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-rs-services</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>nl.vpro.camel</groupId>
         <artifactId>camel-filewatcher</artifactId>
         <version>${vpro-camel.version}</version>
@@ -394,6 +440,70 @@
         <groupId>nl.vpro.camel</groupId>
         <artifactId>camel-json</artifactId>
         <version>1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-classification</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-domain</artifactId>
+        <version>${media.version}</version>
+        <exclusions>
+          <exclusion>
+            <!-- Ships with lucene 3.5 -->
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>geronimo-servlet_2.4_spec</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-es-mappings</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-organizations</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-projectm</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-nebo</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-security</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-test</artifactId>
+        <version>${media.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-transfer</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-rs-services</artifactId>
+        <version>${pages.version}</version>
       </dependency>
 
       <dependency>
@@ -464,6 +574,33 @@
         <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-configuration</artifactId>
         <version>${shared.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-ldap</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-npo</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-domain</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-services</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-test</artifactId>
+        <version>${user.version}</version>
+        <scope>test</scope>
       </dependency>
 
       <dependency>
