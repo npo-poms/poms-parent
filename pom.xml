@@ -108,7 +108,7 @@
     <junit.version>4.11</junit.version>
     <lucene.version>3.5.0</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
-    <resteasy.version>3.0.10.Final</resteasy.version>
+    <resteasy.version>3.0.9.Final</resteasy.version> <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.1</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
