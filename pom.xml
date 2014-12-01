@@ -88,6 +88,7 @@
     <aspectj.version>1.6.12</aspectj.version>
     <camel.version>2.12.2</camel.version>
     <cas.version>3.4.7</cas.version>
+    <cas.client.version>3.3.3</cas.client.version>
     <cxf.version>2.7.10</cxf.version>
     <!-- 2.7.11 gives problem in client. See:  https://issues.apache.org/jira/browse/CXF-5795 -->
     <!-- 2.7.12 gives problem in client. Probably related to the issue above, they may not have fixed it correctly. We get null as entity now. -->
@@ -1284,7 +1285,16 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.jasig.cas</groupId>
+            <artifactId>cas-client-core</artifactId>
+          </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.jasig.cas.client</groupId>
+        <artifactId>cas-client-core</artifactId>
+        <version>${cas.client.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
