@@ -1378,6 +1378,12 @@
         <groupId>org.jboss.weld.se</groupId>
         <artifactId>weld-se-core</artifactId>
         <version>${weld.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.el</groupId>
+            <artifactId>jboss-el-api_3.0_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
