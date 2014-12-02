@@ -109,6 +109,7 @@
     <lucene.version>3.5.0</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
     <resteasy.version>3.0.9.Final</resteasy.version> <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
+    <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.1</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
@@ -1369,14 +1370,14 @@
         <exclusions>
           <exclusion>
             <groupId>org.jboss.weld.se</groupId>
-            <artifactId>weld-se-core</artifactId>
+            <artifactId>weld-se</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.weld.se</groupId>
-        <artifactId>weld-se-shaded</artifactId>
-        <version>3.0.0.Alpha2</version>
+        <artifactId>weld-se-core</artifactId>
+        <version>${weld.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
