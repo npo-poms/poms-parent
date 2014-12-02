@@ -1366,6 +1366,16 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-hibernatevalidator-provider</artifactId>
         <version>${resteasy.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-core</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.jbos.weld.se</groupId>
+        <artifactId>weld-se-shaded</artifactId>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
