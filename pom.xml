@@ -1374,7 +1374,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.jbos.weld.se</groupId>
+        <groupId>org.jboss.weld.se</groupId>
         <artifactId>weld-se-shaded</artifactId>
         <version>3.0.0.Alpha2</version>
       </dependency>
