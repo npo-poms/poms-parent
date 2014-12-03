@@ -423,12 +423,7 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
-        <artifactId>api-media</artifactId>
-        <version>${api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-profiles</artifactId>
+        <artifactId>api-services</artifactId>
         <version>${api.version}</version>
       </dependency>
       <dependency>
