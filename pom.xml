@@ -3,7 +3,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-parent</artifactId>
-  <version>3.2-SNAPSHOT</version>
+  <version>3.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>poms-parent</name>
@@ -67,18 +67,18 @@
   <properties>
     <!-- VPRO Artifacts -->
     <api.version>3.2.5</api.version>
-    <api.client.version>1.1.2</api.client.version>
+    <api.client.version>1.4.1</api.client.version>
     <events.version>1.6.0</events.version>
     <image.version>3.1.0</image.version>
     <js.version>0.4.1</js.version><!-- When changing this version remember to change this version in media.properties of the media project as well -->
-    <media.version>3.2.3</media.version>
-    <pages.version>3.3.0</pages.version>
-    <player.version>3.3.0</player.version>
-    <poms.shared.version>3.3.0</poms.shared.version>
+    <media.version>3.2.4</media.version>
+    <pages.version>3.3.5</pages.version>
+    <player.version>3.3.1</player.version>
+    <poms.shared.version>3.4.0</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.3.0</stats.version>
-    <shared.version>0.17.0</shared.version>
-    <user.version>3.3.0</user.version>
+    <shared.version>0.18.0</shared.version>
+    <user.version>3.3.2</user.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
@@ -88,6 +88,7 @@
     <aspectj.version>1.6.12</aspectj.version>
     <camel.version>2.12.2</camel.version>
     <cas.version>3.4.7</cas.version>
+    <cas.client.version>3.3.3</cas.client.version>
     <cxf.version>2.7.10</cxf.version>
     <!-- 2.7.11 gives problem in client. See:  https://issues.apache.org/jira/browse/CXF-5795 -->
     <!-- 2.7.12 gives problem in client. Probably related to the issue above, they may not have fixed it correctly. We get null as entity now. -->
@@ -95,6 +96,7 @@
     <!-- I absolutely HATE CXF. I propopse we'll never upgrade it any more. Earlier we drop it altogether because it is an absolute disaster.  -->
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>17.0</guava.version>
+    <guice.version>3.0</guice.version>
     <hibernate.version>4.2.12.Final</hibernate.version>
     <hibernate.search.version>4.2.0.Final</hibernate.search.version>
     <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
@@ -106,7 +108,9 @@
     <junit.version>4.11</junit.version>
     <lucene.version>3.5.0</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
-    <resteasy.version>3.0.6.Final</resteasy.version>
+    <resteasy.version>3.0.9.Final</resteasy.version> <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
+    <weld.version>2.2.7.Final</weld.version>
+    <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.1</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <spring.version>3.2.9.RELEASE</spring.version>
@@ -120,12 +124,15 @@
     CXF 2 will not work with spring 4.
     -->
 
+    <httpcomponents.version>4.3.6</httpcomponents.version> <!-- resteasy doesn't support bigger than this. See https://issues.jboss.org/browse/RESTEASY-975, and https://jira.vpro.nl/browse/MGNL-11312 -->
+    <httpcomponentscore.version>4.3.3</httpcomponentscore.version>
+    <swagger.version>1.3.8</swagger.version>
+    <ehcache.version>2.6.9</ehcache.version>
+
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <httpcomponents.version>4.3.5</httpcomponents.version>
-    <httpcomponentscore.version>4.3.2</httpcomponentscore.version>
-    <swagger.version>1.3.8</swagger.version>
+
   </properties>
 
   <dependencyManagement>
@@ -142,9 +149,19 @@
         <version>${guava.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.newrelic.agent.java</groupId>
         <artifactId>newrelic-api</artifactId>
         <version>3.7.2</version>
+      </dependency>
+      <dependency>
+        <groupId>com.joestelmach</groupId>
+        <artifactId>natty</artifactId>
+        <version>0.9</version>
       </dependency>
       <dependency>
         <groupId>com.mycila.testing</groupId>
@@ -261,7 +278,7 @@
       <dependency>
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
-        <version>1.1</version>
+        <version>1.1.3</version>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
@@ -363,7 +380,12 @@
       <dependency>
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache-core</artifactId>
-        <version>2.6.5</version>
+        <version>${ehcache.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.ehcache</groupId>
+        <artifactId>ehcache-web</artifactId>
+        <version>${ehcache.version}</version>
       </dependency>
 
       <dependency>
@@ -386,6 +408,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-media-search</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-profiles</artifactId>
         <version>${api.version}</version>
       </dependency>
@@ -396,12 +423,7 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
-        <artifactId>api-media</artifactId>
-        <version>${api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-profiles</artifactId>
+        <artifactId>api-services</artifactId>
         <version>${api.version}</version>
       </dependency>
       <dependency>
@@ -611,6 +633,12 @@
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared</artifactId>
         <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.publiekeomroep</groupId>
+        <artifactId>poms-shared-test</artifactId>
+        <version>${poms.shared.version}</version>
+        <scope>test</scope>
       </dependency>
 
       <dependency>
@@ -1036,7 +1064,7 @@
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
-        <version>1.0.0.GA</version>
+        <version>1.1.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
@@ -1258,6 +1286,31 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.jasig.cas</groupId>
+            <artifactId>cas-client-core</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.jasig.cas.client</groupId>
+        <artifactId>cas-client-core</artifactId>
+        <version>${cas.client.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.opensaml</groupId>
+            <artifactId>opensaml</artifactId>
+          </exclusion>
+          <exclusion>
+            <!-- Comes with opensaml -->
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+          </exclusion>
+          <exclusion>
+            <!-- Comes with opensaml -->
+            <groupId>org.slf4j</groupId>
+            <artifactId>jul-to-slf4j</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -1330,6 +1383,23 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-hibernatevalidator-provider</artifactId>
         <version>${resteasy.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.weld.se</groupId>
+        <artifactId>weld-se-core</artifactId>
+        <version>${weld.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.el</groupId>
+            <artifactId>jboss-el-api_3.0_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
@@ -1355,6 +1425,16 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-spring</artifactId>
         <version>${resteasy.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.ejb</groupId>
+        <artifactId>ejb-api</artifactId>
+        <version>${ejb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <version>1.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.collections</groupId>
