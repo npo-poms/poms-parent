@@ -69,9 +69,9 @@
     <api.version>3.2.5</api.version>
     <api.client.version>1.4.1</api.client.version>
     <events.version>1.6.0</events.version>
-    <image.version>3.1.0</image.version>
+    <image.version>3.3.0</image.version>
     <js.version>0.4.1</js.version><!-- When changing this version remember to change this version in media.properties of the media project as well -->
-    <media.version>3.2.4</media.version>
+    <media.version>3.3.0</media.version>
     <pages.version>3.3.5</pages.version>
     <player.version>3.3.1</player.version>
     <poms.shared.version>3.4.0</poms.shared.version>
