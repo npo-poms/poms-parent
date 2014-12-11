@@ -525,6 +525,11 @@
         <artifactId>media-transfer</artifactId>
         <version>${media.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-rs-services</artifactId>
+        <version>${media.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.pages</groupId>
