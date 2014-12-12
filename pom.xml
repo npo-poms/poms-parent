@@ -448,6 +448,29 @@
       </dependency>
 
       <dependency>
+        <groupId>nl.vpro.player</groupId>
+        <artifactId>player-rs</artifactId>
+        <version>${player.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.player</groupId>
+        <artifactId>player-backend</artifactId>
+        <version>${player.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.api-client</groupId>
+        <artifactId>client-utils</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api-client</groupId>
+        <artifactId>media-backend-rs-client</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+
+
+      <dependency>
         <groupId>nl.vpro.camel</groupId>
         <artifactId>camel-filewatcher</artifactId>
         <version>${vpro-camel.version}</version>
