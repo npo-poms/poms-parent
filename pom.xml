@@ -73,7 +73,7 @@
     <js.version>0.4.1</js.version><!-- When changing this version remember to change this version in media.properties of the media project as well -->
     <media.version>3.3.0</media.version>
     <pages.version>3.3.5</pages.version>
-    <player.version>3.3.1</player.version>
+    <player.version>3.3.2</player.version>
     <poms.shared.version>3.4.0</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.3.0</stats.version>
