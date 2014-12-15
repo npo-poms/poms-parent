@@ -831,6 +831,12 @@
         <artifactId>camel-xstream</artifactId>
         <version>${camel.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-freemarker</artifactId>
+        <version>${camel.version}</version>
+      </dependency>
+
 
       <dependency>
         <groupId>org.apache.cxf</groupId>
