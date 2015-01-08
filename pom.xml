@@ -110,6 +110,7 @@
     <jaxb.version>2.2.6</jaxb.version>
     <!-- Can upgrade when 2.3.2 is available -->
     <junit.version>4.11</junit.version>
+    <mockito.version>1.9.5</mockito.version>
     <lucene.version>3.5.0</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
     <resteasy.version>3.0.9.Final</resteasy.version>
@@ -1219,8 +1220,20 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-all</artifactId>
-        <version>1.9.5</version>
+        <version>${mockito.version}</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito.version}</version>
+        <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
