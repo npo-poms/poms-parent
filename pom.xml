@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>nl.vpro.poms</groupId>
@@ -70,7 +71,8 @@
     <api.client.version>1.6.1</api.client.version>
     <events.version>1.6.0</events.version>
     <image.version>3.3.0</image.version>
-    <js.version>0.4.1</js.version><!-- When changing this version remember to change this version in media.properties of the media project as well -->
+    <js.version>0.4.1</js.version>
+    <!-- When changing this version remember to change this version in media.properties of the media project as well -->
     <media.version>3.3.0.API</media.version>
     <pages.version>3.4-SNAPSHOT</pages.version>
     <player.version>3.3.2</player.version>
@@ -78,7 +80,7 @@
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.3.0</stats.version>
     <shared.version>0.19-SNAPSHOT</shared.version>
-    <user.version>3.3.2</user.version>
+    <user.version>3.4-SNAPSHOT</user.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
@@ -86,10 +88,10 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.6.12</aspectj.version>
-    <camel.version>2.12.2</camel.version>
+    <camel.version>2.14.1</camel.version>
     <cas.version>3.4.7</cas.version>
     <cas.client.version>3.3.3</cas.client.version>
-    <cxf.version>2.7.10</cxf.version>
+    <cxf.version>3.0.3</cxf.version>
     <!-- 2.7.11 gives problem in client. See:  https://issues.apache.org/jira/browse/CXF-5795 -->
     <!-- 2.7.12 gives problem in client. Probably related to the issue above, they may not have fixed it correctly. We get null as entity now. -->
     <!-- 2.7.10 gives problem in client too if you wrap it in an uberjar (metropolis importer), because it can't find any conduit any more.  -->
@@ -97,25 +99,28 @@
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>17.0</guava.version>
     <guice.version>3.0</guice.version>
-    <hibernate.version>4.2.12.Final</hibernate.version>
-    <hibernate.search.version>4.2.0.Final</hibernate.search.version>
-    <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
+    <hibernate.version>4.3.8.Final</hibernate.version>
+    <!-- Hibernate Search 5 updates to Lucene 4 and requires a full re-index -->
+    <hibernate.search.version>4.5.2.Final</hibernate.search.version>
+    <hibernate.validator.version>5.1.3.Final</hibernate.validator.version>
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
     <jackson2.version>2.4.4</jackson2.version>
+    <jaxb.version>2.2.6</jaxb.version>
     <!-- Can upgrade when 2.3.2 is available -->
     <junit.version>4.11</junit.version>
     <lucene.version>3.5.0</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
-    <resteasy.version>3.0.9.Final</resteasy.version> <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
+    <resteasy.version>3.0.9.Final</resteasy.version>
+    <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.1</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <spring.version>3.2.9.RELEASE</spring.version>
-    <spring-security.version>3.2.4.RELEASE</spring-security.version>
-    <spring.ldap.version>1.3.1.RELEASE</spring.ldap.version>
+    <spring.version>4.1.4.RELEASE</spring.version>
+    <spring-security.version>3.2.5.RELEASE</spring-security.version>
+    <spring.ldap.version>2.0.2.RELEASE</spring.ldap.version>
     <spring-security.casclient.version>3.0.8.RELEASE</spring-security.casclient.version>
 
     <!--
@@ -124,10 +129,12 @@
     CXF 2 will not work with spring 4.
     -->
 
-    <httpcomponents.version>4.3.6</httpcomponents.version> <!-- resteasy doesn't support bigger than this. See https://issues.jboss.org/browse/RESTEASY-975, and https://jira.vpro.nl/browse/MGNL-11312 -->
+    <httpcomponents.version>4.3.6</httpcomponents.version>
+    <!-- resteasy doesn't support bigger than this. See https://issues.jboss.org/browse/RESTEASY-975, and https://jira.vpro.nl/browse/MGNL-11312 -->
     <httpcomponentscore.version>4.3.3</httpcomponentscore.version>
     <swagger.version>1.3.8</swagger.version>
-    <ehcache.version>2.6.9</ehcache.version>
+    <ehcache.version>2.6.10</ehcache.version>
+    <wss4j.version>2.0.2</wss4j.version>
 
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -224,6 +231,21 @@
         </exclusions>
       </dependency>
       <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-core</artifactId>
+        <version>2.2.7</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-xjc</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.codehaus.woodstox</groupId>
         <artifactId>stax2-api</artifactId>
         <version>3.1.1</version>
@@ -233,7 +255,11 @@
         <artifactId>stax-api</artifactId>
         <version>1.0-2</version>
       </dependency>
-
+      <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
+        <version>2.2.4</version>
+      </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
         <artifactId>javax.inject</artifactId>
@@ -245,9 +271,9 @@
         <version>3.2.1</version>
       </dependency>
       <dependency>
-	      <groupId>org.apache.commons</groupId>
-	      <artifactId>commons-collections4</artifactId>
-	      <version>4.0</version>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.0</version>
       </dependency>
       <dependency>
         <groupId>commons-configuration</groupId>
@@ -331,13 +357,16 @@
           </exclusion>
         </exclusions>
       </dependency>
-
+      <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
+        <version>2.2.4</version>
+      </dependency>
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>mail</artifactId>
         <version>1.4.7</version>
       </dependency>
-
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
@@ -351,12 +380,15 @@
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.1.0</version>
         <scope>provided</scope>
       </dependency>
-
-
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
       <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
@@ -791,7 +823,7 @@
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
-        <artifactId>camel-quartz</artifactId>
+        <artifactId>camel-quartz2</artifactId>
         <version>${camel.version}</version>
       </dependency>
       <dependency>
@@ -974,9 +1006,14 @@
         <version>${httpcomponentscore.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.apache.ws.security</groupId>
-        <artifactId>wss4j</artifactId>
-        <version>1.6.15</version>
+        <groupId>org.apache.wss4j</groupId>
+        <artifactId>wss4j-ws-security-dom</artifactId>
+        <version>${wss4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.wss4j</groupId>
+        <artifactId>wss4j-ws-security-common</artifactId>
+        <version>${wss4j.version}</version>
       </dependency>
 
       <dependency>
@@ -1075,6 +1112,13 @@
         <scope>test</scope>
       </dependency>
       <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>el-impl</artifactId>
+        <version>2.2</version>
+        <!-- As of Tomcat7 it is provided by Tomcat, Tomcat 6 needs a server add-on Needed here to run validation tests -->
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
         <version>1.2</version>
@@ -1113,36 +1157,19 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>4.2.0.Final</version>
+        <version>${hibernate.validator.version}</version>
       </dependency>
-
-
-      <!-- hibernate 4 -->
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
         <version>1.0.0.Final</version>
       </dependency>
-
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>2.2.7</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-xjc</artifactId>
-        <version>2.2.7</version>
-      </dependency>
-
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
         <version>2.3.2</version>
         <scope>test</scope>
       </dependency>
-
       <dependency>
         <groupId>org.jasig.cas</groupId>
         <artifactId>cas-server-core</artifactId>
@@ -1381,12 +1408,6 @@
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-web</artifactId>
         <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.quartz-scheduler</groupId>
-        <artifactId>quartz</artifactId>
-        <version>1.8.4</version>
       </dependency>
 
       <dependency>
