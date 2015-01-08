@@ -260,6 +260,7 @@
         <groupId>javax.el</groupId>
         <artifactId>javax.el-api</artifactId>
         <version>2.2.4</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
@@ -357,11 +358,6 @@
             <artifactId>javassist</artifactId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>javax.el</groupId>
-        <artifactId>javax.el-api</artifactId>
-        <version>2.2.4</version>
       </dependency>
       <dependency>
         <groupId>javax.mail</groupId>
@@ -780,6 +776,10 @@
           <exclusion>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>javax.el</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
