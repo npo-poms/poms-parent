@@ -1167,6 +1167,11 @@
         <version>${hibernate.validator.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator-cdi</artifactId>
+        <version>${hibernate.validator.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
         <version>1.0.0.Final</version>
@@ -1463,7 +1468,9 @@
         <artifactId>jaxrs-api</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
+      <!--   doesn't work with hibernate validator 5
       <dependency>
+
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-hibernatevalidator-provider</artifactId>
         <version>${resteasy.version}</version>
@@ -1474,6 +1481,14 @@
           </exclusion>
         </exclusions>
       </dependency>
+      -->
+      <!-- I think we should use this now -->
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-validator-provider-11</artifactId>
+        <version>${resteasy.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.jboss.weld.se</groupId>
         <artifactId>weld-se-core</artifactId>
