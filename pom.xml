@@ -598,6 +598,11 @@
         <artifactId>media-odi</artifactId>
         <version>${media.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-ws</artifactId>
+        <version>${media.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.pages</groupId>
@@ -852,6 +857,12 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-bam</artifactId>
         <version>${camel.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jpa_2.0_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
