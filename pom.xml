@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
 
   <name>poms-parent</name>
-  <description>Parent POM for POMS.</description>
+  <description>Parent POM for POMS and related projects</description>
 
   <organization>
     <name>NPO</name>
@@ -850,6 +850,7 @@
         <artifactId>camel-saxon</artifactId>
         <version>${camel.version}</version>
       </dependency>
+      <!-- https://saxonica.plan.io/issues/1944, hmm, will need actually8 -5 -->
       <dependency>
         <groupId>net.sf.saxon</groupId>
         <artifactId>Saxon-HE</artifactId>
