@@ -137,6 +137,8 @@
     <ehcache.version>2.6.10</ehcache.version>
     <wss4j.version>2.0.2</wss4j.version>
 
+    <saxon.version>9.5.1-5</saxon.version>
+
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -847,6 +849,11 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-saxon</artifactId>
         <version>${camel.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.saxon</groupId>
+        <artifactId>Saxon-HE</artifactId>
+        <version>${saxon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
