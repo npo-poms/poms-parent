@@ -493,6 +493,12 @@
         <artifactId>player-backend</artifactId>
         <version>${player.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.player</groupId>
+        <artifactId>player-server</artifactId>
+        <version>${player.version}</version>
+        <classifier>classes</classifier>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.api-client</groupId>
