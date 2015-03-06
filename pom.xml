@@ -610,6 +610,11 @@
         <artifactId>pages-rs-services</artifactId>
         <version>${pages.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-domain</artifactId>
+        <version>${pages.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.shared</groupId>
