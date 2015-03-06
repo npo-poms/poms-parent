@@ -97,7 +97,7 @@
     <!-- 2.7.10 gives problem in client too if you wrap it in an uberjar (metropolis importer), because it can't find any conduit any more.  -->
     <!-- I absolutely HATE CXF. I propopse we'll never upgrade it any more. Earlier we drop it altogether because it is an absolute disaster.  -->
     <ektorp.version>1.4.2</ektorp.version>
-    <guava.version>17.0</guava.version>
+    <guava.version>18.0</guava.version>
     <guice.version>3.0</guice.version>
     <hibernate.version>4.3.8.Final</hibernate.version>
     <!-- Hibernate Search 5 updates to Lucene 4 and requires a full re-index -->
