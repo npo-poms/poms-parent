@@ -514,7 +514,7 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.player</groupId>
-        <artifactId>player-server</artifactId>
+        <artifactId>player-frontend</artifactId>
         <version>${player.version}</version>
         <classifier>classes</classifier>
       </dependency>
