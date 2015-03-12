@@ -757,6 +757,17 @@
         <version>${events.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>nl.vpro.stats</groupId>
+        <artifactId>stats-events</artifactId>
+        <version>${stats.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.stats</groupId>
+        <artifactId>stats-services</artifactId>
+        <version>${stats.version}</version>
+      </dependency>
+
       <!-- specs are generally provided -->
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
