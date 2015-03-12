@@ -135,7 +135,7 @@
     <!-- resteasy doesn't support bigger than this. See https://issues.jboss.org/browse/RESTEASY-975, and https://jira.vpro.nl/browse/MGNL-11312 -->
     <httpcomponentscore.version>4.3.3</httpcomponentscore.version>
     <swagger.version>1.3.8</swagger.version>
-    <ehcache.version>2.6.10</ehcache.version>
+    <ehcache.version>2.9.1</ehcache.version>
     <wss4j.version>2.0.2</wss4j.version>
 
     <saxon.version>9.5.1-5</saxon.version>
@@ -435,11 +435,6 @@
       <dependency>
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache-core</artifactId>
-        <version>${ehcache.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sf.ehcache</groupId>
-        <artifactId>ehcache-web</artifactId>
         <version>${ehcache.version}</version>
       </dependency>
 
