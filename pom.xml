@@ -75,7 +75,7 @@
     <media.version>3.5-SNAPSHOT</media.version>
     <pages.version>3.4.4</pages.version>
     <player.version>3.5-SNAPSHOT</player.version>
-    <poms.shared.version>3.4.4</poms.shared.version>
+    <poms.shared.version>3.5-SNAPSHOT</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.4.0</stats.version>
     <shared.version>0.20-SNAPSHOT</shared.version>
