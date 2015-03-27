@@ -71,7 +71,6 @@
     <events.version>1.6.0</events.version>
     <image.version>3.4.0</image.version>
     <js.version>0.4.1</js.version>
-    <!-- When changing this version remember to change this version in media.properties of the media project as well -->
     <media.version>3.5-SNAPSHOT</media.version>
     <pages.version>3.4.4</pages.version>
     <player.version>3.5-SNAPSHOT</player.version>
