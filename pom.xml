@@ -36,7 +36,7 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:svn+ssh://subversion.vpro.nl/export/svn/nl/vpro/poms-parent/branches/REL-3.5-SNAPSHOT</connection>
+    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/branches/REL-3.5-SNAPSHOT</connection>
     <developerConnection>scm:svn:svn+ssh://subversion.vpro.nl/export/svn/nl/vpro/poms-parent/branches/REL-3.5-SNAPSHOT</developerConnection>
     <url>https://subversion.vpro.nl/cgi-bin/viewvc.cgi/branches/REL-3.5-SNAPSHOT</url>
   </scm>
