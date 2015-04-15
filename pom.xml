@@ -111,7 +111,7 @@
     <!-- Can upgrade when 2.3.2 is available -->
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
-    <lucene.version>3.5.0</lucene.version>
+    <lucene.version>3.6.2</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
     <resteasy.version>3.0.9.Final</resteasy.version>
     <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
@@ -358,6 +358,12 @@
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-queries</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-core</artifactId>
         <version>${lucene.version}</version>
       </dependency>
 
