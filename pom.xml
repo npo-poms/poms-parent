@@ -72,7 +72,7 @@
     <events.version>1.6.0</events.version>
     <image.version>3.4.0</image.version>
     <js.version>0.4.1</js.version>
-    <media.version>3.5.2</media.version>
+    <media.version>3.5.3</media.version>
     <pages.version>3.5.0</pages.version>
     <player.version>3.5.0</player.version>
     <poms.shared.version>3.5.0</poms.shared.version>
@@ -112,7 +112,7 @@
     <!-- Can upgrade when 2.3.2 is available -->
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
-    <lucene.version>3.5.0</lucene.version>
+    <lucene.version>3.6.2</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
     <resteasy.version>3.0.9.Final</resteasy.version>
     <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
