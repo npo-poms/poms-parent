@@ -3,7 +3,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-parent</artifactId>
-  <version>3.5.7</version>
+  <version>3.5.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>poms-parent</name>
@@ -36,9 +36,9 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/tags/REL-3.5.7</connection>
-    <developerConnection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/tags/REL-3.5.7</developerConnection>
-    <url>https://subversion.vpro.nl/cgi-bin/viewvc.cgi/tags/REL-3.5.7</url>
+    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/branches/REL-3.5-SNAPSHOT</connection>
+    <developerConnection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/branches/REL-3.5-SNAPSHOT</developerConnection>
+    <url>https://subversion.vpro.nl/cgi-bin/viewvc.cgi/branches/REL-3.5-SNAPSHOT</url>
   </scm>
 
 
