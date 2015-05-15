@@ -71,7 +71,7 @@
     <events.version>1.6.0</events.version>
     <image.version>3.6.0</image.version>
     <js.version>0.4.1</js.version>
-    <media.version>3.6.0</media.version>
+    <media.version>3.7-SNAPSHOT</media.version>
     <pages.version>3.5.0</pages.version>
     <player.version>3.5.1</player.version>
     <poms.shared.version>3.6-SNAPSHOT</poms.shared.version>
@@ -112,7 +112,7 @@
     <jackson2.scala.version>2.5.2</jackson2.scala.version>
 
     <jaxb.version>2.2.6</jaxb.version>
-    <jaxb.version.JAXB-1062>2.2.11</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
+    <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
     <!-- Can upgrade when 2.3.2 is available -->
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
