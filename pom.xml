@@ -73,7 +73,7 @@
     <js.version>0.4.1</js.version>
     <media.version>3.7-SNAPSHOT</media.version>
     <pages.version>3.5.0</pages.version>
-    <player.version>3.5.1</player.version>
+    <player.version>3.7-SNAPSHOT</player.version>
     <poms.shared.version>3.6-SNAPSHOT</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.4.0</stats.version>
