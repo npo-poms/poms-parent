@@ -84,7 +84,6 @@
 
     <!-- External Artifacts -->
     <activemq.version>5.10.1</activemq.version>
-    <activemq.core.version>5.7.0</activemq.core.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.6.12</aspectj.version>
@@ -847,9 +846,10 @@
       </dependency>
       <dependency>
         <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-core</artifactId>
-        <version>${activemq.core.version}</version>
+        <artifactId>activemq-pool</artifactId>
+        <version>${activemq.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
@@ -1305,12 +1305,6 @@
         <artifactId>cas-server-webapp</artifactId>
         <version>${cas.version}</version>
         <type>war</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jencks</groupId>
-        <artifactId>jencks-amqpool</artifactId>
-        <version>2.1</version>
       </dependency>
 
       <dependency>
