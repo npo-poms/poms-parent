@@ -123,9 +123,9 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.5</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <spring.version>4.1.4.RELEASE</spring.version>
-    <spring-security.version>3.2.5.RELEASE</spring-security.version>
-    <spring.ldap.version>2.0.2.RELEASE</spring.ldap.version>
+    <spring.version>4.1.6.RELEASE</spring.version>
+    <spring-security.version>4.0.1.RELEASE</spring-security.version>
+    <spring.ldap.version>2.0.3.RELEASE</spring.ldap.version>
     <spring-security.casclient.version>3.0.8.RELEASE</spring-security.casclient.version>
 
     <!--
