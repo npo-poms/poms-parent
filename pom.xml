@@ -684,6 +684,12 @@
         <artifactId>shared-camel</artifactId>
         <version>${shared.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-swagger</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-domain</artifactId>
