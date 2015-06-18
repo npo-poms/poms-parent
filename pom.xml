@@ -495,11 +495,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
-        <artifactId>api-services</artifactId>
-        <version>${api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media-search</artifactId>
         <version>${api.version}</version>
       </dependency>
@@ -704,11 +699,6 @@
             <artifactId>jaxb-api</artifactId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-newrelic</artifactId>
-        <version>${shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
