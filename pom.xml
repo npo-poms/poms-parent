@@ -638,6 +638,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
+        <artifactId>media-secondscreen</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
         <artifactId>media-security</artifactId>
         <version>${media.version}</version>
       </dependency>
