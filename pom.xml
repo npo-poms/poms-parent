@@ -71,10 +71,10 @@
     <events.version>1.6.0</events.version>
     <image.version>3.7.2</image.version>
     <js.version>0.4.1</js.version>
-    <media.version>3.8-SNAPSHOT</media.version>
+    <media.version>3.8</media.version>
     <pages.version>3.5.0</pages.version>
     <player.version>3.7.0</player.version>
-    <poms.shared.version>3.8-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>3.8</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
     <shared.version>0.24.1</shared.version>
