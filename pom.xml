@@ -490,6 +490,11 @@
 
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
         <version>${api.version}</version>
       </dependency>
