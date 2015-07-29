@@ -66,7 +66,7 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <api.version>3.8.1</api.version>
+    <api.version>3.9-SNAPSHOT</api.version>
     <api.client.version>1.12.0</api.client.version>
     <events.version>1.6.0</events.version>
     <image.version>3.7.2</image.version>
@@ -77,7 +77,7 @@
     <poms.shared.version>3.8.1</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.24.7</shared.version>
+    <shared.version>0.25-SNAPSHOT</shared.version>
     <user.version>3.7.0</user.version>
     <npo-publish.version>3.6.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
