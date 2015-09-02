@@ -77,7 +77,7 @@
     <poms.shared.version>4.0-SNAPSHOT</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.25-SNAPSHOT</shared.version>
+    <shared.version>0.26.0</shared.version>
     <user.version>4.0-SNAPSHOT</user.version>
     <npo-publish.version>3.6.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
