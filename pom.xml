@@ -1800,7 +1800,7 @@
             <include>**/*Spec.java</include>
           </includes>
           <excludes>
-            <exclude>**/*IT*.java</exclude>
+            <exclude>**/*ITest.java</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -1810,7 +1810,7 @@
         <version>2.12</version>
         <configuration>
           <includes>
-            <include>**/*IT*.java</include>
+            <include>**/*ITest.java</include>
           </includes>
         </configuration>
         <executions>
