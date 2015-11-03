@@ -72,14 +72,14 @@
     <image.version>4.0.0</image.version>
     <js.version>0.4.1</js.version>
     <media.version>4.1.0</media.version>
-    <pages.version>4.1-SNAPSHOT</pages.version>
+    <pages.version>4.1.0</pages.version>
     <player.version>3.7.0</player.version>
     <poms.shared.version>4.1.0</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
     <shared.version>0.29.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
-    <user.version>4.0.1</user.version>
+    <user.version>4.2-SNAPSHOT</user.version>
     <npo-publish.version>4.1.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
