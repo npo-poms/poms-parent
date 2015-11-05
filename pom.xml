@@ -66,8 +66,8 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <api.version>4.1.0</api.version>
-    <api.client.version>1.18.0</api.client.version>
+    <api.version>4.1.1</api.version>
+    <api.client.version>4.1.0</api.client.version>
     <events.version>1.6.0</events.version>
     <image.version>4.0.0</image.version>
     <js.version>0.4.1</js.version>
