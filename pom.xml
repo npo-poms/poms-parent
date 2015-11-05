@@ -567,6 +567,11 @@
         <artifactId>media-backend-rs-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.api-client</groupId>
+        <artifactId>client-resteasy</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
 
 
       <dependency>
