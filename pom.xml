@@ -71,7 +71,7 @@
     <events.version>1.6.0</events.version>
     <image.version>4.0.0</image.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.1.0</media.version>
+    <media.version>4.2-SNAPSHOT</media.version>
     <pages.version>4.2-SNAPSHOT</pages.version>
     <player.version>3.7.0</player.version>
     <poms.shared.version>4.1.0</poms.shared.version>
@@ -686,6 +686,11 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-ws</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-gtaa</artifactId>
         <version>${media.version}</version>
       </dependency>
 
