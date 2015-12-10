@@ -834,6 +834,11 @@
       </dependency>
       <dependency>
         <groupId>nl.publiekeomroep</groupId>
+        <artifactId>poms-shared-services</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared-test</artifactId>
         <version>${poms.shared.version}</version>
         <scope>test</scope>
