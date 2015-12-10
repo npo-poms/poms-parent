@@ -69,7 +69,7 @@
     <api.version>4.2-SNAPSHOT</api.version>
     <api.client.version>4.1.0</api.client.version>
     <events.version>1.6.0</events.version>
-    <image.version>4.0.0</image.version>
+    <image.version>4.2-SNAPSHOT</image.version>
     <js.version>0.4.1</js.version>
     <media.version>4.2-SNAPSHOT</media.version>
     <pages.version>4.2-SNAPSHOT</pages.version>
