@@ -74,7 +74,7 @@
     <media.version>4.2-SNAPSHOT</media.version>
     <pages.version>4.2-SNAPSHOT</pages.version>
     <player.version>3.7.0</player.version>
-    <poms.shared.version>4.1.0</poms.shared.version>
+    <poms.shared.version>4.2-SNAPSHOT</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
     <shared.version>0.31-SNAPSHOT</shared.version>
@@ -825,6 +825,11 @@
       <dependency>
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.publiekeomroep</groupId>
+        <artifactId>poms-shared-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
