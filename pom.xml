@@ -779,6 +779,11 @@
         <artifactId>shared-resteasy</artifactId>
         <version>${shared.version}</version>
       </dependency>
+            <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-client-resteasy</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-configuration</artifactId>
