@@ -771,6 +771,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-rs</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-resteasy</artifactId>
         <version>${shared.version}</version>
       </dependency>
