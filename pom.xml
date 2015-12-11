@@ -1676,6 +1676,11 @@
         <artifactId>jaxrs-api</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>2.0.1</version>
+      </dependency>
       <!--   doesn't work with hibernate validator 5
       <dependency>
 
