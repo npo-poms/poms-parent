@@ -765,6 +765,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-rs</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-configuration</artifactId>
         <version>${shared.version}</version>
       </dependency>
