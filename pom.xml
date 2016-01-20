@@ -496,6 +496,13 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
         <version>${api.version}</version>
       </dependency>
