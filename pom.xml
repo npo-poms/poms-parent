@@ -77,7 +77,7 @@
     <poms.shared.version>4.2.0</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.32.0</shared.version>
+    <shared.version>0.34-SNAPSHOT</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.2.0</user.version>
     <npo-publish.version>4.1.0</npo-publish.version>
