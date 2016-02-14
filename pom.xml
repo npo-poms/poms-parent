@@ -118,8 +118,7 @@
     <lucene.version>3.6.2</lucene.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>3.16.1</newrelic.version>
-    <resteasy.version>3.0.9.Final</resteasy.version>
-    <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
+    <resteasy.version>3.0.14.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.5</slf4j.version>
