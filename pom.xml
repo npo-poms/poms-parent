@@ -151,6 +151,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+    <bintray.package>poms-parent</bintray.package>
+
   </properties>
 
   <dependencyManagement>
@@ -1949,7 +1951,7 @@
         <repository>
           <id>bintray-npo-topspin-vpro-releases</id>
           <name>npo-topspin-vpro-releases</name>
-          <url>https://api.bintray.com/maven/npo-topspin/vpro-releases/poms-parent/;publish=1</url>
+          <url>https://api.bintray.com/maven/npo-topspin/vpro-releases/${bintray.package}/;publish=1</url>
         </repository>
       </distributionManagement>
     </profile>
