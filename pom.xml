@@ -625,6 +625,16 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
+        <artifactId>media-classification-spring</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-i18n</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
         <artifactId>media-domain</artifactId>
         <version>${media.version}</version>
         <exclusions>
@@ -1716,10 +1726,17 @@
       </dependency>
 
 
+      <!--
       <dependency>
         <groupId>net.sf.jsr107cache</groupId>
         <artifactId>jsr107cache</artifactId>
         <version>1.0</version>
+      </dependency>
+      -->
+      <dependency>
+        <groupId>javax.cache</groupId>
+        <artifactId>cache-api</artifactId>
+        <version>1.0.0</version>
       </dependency>
 
       <dependency>
