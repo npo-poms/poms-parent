@@ -151,8 +151,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+    <bintray.organization>npo-topspin</bintray.organization>
+    <bintray.repository>vpro-releases</bintray.repository>
     <bintray.package>poms-parent</bintray.package>
-
+    <bintray.name>bintray-npo-topspin-vpro-releases</bintray.name>
+    <bintray.releases.name>${bintray.name}</bintray.releases.name>
+    <bintray.snapshots.name>${bintray.name}</bintray.snapshots.name>
   </properties>
 
   <dependencyManagement>
@@ -1845,11 +1849,6 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.1.7.v20120910</version>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>2.4</version>
-        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -1927,6 +1926,20 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.9</version>
         <configuration>
@@ -1936,15 +1949,21 @@
       </plugin>
     </plugins>
   </build>
+
   <profiles>
     <profile>
-      <id>topspin-bintray</id>
+      <id>bintray</id>
       <distributionManagement>
         <repository>
-          <id>bintray-npo-topspin-vpro-releases</id>
-          <name>npo-topspin-vpro-releases</name>
-          <url>https://api.bintray.com/maven/npo-topspin/vpro-releases/${bintray.package}/;publish=1</url>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.releases.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
         </repository>
+        <snapshotRepository>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.snapshots.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
+        </snapshotRepository>
       </distributionManagement>
     </profile>
     <profile>
@@ -1981,6 +2000,5 @@
       </build>
     </profile>
   </profiles>
-
 
 </project>
