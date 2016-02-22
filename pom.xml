@@ -69,12 +69,12 @@
     <api.version>4.3-SNAPSHOT</api.version>
     <api.client.version>4.3-SNAPSHOT</api.client.version>
     <events.version>1.6.0</events.version>
-    <image.version>4.2.0</image.version>
+    <image.version>4.2.1</image.version>
     <js.version>0.4.1</js.version>
     <media.version>4.3-SNAPSHOT</media.version>
     <pages.version>4.3-SNAPSHOT</pages.version>
     <player.version>3.7.0</player.version>
-    <poms.shared.version>4.2.0</poms.shared.version>
+    <poms.shared.version>4.2.4</poms.shared.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
     <shared.version>0.35.0</shared.version>
@@ -1379,6 +1379,11 @@
         <groupId>javax.transaction</groupId>
         <artifactId>javax.transaction-api</artifactId>
         <version>1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>1.0.2</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
