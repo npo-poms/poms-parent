@@ -149,7 +149,13 @@
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <bintray.organization>npo-topspin</bintray.organization>
+    <bintray.repository>vpro-releases</bintray.repository>
     <bintray.package>poms-parent</bintray.package>
+    <bintray.name>bintray-npo-topspin-vpro-releases</bintray.name>
+    <bintray.releases.name>${bintray.name}</bintray.releases.name>
+    <bintray.snapshots.name>${bintray.name}</bintray.snapshots.name>
   </properties>
 
   <dependencyManagement>
@@ -1949,17 +1955,17 @@
 
   <profiles>
     <profile>
-      <id>topspin-bintray</id>
+      <id>bintray</id>
       <distributionManagement>
         <repository>
-          <id>bintray-npo-topspin-vpro-releases</id>
-          <name>npo-topspin-vpro-releases</name>
-          <url>https://api.bintray.com/maven/npo-topspin/vpro-releases/${bintray.package}/;publish=1</url>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.releases.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
         </repository>
         <snapshotRepository>
-          <id>bintray-npo-topspin-vpro-snapshots</id>
-          <name>npo-topspin-vpro-snapshots</name>
-          <url>https://api.bintray.com/maven/npo-topspin/vpro-releases/${bintray.package}/;publish=1</url>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.snapshots.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
         </snapshotRepository>
       </distributionManagement>
     </profile>
