@@ -116,6 +116,7 @@
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
     <lucene.version>3.6.2</lucene.version>
+    <lucene.elasticsearch.version>4.7.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>3.16.1</newrelic.version>
     <resteasy.version>3.0.14.Final</resteasy.version>
