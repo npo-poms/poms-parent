@@ -759,6 +759,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-persistence</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-domain</artifactId>
         <version>${shared.version}</version>
         <exclusions>
