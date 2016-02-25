@@ -870,7 +870,7 @@
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
-        <version>${user.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
@@ -902,11 +902,6 @@
       <dependency>
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared-services</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.publiekeomroep</groupId>
-        <artifactId>poms-shared-util</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
