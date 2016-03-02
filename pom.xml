@@ -77,7 +77,7 @@
     <media.version>4.3-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <pages.version>4.3-SNAPSHOT</pages.version>
-    <player.version>3.7.0</player.version>
+    <player.version>4.3-SNAPSHOT</player.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
@@ -399,7 +399,7 @@
         <artifactId>lucene-core</artifactId>
         <version>${lucene.version}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>annotations</artifactId>
