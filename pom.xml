@@ -115,8 +115,8 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.5.3</jackson2.version>
-    <jackson2.scala.version>2.5.2</jackson2.scala.version>
+    <jackson2.version>2.7.3</jackson2.version>
+    <jackson2.scala.version>2.7.2</jackson2.scala.version>
 
     <jaxb.version>2.2.6</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -1357,6 +1357,11 @@
       <dependency>
         <groupId>com.fasterxml.jackson.module</groupId>
         <artifactId>jackson-module-scala_2.10</artifactId>
+        <version>${jackson2.scala.version}</version>
+      </dependency>
+            <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-scala_2.11</artifactId>
         <version>${jackson2.scala.version}</version>
       </dependency>
       <dependency>
