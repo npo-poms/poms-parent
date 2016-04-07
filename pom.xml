@@ -66,21 +66,26 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <api.version>4.2.0</api.version>
-    <api.client.version>4.2.0</api.client.version>
-    <events.version>1.6.0</events.version>
-    <image.version>4.2.0</image.version>
+    <poms.shared.version>4.3.0</poms.shared.version>
+
+    <api.version>4.3.0</api.version>
+    <api.client.version>4.3.0</api.client.version>
+    <events.version>2.1-SNAPSHOT</events.version>
+    <image.version>4.3-SNAPSHOT</image.version>
+    <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.2.0</media.version>
-    <pages.version>4.2.0</pages.version>
-    <player.version>3.7.0</player.version>
-    <poms.shared.version>4.2.0</poms.shared.version>
+    <media.version>4.3.0</media.version>
+    <media.domain.version>${poms.shared.version}</media.domain.version>
+    <pages.version>4.3.0</pages.version>
+    <player.version>4.3.0</player.version>
+
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.31.0</shared.version>
+    <shared.version>0.37.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
-    <user.version>4.2.0</user.version>
-    <npo-publish.version>4.1.0</npo-publish.version>
+    <user.version>4.3.0</user.version>
+    <user.domain.version>${poms.shared.version}</user.domain.version>
+    <npo-publish.version>4.2.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
@@ -93,22 +98,25 @@
     <cas.client.version>3.3.3</cas.client.version>
     <cxf.version>3.1.4</cxf.version>
     <ektorp.version>1.4.2</ektorp.version>
-    <guava.version>18.0</guava.version>
+    <guava.version>19.0</guava.version>
     <guice.version>3.0</guice.version>
     <hibernate.version>4.3.8.Final</hibernate.version>
     <!--
-    <hibernate.version>5.0.3.Final</hibernate.version>
+    <hibernate.version>5.1.0.Final</hibernate.version>
     -->
     <!-- Hibernate Search 5 updates to Lucene 4 and requires a full re-index -->
     <hibernate.search.version>4.5.2.Final</hibernate.search.version>
-    <hibernate.validator.version>5.1.3.Final</hibernate.validator.version>
+    <!--
+    <hibernate.search.version>5.5.2.Final</hibernate.search.version>
+    -->
+    <hibernate.validator.version>5.2.4.Final</hibernate.validator.version>
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
 
 
-    <jackson2.version>2.5.3</jackson2.version>
-    <jackson2.scala.version>2.5.2</jackson2.scala.version>
+    <jackson2.version>2.7.3</jackson2.version>
+    <jackson2.scala.version>2.7.2</jackson2.scala.version>
 
     <jaxb.version>2.2.6</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -116,15 +124,15 @@
     <junit.version>4.11</junit.version>
     <mockito.version>1.9.5</mockito.version>
     <lucene.version>3.6.2</lucene.version>
+    <lucene.elasticsearch.version>4.7.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>3.16.1</newrelic.version>
-    <resteasy.version>3.0.9.Final</resteasy.version>
-    <!-- pages publisher won't start up otherwise because https://github.com/resteasy/Resteasy/pull/615 -->
+    <resteasy.version>3.0.16.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.5</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <spring.version>4.1.6.RELEASE</spring.version>
+    <spring.version>4.2.5.RELEASE</spring.version>
     <spring-security.version>4.0.1.RELEASE</spring-security.version>
 
     <spring.ldap.version>2.0.3.RELEASE</spring.ldap.version>
@@ -142,15 +150,20 @@
     <swagger.version>1.3.8</swagger.version>
     <ehcache.version>2.9.1</ehcache.version>
     <wss4j.version>2.1.4</wss4j.version>
-
     <saxon.version>9.5.1-5</saxon.version>
-
     <javassist.version>3.18.2-GA</javassist.version>
+    <scala.version>2.11.7</scala.version>
 
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+    <bintray.organization>npo-topspin</bintray.organization>
+    <bintray.repository>vpro-releases</bintray.repository>
+    <bintray.package>poms-parent</bintray.package>
+    <bintray.name>bintray-npo-topspin-vpro-releases</bintray.name>
+    <bintray.releases.name>${bintray.name}</bintray.releases.name>
+    <bintray.snapshots.name>${bintray.name}</bintray.snapshots.name>
   </properties>
 
   <dependencyManagement>
@@ -369,6 +382,20 @@
         <version>${lucene.version}</version>
       </dependency>
 
+      <!--
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-analyzers</artifactId>
+        <version>${lucene.version}</version>
+        </dependency>
+        -->
+
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-analyzers-common</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
@@ -376,9 +403,9 @@
       </dependency>
 
       <dependency>
-        <groupId>findbugs</groupId>
+        <groupId>com.google.code.findbugs</groupId>
         <artifactId>annotations</artifactId>
-        <version>1.0.0</version>
+        <version>2.0.1</version>
       </dependency>
 
       <dependency>
@@ -496,6 +523,13 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+        <version>${api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
         <version>${api.version}</version>
       </dependency>
@@ -609,8 +643,24 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-classification</artifactId>
+        <version>${media.domain.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-classification-spring</artifactId>
         <version>${media.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-pluto</artifactId>
+        <version>${media.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-i18n</artifactId>
+        <version>${media.domain.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-domain</artifactId>
@@ -713,6 +763,16 @@
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-camel</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-hibernate</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-persistence</artifactId>
         <version>${shared.version}</version>
       </dependency>
       <dependency>
@@ -823,6 +883,11 @@
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
+        <version>${user.domain.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-domain</artifactId>
         <version>${user.version}</version>
       </dependency>
       <dependency>
@@ -838,6 +903,12 @@
       </dependency>
 
       <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-domain</artifactId>
+        <version>${image.domain.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared</artifactId>
         <version>${poms.shared.version}</version>
@@ -850,11 +921,6 @@
       <dependency>
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared-services</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.publiekeomroep</groupId>
-        <artifactId>poms-shared-util</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
@@ -929,6 +995,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-csv</artifactId>
+        <version>1.2</version>
       </dependency>
 
       <dependency>
@@ -1288,15 +1359,46 @@
         <artifactId>jackson-module-scala_2.10</artifactId>
         <version>${jackson2.scala.version}</version>
       </dependency>
+            <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-scala_2.11</artifactId>
+        <version>${jackson2.scala.version}</version>
+      </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jsr310</artifactId>
         <version>${jackson2.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-reflect</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-compiler</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scalap</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.easytesting</groupId>
         <artifactId>fest-assert</artifactId>
         <version>1.4</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>3.4.0</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1367,6 +1469,17 @@
         <groupId>javax.transaction</groupId>
         <artifactId>javax.transaction-api</artifactId>
         <version>1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
@@ -1575,12 +1688,6 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-mock</artifactId>
-        <version>2.0.8</version>
-        <scope>test</scope>
-      </dependency>
 
       <dependency>
         <groupId>org.springframework.security</groupId>
@@ -1687,10 +1794,29 @@
         <artifactId>resteasy-client</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
+
+
+      <!--
       <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>jaxrs-api</artifactId>
-        <version>${resteasy.version}</version>
+        <groupId>net.sf.jsr107cache</groupId>
+        <artifactId>jsr107cache</artifactId>
+        <version>1.0</version>
+      </dependency>
+      -->
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>jsr311-api</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.cache</groupId>
+        <artifactId>cache-api</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.cache.implementation</groupId>
+        <artifactId>cache-annotations-ri-spring</artifactId>
+        <version>0.5</version>
       </dependency>
       <dependency>
         <groupId>javax.ws.rs</groupId>
@@ -1785,6 +1911,7 @@
         <artifactId>jasypt</artifactId>
         <version>1.9.0</version>
       </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -1834,6 +1961,11 @@
           <groupId>org.mortbay.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.1.7.v20120910</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.4</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -1912,20 +2044,6 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>2.3</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>jar-no-fork</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.9</version>
         <configuration>
@@ -1935,5 +2053,56 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>bintray</id>
+      <distributionManagement>
+        <repository>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.releases.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
+        </repository>
+        <snapshotRepository>
+          <id>${bintray.snapshots.name}</id>
+          <name>${bintray.snapshots.name}</name>
+          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+    <profile>
+      <id>deploy</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.3</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
