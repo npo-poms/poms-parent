@@ -137,6 +137,8 @@
 
     <spring.ldap.version>2.0.3.RELEASE</spring.ldap.version>
     <spring-security.casclient.version>3.0.8.RELEASE</spring-security.casclient.version>
+    <spring-data-jpa.version>1.10.1.RELEASE</spring-data-jpa.version>
+    <spring-data-commons.version>1.12.1.RELEASE</spring-data-commons.version>
 
     <!--
     Spring Framework 3.2.3+ fully supports Hibernate 4.0 to 4.2.x in its orm.hibernate4 package.
@@ -1675,7 +1677,12 @@
       <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
-        <version>1.4.3.RELEASE</version>
+        <version>${spring-data-jpa.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-commons</artifactId>
+        <version>${spring-data-commons.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.ldap</groupId>
