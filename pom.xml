@@ -71,10 +71,10 @@
     <api.version>4.3.0</api.version>
     <api.client.version>4.3.0</api.client.version>
     <events.version>2.1.0</events.version>
-    <image.version>4.3.0</image.version>
+    <image.version>4.4-SNAPSHOT</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.3.0</media.version>
+    <media.version>4.4-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <pages.version>4.3.0</pages.version>
     <player.version>4.3.0</player.version>
