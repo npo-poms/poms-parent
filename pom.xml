@@ -85,7 +85,7 @@
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.3.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
-    <npo-publish.version>4.2.0</npo-publish.version>
+    <npo-publish.version>4.3.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
