@@ -894,11 +894,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
-        <artifactId>user-services</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
         <artifactId>user-test</artifactId>
         <version>${user.version}</version>
         <scope>test</scope>
