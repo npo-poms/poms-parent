@@ -80,7 +80,7 @@
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.38.4</shared.version>
+    <shared.version>0.39.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.3.1</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
