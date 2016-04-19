@@ -687,7 +687,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-organizations</artifactId>
-        <version>${media.version}</version>
+        <version>${media.domain.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
