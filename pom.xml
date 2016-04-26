@@ -67,20 +67,20 @@
   <properties>
     <!-- VPRO Artifacts -->
     <poms.shared.version>4.3.2</poms.shared.version>
-    <api.version>4.3.1</api.version>
-    <api.client.version>4.3.1</api.client.version>
+    <api.version>4.3.2</api.version>
+    <api.client.version>4.3.4</api.client.version>
     <events.version>2.1.0</events.version>
     <image.version>4.3.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.3.1</media.version>
+    <media.version>4.3.2</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <pages.version>4.3.3</pages.version>
+    <pages.version>4.3.4</pages.version>
     <player.version>4.3.0</player.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.39.1</shared.version>
+    <shared.version>0.40.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.3.1</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
