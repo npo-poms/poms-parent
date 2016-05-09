@@ -151,7 +151,7 @@
     <httpcomponentscore.version>4.3.3</httpcomponentscore.version>
     <swagger.version>1.3.8</swagger.version>
     <ehcache.version>2.9.1</ehcache.version>
-    <wss4j.version>2.1.4</wss4j.version>
+    <wss4j.version>2.1.5</wss4j.version>
     <saxon.version>9.5.1-5</saxon.version>
     <javassist.version>3.18.2-GA</javassist.version>
     <scala.version>2.11.7</scala.version>
