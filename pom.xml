@@ -95,7 +95,7 @@
     <aspectj.version>1.6.12</aspectj.version>
     <camel.version>2.17.0</camel.version>
     <cas.version>3.4.7</cas.version>
-    <cas.client.version>3.3.3</cas.client.version>
+    <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.1.4</cxf.version>
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>19.0</guava.version>
@@ -133,9 +133,9 @@
     <slf4j.version>1.7.21</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <spring.version>4.2.5.RELEASE</spring.version>
-    <spring-security.version>4.0.1.RELEASE</spring-security.version>
+    <spring-security.version>4.1.0.RELEASE</spring-security.version>
 
-    <spring.ldap.version>2.0.3.RELEASE</spring.ldap.version>
+    <spring.ldap.version>2.0.4.RELEASE</spring.ldap.version>
     <spring-security.casclient.version>3.0.8.RELEASE</spring-security.casclient.version>
     <spring-data-jpa.version>1.10.1.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>1.12.1.RELEASE</spring-data-commons.version>
@@ -1484,12 +1484,12 @@
         <version>2.3.2</version>
         <scope>test</scope>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.jasig.cas</groupId>
         <artifactId>cas-server-core</artifactId>
         <version>${cas.version}</version>
         <exclusions>
-          <!--Unofficial unavailable-->
+          &lt;!&ndash;Unofficial unavailable&ndash;&gt;
           <exclusion>
             <groupId>javax.xml</groupId>
             <artifactId>xmldsig</artifactId>
@@ -1510,7 +1510,7 @@
         <artifactId>cas-server-webapp</artifactId>
         <version>${cas.version}</version>
         <type>war</type>
-      </dependency>
+      </dependency>-->
 
       <dependency>
         <groupId>org.jsoup</groupId>
@@ -1699,18 +1699,8 @@
 
       <dependency>
         <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-cas-client</artifactId>
-        <version>${spring-security.casclient.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.jasig.cas</groupId>
-            <artifactId>cas-client-core</artifactId>
-          </exclusion>
-        </exclusions>
+        <artifactId>spring-security-cas</artifactId>
+        <version>${spring-security.version}</version>
       </dependency>
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
