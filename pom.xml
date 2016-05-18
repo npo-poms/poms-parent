@@ -66,26 +66,26 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.4-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>4.4.0</poms.shared.version>
 
-    <api.version>4.4-SNAPSHOT</api.version>
-    <api.client.version>4.3.3</api.client.version>
+    <api.version>4.4.0</api.version>
+    <api.client.version>4.4.0</api.client.version>
     <events.version>2.1.0</events.version>
-    <image.version>4.4-SNAPSHOT</image.version>
+    <image.version>4.4.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.4-SNAPSHOT</media.version>
+    <media.version>4.4.0</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <pages.version>4.4-SNAPSHOT</pages.version>
-    <player.version>4.3.0</player.version>
+    <pages.version>4.4.0</pages.version>
+    <player.version>4.4.0</player.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <stats.version>0.5.0</stats.version>
-    <shared.version>0.42-SNAPSHOT</shared.version>
+    <shared.version>0.42.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
-    <user.version>4.4-SNAPSHOT</user.version>
+    <user.version>4.4.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
-    <npo-publish.version>4.4-SNAPSHOT</npo-publish.version>
+    <npo-publish.version>4.4.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
@@ -120,7 +120,7 @@
 
     <jaxb.version>2.2.6</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
-    <!-- Can upgrade when 2.3.2 is available -->
+
     <junit.version>4.12</junit.version>
     <mockito.version>1.9.5</mockito.version>
     <lucene.version>3.6.2</lucene.version>
