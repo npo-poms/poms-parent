@@ -876,6 +876,11 @@
         <artifactId>shared-logging</artifactId>
         <version>${shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-ektorp</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.user</groupId>
