@@ -653,11 +653,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
-        <artifactId>media-pluto</artifactId>
-        <version>${media.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
         <artifactId>media-i18n</artifactId>
         <version>${media.domain.version}</version>
       </dependency>
