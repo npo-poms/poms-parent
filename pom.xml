@@ -283,6 +283,8 @@
         <version>${jaxb.version}</version>
       </dependency>
 
+      <!-- http://stackoverflow.com/questions/26413431/which-artifacts-should-i-use-for-jaxb-ri-in-my-maven-project
+           Use org.glassfish
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-core</artifactId>
@@ -298,7 +300,7 @@
         <artifactId>jaxb-xjc</artifactId>
         <version>${jaxb.version}</version>
       </dependency>
-
+      -->
       <dependency>
         <groupId>javax.xml.stream</groupId>
         <artifactId>stax-api</artifactId>
