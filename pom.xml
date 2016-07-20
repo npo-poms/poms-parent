@@ -75,7 +75,7 @@
     <js.version>0.4.1</js.version>
     <media.version>4.7-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <player.version>4.4.0</player.version>
+    <player.version>4.7-SNAPSHOT</player.version>
     <pages.version>4.7-SNAPSHOT</pages.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
