@@ -2122,7 +2122,6 @@
       </releases>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
       </snapshots>
     </repository>
   </repositories>
@@ -2135,7 +2134,6 @@
       </releases>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
