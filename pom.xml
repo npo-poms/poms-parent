@@ -66,7 +66,7 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.7.0</poms.shared.version>
+    <poms.shared.version>4.7.1</poms.shared.version>
     <api.version>4.7.0</api.version>
     <api.client.version>4.7.0</api.client.version>
     <events.version>2.2.0</events.version>
@@ -721,7 +721,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-secondscreen</artifactId>
-        <version>${media.version}</version>
+        <version>${media.domain.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.subtitles</groupId>
@@ -742,7 +742,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-test</artifactId>
-        <version>${media.version}</version>
+        <version>${media.domain.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
