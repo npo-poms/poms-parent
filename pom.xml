@@ -79,7 +79,6 @@
     <pages.version>4.7.0</pages.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <stats.version>0.6.0</stats.version>
     <shared.version>0.47.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.6.0</user.version>
@@ -753,12 +752,12 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-rs-services</artifactId>
-        <version>${media.version}</version>
+        <version>${media.domain.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-odi</artifactId>
-        <version>${media.version}</version>
+        <version>${media.domain.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
