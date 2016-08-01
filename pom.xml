@@ -66,7 +66,7 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.7.1</poms.shared.version>
+    <poms.shared.version>4.7.4</poms.shared.version>
     <api.version>4.7.0</api.version>
     <api.client.version>4.7.0</api.client.version>
     <events.version>2.2.0</events.version>
@@ -2123,7 +2123,6 @@
       </releases>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
       </snapshots>
     </repository>
   </repositories>
@@ -2136,7 +2135,6 @@
       </releases>
       <snapshots>
         <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
