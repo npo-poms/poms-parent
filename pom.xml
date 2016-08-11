@@ -76,7 +76,7 @@
     <media.version>4.7.0</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <player.version>4.7.0</player.version>
-    <pages.version>4.7.0</pages.version>
+    <pages.version>4.8-SNAPSHOT</pages.version>
     <stats.version>${poms.shared.version}</stats.version>
     <parkpost.version>${media.version}</parkpost.version>
 
@@ -246,6 +246,7 @@
         <groupId>io.swagger</groupId>
         <artifactId>swagger-jaxrs</artifactId>
         <version>${swagger.version}</version>
+        <!--
         <exclusions>
           <exclusion>
             <groupId>com.fasterxml.jackson.jaxrs</groupId>
@@ -271,7 +272,13 @@
             <groupId>javax.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
           </exclusion>
-        </exclusions>
+          </exclusions>
+          -->
+      </dependency>
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-core</artifactId>
+        <version>${swagger.version}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
