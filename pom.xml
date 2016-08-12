@@ -791,7 +791,7 @@
       <dependency>
         <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-domain</artifactId>
-        <version>${pages.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
 
       <dependency>
