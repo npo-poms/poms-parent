@@ -89,7 +89,7 @@
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
-    <activemq.version>5.13.4</activemq.version>
+    <activemq.version>5.14.0</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.6.12</aspectj.version>
@@ -1412,6 +1412,11 @@
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jsr310</artifactId>
+        <version>${jackson2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.datatype</groupId>
+        <artifactId>jackson-datatype-joda</artifactId>
         <version>${jackson2.version}</version>
       </dependency>
       <dependency>
