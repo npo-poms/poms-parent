@@ -127,7 +127,7 @@
     <lucene.elasticsearch.version>4.7.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>3.16.1</newrelic.version>
-    <resteasy.version>3.0.18.Final</resteasy.version>
+    <resteasy.version>3.0.19.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.21</slf4j.version>
