@@ -81,7 +81,7 @@
     <parkpost.version>${media.version}</parkpost.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <shared.version>0.48.1</shared.version>
+    <shared.version>0.49-SNAPSHOT</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.6.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
