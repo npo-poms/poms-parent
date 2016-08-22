@@ -779,6 +779,11 @@
         <artifactId>pages-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-es-mappings</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.shared</groupId>
