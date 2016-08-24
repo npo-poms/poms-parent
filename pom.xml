@@ -70,7 +70,7 @@
     <api.version>4.7.0</api.version>
     <api.client.version>4.7.0</api.client.version>
     <events.version>2.2.0</events.version>
-    <image.version>4.7.0</image.version>
+    <image.version>4.8-SNAPSHOT</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
     <media.version>4.7.0</media.version>
