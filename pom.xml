@@ -36,9 +36,9 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/trunk</connection>
-    <developerConnection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/trunk</developerConnection>
-    <url>https://subversion.vpro.nl/viewvc/nl/vpro/poms-parent/trunk</url>
+    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/branches/REL-4.8-SNAPSHOT</connection>
+    <developerConnection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/branches/REL-4.8-SNAPSHOT</developerConnection>
+    <url>https://subversion.vpro.nl/viewvc/nl/vpro/poms-parent/branches/REL-4.8-SNAPSHOT</url>
   </scm>
 
   <distributionManagement>
