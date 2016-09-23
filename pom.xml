@@ -75,7 +75,7 @@
     <js.version>0.4.1</js.version>
     <media.version>4.8.0</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <player.version>4.7.0</player.version>
+    <player.version>4.8.0</player.version>
     <pages.version>4.8.0</pages.version>
     <stats.version>${poms.shared.version}</stats.version>
     <parkpost.version>${media.version}</parkpost.version>
