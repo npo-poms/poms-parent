@@ -66,7 +66,7 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.8.0</poms.shared.version>
+    <poms.shared.version>4.9-SNAPSHOT</poms.shared.version>
     <api.version>4.8.0</api.version>
     <api.client.version>4.8.0</api.client.version>
     <events.version>2.2.0</events.version>
@@ -81,7 +81,7 @@
     <parkpost.version>${media.version}</parkpost.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <shared.version>0.49.0</shared.version>
+    <shared.version>0.52.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.6.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
@@ -99,15 +99,8 @@
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>19.0</guava.version>
     <guice.version>4.1.0</guice.version>
-    <hibernate.version>4.3.8.Final</hibernate.version>
-    <!--
-    <hibernate.version>5.1.0.Final</hibernate.version>
-    -->
-    <!-- Hibernate Search 5 updates to Lucene 4 and requires a full re-index -->
-    <hibernate.search.version>4.5.2.Final</hibernate.search.version>
-    <!--
-    <hibernate.search.version>5.5.2.Final</hibernate.search.version>
-    -->
+    <hibernate.version>5.2.3.Final</hibernate.version>
+    <hibernate.search.version>5.5.4.Final</hibernate.search.version>
     <hibernate.validator.version>5.2.4.Final</hibernate.validator.version>
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -123,7 +116,7 @@
     <junit.version>4.12</junit.version>
     <mockito.version>1.10.19</mockito.version>
     <lombok.version>1.16.10</lombok.version>
-    <lucene.version>3.6.2</lucene.version>
+    <lucene.version>5.3.1</lucene.version>
     <lucene.elasticsearch.version>4.7.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>3.16.1</newrelic.version>
@@ -387,6 +380,11 @@
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-queries</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
+       <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-queryparser</artifactId>
         <version>${lucene.version}</version>
       </dependency>
 
@@ -1494,6 +1492,11 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-search-orm</artifactId>
+        <version>${hibernate.search.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-search</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
 
