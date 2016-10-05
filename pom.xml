@@ -75,7 +75,7 @@
     <js.version>0.4.1</js.version>
     <media.version>4.8.0</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <player.version>4.7.0</player.version>
+    <player.version>4.8.0</player.version>
     <pages.version>4.8.0</pages.version>
     <stats.version>${poms.shared.version}</stats.version>
     <parkpost.version>${media.version}</parkpost.version>
@@ -83,7 +83,7 @@
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <shared.version>0.52.0</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
-    <user.version>4.6.0</user.version>
+    <user.version>4.9-SNAPSHOT</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <npo-publish.version>4.8.0</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
@@ -95,7 +95,7 @@
     <aspectj.version>1.6.12</aspectj.version>
     <camel.version>2.17.2</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
-    <cxf.version>3.1.6</cxf.version>
+    <cxf.version>3.1.7</cxf.version>
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>19.0</guava.version>
     <guice.version>4.1.0</guice.version>
@@ -125,7 +125,7 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.21</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <spring.version>4.2.6.RELEASE</spring.version>
+    <spring.version>4.3.3.RELEASE</spring.version>
     <spring-security.version>4.1.0.RELEASE</spring-security.version>
 
     <cglib.version>3.2.4</cglib.version>
