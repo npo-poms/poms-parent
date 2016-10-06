@@ -68,7 +68,7 @@
     <!-- VPRO Artifacts -->
     <poms.shared.version>4.9-SNAPSHOT</poms.shared.version>
     <api.version>4.8.0</api.version>
-    <api.client.version>4.8.0</api.client.version>
+    <api.client.version>4.8.2</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>4.8.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -399,6 +399,12 @@
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-analyzers-common</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-queryparser</artifactId>
         <version>${lucene.version}</version>
       </dependency>
 
