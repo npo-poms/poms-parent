@@ -908,42 +908,42 @@
 
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-xml</artifactId>
+        <artifactId>vpro-shared-xml</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-logging</artifactId>
+        <artifactId>vpro-shared-logging</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-ektorp</artifactId>
+        <artifactId>vpro-shared-ektorp</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-camel</artifactId>
+        <artifactId>vpro-shared-camel</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-hibernate</artifactId>
+        <artifactId>vpro-shared-hibernate</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-persistence</artifactId>
+        <artifactId>vpro-shared-persistence</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-validation</artifactId>
+        <artifactId>vpro-shared-validation</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-domain</artifactId>
+        <artifactId>vpro-shared-domain</artifactId>
         <version>${shared.version.legacy}</version>
         <exclusions>
           <exclusion>
@@ -954,75 +954,75 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-jackson2</artifactId>
+        <artifactId>vpro-shared-jackson2</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-newrelic</artifactId>
+        <artifactId>vpro-shared-newrelic</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-swagger</artifactId>
+        <artifactId>vpro-shared-swagger</artifactId>
         <version>${shared.version.legacy}</version>
         <type>war</type>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-swagger</artifactId>
+        <artifactId>vpro-shared-swagger</artifactId>
         <version>${shared.version.legacy}</version>
         <classifier>classes</classifier>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-util</artifactId>
+        <artifactId>vpro-shared-util</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-test</artifactId>
+        <artifactId>vpro-shared-test</artifactId>
         <version>${shared.version.legacy}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-transfer</artifactId>
+        <artifactId>vpro-shared-transfer</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-web</artifactId>
+        <artifactId>vpro-shared-web</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-ws</artifactId>
+        <artifactId>vpro-shared-ws</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-rs</artifactId>
+        <artifactId>vpro-shared-rs</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-resteasy</artifactId>
+        <artifactId>vpro-shared-resteasy</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-client-resteasy</artifactId>
+        <artifactId>vpro-shared-client-resteasy</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-configuration</artifactId>
+        <artifactId>vpro-shared-configuration</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-elasticsearch</artifactId>
+        <artifactId>vpro-shared-elasticsearch</artifactId>
         <version>${shared.version.legacy}</version>
       </dependency>
       <dependency>
