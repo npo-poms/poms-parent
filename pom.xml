@@ -788,6 +788,21 @@
 
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-xml</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-logging</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-ektorp</artifactId>
+        <version>${shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-camel</artifactId>
         <version>${shared.version}</version>
       </dependency>
@@ -891,6 +906,21 @@
         <version>${shared.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-xml</artifactId>
+        <version>${shared.version.legacy}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-logging</artifactId>
+        <version>${shared.version.legacy}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>shared-ektorp</artifactId>
+        <version>${shared.version.legacy}</version>
+      </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>shared-camel</artifactId>
@@ -1005,21 +1035,6 @@
         <artifactId>elasticsearch-analysis-icu</artifactId>
         <version>${elasticsearch.icu.version}</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-xml</artifactId>
-        <version>${shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-logging</artifactId>
-        <version>${shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>shared-ektorp</artifactId>
-        <version>${shared.version}</version>
       </dependency>
 
       <dependency>
