@@ -81,8 +81,7 @@
     <parkpost.version>${media.version}</parkpost.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <shared.version.legacy>0.53.0</shared.version.legacy>
-    <shared.version>1.54-SNAPSHOT</shared.version>
+    <shared.version>1.55-SNAPSHOT</shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>4.9-SNAPSHOT</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
@@ -906,125 +905,6 @@
         <version>${shared.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-xml</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-logging</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-ektorp</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-camel</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-hibernate</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-persistence</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-validation</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-domain</artifactId>
-        <version>${shared.version.legacy}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-jackson2</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-newrelic</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-swagger</artifactId>
-        <version>${shared.version.legacy}</version>
-        <type>war</type>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-swagger</artifactId>
-        <version>${shared.version.legacy}</version>
-        <classifier>classes</classifier>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-util</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-test</artifactId>
-        <version>${shared.version.legacy}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-transfer</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-web</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-ws</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-rs</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-resteasy</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-client-resteasy</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-configuration</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-elasticsearch</artifactId>
-        <version>${shared.version.legacy}</version>
-      </dependency>
       <dependency>
         <groupId>org.elasticsearch</groupId>
         <artifactId>elasticsearch</artifactId>
