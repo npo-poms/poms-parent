@@ -951,6 +951,12 @@
       </dependency>
 
       <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-ws</artifactId>
+        <version>${image.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-shared</artifactId>
         <version>${poms.shared.version}</version>
