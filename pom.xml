@@ -940,7 +940,7 @@
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-test</artifactId>
-        <version>${user.version}</version>
+        <version>${poms.shared.version}</version>
         <scope>test</scope>
       </dependency>
 
