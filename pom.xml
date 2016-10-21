@@ -99,9 +99,18 @@
     <ektorp.version>1.4.2</ektorp.version>
     <guava.version>19.0</guava.version>
     <guice.version>4.1.0</guice.version>
+
     <hibernate.version>5.0.11.Final</hibernate.version>
     <hibernate.search.version>5.5.5.Final</hibernate.search.version>
+    <!--
+    <hibernate.version>5.1.0.Final</hibernate.version>
+    <hibernate.search.version>5.6.0.Beta3</hibernate.search.version>
+    -->
+
+
     <hibernate.validator.version>5.3.0.Final</hibernate.validator.version>
+
+
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
@@ -1430,11 +1439,6 @@
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-xml</artifactId>
-        <version>${jackson2.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.dataformat</groupId>
-        <artifactId>jackson-dataformat-yaml</artifactId>
         <version>${jackson2.version}</version>
       </dependency>
       <dependency>
