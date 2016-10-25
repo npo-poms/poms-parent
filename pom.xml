@@ -68,7 +68,7 @@
     <!-- VPRO Artifacts -->
     <poms.shared.version>4.9-SNAPSHOT</poms.shared.version>
     <api.version>4.9-SNAPSHOT</api.version>
-    <api.client.version>4.8.2</api.client.version>
+    <api.client.version>4.9-SNAPSHOT</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>4.8.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
