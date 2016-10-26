@@ -73,7 +73,7 @@
     <image.version>4.8.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.9-SNAPSHOT</media.version>
+    <media.version>5.0-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <player.version>4.8.0</player.version>
     <pages.version>4.9-SNAPSHOT</pages.version>
