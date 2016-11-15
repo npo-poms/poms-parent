@@ -117,7 +117,7 @@
 
 
     <jackson2.version>2.8.4</jackson2.version>
-    <jackson2.scala.version>2.7.4</jackson2.scala.version>
+    <jackson2.scala.version>2.8.4</jackson2.scala.version>
 
     <jaxb.version>2.2.11</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
