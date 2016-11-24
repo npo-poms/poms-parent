@@ -2021,6 +2021,9 @@
           <configuration>
             <archive>
               <addMavenDescriptor>false</addMavenDescriptor>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              </manifest>
               <manifestEntries>
                 <Implementation-Title>${project.name}</Implementation-Title>
                 <Implementation-Vendor>NPO</Implementation-Vendor>
