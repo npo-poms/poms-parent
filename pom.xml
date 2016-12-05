@@ -66,7 +66,7 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.8.11</poms.shared.version>
+    <poms.shared.version>4.8.12</poms.shared.version>
     <api.version>4.8.6</api.version>
     <api.client.version>4.8.10</api.client.version>
     <events.version>2.2.0</events.version>
