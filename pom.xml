@@ -75,7 +75,6 @@
     <js.version>0.4.1</js.version>
     <media.version>5.0-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <player.version>4.8.0</player.version>
     <pages.version>5.0-SNAPSHOT</pages.version>
     <stats.version>${poms.shared.version}</stats.version>
     <parkpost.version>${media.version}</parkpost.version>
@@ -607,23 +606,6 @@
       </dependency>
 
       <dependency>
-        <groupId>nl.vpro.player</groupId>
-        <artifactId>player-rs</artifactId>
-        <version>${player.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.player</groupId>
-        <artifactId>player-backend</artifactId>
-        <version>${player.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.player</groupId>
-        <artifactId>player-frontend</artifactId>
-        <version>${player.version}</version>
-        <classifier>classes</classifier>
-      </dependency>
-
-      <dependency>
         <groupId>nl.vpro.api-client</groupId>
         <artifactId>client-utils</artifactId>
         <version>${api.client.version}</version>
@@ -978,6 +960,12 @@
         <artifactId>poms-shared-test</artifactId>
         <version>${poms.shared.version}</version>
         <scope>test</scope>
+      </dependency>
+       <dependency>
+        <groupId>nl.publiekeomroep</groupId>
+        <artifactId>poms-ext</artifactId>
+        <version>4.8.12</version>
+        <type>war</type>
       </dependency>
 
       <dependency>
