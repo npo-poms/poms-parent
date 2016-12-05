@@ -66,11 +66,11 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.9-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>5.0-SNAPSHOT</poms.shared.version>
     <api.version>4.9-SNAPSHOT</api.version>
     <api.client.version>4.9-SNAPSHOT</api.client.version>
     <events.version>2.2.0</events.version>
-    <image.version>4.9-SNAPSHOT</image.version>
+    <image.version>5.0-SNAPSHOT</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
     <media.version>5.0-SNAPSHOT</media.version>
@@ -2126,7 +2126,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.9</version>
         <configuration>
-          <additionalparam>-Xdoclint:none</additionalparam>
+          <additionalparam>-Xdoclint:none -quiet</additionalparam>
           <failOnError>false</failOnError>
         </configuration>
       </plugin>
