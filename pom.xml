@@ -96,7 +96,7 @@
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.1.6</cxf.version>
     <ektorp.version>1.4.2</ektorp.version>
-    <guava.version>19.0</guava.version>
+    <guava.version>20.0</guava.version>
     <guice.version>4.1.0</guice.version>
 
     <hibernate.version>5.0.11.Final</hibernate.version>
