@@ -122,7 +122,7 @@
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <junit.version>4.12</junit.version>
-    <mockito.version>1.10.19</mockito.version>
+    <mockito.version>2.2.29</mockito.version>
     <lombok.version>1.16.10</lombok.version>
 
     <lucene.version>5.3.1</lucene.version> <!-- linked to hibernate search -->
@@ -1570,13 +1570,14 @@
         <artifactId>jsoup</artifactId>
         <version>1.9.2</version>
       </dependency>
-
+      <!--
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-all</artifactId>
         <version>${mockito.version}</version>
         <scope>test</scope>
-      </dependency>
+        </dependency>
+        -->
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
