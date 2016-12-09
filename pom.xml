@@ -66,14 +66,14 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>4.8.12</poms.shared.version>
+    <poms.shared.version>4.8.16</poms.shared.version>
     <api.version>4.8.6</api.version>
     <api.client.version>4.8.10</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>4.8.1</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>4.8.6</media.version>
+    <media.version>4.8.7</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <player.version>4.8.1</player.version>
     <pages.version>4.8.1</pages.version>
