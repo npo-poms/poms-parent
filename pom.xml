@@ -579,7 +579,7 @@
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-domain</artifactId>
-        <version>${api.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
@@ -609,7 +609,7 @@
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs-services</artifactId>
-        <version>${api.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
 
       <dependency>
