@@ -45,23 +45,23 @@
     <repository>
       <id>nexus</id>
       <name>Nexus releases</name>
-      <url>http://nexus.vpro.nl/content/repositories/releases</url>
+      <url>https://nexus.vpro.nl/content/repositories/releases</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Nexus snapshots</name>
-      <url>http://nexus.vpro.nl/content/repositories/snapshots</url>
+      <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
   <issueManagement>
     <system>JIRA</system>
-    <url>http://jira.vpro.nl/</url>
+    <url>https://jira.vpro.nl/</url>
   </issueManagement>
 
   <ciManagement>
     <system>jenkins</system>
-    <url>http://jenkins.vpro.nl/</url>
+    <url>https://jenkins.vpro.nl/</url>
   </ciManagement>
 
   <properties>
