@@ -68,7 +68,7 @@
     <!-- VPRO Artifacts -->
     <poms.shared.version>5.0.1</poms.shared.version>
     <api.version>5.0.0</api.version>
-    <api.client.version>5.0.2</api.client.version>
+    <api.client.version>5.0.3</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>5.0.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
