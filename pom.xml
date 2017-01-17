@@ -154,7 +154,7 @@
 
     <httpcomponents.version>4.5.2</httpcomponents.version>
     <httpcomponentscore.version>4.4.5</httpcomponentscore.version>
-    <swagger.version>1.5.10</swagger.version>
+    <swagger.version>1.5.12</swagger.version>
     <ehcache.version>2.10.2</ehcache.version>
     <wss4j.version>2.1.5</wss4j.version>
     <saxon.version>9.5.1-5</saxon.version>
