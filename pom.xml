@@ -772,6 +772,12 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-backend</artifactId>
+        <version>${pages.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
