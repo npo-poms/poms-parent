@@ -122,8 +122,8 @@
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.7.0</mockito.version>
-    <lombok.version>1.16.12</lombok.version>
+    <mockito.version>2.7.10</mockito.version>
+    <lombok.version>1.16.14</lombok.version>
 
     <lucene.version>5.3.1</lucene.version> <!-- linked to hibernate search -->
 
