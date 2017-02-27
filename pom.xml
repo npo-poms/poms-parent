@@ -66,15 +66,15 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>5.2.0</poms.shared.version>
-    <poms.shared.backend.version>5.2.1-SNAPSHOT</poms.shared.backend.version>
+    <poms.shared.version>5.3-SNAPSHOT</poms.shared.version>
+    <poms.shared.backend.version>5.3-SNAPSHOT</poms.shared.backend.version>
     <api.version>5.2.0</api.version>
     <api.client.version>5.2.0</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>5.1.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <js.version>0.4.1</js.version>
-    <media.version>5.2.0</media.version>
+    <media.version>5.3-SNAPSHOT</media.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
     <pages.version>5.1.0</pages.version>
     <stats.version>${poms.shared.version}</stats.version>
@@ -85,7 +85,7 @@
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>5.1.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
-    <npo-publish.version>5.1.0</npo-publish.version>
+    <npo-publish.version>5.3-SNAPSHOT</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
