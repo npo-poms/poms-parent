@@ -558,6 +558,13 @@
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
+        <type>test-jar</type>
+        <scope>test</scope>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
         <classifier>tests</classifier>
         <scope>test</scope>
         <version>${poms.shared.backend.version}</version>
