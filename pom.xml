@@ -69,7 +69,7 @@
     <poms.shared.version>5.2.3</poms.shared.version>
     <poms.shared.backend.version>5.2.2</poms.shared.backend.version>
     <api.version>5.2.0</api.version>
-    <api.client.version>5.2.1</api.client.version>
+    <api.client.version>5.2.2</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>5.1.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
