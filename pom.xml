@@ -126,6 +126,7 @@
     <junit.version>4.12</junit.version>
     <mockito.version>2.7.21</mockito.version>
     <lombok.version>1.16.16</lombok.version>
+    <xmlunit.version>2.3.0</xmlunit.version>
 
     <lucene.version>5.3.1</lucene.version> <!-- linked to hibernate search -->
 
@@ -1845,9 +1846,9 @@
       </dependency>
 
       <dependency>
-        <groupId>xmlunit</groupId>
-        <artifactId>xmlunit</artifactId>
-        <version>1.2</version>
+        <groupId>org.xmlunit</groupId>
+        <artifactId>xmlunit-core</artifactId>
+        <version>${xmlunit.version}</version>
         <scope>test</scope>
       </dependency>
 
