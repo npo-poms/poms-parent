@@ -918,6 +918,11 @@
         <artifactId>vpro-shared-elasticsearch</artifactId>
         <version>${vpro.shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-guice</artifactId>
+        <version>${vpro.shared.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.elasticsearch</groupId>
