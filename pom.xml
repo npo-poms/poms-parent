@@ -595,6 +595,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-spring</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-services</artifactId>
         <version>${api.version}</version>
       </dependency>
