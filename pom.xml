@@ -66,10 +66,10 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>5.3.1</poms.shared.version>
+    <poms.shared.version>5.3.2</poms.shared.version>
     <poms.shared.backend.version>5.3.0</poms.shared.backend.version>
     <api.version>5.3.0</api.version>
-    <api.client.version>5.3.0</api.client.version>
+    <api.client.version>5.3.1</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>5.3.0</image.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -81,7 +81,7 @@
     <parkpost.version>${media.version}</parkpost.version>
 
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <vpro.shared.version>1.69.1</vpro.shared.version>
+    <vpro.shared.version>1.69.2</vpro.shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
     <user.version>5.3.0</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
