@@ -67,8 +67,8 @@
   <properties>
     <!-- VPRO Artifacts -->
     <poms.shared.version>5.4-SNAPSHOT</poms.shared.version>
-    <poms.shared.backend.version>5.3.0</poms.shared.backend.version>
-    <api.version>5.3.0</api.version>
+    <poms.shared.backend.version>5.4-SNAPSHOT</poms.shared.backend.version>
+    <api.version>5.4-SNAPSHOT</api.version>
     <api.client.version>5.4-SNAPSHOT</api.client.version>
     <events.version>2.2.0</events.version>
     <image.version>5.3.0</image.version>
@@ -83,9 +83,9 @@
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <vpro.shared.version>1.70-SNAPSHOT</vpro.shared.version>
     <couchdb-util.version>2.1</couchdb-util.version>
-    <user.version>5.3.0</user.version>
+    <user.version>5.4-SNAPSHOT</user.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
-    <npo-publish.version>5.3.0</npo-publish.version>
+    <npo-publish.version>5.4-SNAPSHOT</npo-publish.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
@@ -101,14 +101,15 @@
     <guice.version>4.1.0</guice.version>
     <quartz.version>2.2.3</quartz.version>
 
+    <!--
     <hibernate.version>5.0.11.Final</hibernate.version>
     <hibernate.search.version>5.5.5.Final</hibernate.search.version>
-    <!--
-    <hibernate.version>5.1.0.Final</hibernate.version>
-    <hibernate.search.version>5.6.0.Beta3</hibernate.search.version>
     -->
 
-    <hibernate.validator.version>5.3.0.Final</hibernate.validator.version>
+    <hibernate.version>5.2.10.Final</hibernate.version>
+    <hibernate.search.version>5.7.0.Final</hibernate.search.version>
+
+    <hibernate.validator.version>5.4.1.Final</hibernate.validator.version>
     <flyway.version>4.1.2</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
@@ -127,7 +128,7 @@
     <lombok.version>1.16.16</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
 
-    <lucene.version>5.3.1</lucene.version> <!-- linked to hibernate search -->
+    <lucene.version>5.5.4</lucene.version> <!-- linked to hibernate search -->
 
     <lucene.elasticsearch.version>4.7.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
