@@ -168,6 +168,8 @@
     <elasticsearch.version>1.1.0</elasticsearch.version>
     <elasticsearch.icu.version>2.1.0</elasticsearch.icu.version>
 
+    <postgresql.version>42.1.1</postgresql.version>
+
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -1547,11 +1549,6 @@
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-search</artifactId>
-        <version>${hibernate.search.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
         <version>${flyway.version}</version>
@@ -1857,7 +1854,7 @@
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>9.4.1208</version>
+        <version>${postgresql.version}</version>
       </dependency>
       <dependency>
         <groupId>xmlrpc</groupId>
