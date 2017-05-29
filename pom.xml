@@ -97,7 +97,7 @@
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.1.6</cxf.version>
     <ektorp.version>1.4.2</ektorp.version>
-    <guava.version>21.0</guava.version>
+    <guava.version>22.0</guava.version>
     <guice.version>4.1.0</guice.version>
     <quartz.version>2.2.3</quartz.version>
 
