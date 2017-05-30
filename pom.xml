@@ -66,8 +66,8 @@
 
   <properties>
     <!-- VPRO Artifacts -->
-    <poms.shared.version>5.3.2</poms.shared.version>
-    <poms.shared.backend.version>5.3.0</poms.shared.backend.version>
+    <poms.shared.version>5.3.3</poms.shared.version>
+    <poms.shared.backend.version>5.3.2</poms.shared.backend.version>
     <api.version>5.3.0</api.version>
     <api.client.version>5.3.1</api.client.version>
     <events.version>2.2.0</events.version>
@@ -1136,6 +1136,7 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-quartz2</artifactId>
         <version>${camel.version}</version>
+        <!-- old c3p0 (0.9.1.1) in class path causes destruction of ComboPooledDataSource-->
         <exclusions>
           <exclusion>
             <groupId>c3p0</groupId>
@@ -1147,6 +1148,14 @@
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
+        <!-- old c3p0 (0.9.1.1) in class path causes destruction of ComboPooledDataSource-->
+        <exclusions>
+          <exclusion>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+          </exclusion>
+        </exclusions>
+
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
