@@ -1160,6 +1160,13 @@
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
+        <!-- old c3p0 (0.9.1.1) in class path causes destruction of ComboPooledDataSource-->
+        <exclusions>
+          <exclusion>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
