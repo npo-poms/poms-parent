@@ -2121,14 +2121,16 @@
            <artifactId>properties-maven-plugin</artifactId>
            <version>1.0.0</version>
          </plugin>
+         <plugin>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.6.1</version>
+         </plugin>
       </plugins>
     </pluginManagement>
 
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.1</version>
-        <inherited>true</inherited>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
