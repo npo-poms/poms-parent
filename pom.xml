@@ -67,18 +67,17 @@
   <properties>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
+    <poms.version>5.4-SNAPSHOT</poms.version>
 
-    <poms.shared.version>UNSET</poms.shared.version>
-    <poms.shared.backend.version>UNSET</poms.shared.backend.version>
-    <api.version>UNSET</api.version>
-    <api.client.version>UNSET</api.client.version>
-
-    <image.version>UNSET</image.version>
-
-    <media.version>UNSET</media.version>
-    <npo-publish.version>UNSET</npo-publish.version>
-    <user.version>UNSET</user.version>
-    <pages.version>UNSET</pages.version>
+    <poms.shared.version>${poms.version}</poms.shared.version>
+    <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
+    <api.version>${poms.version}</api.version>
+    <api.client.version>${poms.version}</api.client.version>
+    <image.version>${poms.version}</image.version>
+    <media.version>${poms.version}</media.version>
+    <npo-publish.version>${poms.version}</npo-publish.version>
+    <user.version>${poms.version}</user.version>
+    <pages.version>${poms.version}</pages.version>
 
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
