@@ -102,8 +102,8 @@
     <aspectj.version>1.6.12</aspectj.version>
     <camel.version>2.19.0</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
-    <cxf.version>3.1.6</cxf.version>
-    <ektorp.version>1.4.2</ektorp.version>
+    <cxf.version>3.1.11</cxf.version>
+    <ektorp.version>1.4.4</ektorp.version>
     <guava.version>22.0</guava.version>
     <guice.version>4.1.0</guice.version>
     <quartz.version>2.2.3</quartz.version>
@@ -131,7 +131,7 @@
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.7.22</mockito.version>
+    <mockito.version>2.8.47</mockito.version>
     <lombok.version>1.16.16</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
 
@@ -143,7 +143,7 @@
     <resteasy.version>3.1.0.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
-    <slf4j.version>1.7.21</slf4j.version>
+    <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
 
     <spring.version>4.3.8.RELEASE</spring.version>
@@ -165,10 +165,11 @@
     <httpcomponents.version>4.5.2</httpcomponents.version>
     <httpcomponentscore.version>4.4.5</httpcomponentscore.version>
     <swagger.version>1.5.12</swagger.version>
-    <ehcache.version>2.10.2</ehcache.version>
-    <wss4j.version>2.1.8</wss4j.version>
-    <saxon.version>9.5.1-5</saxon.version>
-    <javassist.version>3.22.0-CR1</javassist.version>
+    <ehcache3.version>3.3.1</ehcache3.version>
+    <ehcache.version>2.10.4</ehcache.version>
+    <wss4j.version>2.1.10</wss4j.version>
+    <saxon.version>9.8.0-2</saxon.version>
+    <javassist.version>3.22.0-CR2</javassist.version>
     <scala.version>2.11.7</scala.version>
 
     <!-- Tied to the ES server version! -->
@@ -544,6 +545,15 @@
         <version>${log4j.version}</version>
       </dependency>
 
+
+      <!-- not doing this yet -->
+      <!--
+      <dependency>
+        <groupId>org.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>${ehcache3.version}</version>
+        </dependency>
+        -->
 
       <dependency>
         <groupId>net.sf.ehcache</groupId>
