@@ -67,7 +67,7 @@
   <properties>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.4-SNAPSHOT</poms.version>
+    <poms.version>5.4.0</poms.version>
 
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
