@@ -170,7 +170,7 @@
     <wss4j.version>2.1.10</wss4j.version>
     <saxon.version>9.8.0-2</saxon.version>
     <javassist.version>3.22.0-CR2</javassist.version>
-    <scala.version>2.11.7</scala.version>
+    <scala.version>2.11.8</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>1.1.0</elasticsearch.version>
