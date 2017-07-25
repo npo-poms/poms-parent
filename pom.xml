@@ -740,6 +740,11 @@
         </exclusions>
       </dependency>
       <dependency>
+       <groupId>nl.publiekeomroep</groupId>
+       <artifactId>media-openskos</artifactId>
+       <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
