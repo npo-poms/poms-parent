@@ -552,6 +552,11 @@
         <artifactId>apache-log4j-extras</artifactId>
         <version>${log4j.version}</version>
       </dependency>
+      <dependency>
+        <groupId>io.sentry</groupId>
+        <artifactId>sentry-log4j</artifactId>
+        <version>1.4.0</version>
+      </dependency>
 
 
       <!-- not doing this yet -->
@@ -2111,6 +2116,11 @@
           <artifactId>cxf-java2ws-plugin</artifactId>
           <version>${cxf.version}</version>
         </plugin>
+         <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>buildnumber-maven-plugin</artifactId>
+           <version>1.4</version>
+         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
