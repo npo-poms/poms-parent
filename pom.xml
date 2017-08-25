@@ -632,6 +632,11 @@
         <version>${api.version}</version>
       </dependency>
       <dependency>
+        <groupId>nl.publiekeomroep</groupId>
+        <artifactId>api-backend-thesaurus</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media-search</artifactId>
         <version>${poms.shared.backend.version}</version>
