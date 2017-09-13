@@ -2285,6 +2285,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.20</version>
         <configuration>
+          <systemPropertyVariables>
+            <property>
+              <name>projectArtifactId</name>
+              <value>${project.artifactId}</value>
+            </property>
+          </systemPropertyVariables>
           <includes>
             <include>**/*Test.java</include>
             <include>**/*Spec.java</include>
