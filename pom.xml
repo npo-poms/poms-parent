@@ -2175,6 +2175,11 @@
          <artifactId>bcprov-jdk15on</artifactId>
          <version>1.51</version>
        </dependency>
+       <dependency>
+         <groupId>com.hierynomus</groupId>
+         <artifactId>sshj</artifactId>
+         <version>0.22.0</version>
+       </dependency>
     </dependencies>
   </dependencyManagement>
 
