@@ -2298,10 +2298,9 @@
         <version>2.20</version>
         <configuration>
           <systemPropertyVariables>
-            <property>
-              <name>projectArtifactId</name>
-              <value>${project.artifactId}</value>
-            </property>
+            <projectArtifactId>${project.artifactId}</projectArtifactId>
+            <integ.java.port>${integ.java.port}</integ.java.port>
+            <integ.cluster.name>${integ.cluster.name}</integ.cluster.name>
           </systemPropertyVariables>
           <includes>
             <include>**/*Test.java</include>
@@ -2328,11 +2327,11 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+        </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.12</version>
+        <version>2.20</version>
         <configuration>
           <includes>
             <include>**/*ITest.java</include>
