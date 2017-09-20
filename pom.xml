@@ -2312,24 +2312,7 @@
             <exclude>**/*ITest.java</exclude>
           </excludes>
         </configuration>
-        <executions>
-          <execution>
-            <id>integration-test</id>
-            <goals>
-              <goal>test</goal>
-            </goals>
-            <phase>integration-test</phase>
-            <configuration>
-              <excludes>
-                <exclude>none</exclude>
-              </excludes>
-              <includes>
-                <include>**/*ITest.java</include>
-              </includes>
-            </configuration>
-          </execution>
-        </executions>
-        </plugin>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
@@ -2368,16 +2351,16 @@
           <branchName>REL-${project.version}</branchName>
           <tagNameFormat>REL-@{project.version}</tagNameFormat>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.4</version>
-        <configuration>
-          <additionalparam>-Xdoclint:none -quiet</additionalparam>
-          <failOnError>false</failOnError>
-        </configuration>
-      </plugin>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.4</version>
+          <configuration>
+            <additionalparam>-Xdoclint:none -quiet</additionalparam>
+            <failOnError>false</failOnError>
+          </configuration>
+        </plugin>
     </plugins>
   </build>
 
