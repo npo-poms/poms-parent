@@ -147,15 +147,14 @@
 
     <sentry.version>1.4.0</sentry.version>
 
-    <spring.version>4.3.9.RELEASE</spring.version>
-    <spring-security.version>4.2.0.RELEASE</spring-security.version>
+    <spring.version>4.3.11.RELEASE</spring.version>
+    <spring-security.version>4.2.3.RELEASE</spring-security.version>
 
     <cglib.version>3.2.5</cglib.version>
 
-    <spring.ldap.version>2.2.0.RELEASE</spring.ldap.version>
-    <spring-security.casclient.version>3.0.8.RELEASE</spring-security.casclient.version>
-    <spring-data-jpa.version>1.11.0.RELEASE</spring-data-jpa.version>
-    <spring-data-commons.version>1.13.0.RELEASE</spring-data-commons.version>
+    <spring.ldap.version>2.3.1.RELEASE</spring.ldap.version>
+    <spring-data-jpa.version>1.11.7.RELEASE</spring-data-jpa.version>
+    <spring-data-commons.version>1.13.7.RELEASE</spring-data-commons.version>
 
     <!--
     Spring Framework 3.2.3+ fully supports Hibernate 4.0 to 4.2.x in its orm.hibernate4 package.
@@ -174,10 +173,10 @@
     <scala.version>2.11.8</scala.version>
 
     <!-- Tied to the ES server version! -->
-    <elasticsearch.version>5.5.2</elasticsearch.version> <!-- 5.5.2 client seems to be broken ! -->
+    <elasticsearch.version>5.5.2</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
 
-    <postgresql.version>42.1.1</postgresql.version>
+    <postgresql.version>42.1.4.jre7</postgresql.version>
 
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
