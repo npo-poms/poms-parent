@@ -113,7 +113,7 @@
     <hibernate.version>5.2.11.Final</hibernate.version>
     <hibernate.search.version>5.8.0.Final</hibernate.search.version>
 
-    <hibernate.validator.version>5.4.1.Final</hibernate.validator.version>
+    <hibernate.validator.version>6.0.2.Final</hibernate.validator.version>
     <flyway.version>4.2.0</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
@@ -1702,12 +1702,17 @@
         <version>1.0</version>
       </dependency>
       <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate.validator.version}</version>
+      </dependency>
+      <dependency> <!-- remove this -->
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate.validator.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator-cdi</artifactId>
         <version>${hibernate.validator.version}</version>
       </dependency>
