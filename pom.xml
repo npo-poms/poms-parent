@@ -1706,10 +1706,12 @@
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate.validator.version}</version>
       </dependency>
-      <dependency> <!-- remove this -->
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-validator</artifactId>
-        <version>${hibernate.validator.version}</version>
+
+      <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>el-impl</artifactId>
+        <version>3.0.1-b08</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.hibernate.validator</groupId>
