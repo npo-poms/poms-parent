@@ -1708,8 +1708,8 @@
       </dependency>
 
       <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>el-impl</artifactId>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.el</artifactId>
         <version>3.0.1-b08</version>
         <scope>test</scope>
       </dependency>
