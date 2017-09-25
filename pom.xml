@@ -1733,6 +1733,11 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>2.1</version>
+      </dependency>
+      <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
         <version>1.0.0.Final</version>
@@ -2051,11 +2056,6 @@
         <groupId>javax.cache.implementation</groupId>
         <artifactId>cache-annotations-ri-spring</artifactId>
         <version>0.5</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.ws.rs</groupId>
-        <artifactId>javax.ws.rs-api</artifactId>
-        <version>2.0.1</version>
       </dependency>
       <!--   doesn't work with hibernate validator 5
       <dependency>
