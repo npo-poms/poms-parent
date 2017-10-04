@@ -843,6 +843,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-es</artifactId>
+        <version>${pages.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-backend</artifactId>
         <version>${pages.version}</version>
       </dependency>
@@ -1050,13 +1055,13 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
-        <artifactId>user-domain</artifactId>
-        <version>${user.domain.version}</version>
+        <artifactId>user-backend-domain</artifactId>
+        <version>${user.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-domain</artifactId>
-        <version>${user.version}</version>
+        <artifactId>user-domain</artifactId>
+        <version>${user.domain.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
