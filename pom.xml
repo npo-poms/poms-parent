@@ -163,7 +163,7 @@
 
     <httpcomponents.version>4.5.3</httpcomponents.version>
     <httpcomponentscore.version>4.4.7</httpcomponentscore.version>
-    <swagger.version>1.5.16</swagger.version>
+    <swagger.version>1.5.12</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <ehcache3.version>3.3.1</ehcache3.version>
     <ehcache.version>2.10.4</ehcache.version>
     <wss4j.version>2.1.10</wss4j.version>
