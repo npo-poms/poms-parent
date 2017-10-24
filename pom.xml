@@ -837,7 +837,7 @@
       <dependency>
         <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-rs-services</artifactId>
-        <version>${pages.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.pages</groupId>
