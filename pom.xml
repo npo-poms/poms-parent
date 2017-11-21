@@ -69,7 +69,7 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.5.0</poms.version>
+    <poms.version>5.6.0</poms.version>
 
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
@@ -84,9 +84,6 @@
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-
-
-    <stats.version>${poms.shared.version}</stats.version>
     <parkpost.version>${media.version}</parkpost.version>
 
     <!-- dependency provided by VPRO -->
@@ -120,17 +117,17 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.1</jackson2.version>
+    <jackson2.version>2.9.2</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
     <jaxb.version>2.3.0</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.10.0</mockito.version>
+    <mockito.version>2.11.0</mockito.version>
     <lombok.version>1.16.18</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
-    <wiremock.version>2.9.0</wiremock.version>
+    <wiremock.version>2.10.1</wiremock.version>
 
     <lucene.version>5.5.4</lucene.version> <!-- linked to hibernate search -->
 
@@ -144,7 +141,7 @@
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.9.0</log4j2.version>
 
-    <sentry.version>1.5.5</sentry.version>
+    <sentry.version>1.6.1</sentry.version>
 
     <spring.version>4.3.11.RELEASE</spring.version>
     <spring-security.version>4.2.3.RELEASE</spring-security.version>
@@ -1118,15 +1115,6 @@
         <version>${events.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.stats</groupId>
-        <artifactId>stats-events</artifactId>
-        <version>${stats.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.stats</groupId>
-        <artifactId>stats-services</artifactId>
-        <version>${stats.version}</version>
       </dependency>
 
       <!-- specs are generally provided -->
@@ -1438,6 +1426,11 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
+        <version>${httpcomponents.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient-cache</artifactId>
         <version>${httpcomponents.version}</version>
       </dependency>
       <dependency>
