@@ -1109,6 +1109,12 @@
         <artifactId>poms-extjs</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.esper</groupId>
+        <artifactId>esper-events</artifactId>
+        <version>${events.version}</version>
+      </dependency>
+
 
 
       <!-- specs are generally provided -->
