@@ -79,7 +79,6 @@
     <media.version>${poms.version}</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
-    <pages.version>${poms.version}</pages.version>
 
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -92,7 +91,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <vpro.shared.version>1.74.0</vpro.shared.version>
+    <vpro.shared.version>1.75.0</vpro.shared.version>
     <events.version>2.3.0</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
@@ -836,30 +835,15 @@
 
       <dependency>
         <groupId>nl.vpro.pages</groupId>
-        <artifactId>pages-rs-services</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.pages</groupId>
-        <artifactId>pages-couchdb</artifactId>
-        <version>${pages.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.pages</groupId>
-        <artifactId>pages-es</artifactId>
-        <version>${pages.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.pages</groupId>
-        <artifactId>pages-backend</artifactId>
-        <version>${pages.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-rs-services</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-es-mappings</artifactId>
