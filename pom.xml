@@ -728,11 +728,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
-        <artifactId>media-classification-spring</artifactId>
-        <version>${media.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
         <artifactId>media-i18n</artifactId>
         <version>${media.domain.version}</version>
       </dependency>
@@ -776,11 +771,6 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-nebo</artifactId>
-        <version>${media.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
-        <artifactId>media-ceres</artifactId>
         <version>${media.version}</version>
       </dependency>
       <dependency>
@@ -1003,12 +993,6 @@
         <version>${elasticsearch.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.elasticsearch</groupId>
-        <artifactId>elasticsearch-analysis-icu</artifactId>
-        <version>${elasticsearch.icu.version}</version>
-        <scope>test</scope>
-      </dependency>
       <dependency>
         <groupId>org.elasticsearch.test</groupId>
         <artifactId>framework</artifactId>
@@ -2277,6 +2261,9 @@
           <source>1.8</source>
           <target>1.8</target>
           <encoding>UTF-8</encoding>
+          <compilerArgs>
+            <arg>-parameters</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
       <plugin>
