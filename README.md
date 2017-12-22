@@ -26,3 +26,25 @@ developer's port: 8069
 Publisher API
 -------------
 developer's port: not relevant (no frontend)
+
+NPO API Clients
+---------------
+This projects provide java clients for the above projects. 
+
+
+VPRO shared
+-----------
+Most projects also depend on a collection of utilities maintained by VPRO but which are not specific for POMS or its subsystems
+
+POMS shared
+-----------
+These modules are specific, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
+
+Classes from this may also end up outside the POMS projects themselves. Like e.g. CMS's (probably via the api clients)
+
+POMS shared backend
+-------------------
+Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
+
+
+
