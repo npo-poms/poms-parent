@@ -39,6 +39,7 @@ digraph {
 
     media_publish -> poms_shared;
     media_publish -> poms_shared_backend;
+    media_publish -> poms_gui[color=gray]
 
     api_client-> poms_shared;
     api_client-> vpro_shared;
@@ -47,5 +48,7 @@ digraph {
     magnolia -> vpro_shared;
     magnolia -> poms_shared;
 
+    poms_backend -> poms_shared
+    poms_backend -> poms_gui[color=gray]
 
 }
