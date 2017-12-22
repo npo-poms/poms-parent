@@ -2,8 +2,8 @@ digraph {
 
     label="Deployments relevant for POMS";
     subgraph cluster_0  {
-        label="Generic services";
-        postgresql; elasticsearch; sso; jms;
+        label="Generic backend services";
+        postgresql; elasticsearch; sso; jms; ldap;
     }
 
     subgraph cluster_1  {
@@ -16,23 +16,23 @@ digraph {
         users; backendsystems; editors;
     }
     subgraph cluster_3  {
-        label="POMS Services";
+        label="POMS Public Services";
         poms_gui; poms_backend; pages_publish; api;
     }
 
 
-   editors -> {magnolia_backend poms_gui}
+   editors -> {magnolia_backend poms_gui sso}
    users -> {magnolia_frontend api}
    backendsystems -> {poms_backend  pages_publish}
 
 
-    poms_gui -> { postgresql  jms }
+    poms_gui -> { postgresql jms sso ldap }
 
-    poms_backend -> { jms }
+    poms_backend -> { jms ldap}
 
     api -> { elasticsearch }
 
-    pages_publish -> { elasticsearch }
+    pages_publish -> { elasticsearch ldap}
 
     media_publish -> { elasticsearch jms }
 
@@ -41,5 +41,6 @@ digraph {
 
     magnolia_frontend -> { api  };
 
+   sso -> ldap;
 
 }
