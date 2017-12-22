@@ -101,7 +101,7 @@
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.1.11</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>23.0</guava.version>
+    <guava.version>23.5-jre</guava.version>
     <guice.version>4.1.0</guice.version>
     <quartz.version>2.2.3</quartz.version>
 
@@ -116,7 +116,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.2</jackson2.version>
+    <jackson2.version>2.9.3</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
     <jaxb.version>2.3.0</jaxb.version>
