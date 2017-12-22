@@ -1,6 +1,6 @@
 digraph {
 
-
+    label="Dependencies of the different code projects relevant to POMS";
     subgraph cluster_0  {
         label="Generic utilities";
         slf4j; guava; resteasy;
