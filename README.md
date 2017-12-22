@@ -47,4 +47,7 @@ POMS shared backend
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
 
 
+Dependencies
+------------
+![dependency graph](poms.png "")
 
