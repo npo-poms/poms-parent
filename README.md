@@ -49,5 +49,9 @@ Sometimes different POMS project share 'backend' code, like repository implement
 
 Dependencies
 ------------
-![dependency graph](poms.png "")
+![dependency graph](poms-dependencies.png "")
 
+
+Deployments
+------------
+![deployment graph](poms-deployments.png "")
