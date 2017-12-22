@@ -1,0 +1,43 @@
+digraph {
+
+
+    subgraph cluster_0  {
+        label="Generic services";
+        postgresql; elasticsearch; sso; jms;
+    }
+
+    subgraph cluster_1  {
+        label="VPRO";
+        magnolia;
+    }
+
+    subgraph cluster_1  {
+        label="World";
+        users; backendsystems; editors;
+    }
+    subgraph cluster_3  {
+        label="POMS Services";
+        poms_gui; poms_backend; pages_publish; api;
+    }
+
+
+   editors -> {magnolia poms_gui}
+   users -> {magnolia api}
+   backendsystems -> {poms_backend  pages_publish}
+
+
+    poms_gui -> { postgresql  jms }
+
+    poms_backend -> { jms }
+
+    api -> { elasticsearch }
+
+    pages_publish -> { elasticsearch }
+
+    media_publish -> { elasticsearch jms }
+
+
+    magnolia -> { api poms_backend pages_publish };
+
+
+}

@@ -1,0 +1,51 @@
+digraph {
+
+
+    subgraph cluster_0  {
+        label="Generic utilities";
+        slf4j; guava; resteasy;
+    }
+
+    subgraph cluster_1  {
+        label="VPRO";
+        magnolia;
+    }
+    subgraph cluster_2  {
+        label="POMS Services";
+        poms_gui; poms_backend; pages_publish; media_publish; api;
+    }
+
+    subgraph cluster_4  {
+        label="Sharable utilities";
+        api_client; vpro_shared; poms_shared;
+    }
+
+
+    vpro_shared -> { slf4j guava};
+    poms_shared -> vpro_shared;
+    poms_shared_backend -> vpro_shared;
+    poms_shared_backend -> poms_shared;
+    poms_shared_backend -> slf4j;
+    poms_gui -> poms_shared;
+
+    api -> poms_shared;
+    api -> poms_shared_backend;
+    api -> vpro_shared;
+    api -> resteasy;
+
+
+    pages_publish -> poms_shared_backend;
+    pages_publish -> poms_shared;
+
+    media_publish -> poms_shared;
+    media_publish -> poms_shared_backend;
+
+    api_client-> poms_shared;
+    api_client-> vpro_shared;
+
+    magnolia -> api_client;
+    magnolia -> vpro_shared;
+    magnolia -> poms_shared;
+
+
+}

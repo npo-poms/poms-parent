@@ -1,5 +1,6 @@
 
 
+all: poms-dependencies.png poms-deployment.png
 
-poms.png: poms.dot
-	 dot  -Tpng poms.dot -o poms.png
+%.png: %.dot
+	 dot  -Tpng $< -o $@
