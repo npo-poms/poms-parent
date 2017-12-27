@@ -50,10 +50,20 @@ Sometimes different POMS project share 'backend' code, like repository implement
 Dependencies
 ------------
 <!--- PNG's are created using 'graphviz' from the *.dot files. See Makefile.-->
+This describes schematicly the dependencies between the several modules relevant to poms.
+
+This does not intend to be exhaustive, but merely tries to sketch the big picture.
+
+An important aspect is that dependencies may only be one way. Often dependencies are both transitive and direct, of which only examples are indicated.
+
 
 ![dependency graph](poms-dependencies.png "")
 
 
 Deployments
 ------------
+This describes schematicly the connections between actual systems relevant to poms.
+
+This does not intend to be exhaustive, but merely tries to sketch the big picture.
+
 ![deployment graph](poms-deployment.png "")
