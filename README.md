@@ -29,7 +29,7 @@ developer's port: not relevant (no frontend)
 
 NPO API Clients
 ---------------
-This projects provide java clients for the above projects. 
+This project provides java clients for the above projects. 
 
 
 VPRO shared
@@ -38,7 +38,7 @@ Most projects also depend on a collection of utilities maintained by VPRO but wh
 
 POMS shared
 -----------
-These modules are specific, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
+These modules are specific for POMS, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
 
 Classes from this may also end up outside the POMS projects themselves. Like e.g. CMS's (probably via the api clients)
 
@@ -49,9 +49,11 @@ Sometimes different POMS project share 'backend' code, like repository implement
 
 Dependencies
 ------------
+<!--- PNG's are created using 'graphviz' from the *.dot files. See Makefile.-->
+
 ![dependency graph](poms-dependencies.png "")
 
 
 Deployments
 ------------
-![deployment graph](poms-deployments.png "")
+![deployment graph](poms-deployment.png "")
