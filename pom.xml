@@ -964,6 +964,11 @@
         <artifactId>vpro-shared-elasticsearch5</artifactId>
         <version>${vpro.shared.version}</version>
       </dependency>
+            <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-elasticsearch-client</artifactId>
+        <version>${vpro.shared.version}</version>
+      </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-guice</artifactId>
