@@ -123,7 +123,7 @@
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.11.0</mockito.version>
+    <mockito.version>2.13.0</mockito.version>
     <lombok.version>1.16.18</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
     <wiremock.version>2.10.1</wiremock.version>
