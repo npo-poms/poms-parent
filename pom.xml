@@ -122,6 +122,8 @@
     <jaxb.version>2.3.0</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
+    <validation.api.version>2.0.1.Final</validation.api.version>
+
     <junit.version>4.12</junit.version>
     <mockito.version>2.13.0</mockito.version>
     <lombok.version>1.16.18</lombok.version>
@@ -1666,7 +1668,7 @@
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
-        <version>2.0.1.Final</version>
+        <version>${validation.api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.persistence</groupId>
