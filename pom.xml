@@ -780,6 +780,11 @@
         <artifactId>media-nebo</artifactId>
         <version>${media.version}</version>
       </dependency>
+       <dependency>
+         <groupId>nl.vpro.media</groupId>
+         <artifactId>media-nep</artifactId>
+         <version>${media.version}</version>
+       </dependency>
       <dependency>
         <groupId>nl.vpro.subtitles</groupId>
         <artifactId>subtitles-domain</artifactId>
