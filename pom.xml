@@ -1576,6 +1576,11 @@
         <version>${jackson2.version}</version>
       </dependency>
       <dependency>
+        <groupId>io.openapitools.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-hal</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+      <dependency>
         <groupId>org.scala-lang</groupId>
         <artifactId>scala-library</artifactId>
         <version>${scala.version}</version>
