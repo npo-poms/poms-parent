@@ -125,7 +125,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.16.0</mockito.version>
+    <mockito.version>2.17.0</mockito.version>
     <lombok.version>1.16.20</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
     <wiremock.version>2.10.1</wiremock.version>
@@ -134,15 +134,15 @@
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>3.40.0</newrelic.version>
-    <resteasy.version>3.1.4.Final</resteasy.version>
+    <newrelic.version>3.48.0</newrelic.version>
+    <resteasy.version>3.5.0.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.9.0</log4j2.version>
 
-    <sentry.version>1.6.1</sentry.version>
+    <sentry.version>1.7.2</sentry.version>
 
     <spring.version>4.3.11.RELEASE</spring.version>
     <spring-security.version>4.2.3.RELEASE</spring-security.version>
