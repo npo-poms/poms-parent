@@ -2379,7 +2379,8 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.0.0</version>
           <configuration>
-            <additionalparam>-Xdoclint:none -quiet</additionalparam>
+            <doclint>none</doclint>
+            <additionalJOption>-quiet</additionalJOption>
             <failOnError>false</failOnError>
           </configuration>
         </plugin>
