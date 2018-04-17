@@ -109,7 +109,7 @@
     <hibernate.search.version>5.9.1.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.2.Final</hibernate.validator.version>
-    <flyway.version>4.2.0</flyway.version>
+    <flyway.version>5.0.7</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -2300,6 +2300,11 @@
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>build-helper-maven-plugin</artifactId>
            <version>3.0.0</version>
+         </plugin>
+         <plugin>
+           <groupId>org.flywaydb</groupId>
+           <artifactId>flyway-maven-plugin</artifactId>
+           <version>${flyway.version}</version>
          </plugin>
       </plugins>
     </pluginManagement>
