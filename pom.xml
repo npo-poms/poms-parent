@@ -96,7 +96,7 @@
     <activemq.version>5.15.3</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
-    <aspectj.version>1.6.12</aspectj.version>
+    <aspectj.version>1.9.1</aspectj.version>
     <camel.version>2.21.0</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.4</cxf.version>
@@ -159,8 +159,8 @@
     CXF 2 will not work with spring 4.
     -->
 
-    <httpcomponents.version>4.5.3</httpcomponents.version>
-    <httpcomponentscore.version>4.4.7</httpcomponentscore.version>
+    <httpcomponents.version>4.5.5</httpcomponents.version>
+    <httpcomponentscore.version>4.4.9</httpcomponentscore.version>
     <swagger.version>1.5.12</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <!--
         <swagger.version>2.0.0-rc2</swagger.version>
