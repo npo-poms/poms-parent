@@ -125,7 +125,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.17.0</mockito.version>
+    <mockito.version>2.18.3</mockito.version>
     <lombok.version>1.16.20</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
     <wiremock.version>2.10.1</wiremock.version>
