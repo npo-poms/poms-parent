@@ -89,7 +89,7 @@
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
     <vpro.shared.version>1.77-SNAPSHOT</vpro.shared.version>
-    <events.version>2.3.0</events.version>
+    <events.version>2.4-SNAPSHOT</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
