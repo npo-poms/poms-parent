@@ -97,7 +97,7 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.1</aspectj.version>
-    <camel.version>2.21.0</camel.version>
+    <camel.version>2.21.1</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
@@ -1179,6 +1179,10 @@
           <exclusion>
             <groupId>org.glassfish.web</groupId>
             <artifactId>javax.el</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId> <!-- groupid was upgraded-->
+            <artifactId>hibernate-validatpr</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
