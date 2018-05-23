@@ -69,9 +69,9 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.7.0</poms.version>
+    <poms.version>5.7.2</poms.version>
 
-    <poms.shared.version>${poms.version}</poms.shared.version>
+    <poms.shared.version>5.7.2</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
     <api.version>${poms.version}</api.version>
     <api.client.version>${poms.version}</api.client.version>
@@ -88,7 +88,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <vpro.shared.version>1.77.0</vpro.shared.version>
+    <vpro.shared.version>1.78.0</vpro.shared.version>
     <events.version>2.4.0</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
