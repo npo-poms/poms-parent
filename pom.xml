@@ -154,8 +154,8 @@
     <cglib.version>3.2.5</cglib.version>
 
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
-    <spring-data-jpa.version>2.0.6.RELEASE</spring-data-jpa.version>
-    <spring-data-commons.version>2.0.6.RELEASE</spring-data-commons.version>
+    <spring-data-jpa.version>2.0.7.RELEASE</spring-data-jpa.version>
+    <spring-data-commons.version>2.0.7.RELEASE</spring-data-commons.version>
 
     <!--
     Spring Framework 3.2.3+ fully supports Hibernate 4.0 to 4.2.x in its orm.hibernate4 package.
