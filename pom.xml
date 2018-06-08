@@ -122,8 +122,7 @@
     <jaxb.version>2.3.0</jaxb.version>
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
-    <!-- <ws.rs-api.version>2.1</ws.rs-api.version>-->
-    <ws.rs-api.version>2.0.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
+    <ws.rs-api.version>2.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
@@ -165,7 +164,7 @@
 
     <httpcomponents.version>4.5.5</httpcomponents.version>
     <httpcomponentscore.version>4.4.9</httpcomponentscore.version>
-    <swagger.version>1.5.19</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
+    <swagger.version>1.5.20</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <!--
         <swagger.version>2.0.0-rc2</swagger.version>
         -->
@@ -2046,7 +2045,11 @@
         <artifactId>resteasy-client</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
-
+      <dependency>
+        <groupId>org.jboss.spec.javax.ws.rs</groupId>
+        <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+        <version>1.0.0.Final</version>
+      </dependency>
 
       <!--
       <dependency>
