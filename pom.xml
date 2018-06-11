@@ -87,7 +87,7 @@
 
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
-    <vpro-camel.version>1.1.0</vpro-camel.version>
+    <vpro-camel.version>1.2-SNAPSHOT</vpro-camel.version>
     <vpro.shared.version>1.79-SNAPSHOT</vpro.shared.version>
     <events.version>2.4.0</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
@@ -137,7 +137,7 @@
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>3.48.0</newrelic.version>
+    <newrelic.version>4.1.0</newrelic.version>
     <resteasy.version>3.5.1.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
