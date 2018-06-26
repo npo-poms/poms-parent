@@ -88,7 +88,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.1.0</vpro-camel.version>
-    <vpro.shared.version>1.78.0</vpro.shared.version>
+    <vpro.shared.version>1.78.1</vpro.shared.version>
     <events.version>2.4.0</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
