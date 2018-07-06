@@ -755,11 +755,6 @@
           </exclusion>
         </exclusions>
       </dependency>
-       <dependency>
-        <groupId>nl.vpro.media</groupId>
-        <artifactId>subtitles-domain</artifactId>
-        <version>${media.domain.version}</version>
-      </dependency>
       <dependency>
        <groupId>nl.publiekeomroep</groupId>
        <artifactId>media-openskos</artifactId>
