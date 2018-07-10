@@ -2370,8 +2370,6 @@
         <configuration>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
-            <user.language>en</user.language>
-            <user.region>US</user.region>
           </systemPropertyVariables>
           <includes>
             <include>**/*Test.java</include>
