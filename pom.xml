@@ -83,7 +83,6 @@
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-    <parkpost.version>${media.version}</parkpost.version>
 
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
