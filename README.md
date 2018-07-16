@@ -3,33 +3,53 @@ The POMS ecosystem
 
 This is the poms parent. This is the parent pom of the several projects in the poms ecosystem.
 
+Configuration files and context root
+------------------------------------
+For every deployable we indicate:
+The URL in dev/test and production
+The port and application context we suggest for development
+The configuration file that is automticly included and we suggest for development.
+We often support a setting like this:
+env=[prod|test|dev|location] to automaticly switch between several setting which vary between environments predictably.
+
+
+
 Functional Tests
 ----------------
-See npo-functional-tests/trunk/src/test/resources/npo-functional-tests.properties
+See
+npo-functional-tests/trunk/src/test/resources/npo-functional-tests.properties
+${user.home}/conf/npo-functional-tests.properties
 
 
 GUI and Backend RestServices
 --------
 poms[|-dev|-test].omroep.nl/api[|-dev|-test].poms.omroep.nl
-developer's port: 8071, backend rest service on /rs
+developer's port: 8071, context,  backend rest service on /rs
+config files:
+${user.home}/conf/media.properties
+${user.home}/conf/media-rs.properties
 
 Frontend API
 -------------
-rs[|-dev|-test].poms.omroep.nl
-developer's port: 8070
+rs[|-dev|-test].poms.omroep.nl/v1
+
+developer's port: 8070, context: /v1
+${user.home}/conf/npo-api.properties
 
 Page publisher API
 -------------------
 publish[|-dev|-test]..pages.omroep.nl
 developer's port: 8069
+${user.home}/conf/pages-publish.propertiesd
 
 Publisher API
 -------------
 developer's port: not relevant (no frontend)
+${user.home}/conf/npo-publisher.properties
 
 NPO API Clients
 ---------------
-This project provides java clients for the above projects. 
+This project provides java clients for the above projects.
 
 
 VPRO shared
@@ -45,6 +65,9 @@ Classes from this may also end up outside the POMS projects themselves. Like e.g
 POMS shared backend
 -------------------
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
+
+
+
 
 
 Dependencies
