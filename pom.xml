@@ -69,16 +69,15 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.7.2</poms.version>
-
-    <poms.shared.version>5.7.2</poms.shared.version>
-    <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
-    <api.version>${poms.version}</api.version>
-    <api.client.version>${poms.version}</api.client.version>
-    <image.version>${poms.version}</image.version>
+    <poms.version>5.7.8</poms.version>
+    <poms.shared.version>5.7.9</poms.shared.version>
+    <poms.shared.backend.version>5.7.0</poms.shared.backend.version>
+    <api.version>5.7.0</api.version>
+    <api.client.version>5.7.2</api.client.version>
+    <image.version>5.7.0</image.version>
     <media.version>${poms.version}</media.version>
-    <npo-publish.version>${poms.version}</npo-publish.version>
-    <user.version>${poms.version}</user.version>
+    <npo-publish.version>5.7.0</npo-publish.version>
+    <user.version>5.7.0</user.version>
 
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -2406,7 +2405,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.0.1</version>
           <configuration>
             <doclint>none</doclint>
             <additionalJOption>-quiet</additionalJOption>
