@@ -72,7 +72,7 @@
     <!-- these remain unset, and have this pom as parent themselves -->
     <poms.version>5.8.0</poms.version>
 
-    <poms.shared.version>${poms.version}</poms.shared.version>
+    <poms.shared.version>5.8.2</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
     <api.version>${poms.version}</api.version>
     <api.client.version>${poms.version}</api.client.version>
