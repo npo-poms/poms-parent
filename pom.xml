@@ -98,7 +98,7 @@
     <aspectj.version>1.8.13</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.21.1</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
-    <cxf.version>3.2.6</cxf.version>
+    <cxf.version>3.2.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>26.0-jre</guava.version>
     <guice.version>4.2.0</guice.version>
@@ -1484,7 +1484,13 @@
       <dependency>
         <groupId>org.codehaus.woodstox</groupId>
         <artifactId>stax2-api</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.woodstox</groupId>
+        <artifactId>woodstox-core</artifactId>
+        <version>5.1.0</version>
       </dependency>
 
       <dependency>
