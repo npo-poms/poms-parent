@@ -100,7 +100,7 @@
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.6</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>25.1-jre</guava.version>
+    <guava.version>26.0-jre</guava.version>
     <guice.version>4.2.0</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
