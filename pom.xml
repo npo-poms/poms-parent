@@ -69,7 +69,7 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.8.0</poms.version>
+    <poms.version>5.9.0</poms.version>
 
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
@@ -92,7 +92,7 @@
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
-    <activemq.version>5.15.3</activemq.version>
+    <activemq.version>5.15.5</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.8.13</aspectj.version> <!-- version used by spring-aop -->
@@ -104,18 +104,18 @@
     <guice.version>4.2.0</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
-    <hibernate.version>5.2.16.Final</hibernate.version>
-    <hibernate.search.version>5.9.1.Final</hibernate.search.version>
+    <hibernate.version>5.3.5.Final</hibernate.version>
+    <hibernate.search.version>5.10.2.Final</hibernate.search.version>
 
-    <hibernate.validator.version>6.0.2.Final</hibernate.validator.version>
-    <flyway.version>5.0.7</flyway.version>
+    <hibernate.validator.version>6.0.12.Final</hibernate.validator.version>
+    <flyway.version>5.1.4</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.5</jackson2.version>
+    <jackson2.version>2.9.6</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
     <jaxb.version>2.3.0</jaxb.version>
