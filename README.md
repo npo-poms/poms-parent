@@ -40,7 +40,7 @@ Page publisher API
 -------------------
 publish[|-dev|-test]..pages.omroep.nl
 developer's port: 8069
-${user.home}/conf/pages-publish.propertiesd
+${user.home}/conf/pages-publish.properties
 
 Publisher API
 -------------
