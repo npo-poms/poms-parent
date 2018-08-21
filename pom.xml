@@ -908,7 +908,7 @@
       <dependency>
         <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-newrelic</artifactId>
-        <version>${vpro.shared.version}</version>
+        <version>1.79.1</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
