@@ -90,6 +90,6 @@ Deployments
 ------------
 This describes schematicly the connections between actual systems relevant to poms.
 
-This does not intend to be exhaustive, but merely tries to sketch the big picture.
+This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
 
 ![deployment graph](poms-deployment.png "")
