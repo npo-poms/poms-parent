@@ -82,6 +82,9 @@ An important aspect is that dependencies may only be one way. Often dependencies
 
 ![dependency graph](poms-dependencies.png "")
 
+## open source
+The artifacts in 'sharable utilities' are or will be available on maven central, which makes them useable also by other parties then [VPRO](https://github.com/vpro)
+
 
 Deployments
 ------------
