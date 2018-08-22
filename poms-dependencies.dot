@@ -3,7 +3,7 @@
 
 */
 digraph {
-
+    vpro_shared [ href="https://github.com/vpro/vpro-shared"];
 
     label="Dependencies of the different code projects relevant to POMS";
     subgraph cluster_0  {

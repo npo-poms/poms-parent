@@ -1,10 +1,14 @@
-/*
-
-
-*/
-digraph {
+digraph poms_universe {
 
     label="Deployments relevant for POMS";
+
+    poms_gui [ label="POMS" href="https://poms.omroep.nl/"];
+    poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/"];
+    api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/"];
+    pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/"];
+    media_publish [ label = "Media Publisher"     href="https://publish.pages.omroep.nl/"];
+
+
     subgraph cluster_0  {
         label="Generic backend services";
         postgresql; elasticsearch; sso; jms; ldap;
@@ -36,7 +40,7 @@ digraph {
 
     api -> { elasticsearch }
 
-    pages_publish -> { elasticsearch ldap}
+    pages_publish-> { elasticsearch ldap}
 
     media_publish -> { elasticsearch jms }
 
