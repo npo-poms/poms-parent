@@ -92,4 +92,4 @@ This describes schematicly the connections between actual systems relevant to po
 
 This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
 
-![deployment graph](poms-deployment.svg?sanitize=true "")
+<img src="https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg" />
