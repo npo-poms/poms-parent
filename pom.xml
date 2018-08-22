@@ -1,4 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>nl.vpro.poms</groupId>
@@ -35,23 +38,31 @@
     </developer>
   </developers>
 
+
+  <licenses>
+    <license>
+      <name>GPLv3</name>
+      <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+    </license>
+  </licenses>
+
   <scm>
-    <connection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/trunk</connection>
-    <developerConnection>scm:svn:https://subversion.vpro.nl/repo/nl/vpro/poms-parent/trunk</developerConnection>
-    <url>https://subversion.vpro.nl/viewvc/nl/vpro/poms-parent/trunk</url>
+    <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
+    <url>https://github.com/vpro/poms-parent</url>
+    <tag>HEAD</tag>
   </scm>
 
+
   <distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Nexus releases</name>
-      <url>https://nexus.vpro.nl/content/repositories/releases</url>
-    </repository>
     <snapshotRepository>
-      <id>nexus</id>
-      <name>Nexus snapshots</name>
-      <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
+      <id>vpro-ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+    <repository>
+      <id>vpro-ossrh-release</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
   </distributionManagement>
 
   <issueManagement>
@@ -2451,6 +2462,21 @@
           <id>${bintray.snapshots.name}</id>
           <name>${bintray.snapshots.name}</name>
           <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+    <profile>
+      <id>vpro-nexus</id>
+      <distributionManagement>
+        <repository>
+          <id>nexus</id>
+          <name>Nexus releases</name>
+          <url>http://nexus.vpro.nl/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+          <id>nexus</id>
+          <name>Nexus snapshots</name>
+          <url>http://nexus.vpro.nl/content/repositories/snapshots</url>
         </snapshotRepository>
       </distributionManagement>
     </profile>
