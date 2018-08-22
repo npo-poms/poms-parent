@@ -80,7 +80,7 @@ This does not intend to be exhaustive, but merely tries to sketch the big pictur
 An important aspect is that dependencies may only be one way. Often dependencies are both transitive and direct, of which only examples are indicated.
 
 
-![dependency graph](poms-dependencies.svg "")
+![dependency graph](./poms-dependencies.svg "")
 
 ## open source
 The artifacts in 'sharable utilities' are or will be available on maven central, which makes them useable also by other parties then [VPRO](https://github.com/vpro)
@@ -92,4 +92,4 @@ This describes schematicly the connections between actual systems relevant to po
 
 This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
 
-![deployment graph](poms-deployment.svg "")
+![deployment graph](/npo-poms/poms-parent/raw/master/poms-deployment.svg?sanitize=true "")
