@@ -6,7 +6,7 @@ digraph poms_universe {
     poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/" fontcolor=blue];
     api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/" fontcolor=blue];
     pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue];
-    media_publish [ label = "Media Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue];
+    media_publish [ label = "Media Publisher" ];
 
 
     subgraph cluster_0  {
