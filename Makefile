@@ -5,5 +5,5 @@ all: poms-dependencies.png poms-deployment.png poms-dependencies.svg poms-deploy
 %.png: %.dot
 	 dot  -Tpng $< -o $@
 
-%.svg: %.dot
+%.svg: %.dot Makefile
 	 dot  -Tsvg $< -o $@

@@ -1,63 +1,119 @@
 digraph poms_universe {
 
-    label="Deployments relevant for POMS";
+label="Deployments relevant for POMS"
 
-    poms [ label="POMS" href="https://poms.omroep.nl/" fontcolor=blue];
-    poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/" fontcolor=blue];
-    api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/" fontcolor=blue];
-    pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue];
-    media_publish [ label = "Media Publisher" ];
-
-
-    subgraph cluster_0  {
-        label="Generic backend services";
-        postgresql; elasticsearch; sso; jms; ldap;
-    }
-
-    subgraph cluster_1  {
-        label="VPRO";
-        magnolia_frontend; magnolia_backend;
-    }
-
-    subgraph cluster_1  {
-        label="World";
-        users; backendsystems; editors;
-    }
-    subgraph cluster_3  {
-        label="POMS Public Services";
-        poms; poms_backend; pages_publish; api;
-    }
-
-    subgraph cluster_4  {
-        label="NPO Services";
-        metis;
-        pd;
-        prepr;
-        miranda;
-
-    }
+poms [ label="POMS" href="https://poms.omroep.nl/" fontcolor=blue ]
+poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/" fontcolor=blue ]
+api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/" fontcolor=blue ]
+pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue ]
+media_publish [ label = "Media Publisher" ]
 
 
-   editors -> {magnolia_backend poms sso}
-   users -> {magnolia_frontend api}
-   backendsystems -> {poms_backend  pages_publish}
+subgraph cluster_0  {
+  label="Generic backend services"
+  postgresql
+  elasticsearch
+  sso
+  jms
+  ldap
+}
+
+subgraph cluster_1  {
+  label="VPRO"
+  magnolia_frontend
+  magnolia_backend
+}
+
+subgraph cluster_1  {
+  label="World"
+  users
+  backendsystems
+  editors
+}
+subgraph cluster_3  {
+  label="POMS  Services"
+  poms
+  poms_backend
+  pages_publish
+  media_publish
+  api
+}
+
+subgraph cluster_4  {
+  label="NPO Services"
+  metis
+  pd
+  prepr
+  miranda
+  pluto
+  nep
+}
+
+editors -> {
+  magnolia_backend
+  poms
+  sso
+}[color=gray]
+
+users -> {
+  magnolia_frontend
+  api
+}[color=gray]
+
+backendsystems -> {
+  poms_backend
+  pages_publish
+}[color=gray]
+
+poms -> {
+  postgresql
+  jms
+  sso
+  ldap
+  miranda
+  prepr
+  pd
+  metis
+  pluto
+  nep
+}[color=darkgoldenrod3]
+
+poms_backend -> {
+  jms
+  ldap
+  metis
+  ldap
+}[color=darkorange1]
+
+api -> {
+  elasticsearch
+}[color=cornflowerblue]
+
+pages_publish-> {
+  elasticsearch
+  ldap
+}[color=darkseagreen]
+
+media_publish -> {
+  elasticsearch
+  jms
+}[color=darkorchid1]
+pages_publish -> media_publish[color=gray dir=none]
 
 
-    poms -> { postgresql jms sso ldap miranda prepr pd metis }
 
-    poms_backend -> { jms ldap}
+magnolia_backend -> {
+  poms_backend
+  pages_publish
+}[color=gray]
 
-    api -> { elasticsearch }
+magnolia_frontend -> {
+  api
+}[color=gray]
 
-    pages_publish-> { elasticsearch ldap}
+sso -> ldap[color=gray]
 
-    media_publish -> { elasticsearch jms }
-
-
-    magnolia_backend -> { poms_backend pages_publish };
-
-    magnolia_frontend -> { api  };
-
-   sso -> ldap;
+prepr -> metis[color=gray]
+pd -> metis[color=gray]
 
 }

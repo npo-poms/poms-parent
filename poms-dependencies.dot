@@ -2,87 +2,111 @@
 
 
 */
-digraph {
-        vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
-        poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
-        api_client [ href="https://github.com/npo-poms/api-client" fontcolor=blue ];
-        poms_backend [ label="POMS & Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
-        poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
-        poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
-        api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
-        media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
-        pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+strict digraph {
+  vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
+  poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
+  api_client [ href="https://github.com/npo-poms/api-client" fontcolor=blue ];
+  poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
+  poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
+  poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
+  api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
+  media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
 
 
 
-    label="
-    Dependencies of the different code projects relevant to POMS";
+  label="
+  Dependencies of the different code projects relevant to POMS";
 
-    subgraph cluster_0  {
-            label="Generic utilities\n(incoming edges are just examples, there are more)"
-            //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
-            slf4j;
-            guava;
-            resteasy;
-            spring;
-            hibernate;
-            angular;
-
-    }
-
-    subgraph cluster_1  {
-        label="VPRO";
-        magnolia;
-    }
-    subgraph cluster_2  {
-        label="POMS Services";
-        description="These are actually deployed";
-        poms_gui; poms_backend; pages_publish; media_publish; api;
-    }
-
-    subgraph cluster_4  {
-        label="Sharable utilities";
-        api_client; vpro_shared; poms_shared;
-    }
+  graph [
+    splines = yes
+  ]
 
 
-    vpro_shared -> { slf4j guava};
-    poms_shared -> vpro_shared;
-    poms_shared_backend -> vpro_shared;
-    poms_shared_backend -> poms_shared;
-    poms_shared_backend -> slf4j;
+  subgraph cluster_0  {
+    label="Generic utilities\n(incoming edges are just examples, there are more)"
+    //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
+    slf4j;
+    guava;
+    resteasy;
+    spring;
+    hibernate;
+    angular;
 
-    api -> poms_shared;
-    api -> poms_shared_backend;
-    api -> vpro_shared;
-    api -> resteasy;
+  }
+
+  subgraph cluster_1  {
+    label="VPRO";
+    magnolia;
+  }
+  subgraph cluster_2  {
+    label="POMS Services";
+    description="These are actually deployed";
+    poms_gui
+    poms_backend
+    pages_publish
+    media_publish
+    api
+  }
+
+  subgraph cluster_4  {
+    label="Sharable utilities";
+    api_client; vpro_shared; poms_shared;
+  }
 
 
-    pages_publish -> poms_shared_backend;
-    pages_publish -> poms_shared;
+  vpro_shared -> {
+    slf4j
+    guava}[color=gray];
+  poms_shared -> vpro_shared[color=gray];
+  poms_shared_backend -> {
+    vpro_shared
+    poms_shared
+    slf4j
+  }[color=cyan3]
 
-    media_publish -> poms_shared;
-    media_publish -> poms_shared_backend;
-    media_publish -> poms_backend[color=gray weight=0.1 label="?"] // I  think this currently exists, but shouldn't
+  api -> {
+    poms_shared
+    poms_shared_backend
+    vpro_shared
+    resteasy
+  }[color=cornflowerblue]
 
-    media_publish -> pages_publish[color=gray label="we plan to merge these" arrowhead=none]
 
-    api_client-> poms_shared;
-    api_client-> vpro_shared;
+  pages_publish -> {
+    poms_shared_backend
+    poms_shared
+  }[color=darkseagreen]
 
-    magnolia -> api_client;
-    magnolia -> vpro_shared;
-    magnolia -> poms_shared;
+  media_publish -> {
+    poms_shared
+    poms_shared_backend
+    }[color=darkorchid1]
 
-    poms_backend -> {
-            poms_shared;
-            poms_gui;
-            resteasy;
-            spring;
-            hibernate;
-            vpro_shared;
-    }
-    poms_gui -> angular
+  media_publish -> poms_backend[color=gray weight=0.1 label="?"] // I  think this currently exists, but shouldn't
+  media_publish -> pages_publish[color=gray label="we plan to merge these" dir=none]
+
+  api_client -> {
+    poms_shared
+    vpro_shared
+  }[color=gray]
+
+
+  magnolia -> {
+    api_client
+    vpro_shared
+    poms_shared
+  }[color=cornsilk4]
+
+  poms_backend -> {
+    poms_shared
+    poms_gui
+    resteasy
+    spring
+    hibernate
+    vpro_shared
+  }[color=darkgoldenrod3]
+  poms_gui -> angular[color=gray]
 
 
 }
