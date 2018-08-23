@@ -3,23 +3,31 @@
 
 */
 digraph {
-    vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
-    poms_backend [ label="POMS & Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
-    poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
-    poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
-    api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
-    media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
-    pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+        vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
+        poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
+        api_client [ href="https://github.com/npo-poms/api-client" fontcolor=blue ];
+        poms_backend [ label="POMS & Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
+        poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
+        poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
+        api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
+        media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+        pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
 
 
 
-    label="Dependencies of the different code projects relevant to
-    POMS";
+    label="
+    Dependencies of the different code projects relevant to POMS";
 
     subgraph cluster_0  {
-        label="Generic utilities";
-        description="Utilities which we don't maintain";
-        slf4j; guava; resteasy;
+            label="Generic utilities\n(incoming edges are just examples, there are more)"
+            //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
+            slf4j;
+            guava;
+            resteasy;
+            spring;
+            hibernate;
+            angular;
+
     }
 
     subgraph cluster_1  {
@@ -66,9 +74,15 @@ digraph {
     magnolia -> vpro_shared;
     magnolia -> poms_shared;
 
-    poms_backend -> poms_shared;
-
-    poms_backend -> poms_gui;
+    poms_backend -> {
+            poms_shared;
+            poms_gui;
+            resteasy;
+            spring;
+            hibernate;
+            vpro_shared;
+    }
+    poms_gui -> angular
 
 
 }
