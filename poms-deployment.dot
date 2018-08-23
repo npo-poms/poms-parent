@@ -2,11 +2,11 @@ digraph poms_universe {
 
     label="Deployments relevant for POMS";
 
-    poms_gui [ label="POMS" href="https://poms.omroep.nl/"];
-    poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/"];
-    api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/"];
-    pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/"];
-    media_publish [ label = "Media Publisher"     href="https://publish.pages.omroep.nl/"];
+    poms [ label="POMS" href="https://poms.omroep.nl/" fontcolor=blue];
+    poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/" fontcolor=blue];
+    api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/" fontcolor=blue];
+    pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue];
+    media_publish [ label = "Media Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue];
 
 
     subgraph cluster_0  {
@@ -25,16 +25,25 @@ digraph poms_universe {
     }
     subgraph cluster_3  {
         label="POMS Public Services";
-        poms_gui; poms_backend; pages_publish; api;
+        poms; poms_backend; pages_publish; api;
+    }
+
+    subgraph cluster_4  {
+        label="NPO Services";
+        metis;
+        pd;
+        prepr;
+        miranda;
+
     }
 
 
-   editors -> {magnolia_backend poms_gui sso}
+   editors -> {magnolia_backend poms sso}
    users -> {magnolia_frontend api}
    backendsystems -> {poms_backend  pages_publish}
 
 
-    poms_gui -> { postgresql jms sso ldap }
+    poms -> { postgresql jms sso ldap miranda prepr pd metis }
 
     poms_backend -> { jms ldap}
 

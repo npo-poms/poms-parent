@@ -3,9 +3,19 @@
 
 */
 digraph {
-    vpro_shared [ href="https://github.com/vpro/vpro-shared"];
+    vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
+    poms_backend [ label="POMS & Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
+    poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
+    poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
+    api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
+    media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+    pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
 
-    label="Dependencies of the different code projects relevant to POMS";
+
+
+    label="Dependencies of the different code projects relevant to
+    POMS";
+
     subgraph cluster_0  {
         label="Generic utilities";
         description="Utilities which we don't maintain";
@@ -33,7 +43,6 @@ digraph {
     poms_shared_backend -> vpro_shared;
     poms_shared_backend -> poms_shared;
     poms_shared_backend -> slf4j;
-    poms_gui -> poms_shared;
 
     api -> poms_shared;
     api -> poms_shared_backend;
@@ -46,7 +55,9 @@ digraph {
 
     media_publish -> poms_shared;
     media_publish -> poms_shared_backend;
-    media_publish -> poms_gui[color=gray, weight=0.1, label="?"] // I  think this currently exists, but shouldn't
+    media_publish -> poms_backend[color=gray weight=0.1 label="?"] // I  think this currently exists, but shouldn't
+
+    media_publish -> pages_publish[color=gray label="we plan to merge these" arrowhead=none]
 
     api_client-> poms_shared;
     api_client-> vpro_shared;
@@ -55,7 +66,9 @@ digraph {
     magnolia -> vpro_shared;
     magnolia -> poms_shared;
 
-    poms_backend -> poms_shared
-    poms_backend -> poms_gui[color=gray, weight=0.1, label="?"] // I  think this currently exists, but shouldn't
+    poms_backend -> poms_shared;
+
+    poms_backend -> poms_gui;
+
 
 }
