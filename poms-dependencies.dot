@@ -1,6 +1,7 @@
 
 strict digraph {
-  vpro_shared  [ href="https://github.com/vpro/vpro-shared"
+  vpro_shared  [
+                href="https://github.com/vpro/vpro-shared"
                 fontcolor=blue
                 ]
   poms_shared  [
