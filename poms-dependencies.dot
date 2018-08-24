@@ -7,13 +7,15 @@ strict digraph {
                 href="https://github.com/npo-poms/poms-shared"
                 fontcolor=blue
    ]
-  api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ];
-  poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3];
-  poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
-  poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue color=cyan3 ];
-  api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue color=cornflowerblue];
-  media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkorchid1];
-  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkseagreen ];
+  api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ]
+  poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3]
+  poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ]
+  poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue color=cyan3 ]
+  api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue color=cornflowerblue]
+  media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkorchid1]
+  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkseagreen ]
+
+  images [ label="Images Frontend & Backend" href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" fontcolor=blue ]
 
 
 
@@ -49,6 +51,7 @@ strict digraph {
     pages_publish
     media_publish
     api
+    images
   }
 
   subgraph cluster_4  {
@@ -85,13 +88,21 @@ strict digraph {
     poms_shared_backend
     }[color=darkorchid1]
 
-  media_publish -> pages_publish[color=gray label="we plan to merge these" dir=none]
+    media_publish -> pages_publish[color=gray label="we plan to merge these" dir=none]
+
+
 
   api_client -> {
     poms_shared
     vpro_shared
   }[color=gray]
 
+
+  images -> {
+    poms_shared
+    spring
+    hibernate
+  }
 
   magnolia -> {
     api_client
