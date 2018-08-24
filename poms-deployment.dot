@@ -17,6 +17,8 @@ subgraph cluster_0  {
   sso
   jms
   ldap
+  keycloak [ label = "Keycloak (will replace sso)" ]
+  gosa [ label="GOSa" href="https://admin.sso.omroep.nl/" ]
 }
 
 subgraph cluster_1  {
@@ -127,5 +129,7 @@ sso -> ldap[color=gray]
 
 prepr -> metis[color=gray]
 pd -> metis[color=gray]
+
+gosa -> ldap
 
 }
