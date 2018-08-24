@@ -43,10 +43,10 @@ env=[prod|test|dev|location] to automaticly switch between several setting which
 | project | url |  configuration file | port  (context) |
 | ------- | ----| -------------- | ------------- | 
 | Functional Tests| | ${user.home}/conf/npo-functional-tests.properties | - |  
-| GUI  | poms[\|-dev\|-test].omroep.nl/ | ${user.home}/conf/media.properties | 8071 |
-| Backend  | api[\|-dev\|-test].omroep.nl/ | ${user.home}/conf/media-rs.properties | 8071/rs |
-| Frontend API| rs[\|-dev\|-test].omroep.nl/v1 | ${user.home}/conf/npo-api.properties | 8070/v1 |
-| Page publisher API| publish[\|-dev\|-test].pages.omroep.nl/v1 | ${user.home}/conf/page-publish.properties | 8069 |
+| GUI  | [https://poms[\|-dev\|-test].omroep.nl/](https:://poms.omroep.nl) | ${user.home}/conf/media.properties | [8071](http://localhost:8071/) |
+| Backend  | [https://api[\|-dev\|-test].omroep.nl/](https://api.omroep.nl) | ${user.home}/conf/media-rs.properties | [8071/rs](http://localhost:8071/rs) |
+| Frontend API| [https://rs[\|-dev\|-test].poms.omroep.nl/v1](https://rs.poms.omroep.nl) | ${user.home}/conf/npo-api.properties | [8070/v1](http://localhost:8071/v1) |
+| Page publisher API| [https://publish[\|-dev\|-test].pages.omroep.nl/v1](https://publish.pages.omroep.nl) | ${user.home}/conf/page-publish.properties | [8069](http://localhost:8069) |
 | Publisher | - | ${user.home}/conf/npo-publisher.properties | - |
 
 ### Functional Tests
@@ -54,7 +54,9 @@ See https://github.com/npo-poms/functional-tests
  
 
 ### GUI and Backend RestServices
-Currently the POMS GUI and the POMS Backend API are always deployed in one tomcat. 
+Currently the POMS GUI and the POMS Backend API are maintained as one project with two artifacts, which are also always deployed in one tomcat.  It would actually be a good idea to deploy the backend API seperately and also redundant. We may do this on the new hosting solution.
+
+We may also split up the project in SCM then.
 
 ### Frontend API
 
