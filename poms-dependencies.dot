@@ -1,17 +1,14 @@
-/*
 
-
-*/
 strict digraph {
   vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
   poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
   api_client [ href="https://github.com/npo-poms/api-client" fontcolor=blue ];
-  poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue ];
+  poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3];
   poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
-  poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue ];
-  api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue ];
-  media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
-  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue ];
+  poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue color=cyan3 ];
+  api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue color=cornflowerblue];
+  media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkorchid1];
+  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkseagreen ];
 
 
 
@@ -83,7 +80,6 @@ strict digraph {
     poms_shared_backend
     }[color=darkorchid1]
 
-  media_publish -> poms_backend[color=gray weight=0.1 label="?"] // I  think this currently exists, but shouldn't
   media_publish -> pages_publish[color=gray label="we plan to merge these" dir=none]
 
   api_client -> {
