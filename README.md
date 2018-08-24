@@ -40,38 +40,30 @@ We often support a setting like this:
 env=[prod|test|dev|location] to automaticly switch between several setting which vary between environments predictably.
 
 
+| project | url |  configuration file | port  (context) |
+| ------- | ----| -------------- | ------------- | 
+| Functional Tests| | ${user.home}/conf/npo-functional-tests.properties | - |  
+| GUI  | poms[\|-dev\|-test].omroep.nl/ | ${user.home}/conf/media.properties | 8071 |
+| Backend  | api[\|-dev\|-test].omroep.nl/ | ${user.home}/conf/media-rs.properties | 8071/rs |
+| Frontend API| rs[\|-dev\|-test].omroep.nl/v1 | ${user.home}/conf/npo-api.properties | 8070/v1 |
+| Page publisher API| publish[\|-dev\|-test].pages.omroep.nl/v1 | ${user.home}/conf/page-publish.properties | 8069 |
+| Publisher | - | ${user.home}/conf/npo-publisher.properties | - |
 
 ### Functional Tests
-See
-npo-functional-tests/trunk/src/test/resources/npo-functional-tests.properties
-${user.home}/conf/npo-functional-tests.properties
-
+See https://github.com/npo-poms/functional-tests
+ 
 
 ### GUI and Backend RestServices
-poms[|-dev|-test].omroep.nl/api[|-dev|-test].poms.omroep.nl
-developer's port: 8071, context,  backend rest service on /rs
-config files:
-${user.home}/conf/media.properties
-${user.home}/conf/media-rs.properties
+Currently the POMS GUI and the POMS Backend API are always deployed in one tomcat. 
 
 ### Frontend API
-rs[|-dev|-test].poms.omroep.nl/v1
-
-developer's port: 8070, context: /v1
-${user.home}/conf/npo-api.properties
 
 ### Page publisher API
-publish[|-dev|-test]..pages.omroep.nl
-developer's port: 8069
-${user.home}/conf/pages-publish.properties
 
 ### Publisher API
-developer's port: not relevant (no frontend)
-${user.home}/conf/npo-publisher.properties
 
 ### NPO API Clients
 This project provides java clients for the above projects.
-
 
 ### VPRO shared
 Most projects also depend on a collection of utilities maintained by VPRO but which are not specific for POMS or its subsystems. 
