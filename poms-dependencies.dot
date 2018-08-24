@@ -42,6 +42,7 @@ strict digraph {
   subgraph cluster_1  {
     label="VPRO"
     magnolia
+    vpro_rs
   }
   subgraph cluster_2  {
     label="POMS Services";
@@ -108,6 +109,14 @@ strict digraph {
     api_client
     vpro_shared
     poms_shared
+  }[color=cornsilk4]
+
+
+  vpro_rs -> {
+    api_client
+    vpro_shared
+    poms_shared
+    poms_shared_backend
   }[color=cornsilk4]
 
   poms_backend -> {
