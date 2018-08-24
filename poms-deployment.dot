@@ -91,6 +91,7 @@ poms_backend -> {
   ldap
   metis
   ldap
+  nep
 }[color=darkorange1]
 
 api -> {
