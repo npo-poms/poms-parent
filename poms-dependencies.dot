@@ -1,7 +1,12 @@
 
 strict digraph {
-  vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
-  poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
+  vpro_shared  [ href="https://github.com/vpro/vpro-shared"
+                fontcolor=blue
+                ]
+  poms_shared  [
+                href="https://github.com/npo-poms/poms-shared"
+                fontcolor=blue
+   ]
   api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ];
   poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3];
   poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
@@ -16,25 +21,25 @@ strict digraph {
   Dependencies of the different code projects relevant to POMS";
 
   graph [
-    splines = yes
+         splines = yes
   ]
 
 
   subgraph cluster_0  {
     label="Generic utilities\n(incoming edges are just examples, there are more)"
     //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
-    slf4j;
-    guava;
-    resteasy;
-    spring;
-    hibernate;
-    angular;
+    slf4j
+    guava
+    resteasy
+    spring
+    hibernate
+    angular
 
   }
 
   subgraph cluster_1  {
-    label="VPRO";
-    magnolia;
+    label="VPRO"
+    magnolia
   }
   subgraph cluster_2  {
     label="POMS Services";
