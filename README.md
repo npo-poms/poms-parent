@@ -34,13 +34,15 @@ The artifacts in 'sharable utilities' are or will be available on maven central,
 ## Configuration files and context root
 For every deployable we indicate:
 The URL in dev/test and production
-The port and application context we suggest for development
-The configuration file that is automticly included and we suggest for development.
+The port and application context we suggest for development. Configure your application like this and you would have minimal configuration to do to get things up and running on your development machine.
+
+The configuration file that is automaticly included and we suggest for development. We suggest that you maintain configuration you need for development in this file. 
+
 We often support a setting like this:
 env=[prod|test|dev|location] to automaticly switch between several setting which vary between environments predictably.
 
 
-| project | url |  configuration file | port  (context) |
+| project | url |  configuration file | recommended port and context during development |
 | ------- | ----| -------------- | ------------- | 
 | Functional Tests| | ${user.home}/conf/npo-functional-tests.properties | - |  
 | GUI  | [https://poms[\|-dev\|-test].omroep.nl/](https:://poms.omroep.nl) | ${user.home}/conf/media.properties | [8071](http://localhost:8071/) |
