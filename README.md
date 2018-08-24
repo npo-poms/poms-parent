@@ -20,7 +20,7 @@ This describes schematicly the dependencies between the several modules relevant
 
 This does not intend to be exhaustive, but merely tries to sketch the big picture.
 
-An important aspect is that dependencies may only be one way. Often dependencies are both transitive and direct, of which only examples are indicated.
+An important aspect is that dependencies may only be one way and non circular. Often dependencies are both transitive and direct, of which only examples are indicated.
 
 
 <img src="https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg" />
