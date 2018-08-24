@@ -2,7 +2,7 @@
 strict digraph {
   vpro_shared [ href="https://github.com/vpro/vpro-shared" fontcolor=blue ];
   poms_shared [ href="https://github.com/npo-poms/poms-shared" fontcolor=blue ];
-  api_client [ href="https://github.com/npo-poms/api-client" fontcolor=blue ];
+  api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ];
   poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3];
   poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ];
   poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue color=cyan3 ];

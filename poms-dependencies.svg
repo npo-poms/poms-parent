@@ -82,7 +82,7 @@
 <!-- api_client -->
 <g id="node3" class="node">
 <title>api_client</title>
-<g id="a_node3"><a xlink:href="https://github.com/npo-poms/api-client" xlink:title="api_client">
+<g id="a_node3"><a xlink:href="https://github.com/npo-poms/api-clients" xlink:title="api_client">
 <ellipse fill="none" stroke="#000000" cx="66" cy="-439" rx="37.8943" ry="18"/>
 <text text-anchor="middle" x="66" y="-435.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">api_client</text>
 </a>
