@@ -23,17 +23,21 @@ strict digraph {
   Dependencies of the different code projects relevant to POMS";
 
   graph [
-         splines = yes
-  ]
+         splines=yes
+         ]
+  edge [
+        color=gray
+        ]
 
 
   subgraph cluster_0  {
     label="Generic utilities\n(incoming edges are just examples, there are more)"
     //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
-    slf4j
-    guava
+    labelloc=b
+    slf4j[style=dashed]
+    guava[style=dashed]
+    spring[style=dashed]
     resteasy
-    spring
     hibernate
     angular
 
@@ -67,8 +71,8 @@ strict digraph {
 
   vpro_shared -> {
     slf4j
-    guava}[color=gray];
-  poms_shared -> vpro_shared[color=gray];
+    guava}
+  poms_shared -> vpro_shared
   poms_shared_backend -> {
     vpro_shared
     poms_shared
@@ -93,14 +97,14 @@ strict digraph {
     poms_shared_backend
     }[color=darkorchid1]
 
-    media_publish -> pages_publish[color=gray label="we plan to merge these" dir=none]
+    media_publish -> pages_publish[label="we plan to merge these" dir=none]
 
 
 
   api_client -> {
     poms_shared
     vpro_shared
-  }[color=gray]
+  }
 
 
   images -> {
@@ -131,7 +135,7 @@ strict digraph {
     hibernate
     vpro_shared
   }[color=darkgoldenrod3]
-  poms_gui -> angular[color=gray]
+  poms_gui -> angular
 
 
 }
