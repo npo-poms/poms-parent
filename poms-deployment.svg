@@ -12,7 +12,7 @@
 <text text-anchor="middle" x="587.6238" y="-7.8" font-family="Times,serif" font-size="14.00" fill="#000000">Deployments relevant for POMS</text>
 <g id="clust1" class="cluster">
 <title>cluster_0</title>
-<polygon fill="none" stroke="#000000" points="416,-31 416,-178 1024,-178 1024,-31 416,-31"/>
+<polygon fill="#f0ffff" stroke="#000000" points="416,-31 416,-178 1024,-178 1024,-31 416,-31"/>
 <text text-anchor="middle" x="720" y="-162.8" font-family="Times,serif" font-size="14.00" fill="#000000">Generic backend services</text>
 </g>
 <g id="clust2" class="cluster">
@@ -22,7 +22,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_3</title>
-<polygon fill="none" stroke="#000000" points="437,-186 437,-336 1141,-336 1141,-186 437,-186"/>
+<polygon fill="#f0ffff" stroke="#000000" points="437,-186 437,-336 1141,-336 1141,-186 437,-186"/>
 <text text-anchor="middle" x="789" y="-320.8" font-family="Times,serif" font-size="14.00" fill="#000000">POMS &#160;Services</text>
 </g>
 <g id="clust4" class="cluster">
@@ -263,8 +263,8 @@
 <!-- images_frontend&#45;&gt;postgresql -->
 <g id="edge28" class="edge">
 <title>images_frontend&#45;&gt;postgresql</title>
-<path fill="none" stroke="#000000" d="M965.463,-269.4875C953.6801,-242.1096 930.8002,-188.9475 916.813,-156.4478"/>
-<polygon fill="#000000" stroke="#000000" points="919.9479,-154.8783 912.7798,-147.0765 913.5181,-157.6456 919.9479,-154.8783"/>
+<path fill="none" stroke="#caff70" d="M965.463,-269.4875C953.6801,-242.1096 930.8002,-188.9475 916.813,-156.4478"/>
+<polygon fill="#caff70" stroke="#caff70" points="919.9479,-154.8783 912.7798,-147.0765 913.5181,-157.6456 919.9479,-154.8783"/>
 </g>
 <!-- images_backend -->
 <g id="node7" class="node">
@@ -278,26 +278,26 @@
 <!-- images_backend&#45;&gt;postgresql -->
 <g id="edge29" class="edge">
 <title>images_backend&#45;&gt;postgresql</title>
-<path fill="none" stroke="#000000" d="M1046.976,-271.7291C1041.4748,-268.4631 1035.922,-264.8322 1031,-261 1008.7833,-243.7023 956.6734,-186.7879 926.8929,-153.6107"/>
-<polygon fill="#000000" stroke="#000000" points="929.4659,-151.2374 920.1879,-146.1217 924.2507,-155.9066 929.4659,-151.2374"/>
+<path fill="none" stroke="#caff70" d="M1046.976,-271.7291C1041.4748,-268.4631 1035.922,-264.8322 1031,-261 1008.7833,-243.7023 956.6734,-186.7879 926.8929,-153.6107"/>
+<polygon fill="#caff70" stroke="#caff70" points="929.4659,-151.2374 920.1879,-146.1217 924.2507,-155.9066 929.4659,-151.2374"/>
 </g>
 <!-- images_backend&#45;&gt;sso -->
 <g id="edge30" class="edge">
 <title>images_backend&#45;&gt;sso</title>
-<path fill="none" stroke="#000000" d="M1070.0967,-268.9254C1061.9089,-248.2709 1047.2999,-213.7431 1031,-186 1024.3539,-174.688 1015.9488,-162.9003 1008.4067,-152.9999"/>
-<polygon fill="#000000" stroke="#000000" points="1010.9678,-150.5916 1002.067,-144.8447 1005.4413,-154.8879 1010.9678,-150.5916"/>
+<path fill="none" stroke="#caff70" d="M1070.0967,-268.9254C1061.9089,-248.2709 1047.2999,-213.7431 1031,-186 1024.3539,-174.688 1015.9488,-162.9003 1008.4067,-152.9999"/>
+<polygon fill="#caff70" stroke="#caff70" points="1010.9678,-150.5916 1002.067,-144.8447 1005.4413,-154.8879 1010.9678,-150.5916"/>
 </g>
 <!-- images_backend&#45;&gt;jms -->
 <g id="edge31" class="edge">
 <title>images_backend&#45;&gt;jms</title>
-<path fill="none" stroke="#000000" d="M1036.2356,-274.6353C1028.5619,-272.5643 1020.5704,-270.5789 1013,-269 987.5263,-263.6871 978.7614,-271.6081 955,-261 903.2131,-237.8802 860.0198,-185.3787 837.5944,-154.0014"/>
-<polygon fill="#000000" stroke="#000000" points="840.4274,-151.9452 831.8301,-145.7536 834.6898,-155.9552 840.4274,-151.9452"/>
+<path fill="none" stroke="#caff70" d="M1036.2356,-274.6353C1028.5619,-272.5643 1020.5704,-270.5789 1013,-269 987.5263,-263.6871 978.7614,-271.6081 955,-261 903.2131,-237.8802 860.0198,-185.3787 837.5944,-154.0014"/>
+<polygon fill="#caff70" stroke="#caff70" points="840.4274,-151.9452 831.8301,-145.7536 834.6898,-155.9552 840.4274,-151.9452"/>
 </g>
 <!-- images_backend&#45;&gt;ldap -->
 <g id="edge32" class="edge">
 <title>images_backend&#45;&gt;ldap</title>
-<path fill="none" stroke="#000000" d="M1085.8333,-269.0058C1101.6869,-233.8702 1130.2672,-155.0314 1096,-103 1080.5271,-79.506 1050.27,-67.962 1025.8676,-62.3183"/>
-<polygon fill="#000000" stroke="#000000" points="1026.3296,-58.8399 1015.8281,-60.2432 1024.9126,-65.695 1026.3296,-58.8399"/>
+<path fill="none" stroke="#caff70" d="M1085.8333,-269.0058C1101.6869,-233.8702 1130.2672,-155.0314 1096,-103 1080.5271,-79.506 1050.27,-67.962 1025.8676,-62.3183"/>
+<polygon fill="#caff70" stroke="#caff70" points="1026.3296,-58.8399 1015.8281,-60.2432 1024.9126,-65.695 1026.3296,-58.8399"/>
 </g>
 <!-- sso&#45;&gt;ldap -->
 <g id="edge36" class="edge">

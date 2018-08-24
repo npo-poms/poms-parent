@@ -12,6 +12,7 @@ images_backend [ label = "Images Backend" href="https://images-backend.poms.omro
 
 subgraph cluster_0  {
   label="Generic backend services"
+  bgcolor=azure
   postgresql
   elasticsearch
   sso
@@ -35,6 +36,7 @@ subgraph cluster_1  {
 }
 subgraph cluster_3  {
   label="POMS  Services"
+  bgcolor=azure
   poms
   poms_backend
   pages_publish
@@ -108,13 +110,13 @@ pages_publish -> media_publish[color=gray dir=none]
 
 images_frontend -> {
   postgresql
-}
+}[color=darkolivegreen1]
 images_backend -> {
   postgresql
   jms
   sso
   ldap
-}
+}[color=darkolivegreen1]
 
 magnolia_backend -> {
   poms_backend

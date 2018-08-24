@@ -23,12 +23,12 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="none" stroke="#000000" points="510,-340 510,-582 1162,-582 1162,-340 510,-340"/>
+<polygon fill="#f0ffff" stroke="#000000" points="510,-340 510,-582 1162,-582 1162,-340 510,-340"/>
 <text text-anchor="middle" x="836" y="-566.8" font-family="Times,serif" font-size="14.00" fill="#000000">POMS Services</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_4</title>
-<polygon fill="none" stroke="#000000" points="148,-156 148,-488 278,-488 278,-156 148,-156"/>
+<polygon fill="#f0ffff" stroke="#000000" points="148,-156 148,-488 278,-488 278,-156 148,-156"/>
 <text text-anchor="middle" x="213" y="-472.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sharable utilities</text>
 </g>
 <!-- vpro_shared -->
@@ -296,7 +296,7 @@
 <g id="node10" class="node">
 <title>images</title>
 <g id="a_node10"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" xlink:title="Images Frontend &amp; Backend">
-<ellipse fill="none" stroke="#000000" cx="1064" cy="-533" rx="89.8845" ry="18"/>
+<ellipse fill="none" stroke="#caff70" cx="1064" cy="-533" rx="89.8845" ry="18"/>
 <text text-anchor="middle" x="1064" y="-529.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Images Frontend &amp; Backend</text>
 </a>
 </g>
@@ -304,20 +304,20 @@
 <!-- images&#45;&gt;poms_shared -->
 <g id="edge18" class="edge">
 <title>images&#45;&gt;poms_shared</title>
-<path fill="none" stroke="#000000" d="M1014.8231,-517.9225C999.055,-513.6728 981.4224,-509.5241 965,-507 921.68,-500.3417 609.49,-508.9636 571,-488 499.9469,-449.3008 528.8275,-389.7214 465,-340 454.4523,-331.7834 449.8841,-332.5727 437,-329 384.0637,-314.321 322.0052,-304.6847 278.3892,-299.1087"/>
-<polygon fill="#000000" stroke="#000000" points="278.6256,-295.6111 268.269,-297.8454 277.7585,-302.5572 278.6256,-295.6111"/>
+<path fill="none" stroke="#caff70" d="M1014.8231,-517.9225C999.055,-513.6728 981.4224,-509.5241 965,-507 921.68,-500.3417 609.49,-508.9636 571,-488 499.9469,-449.3008 528.8275,-389.7214 465,-340 454.4523,-331.7834 449.8841,-332.5727 437,-329 384.0637,-314.321 322.0052,-304.6847 278.3892,-299.1087"/>
+<polygon fill="#caff70" stroke="#caff70" points="278.6256,-295.6111 268.269,-297.8454 277.7585,-302.5572 278.6256,-295.6111"/>
 </g>
 <!-- images&#45;&gt;spring -->
 <g id="edge19" class="edge">
 <title>images&#45;&gt;spring</title>
-<path fill="none" stroke="#000000" d="M1075.3906,-515.0537C1085.9375,-496.6891 1100,-466.9605 1100,-439 1100,-439 1100,-439 1100,-182 1100,-152.9251 1089.3881,-121.1899 1080.3863,-99.5002"/>
-<polygon fill="#000000" stroke="#000000" points="1083.5855,-98.0801 1076.4076,-90.2872 1077.1592,-100.8554 1083.5855,-98.0801"/>
+<path fill="none" stroke="#caff70" d="M1075.3906,-515.0537C1085.9375,-496.6891 1100,-466.9605 1100,-439 1100,-439 1100,-439 1100,-182 1100,-152.9251 1089.3881,-121.1899 1080.3863,-99.5002"/>
+<polygon fill="#caff70" stroke="#caff70" points="1083.5855,-98.0801 1076.4076,-90.2872 1077.1592,-100.8554 1083.5855,-98.0801"/>
 </g>
 <!-- images&#45;&gt;hibernate -->
 <g id="edge20" class="edge">
 <title>images&#45;&gt;hibernate</title>
-<path fill="none" stroke="#000000" d="M1063.3891,-514.982C1062.8009,-496.0619 1062,-465.4435 1062,-439 1062,-439 1062,-439 1062,-256.5 1062,-196.3587 1026.7226,-132.9902 1004.2371,-98.708"/>
-<polygon fill="#000000" stroke="#000000" points="1007.0299,-96.5887 998.5499,-90.2374 1001.2183,-100.4907 1007.0299,-96.5887"/>
+<path fill="none" stroke="#caff70" d="M1063.3891,-514.982C1062.8009,-496.0619 1062,-465.4435 1062,-439 1062,-439 1062,-439 1062,-256.5 1062,-196.3587 1026.7226,-132.9902 1004.2371,-98.708"/>
+<polygon fill="#caff70" stroke="#caff70" points="1007.0299,-96.5887 998.5499,-90.2374 1001.2183,-100.4907 1007.0299,-96.5887"/>
 </g>
 <!-- magnolia -->
 <g id="node17" class="node">

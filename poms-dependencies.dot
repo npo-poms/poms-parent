@@ -15,7 +15,7 @@ strict digraph {
   media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkorchid1]
   pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkseagreen ]
 
-  images [ label="Images Frontend & Backend" href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" fontcolor=blue ]
+  images [ label="Images Frontend & Backend" href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" fontcolor=blue color=darkolivegreen1 ]
 
 
 
@@ -45,8 +45,9 @@ strict digraph {
     vpro_rs
   }
   subgraph cluster_2  {
-    label="POMS Services";
-    description="These are actually deployed";
+    label="POMS Services"
+    description="These are actually deployed"
+    bgcolor=azure
     poms_gui
     poms_backend
     pages_publish
@@ -56,8 +57,11 @@ strict digraph {
   }
 
   subgraph cluster_4  {
-    label="Sharable utilities";
-    api_client; vpro_shared; poms_shared;
+    label="Sharable utilities"
+    bgcolor=azure
+    api_client
+    vpro_shared
+    poms_shared
   }
 
 
@@ -103,7 +107,7 @@ strict digraph {
     poms_shared
     spring
     hibernate
-  }
+  }[color=darkolivegreen1]
 
   magnolia -> {
     api_client
