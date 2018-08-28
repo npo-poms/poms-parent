@@ -55,14 +55,16 @@
 
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>vpro-ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
     <repository>
-      <id>vpro-ossrh-release</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>nexus</id>
+      <name>Nexus releases</name>
+      <url>http://nexus.vpro.nl/content/repositories/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Nexus snapshots</name>
+      <url>http://nexus.vpro.nl/content/repositories/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <issueManagement>
@@ -2466,18 +2468,16 @@
       </distributionManagement>
     </profile>
     <profile>
-      <id>vpro-nexus</id>
+      <id>ossr</id>
       <distributionManagement>
-        <repository>
-          <id>nexus</id>
-          <name>Nexus releases</name>
-          <url>http://nexus.vpro.nl/content/repositories/releases</url>
-        </repository>
         <snapshotRepository>
-          <id>nexus</id>
-          <name>Nexus snapshots</name>
-          <url>http://nexus.vpro.nl/content/repositories/snapshots</url>
+          <id>vpro-ossrh</id>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+          <id>vpro-ossrh-release</id>
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
       </distributionManagement>
     </profile>
     <profile>
