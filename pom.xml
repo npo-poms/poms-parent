@@ -2468,7 +2468,7 @@
       </distributionManagement>
     </profile>
     <profile>
-      <id>ossr</id>
+      <id>ossrh</id>
       <distributionManagement>
         <snapshotRepository>
           <id>vpro-ossrh</id>
