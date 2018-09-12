@@ -268,7 +268,7 @@
 <!-- pages_publish -->
 <g id="node9" class="node">
 <title>pages_publish</title>
-<g id="a_node9"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" xlink:title="Pages Publisher">
+<g id="a_node9"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/pages-publish/" xlink:title="Pages Publisher">
 <ellipse fill="none" stroke="#8fbc8f" cx="580" cy="-368" rx="53.8905" ry="18"/>
 <text text-anchor="middle" x="580" y="-364.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Pages Publisher</text>
 </a>
