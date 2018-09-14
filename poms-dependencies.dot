@@ -14,7 +14,7 @@ strict digraph {
   poms_shared_backend [ href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" fontcolor=blue color=cyan3 ]
   api [ label="Frontend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" fontcolor=blue color=cornflowerblue]
   media_publish [ label="Media Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkorchid1]
-  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" fontcolor=blue color=darkseagreen ]
+  pages_publish [ label="Pages Publisher" href="https://subversion.vpro.nl/viewvc/nl/vpro/pages-publish/" fontcolor=blue color=darkseagreen ]
 
   images [ label="Images Frontend & Backend" href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" fontcolor=blue color=darkolivegreen1 ]
 
