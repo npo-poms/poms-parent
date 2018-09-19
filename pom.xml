@@ -10,6 +10,7 @@
   <packaging>pom</packaging>
 
   <name>poms-parent</name>
+  <url>https://github.com/npo-poms/poms-parent</url>
   <description>Parent POM for POMS and related projects</description>
 
   <organization>
