@@ -140,11 +140,11 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.20.0</mockito.version>
-    <assertj.version>3.10.0</assertj.version>
+    <mockito.version>2.22.0</mockito.version>
+    <assertj.version>3.11.1</assertj.version>
     <lombok.version>1.18.2</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
-    <wiremock.version>2.17.0</wiremock.version>
+    <wiremock.version>2.18.0</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
@@ -160,8 +160,8 @@
 
     <sentry.version>1.7.3</sentry.version>
 
-    <spring.version>5.0.6.RELEASE</spring.version>
-    <spring-security.version>5.0.5.RELEASE</spring-security.version>
+    <spring.version>5.0.9.RELEASE</spring.version>
+    <spring-security.version>5.0.8.RELEASE</spring-security.version>
 
     <cglib.version>3.2.5</cglib.version>
 
@@ -194,7 +194,7 @@
 
     <postgresql.version>42.1.4.jre7</postgresql.version>
 
-    <commons.lang3.version>3.7</commons.lang3.version>
+    <commons.lang3.version>3.8</commons.lang3.version>
 
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
