@@ -110,7 +110,7 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.8.13</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.21.1</camel.version>
+    <camel.version>2.22.1</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
@@ -119,7 +119,7 @@
     <quartz.version>2.3.0</quartz.version>
 
     <hibernate.version>5.3.6.Final</hibernate.version>
-    <hibernate.search.version>5.10.3.Final</hibernate.search.version>
+    <hibernate.search.version>5.10.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.12.Final</hibernate.validator.version>
     <flyway.version>5.1.4</flyway.version>
@@ -129,7 +129,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.6</jackson2.version>
+    <jackson2.version>2.9.7</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
     <jaxb.version>2.3.0</jaxb.version>
@@ -151,7 +151,7 @@
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>4.1.0</newrelic.version>
-    <resteasy.version>3.5.1.Final</resteasy.version>
+    <resteasy.version>3.6.1.Final</resteasy.version>
     <weld.version>2.2.7.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
@@ -160,8 +160,8 @@
 
     <sentry.version>1.7.3</sentry.version>
 
-    <spring.version>5.0.9.RELEASE</spring.version>
-    <spring-security.version>5.0.8.RELEASE</spring-security.version>
+    <spring.version>5.1.0.RELEASE</spring.version>
+    <spring-security.version>5.1.0.RELEASE</spring-security.version>
 
     <cglib.version>3.2.5</cglib.version>
 
