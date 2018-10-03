@@ -132,7 +132,7 @@
     <jackson2.version>2.9.7</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
-    <jaxb.version>2.3.0.1</jaxb.version>
+    <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <ws.rs-api.version>2.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
@@ -317,7 +317,8 @@
       </dependency>
 
       <!-- http://stackoverflow.com/questions/26413431/which-artifacts-should-i-use-for-jaxb-ri-in-my-maven-project
-           Use org.glassfish
+           Use org.glassfish ?
+           -->
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-core</artifactId>
@@ -333,7 +334,7 @@
         <artifactId>jaxb-xjc</artifactId>
         <version>${jaxb.version}</version>
       </dependency>
-      -->
+
       <dependency>
         <groupId>org.meeuw</groupId>
         <artifactId>jaxb-documentation</artifactId>
