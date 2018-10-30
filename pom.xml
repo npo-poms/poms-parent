@@ -142,7 +142,7 @@
     <junit.version>4.12</junit.version>
     <mockito.version>2.22.0</mockito.version>
     <assertj.version>3.11.1</assertj.version>
-    <lombok.version>1.18.2</lombok.version>
+    <lombok.version>1.18.4</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
     <wiremock.version>2.18.0</wiremock.version>
 
