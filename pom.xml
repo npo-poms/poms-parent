@@ -101,7 +101,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.2.0</vpro-camel.version>
-    <vpro.shared.version>2.2-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>2.2.0</vpro.shared.version>
     <events.version>2.5-SNAPSHOT</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
@@ -114,7 +114,7 @@
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>26.0-jre</guava.version>
+    <guava.version>27.0.1-jre</guava.version>
     <guice.version>4.2.0</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
@@ -140,7 +140,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.22.0</mockito.version>
+    <mockito.version>2.23.4</mockito.version>
     <assertj.version>3.11.1</assertj.version>
     <lombok.version>1.18.4</lombok.version>
     <xmlunit.version>2.3.0</xmlunit.version>
