@@ -183,7 +183,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.8.0-11</saxon.version>
     <javassist.version>3.22.0-GA</javassist.version>
-    <scala.version>2.11.8</scala.version>
+    <scala.version>2.12.7</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>5.5.2</elasticsearch.version>
