@@ -102,7 +102,7 @@
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.2.0</vpro-camel.version>
     <vpro.shared.version>2.2.0</vpro.shared.version>
-    <events.version>2.5-SNAPSHOT</events.version>
+    <events.version>2.5.0</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
