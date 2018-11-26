@@ -116,7 +116,7 @@
     <quartz.version>2.3.0</quartz.version>
 
     <hibernate.version>5.3.6.Final</hibernate.version>
-    <hibernate.search.version>5.10.4.Final</hibernate.search.version>
+    <hibernate.search.version>5.10.5.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.12.Final</hibernate.validator.version>
     <flyway.version>5.1.4</flyway.version>
