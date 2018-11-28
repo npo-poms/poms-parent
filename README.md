@@ -50,7 +50,7 @@ env=[prod|test|dev|location] to automaticly switch between several setting which
 | [Frontend API](https://subversion.vpro.nl/repo/nl/vpro/api/trunk/)| [https://rs[\|-dev\|-test].poms.omroep.nl/v1](https://rs.poms.omroep.nl/v1) | `${user.home}/conf/npo-api.properties` | [8070/v1](http://localhost:8071/v1) |
 | [Page publisher API](https://subversion.vpro.nl/repo/nl/vpro/pages-publish/trunk/)| [https://publish[\|-dev\|-test].pages.omroep.nl/v1](https://publish.pages.omroep.nl) | `${user.home}/conf/page-publish.properties` | [8069](http://localhost:8069) |
 | [Publisher](https://subversion.vpro.nl/repo/nl/publiekeomroep/npo-publish/trunk/) | - | `${user.home}/conf/npo-publisher.properties` | - |
-| [Images Frontend](https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server-frontend/) | [https://images[\|-dev\|-test].poms.omroep.nl/](https://images.poms.omroep.nl) | `${user.home}/conf/images-frontend.properties` | ? |
+| [Images Frontend](https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server-frontend/) | [https://images[\|-dev\|-test].poms.omroep.nl/](https://images.poms.omroep.nl) | `${user.home}/conf/images-frontend.properties` | 8072 |
 | [Images Backend](https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server/) | [https://poms[\|-dev\|-test].omroep.nl/images](https://poms.omroep.nl/images) | `${user.home}/conf/images.properties` | [8071/images](http://localhost:8071/images/)  |
 
 ### Functional Tests
