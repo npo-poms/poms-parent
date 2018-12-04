@@ -134,8 +134,9 @@
     <jackson2.version>2.9.7</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
-    <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
-    <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
+    <jaxb.version>2.3.1</jaxb.version> <!-- version compatible with java 8 -->
+    <jaxb.core.version>2.3.0.1</jaxb.core.version> <!-- version compatible with java 8 -->
+    <jaxb.version.JAXB-1062>2.3.1</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
     <ws.rs-api.version>2.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
@@ -305,12 +306,12 @@
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-core</artifactId>
-        <version>${jaxb.version}</version>
+        <version>${jaxb.core.version}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>${jaxb.version}</version>
+        <version>${jaxb.core.version}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
@@ -324,7 +325,7 @@
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-core</artifactId>
-        <version>${jaxb.version}</version>
+        <version>${jaxb.core.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
@@ -1994,7 +1995,6 @@
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
         <version>7.0</version>
-        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.ws.rs</groupId>
@@ -2597,8 +2597,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>11</source>
+          <target>11</target>
           <encoding>UTF-8</encoding>
           <compilerArgs>
             <!-- would this help intellij? It seems not.
