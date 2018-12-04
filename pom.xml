@@ -108,16 +108,16 @@
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
     <!-- External Artifacts -->
-    <activemq.version>5.15.7</activemq.version>
+    <activemq.version>5.15.8</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.8.13</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.22.2</camel.version>
+    <camel.version>2.23.0</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
     <cxf.version>3.2.7</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>27.0.1-jre</guava.version>
-    <guice.version>4.2.0</guice.version>
+    <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
     <hibernate.version>5.3.6.Final</hibernate.version>
@@ -145,8 +145,8 @@
     <mockito.version>2.23.4</mockito.version>
     <assertj.version>3.11.1</assertj.version>
     <lombok.version>1.18.4</lombok.version>
-    <xmlunit.version>2.3.0</xmlunit.version>
-    <wiremock.version>2.18.0</wiremock.version>
+    <xmlunit.version>2.6.2</xmlunit.version>
+    <wiremock.version>2.19.0</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
@@ -158,14 +158,14 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.9.0</log4j2.version>
+    <log4j2.version>2.11.1</log4j2.version>
 
-    <sentry.version>1.7.3</sentry.version>
+    <sentry.version>1.7.15</sentry.version>
 
-    <spring.version>5.1.2.RELEASE</spring.version>
-    <spring-security.version>5.1.1.RELEASE</spring-security.version>
+    <spring.version>5.1.3.RELEASE</spring.version>
+    <spring-security.version>5.1.2.RELEASE</spring-security.version>
 
-    <cglib.version>3.2.5</cglib.version>
+    <cglib.version>3.2.9</cglib.version>
 
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
     <spring-data-jpa.version>2.0.7.RELEASE</spring-data-jpa.version>
@@ -187,14 +187,14 @@
     <ehcache.version>2.10.4</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.8.0-11</saxon.version>
-    <javassist.version>3.22.0-GA</javassist.version>
+    <javassist.version>3.24.0-GA</javassist.version>
     <scala.version>2.12.7</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>5.5.2</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
 
-    <postgresql.version>42.1.4.jre7</postgresql.version>
+    <postgresql.version>42.2.5.jre7</postgresql.version>
 
     <commons.lang3.version>3.8</commons.lang3.version>
 
@@ -366,12 +366,12 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-collections4</artifactId>
-        <version>4.1</version>
+        <version>4.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.0</version>
+        <version>2.4</version>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
@@ -412,12 +412,12 @@
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
-        <version>1.8.3</version>
+        <version>1.9.3</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils-core</artifactId>
-        <version>1.8.3</version>
+        <version>1.9.3</version>
       </dependency>
 
       <dependency>
@@ -1738,7 +1738,7 @@
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
         <artifactId>woodstox-core</artifactId>
-        <version>5.0.3</version>
+        <version>5.2.0</version>
       </dependency>
 
       <dependency>
@@ -1993,7 +1993,7 @@
       <dependency>
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
-        <version>7.0</version>
+        <version>8.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -2331,7 +2331,7 @@
       <dependency>
         <groupId>javax.cache</groupId>
         <artifactId>cache-api</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>javax.cache.implementation</groupId>
@@ -2482,7 +2482,7 @@
        <dependency>
          <groupId>io.jsonwebtoken</groupId>
          <artifactId>jjwt</artifactId>
-         <version>0.9.0</version>
+         <version>0.9.1</version>
        </dependency>
     </dependencies>
   </dependencyManagement>
