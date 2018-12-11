@@ -2606,6 +2606,15 @@
             <arg>-parameters</arg>
           </compilerArgs>
         </configuration>
+        <!-- https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9
+        <dependencies>
+          <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>7.0</version>
+        </dependency>
+        </dependencies>
+        -->
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
