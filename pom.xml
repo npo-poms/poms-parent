@@ -157,8 +157,8 @@
 
     <sentry.version>1.7.3</sentry.version>
 
-    <spring.version>5.1.2.RELEASE</spring.version>
-    <spring-security.version>5.1.1.RELEASE</spring-security.version>
+    <spring.version>5.1.3.RELEASE</spring.version>
+    <spring-security.version>5.1.2.RELEASE</spring-security.version>
 
     <cglib.version>3.2.5</cglib.version>
 
