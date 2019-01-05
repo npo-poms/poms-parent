@@ -131,7 +131,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.7</jackson2.version>
+    <jackson2.version>2.9.8</jackson2.version>
     <jackson2.scala.version>${jackson2.version}</jackson2.scala.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
