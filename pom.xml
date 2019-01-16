@@ -274,12 +274,6 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7.1</version>
-        <type>maven-plugin</type>
-      </dependency>
-      <dependency>
         <groupId>io.swagger</groupId>
         <artifactId>swagger-annotations</artifactId>
         <version>${swagger.version}</version>
@@ -2490,6 +2484,11 @@
            <artifactId>buildnumber-maven-plugin</artifactId>
            <version>1.4</version>
          </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.7.1</version>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
