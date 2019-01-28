@@ -120,8 +120,8 @@
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
-    <hibernate.version>5.3.7.Final</hibernate.version>
-    <hibernate.search.version>5.10.5.Final</hibernate.search.version>
+    <hibernate.version>5.4.0.Final</hibernate.version>
+    <hibernate.search.version>5.11.0.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
     <flyway.version>5.2.3</flyway.version>
