@@ -1094,7 +1094,7 @@
       </dependency>
 
       <dependency>
-        <groupId>nl.vpro.poms</groupId>
+        <groupId>nl.publiekeomroep</groupId>
         <artifactId>poms-ext</artifactId>
         <version>4.8.12</version>
         <type>war</type>
