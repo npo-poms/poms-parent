@@ -2,11 +2,11 @@ language: java
 env:
   global:
   - SONATYPE_USERNAME=vpro
-  - secure: Ra9zGqU1rDybwUHCo+vEpQKANi/TWWOoBGQ//rJYIYjDqOoCi/hWiBAliXsd9d3rWb6LylViIT5gAdxTokP0qW8wxfDx/nBii+nZZEUVirWsHhIvnwYH1cpt9+MU0M8JGQTkivzKceODSJItawheUeCq1mDtz4RSsTxGs20D2Pdje0SnzVV4F9Gj92YTF+auN5UNxeuIfWfPmOfpmu2Hk+NLrSNCydY24hDQN3YQyZAXl9RgeapXkHpDF1rLEw2mFvZXk9hpBOaPyB5yVrP1SpSkDSDGwVF+/kneprmITv92cdJOdI5T9ldHznnQKeIzv/9lRGDmYzrn2vX8kZFWQnsmd7N3uNhEERR93lBC118QnJT/JaUDgUbFzCLxBH2iDW5atsbZYmjfKWvMi4JWwEDSW7tzkNNXIQKgAIXT4ZhCPCYJbWzIHH/I7MkC+ZpjMiokmsQ5HxdEeesxJFwksy4LDdT6+8tqPD0yg3DIocmvsiVLYCGjUzl/VSkIC3VPDXl9/z4IfZoanAfVYlIVvxXisw9I8gZlcQbis8GplPvx+qUNt7rEY/rICw5fDhojYfFiWop/WAKxwpA1xBC4hpxXEPXiCRrYQergwwEXozZhebzs6Ux/a53Gcefb+o2+oK3FVrwb89sp60jeeQmoIP5kyhkIovpF6ECBRXHYcs4=
+  - secure: G7O9rFCtlZPfhnvMazjfzdTRPp+p9/ASA4z36yUrgdgIkTQ0AS67xborWKliFENHX4NBziMywRnEfT7MvN0JpWJAN0W5a3D+kPNWeBLCnhf9mC7WR5CRcs0zJnK7x4JjE2AvdLVAwsewd5RjPp6pkuxvlByUcR4m4SnA4a8VRwOwrAhS5blMh3k88WOHgky/GJztXRDyvlx3/MockD0mFvay5N0lZ7h/ik37C0y/wgaUPLsBFDE2ggl3qt39znzg/9lF0/u9GfH9WHTPZPikImbZHvs8WliD+QNe+9EzEHoN8v2fU5qDXpq6Z2dUkl6FSc2P8QQl6lnaM/Ad/K5az/wT122tnN3JTNG7Cm8KI5KBhYljA+NGMvlnmRPlTVWbg2IHSKkNO1fZwuQN0Yb7Mtk0fj1/ZZ4lYyCYFMkxEDQeiuBY/GMY3IO+DT1XHoCLQ/4p/SzIwa2czkiI2XjlmbAXBh/R8Y5Fjl42CX3DozivW3awE0EuSseeP+WM2YVGTJm4yNlaEZAxGp6sOQSl71OaZYqUHPX8Gjak1gJyY/h/1trXg/ctDXyYxHr3LDE18bCja4oE044NLqV4uGsEmberznsHXd1+OgNRzfgW9aB2mDmx1Af43UT0yGKXJhzzqOZUFqCUmDfiTsA4oqmBkMN3EBM7Mp6YlTC1nmx14jU=
 jdk:
 - oraclejdk8
 sudo: false
 script: mvn clean test install
 after_success:
-- mvn -Pdeploy deploy --settings .travis-settings.xml -DskipTests=true -Dgpg.skip=true  -B
+- mvn -Pdeploy,ossrh deploy --settings .travis-settings.xml -DskipTests=true -Dgpg.skip=true  -B
 - bash <(curl -s https://codecov.io/bash)
