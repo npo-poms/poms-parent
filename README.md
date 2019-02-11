@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/npo-poms/poms-parent.svg?)](https://travis-ci.org/npo-poms/poms-parent)
+[![Maven Central](https://img.shields.io/maven-central/v/nl.vpro.poms/poms-parent.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22nl.vpro.poms%22%20AND%20a:%22poms-parent%22)
+
 # The POMS ecosystem
 
 This is the poms parent. This is the parent pom of the several projects in the poms ecosystem. We use the `pom.xml` of this project to synchronize versions of dependencies.
