@@ -2701,21 +2701,6 @@
 
   <profiles>
     <profile>
-      <id>bintray</id>
-      <distributionManagement>
-        <repository>
-          <id>${bintray.snapshots.name}</id>
-          <name>${bintray.releases.name}</name>
-          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
-        </repository>
-        <snapshotRepository>
-          <id>${bintray.snapshots.name}</id>
-          <name>${bintray.snapshots.name}</name>
-          <url>https://api.bintray.com/maven/${bintray.organization}/${bintray.repository}/${bintray.package}/;publish=1</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
-    <profile>
       <id>ossrh</id>
       <distributionManagement>
         <snapshotRepository>
