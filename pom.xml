@@ -84,7 +84,7 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.10.0</poms.version>
+    <poms.version>5.11.0</poms.version>
 
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
@@ -103,7 +103,7 @@
     <js.version>0.4.1</js.version>
 
     <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.5-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>2.6-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
@@ -112,15 +112,15 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.2</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.23.0</camel.version>
+    <camel.version>2.23.1</camel.version>
     <cas.client.version>3.4.1</cas.client.version>
-    <cxf.version>3.2.7</cxf.version>
+    <cxf.version>3.3.0</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>27.0.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
-    <hibernate.version>5.4.0.Final</hibernate.version>
+    <hibernate.version>5.4.1.Final</hibernate.version>
     <hibernate.search.version>5.11.0.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
@@ -143,7 +143,7 @@
 
     <junit.version>4.12</junit.version>
     <mockito.version>2.23.4</mockito.version>
-    <assertj.version>3.11.1</assertj.version>
+    <assertj.version>3.12.0</assertj.version>
     <lombok.version>1.18.4</lombok.version>
     <xmlunit.version>2.6.2</xmlunit.version>
     <wiremock.version>2.19.0</wiremock.version>
@@ -152,7 +152,7 @@
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>4.8.0</newrelic.version>
+    <newrelic.version>4.11.0</newrelic.version>
     <resteasy.version>3.6.2.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
@@ -160,12 +160,12 @@
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.11.1</log4j2.version>
 
-    <sentry.version>1.7.15</sentry.version>
+    <sentry.version>1.7.21</sentry.version>
 
-    <spring.version>5.1.3.RELEASE</spring.version>
-    <spring-security.version>5.1.2.RELEASE</spring-security.version>
+    <spring.version>5.1.5.RELEASE</spring.version>
+    <spring-security.version>5.1.4.RELEASE</spring-security.version>
 
-    <cglib.version>3.2.9</cglib.version>
+    <cglib.version>3.2.10</cglib.version>
 
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
     <spring-data-jpa.version>2.1.0.RELEASE</spring-data-jpa.version>
@@ -186,7 +186,7 @@
     <ehcache3.version>3.5.2</ehcache3.version>
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>9.9.0-1</saxon.version>
+    <saxon.version>9.9.1-1</saxon.version>
     <javassist.version>3.24.0-GA</javassist.version>
     <scala.version>2.12.8</scala.version>
 
@@ -380,7 +380,7 @@
       <dependency>
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
-        <version>1.3.3</version>
+        <version>1.4</version>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
@@ -401,7 +401,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.11</version>
+        <version>1.12</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -1630,7 +1630,7 @@
       <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
-        <version>10.7.1.1</version>
+        <version>10.14.2.0</version>
       </dependency>
 
       <dependency>
@@ -1942,7 +1942,7 @@
       <dependency>
         <groupId>javax.websocket</groupId>
         <artifactId>javax.websocket-api</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.validator</groupId>
@@ -2446,7 +2446,7 @@
        <dependency>
          <groupId>com.hierynomus</groupId>
          <artifactId>sshj</artifactId>
-         <version>0.26.0</version>
+         <version>0.27.0</version>
        </dependency>
        <dependency>
          <!-- highly recommended by sshj-->
