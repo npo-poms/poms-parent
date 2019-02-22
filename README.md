@@ -87,3 +87,6 @@ Classes from this may also end up outside the POMS projects themselves. Like e.g
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
 
 
+### User backend
+This contains the code to talk to LDAP to acquire user roles
+
