@@ -79,10 +79,14 @@ Most projects also depend on a collection of utilities maintained by VPRO but wh
 
 ### POMS shared
 These modules are specific for POMS, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
+See https://github.com/npo-poms/poms-shared
 
 Classes from this may also end up outside the POMS projects themselves. Like e.g. CMS's (probably via the api clients)
 
 ### POMS shared backend
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
 
+
+### User backend
+This contains the code to talk to LDAP to acquire user roles
 

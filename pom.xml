@@ -84,7 +84,7 @@
     <skipITs>true</skipITs>
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
-    <poms.version>5.10.0</poms.version>
+    <poms.version>5.11.0</poms.version>
 
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
@@ -103,7 +103,7 @@
     <js.version>0.4.1</js.version>
 
     <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.5-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>2.6-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
 
@@ -112,16 +112,16 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.2</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.23.0</camel.version>
-    <cas.client.version>3.4.1</cas.client.version>
-    <cxf.version>3.2.7</cxf.version>
+    <camel.version>2.23.1</camel.version>
+    <cas.client.version>3.5.1</cas.client.version>
+    <cxf.version>3.3.1</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>27.0.1-jre</guava.version>
+    <guava.version>27.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.0</quartz.version>
 
-    <hibernate.version>5.4.0.Final</hibernate.version>
-    <hibernate.search.version>5.11.0.Final</hibernate.search.version>
+    <hibernate.version>5.4.1.Final</hibernate.version>
+    <hibernate.search.version>5.11.1.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
     <flyway.version>5.2.3</flyway.version>
@@ -137,14 +137,15 @@
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
 
-    <ws.rs-api.version>2.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
+    <ws.rs-api.version>2.1.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.23.4</mockito.version>
-    <assertj.version>3.11.1</assertj.version>
-    <lombok.version>1.18.4</lombok.version>
+    <mockito.version>2.25.0</mockito.version>
+    <bytebuddy.version>1.9.7</bytebuddy.version>
+    <assertj.version>3.12.1</assertj.version>
+    <lombok.version>1.18.6</lombok.version>
     <xmlunit.version>2.6.2</xmlunit.version>
     <wiremock.version>2.19.0</wiremock.version>
 
@@ -152,24 +153,24 @@
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>4.8.0</newrelic.version>
+    <newrelic.version>4.11.0</newrelic.version>
     <resteasy.version>3.6.2.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.11.1</log4j2.version>
+    <log4j2.version>2.11.2</log4j2.version>
 
-    <sentry.version>1.7.15</sentry.version>
+    <sentry.version>1.7.21</sentry.version>
 
-    <spring.version>5.1.3.RELEASE</spring.version>
-    <spring-security.version>5.1.2.RELEASE</spring-security.version>
+    <spring.version>5.1.5.RELEASE</spring.version>
+    <spring-security.version>5.1.4.RELEASE</spring-security.version>
 
-    <cglib.version>3.2.9</cglib.version>
+    <cglib.version>3.2.10</cglib.version>
 
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
-    <spring-data-jpa.version>2.1.0.RELEASE</spring-data-jpa.version>
-    <spring-data-commons.version>2.1.0.RELEASE</spring-data-commons.version>
+    <spring-data-jpa.version>2.1.5.RELEASE</spring-data-jpa.version>
+    <spring-data-commons.version>2.1.5.RELEASE</spring-data-commons.version>
 
     <!--
     Spring Framework 3.2.3+ fully supports Hibernate 4.0 to 4.2.x in its orm.hibernate4 package.
@@ -177,8 +178,8 @@
     CXF 2 will not work with spring 4.
     -->
 
-    <httpcomponents.version>4.5.6</httpcomponents.version>
-    <httpcomponentscore.version>4.4.10</httpcomponentscore.version>
+    <httpcomponents.version>4.5.7</httpcomponents.version>
+    <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
     <swagger.version>1.5.20</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <!--
         <swagger.version>2.0.0-rc2</swagger.version>
@@ -186,7 +187,7 @@
     <ehcache3.version>3.5.2</ehcache3.version>
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>9.9.0-1</saxon.version>
+    <saxon.version>9.9.1-1</saxon.version>
     <javassist.version>3.24.0-GA</javassist.version>
     <scala.version>2.12.8</scala.version>
 
@@ -360,7 +361,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-collections4</artifactId>
-        <version>4.2</version>
+        <version>4.3</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -380,7 +381,7 @@
       <dependency>
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
-        <version>1.3.3</version>
+        <version>1.4</version>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
@@ -401,7 +402,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.11</version>
+        <version>1.12</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -411,7 +412,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-vfs2</artifactId>
-        <version>2.1</version>
+        <version>2.3</version>
       </dependency>
 
       <dependency>
@@ -912,13 +913,6 @@
         <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-swagger</artifactId>
         <version>${vpro.shared.version}</version>
-        <type>war</type>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-swagger</artifactId>
-        <version>${vpro.shared.version}</version>
-        <classifier>classes</classifier>
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
@@ -1141,7 +1135,7 @@
       <dependency>
         <groupId>org.acegisecurity</groupId>
         <artifactId>acegi-security</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.7</version>
       </dependency>
 
       <dependency>
@@ -1642,7 +1636,7 @@
       <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
-        <version>10.7.1.1</version>
+        <version>10.14.2.0</version>
       </dependency>
 
       <dependency>
@@ -1954,7 +1948,7 @@
       <dependency>
         <groupId>javax.websocket</groupId>
         <artifactId>javax.websocket-api</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.validator</groupId>
@@ -2025,6 +2019,18 @@
             <artifactId>hamcrest-core</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>net.bytebuddy</groupId>
+        <artifactId>byte-buddy</artifactId>
+        <version>${bytebuddy.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>net.bytebuddy</groupId>
+        <artifactId>byte-buddy-agent</artifactId>
+        <version>${bytebuddy.version}</version>
+        <scope>compile</scope>
       </dependency>
 
       <dependency>
@@ -2458,7 +2464,7 @@
        <dependency>
          <groupId>com.hierynomus</groupId>
          <artifactId>sshj</artifactId>
-         <version>0.26.0</version>
+         <version>0.27.0</version>
        </dependency>
        <dependency>
          <!-- highly recommended by sshj-->
@@ -2778,16 +2784,6 @@
 
   <repositories>
     <repository>
-      <id>vpro</id>
-      <url>https://nexus.vpro.nl/content/groups/public</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <id>sonatype_snapshot</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <releases>
@@ -2798,16 +2794,5 @@
       </snapshots>
     </repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>vpro</id>
-      <url>https://nexus.vpro.nl/content/groups/public</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
+
 </project>
