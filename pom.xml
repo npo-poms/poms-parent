@@ -874,6 +874,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-hibernate-search</artifactId>
+        <version>${vpro.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-persistence</artifactId>
         <version>${vpro.shared.version}</version>
       </dependency>
