@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<style  type="text/css">
+		table  {
+		background: #ffe;
+		}
+    table th {
+    background: #fee;
+
+    }
+    table td {
+    vertical-align: text-top;
+    }
+	</style>
+</head>
+<body>
+
+  <table>
+    <thead>
+	    <tr>
+        <th>rol</th>
+        <th>VIND</th>
+        <th>LEES</th>
+        <th>CREËREN</th>
+        <th>SCHRIJVEN VAN NIET-SPECIALE VELDEN</th>
+        <th>EXTRA RECHTEN</th>
+        <th>Opmerkingen</th>
+      </tr>
+	    <tr>
+        <td>Er zijn niet werkelijk vind-rechten. Alleen defaults daarvoor.</td>
+        <td></td>
+        <td />
+        <td />
+        <td>voor sommige velden zijn 'extra rechten' nodig	voor sommige andere velden of acties kunnen er uitzonderlijke rechten zijn geregeld</td>
+        <td />
+      </tr>
+    </thead>
+    <tbody>
+	    <tr>
+		    <td rowspan="2">media_user
+
+        Dit is de meest gewone 'rol'. Elke menselijke gebruiker die in de POMS backend moet kunnen zal deze rol nodig hebben.
+	      </td>
+		    <td>Alles wat niet gedelete is</td>
+		    <td>NOEMBARGO</td>
+		    <td>
+			    In principe alle type objecten behalve:
+			    <ul>
+				    <li>Uitzendingen</li>
+				    <li>Promo's</li>
+				    <li>Deprecated types</li>
+			    </ul>
+			    De lijst is overigens inclusief gedefinieerd (niet via uitzonderingen), dus eigenlijk zijn het deze types:
+          <pre><code>
+            MediaType.CLIP,
+            MediaType.TRAILER,
+MediaType.SERIES,
+MediaType.SEASON,
+MediaType.UMBRELLA,
+MediaType.COLLECTION,
+MediaType.PLAYLIST,
+MediaType.ALBUM,
+MediaType.TRACK,
+MediaType.VISUALRADIO
+</code>			 </pre>
+		    </td>
+		 <td>
+			 Alles wat tenminste één omroep deelt met de omroepen geässocieerd met deze gebruiker
+			 Alles wat tenminste één portal deelt met de portals geässocieerd met deze gebruiker
+		 </td>
+		 <td>
+       Men mag ook objecten in een groep plaatsen, ook zonder schrijfrechten op het object wat in de groep geplaatst wordt. Dit is meer een technische opmerking, want in principe wordt onderdeelschap in het onderdeel opgeslagen, niet in de groep. Dat zie je ook zo terug in de XML- en JSON-presentatie.
+		 </td>
+	 </tr>
+	 <tr>
+		 <td> </td>
+		 <td>
+			 J- (testHasReadPermissionForNonUser)
+			 J+(testHasReadPermissionForOtherBroadcaster,
+			 testHasReadPermissionForOwnBroadcaster)
+		 </td>
+	 </tr>
+	 <tr>
+		 <th rowspan="2">media_support</th>
+		 <td>Alles</td>
+		 <td>NOEMBARGO</td>
+		 <td>Niets</td>
+		 <td>Niets</td>
+		 <td>EPISODE</td>
+		 <td>Raar dat deze rol in principe juist read-only maakt, maar dan toch extra dingen mag</td>
+	 </tr>
+	 <tr>
+		 <td>media_externaluser
+
+		 Dit zijn mensen die slechts ingehuurd zijn door een omroep om specifieke content te bewerken. Zij hebben niet de leesrechten op alle content, en kunnen ook niet alle content van hun omroep bewerken
+		 </td>
+		 <td>
+			 THIRDPARTY
+			  	J- (testHasNoReadPermissionsForExternalUser)
+		 </td>
+		 <td>
+			 THIRDPARTY
+		 </td>
+		 <td>
+			 THIRDPARTY
+		 </td>
+		 <td>
+			 CHECK
+		 </td>
+	 </tr>
+	 <tr>
+     <th>media_superuser</th>
+	   <td>Alle objecten</td>
+     <td>Alle objecten</td>
+     <td>Alle objecten</td>
+     <td>EXTRA_TYPES</td>
+
+     <td>BROADCAST</td>
+   </tr>
+   <tr>
+     <td>
+ 	     J+ (testHasReadPermissionForSuperUser)
+     </td>
+   </tr>
+   <tr>
+     <th>media_superprocess</th>
+     <td />
+     <td />
+     <td />
+	 	 <td>TRANSLATE</td>
+   </tr>
+
+   <tr>
+     <th>media_superadmin</th>
+     <td>Alle objecten</td>
+     <td>Alle objecten</td>
+	 	 <td>Alle objecten</td>
+     <td>EXTRA_TYPES
+
+BROADCAST
+
+Herpubliceren, objecten samenvoegen,
+
+bronnen aanpassen
+     </td>
+   </tr>
+
+
+
+media_archivist	 	 	 	 	BROADCAST
+media_upload	 	 	 	 	De mogelijkheid om te uploaden bij het 'bronnen' tabje
+media_mis
+OWNER van ownable fields aanpassen
+
+
+media_schedule
+EXTRA_TYPES
+
+SCHEDULE
+
+niet-authorative predictions bewerken
+
+
+media_mergeall	 	 	 	 	objecten samenvoegen
+media_mergeepisode	 	 	 	 	uitzendingen samenvoegen
+media_mergeseries	 	 	 	 	series samenvoegen
+media_translator
+TRANSLATE
+
+</tr>
+</tbody>
+ </table>
+Omschrijving van extra rechten:
+
+ <table>
+	 <thead>
+	 <tr>
+		 <th>NAAM</th>
+		 <th>OMSCHRIJVING</th>
+	 </tr>
+	 </thead>
+	 <tbody>
+	 <tr><td>EXTRA_TYPES</td><td>type van een object veranderen van of naar Uitzending, Series of Seizoen</td></tr>
+	 <tr><td>SCHEDULE</td><td>Schedule-events bewerken</td></tr>
+	 <tr><td>BROADCAST</td><td>	Aanmaken van Uitzending-objecten</td></tr>
+	 <tr><td>EPISODE</td><td>uitzendingen als 'episode' koppelen aan een Series/seizoen (tenzij die group 'gelocked' is)</td></tr>
+	 <tr><td>TRANSLATE</td><td>ondertitels toevoegen op alle objecten
+
+vertalingen toevoegen op alle objecten (nog niet mogelijk in de GUI)</td></tr>
+	 </tbody>
+ </table>
+
+Omschrijving van criteria
+<table>
+  <thead>
+    <tr><th>NAAM</th><th>OMSCHRIJVING</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>THIRDPARTY</td><td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
+    <tr><td>NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
+  </tbody>
+</table>
+
+
+
+
+
+Omschrijving van coverage
+
+S-: Via selenium getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag
+
+S+: Via selenium getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag
+
+J-: Via junit getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag
+
+J+: Via junit getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag
+
+Merk op dat de rechten via de frontend (selenium dus) in weze secundair zijn. Als iets niet mag, maar het mag via de frontend wel, dan zal dat foutmeldingen geven, maar in elk geval zal er niet werkelijk iets gebeuren wat eigenlijk niet mag.
+
+Junit: nl.vpro.domain.media.MediaServiceImplAuthorizationTest, nl.vpro.spring.security.acl.MediaPermissionEvaluatorImplTest
+
+	 </body>
+</html>
