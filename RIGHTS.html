@@ -6,14 +6,29 @@
      background: #fff;
      }
      table {
+     width: 100%;
      background: #aaa;
+     margin-bottom: 2ex;
      }
-		table  td {
+		table  thead td {
+		background: #fff;
+		}
+
+    table  tr.coverage td {
+		background: #bbb;
+		}
+
+    table  td {
 		background: #ffe;
 		}
     table th {
     background: #fee;
 
+    }
+    table tbody th {
+    background: #fee;
+    vertical-align: text-top;
+    text-align: left;
     }
     table td {
     vertical-align: text-top;
@@ -29,7 +44,7 @@
   <script>
     $("[href]").click(function(e) {
     console.log(e);
-    alert('hoi');
+
     });
   </script>
 </head>
@@ -47,7 +62,7 @@
 
     <thead>
 	    <tr>
-        <th>rol</th>
+        <th rowspan="2">rol</th>
         <th>VIND</th>
         <th>LEES</th>
         <th>CREËREN</th>
@@ -57,7 +72,7 @@
       </tr>
 	    <tr>
         <td>Er zijn niet werkelijk vind-rechten. Alleen defaults daarvoor.</td>
-        <td></td>
+        <td />
         <td />
         <td />
         <td>voor sommige velden zijn 'extra rechten' nodig	voor sommige andere velden of acties kunnen er uitzonderlijke rechten zijn geregeld</td>
@@ -66,11 +81,11 @@
     </thead>
     <tbody>
 	    <tr>
-		    <td rowspan="2">
+		    <th rowspan="2">
           <em>media_user</em>
           <br />
           Dit is de meest gewone 'rol'. Elke menselijke gebruiker die in de POMS backend moet kunnen zal deze rol nodig hebben.
-	      </td>
+	      </th>
 		    <td>Alles wat niet gedelete is</td>
 		    <td><a href="#noembargo">NOEMBARGO</a></td>
 		    <td>
@@ -82,8 +97,8 @@
 			    </ul>
 			    De lijst is overigens inclusief gedefinieerd (niet via uitzonderingen), dus eigenlijk zijn het deze types:
           <pre><code>
-            MediaType.CLIP,
-            MediaType.TRAILER,
+MediaType.CLIP,
+MediaType.TRAILER,
 MediaType.SERIES,
 MediaType.SEASON,
 MediaType.UMBRELLA,
@@ -95,175 +110,262 @@ MediaType.VISUALRADIO
 </code>			 </pre>
 		    </td>
 		 <td>
-			 Alles wat tenminste één omroep deelt met de omroepen geässocieerd met deze gebruiker
-			 Alles wat tenminste één portal deelt met de portals geässocieerd met deze gebruiker
+			 <ul>
+         <li>Alles wat tenminste één omroep deelt met de omroepen geässocieerd met deze gebruiker</li>
+			   <li>Alles wat tenminste één portal deelt met de portals geässocieerd met deze gebruiker</li>
+       </ul>
 		 </td>
-		 <td>
+     <td />
+		 <td rowspan="2">
        Men mag ook objecten in een groep plaatsen, ook zonder schrijfrechten op het object wat in de groep geplaatst wordt. Dit is meer een technische opmerking, want in principe wordt onderdeelschap in het onderdeel opgeslagen, niet in de groep. Dat zie je ook zo terug in de XML- en JSON-presentatie.
 		 </td>
 	 </tr>
-	 <tr>
+	 <tr class="coverage">
 		 <td> </td>
 		 <td>
 			 J- (testHasReadPermissionForNonUser)
 			 J+(testHasReadPermissionForOtherBroadcaster,
 			 testHasReadPermissionForOwnBroadcaster)
 		 </td>
+     <td />
+     <td />
+     <td />
 	 </tr>
 	 <tr>
 		 <th rowspan="2">media_support</th>
 		 <td>Alles</td>
-		 <td>NOEMBARGO</td>
+		 <td><a href="#noembargo">NOEMBARGO</a></td>
 		 <td>Niets</td>
 		 <td>Niets</td>
-		 <td>EPISODE</td>
+		 <td><a href="#episode">EPISODE</a></td>
 		 <td>Raar dat deze rol in principe juist read-only maakt, maar dan toch extra dingen mag</td>
 	 </tr>
+   <tr class="coverage">
+   </tr>
 	 <tr>
-		 <td>media_externaluser
-
+		 <th rowspan="2">
+       media_externaluser
+       <br />
 		 Dit zijn mensen die slechts ingehuurd zijn door een omroep om specifieke content te bewerken. Zij hebben niet de leesrechten op alle content, en kunnen ook niet alle content van hun omroep bewerken
+		 </th>
+		 <td>
+			 <a href="#thirdparty">THIRDPARTY</a>
 		 </td>
 		 <td>
-			 THIRDPARTY
-			  	J- (testHasNoReadPermissionsForExternalUser)
+			 <a href="#thirdparty">THIRDPARTY</a>
 		 </td>
 		 <td>
-			 THIRDPARTY
+       <a href="#thirdparty">THIRDPARTY</a>
 		 </td>
-		 <td>
-			 THIRDPARTY
+     <td>
+       <a href="#thirdparty">THIRDPARTY</a>
 		 </td>
-		 <td>
+     <td/>
+		 <td rowspan="2">
 			 CHECK
 		 </td>
 	 </tr>
+   <tr class="coverage">
+     <td />
+     <td> </td>
+   </tr>
 	 <tr>
-     <th>media_superuser</th>
+     <th rowspan="2">media_superuser</th>
 	   <td>Alle objecten</td>
      <td>Alle objecten</td>
      <td>Alle objecten</td>
-     <td>EXTRA_TYPES</td>
-
-     <td>BROADCAST</td>
+     <td>
+       <a href="#extratypes">EXTRA_TYPES</a>
+     </td>
+     <td>
+       <a href="#broadcast">BROADCAST</a>
+     </td>
+     <td rowspan="2"/>
    </tr>
-   <tr>
+   <tr class="coverage">
      <td>
  	     J+ (testHasReadPermissionForSuperUser)
      </td>
    </tr>
    <tr>
-     <th>media_superprocess</th>
-     <td />
-     <td />
-     <td />
+     <th rowspan="2">media_superprocess</th>
+     <td colspan="4" />
 	 	 <td>TRANSLATE</td>
+     <td rowspan="2"/>
    </tr>
-
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
    <tr>
-     <th>media_superadmin</th>
+     <th rowspan="2">media_superadmin</th>
      <td>Alle objecten</td>
      <td>Alle objecten</td>
 	 	 <td>Alle objecten</td>
-     <td>EXTRA_TYPES
-
-BROADCAST
-
-Herpubliceren, objecten samenvoegen,
-
-bronnen aanpassen
+     <td />
+     <td>
+       <a href="#extratype">EXTRA_TYPES</a>,
+       <a href="#broadcast">BROADCAST</a>,
+       Herpubliceren,
+       objecten samenvoegen,
+       bronnen aanpassen
      </td>
+     <td rowspan="2" />
    </tr>
-
-   <tr>
-     <th> media_archivist</th><td>	 	 	 	 	BROADCAST</td>
+   <tr class="coverage">
+     <td colspan="5" />
    </tr>
    <tr>
-     <th>media_upload</th>
+     <th rowspan="2">
+       media_archivist
+     </th>
+     <td colspan="4" />
+     <td>
+       <a href="#broadcast">BROADCAST</a>,
+     </td>
+     <td rowspan="2"/>
+   </tr>
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
+   <tr>
+     <th rowspan="2">media_upload</th>
+     <td colspan="4" />
 	 	 <td>De mogelijkheid om te uploaden bij het 'bronnen' tabje</td>
+     <td rowspan="2"/>
    </tr>
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
+
    <tr>
-     <th>media_mis</th>
+     <th rowspan="2">media_mis</th>
+     <td colspan="4" />
      <td>OWNER van ownable fields aanpassen</td>
+     <td rowspan="2" />
    </tr>
-
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
    <tr>
-     <th>media_schedule</th>
-     <td>EXTRA_TYPES
-
-     SCHEDULE
-
-     niet-authorative predictions bewerken
+     <th rowspan="2">media_schedule</th>
+     <td colspan="4" />
+     <td>
+       <a href="#extratype">EXTRA_TYPES</a>,
+       <a href="#schedule">SCHEDULE</a>,
+       niet-authorative predictions bewerken
      </td>
+     <td rowspan="2"/>
    </tr>
-   <tr>
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
 
-     <th>media_mergeall</th>
-	 	 <td>objecten samenvoegen
-     </td>
+   <tr>
+     <th rowspan="2">media_mergeall</th>
+     <td colspan="4" />
+	 	 <td>objecten samenvoegen</td>
+     <td rowspan="2"/>
+   </tr>
+   <tr class="coverage">
+     <td colspan="5" />
    </tr>
    <tr>
-     <th>media_mergeepisode</th>
+     <th rowspan="2">media_mergeepisode</th>
+     <td colspan="4" />
 	 	 <td>uitzendingen samenvoegen</td>
+     <td rowspan="2"/>
    </tr>
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
+
    <tr>
-     <th>media_mergeseries</th>
+     <th rowspan="2">media_mergeseries</th>
+     <td colspan="4" />
 	 	 <td>series samenvoegen</td>
+     <td rowspan="2"/>
+   </tr>
+   <tr class="coverage">
+     <td colspan="5" />
    </tr>
    <tr>
-     <th>media_translator</th>
-     <td>TRANSLATE</td>
+     <th rowspan="2">media_translator</th>
+     <td colspan="4" />
+     <td><a href="#translate">TRANSLATE</td>
+     <td rowspan="2"/>
    </tr>
-    </tbody>
+   <tr class="coverage">
+     <td colspan="5" />
+   </tr>
+
+ </tbody>
  </table>
-Omschrijving van extra rechten:
+
 
  <table>
+  <caption>Omschrijving van extra rechten</caption>
 	 <thead>
-	 <tr>
-		 <th>NAAM</th>
-		 <th>OMSCHRIJVING</th>
-	 </tr>
+	   <tr>
+		   <th>NAAM</th>
+		   <th>OMSCHRIJVING</th>
+	   </tr>
 	 </thead>
 	 <tbody>
-	 <tr><td>EXTRA_TYPES</td><td>type van een object veranderen van of naar Uitzending, Series of Seizoen</td></tr>
-	 <tr><td>SCHEDULE</td><td>Schedule-events bewerken</td></tr>
-	 <tr><td>BROADCAST</td><td>	Aanmaken van Uitzending-objecten</td></tr>
-	 <tr><td>EPISODE</td><td>uitzendingen als 'episode' koppelen aan een Series/seizoen (tenzij die group 'gelocked' is)</td></tr>
-	 <tr><td>TRANSLATE</td><td>ondertitels toevoegen op alle objecten
+	   <tr id="extratypes">
+       <td>EXTRA_TYPES</td>
+       <td>type van een object veranderen van of naar Uitzending, Series of Seizoen</td>
+     </tr>
+	   <tr id="schedule">
+       <td>SCHEDULE</td>
+       <td>Schedule-events bewerken</td>
+     </tr>
+	   <tr id="broadcast">
+       <td>BROADCAST</td>
+       <td>	Aanmaken van Uitzending-objecten</td>
+     </tr>
+	   <tr id="episode">
+       <td>EPISODE</td>
+       <td>uitzendingen als 'episode' koppelen aan een Series/seizoen (tenzij die group 'gelocked' is)</td>
+     </tr>
+	   <tr id="translate">
+       <td>TRANSLATE</td>
+       <td>
+         ondertitels toevoegen op alle objecten
 
-vertalingen toevoegen op alle objecten (nog niet mogelijk in de GUI)</td></tr>
+         vertalingen toevoegen op alle objecten (nog niet mogelijk in de GUI)
+       </td>
+     </tr>
 	 </tbody>
  </table>
 
-Omschrijving van criteria
-<table>
-  <thead>
-    <tr><th>NAAM</th><th>OMSCHRIJVING</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>THIRDPARTY</td><td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
-    <tr><td id="noembargo">NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
-  </tbody>
-</table>
+ <table>
+   <caption>Omschrijving van criteria</caption>
+   <thead>
+     <tr><th>NAAM</th><th>OMSCHRIJVING</th></tr>
+   </thead>
+   <tbody>
+     <tr id="thirdparty"><td>THIRDPARTY</td><td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
+     <tr id="noembargo"><td>NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
+   </tbody>
+ </table>
 
+ <h2> Omschrijving van coverage</h2>
 
+ <dl>
+   <dt>S-</dt><dd>Via selenium getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag</dd>
 
+   <dt>S+</dt><dd>Via selenium getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag</dd>
 
+   <dt>J-</dt><dd>Via junit getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag</dd>
 
-Omschrijving van coverage
-
-S-: Via selenium getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag
-
-S+: Via selenium getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag
-
-J-: Via junit getest dat als je vereiste rollen/rechten niet hebt, dat het dan ook niet mag
-
-J+: Via junit getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag
-
-Merk op dat de rechten via de frontend (selenium dus) in weze secundair zijn. Als iets niet mag, maar het mag via de frontend wel, dan zal dat foutmeldingen geven, maar in elk geval zal er niet werkelijk iets gebeuren wat eigenlijk niet mag.
-
-Junit: nl.vpro.domain.media.MediaServiceImplAuthorizationTest, nl.vpro.spring.security.acl.MediaPermissionEvaluatorImplTest
+   <dt>J+</dt><dd>Via junit getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag</dd>
+ </dl>
+<p>
+  Merk op dat de rechten via de frontend (selenium dus) in weze secundair zijn. Als iets niet mag, maar het mag via de frontend wel, dan zal dat foutmeldingen geven, maar in elk geval zal er niet werkelijk iets gebeuren wat eigenlijk niet mag.
+</p>
+<p>
+  Junit: nl.vpro.domain.media.MediaServiceImplAuthorizationTest, nl.vpro.spring.security.acl.MediaPermissionEvaluatorImplTest
+</p>
 
 	 </body>
 </html>
