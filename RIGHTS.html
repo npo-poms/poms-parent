@@ -2,7 +2,13 @@
 <html  xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<style  type="text/css">
-		table  {
+    body {
+     background: #fff;
+     }
+     table {
+     background: #aaa;
+     }
+		table  td {
 		background: #ffe;
 		}
     table th {
@@ -12,11 +18,33 @@
     table td {
     vertical-align: text-top;
     }
+    #vind {
+    with: 100px;
+    }
 	</style>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+    $("[href]").click(function(e) {
+    console.log(e);
+    alert('hoi');
+    });
+  </script>
 </head>
 <body>
 
   <table>
+    <caption>POMS Rechten-matrix</caption>
+    <col id="rol" />
+    <col id="vind" />
+    <col id="lees" />
+    <col id="create" />
+    <col  />
+    <col />
+    <col />
+
     <thead>
 	    <tr>
         <th>rol</th>
@@ -38,12 +66,13 @@
     </thead>
     <tbody>
 	    <tr>
-		    <td rowspan="2">media_user
-
-        Dit is de meest gewone 'rol'. Elke menselijke gebruiker die in de POMS backend moet kunnen zal deze rol nodig hebben.
+		    <td rowspan="2">
+          <em>media_user</em>
+          <br />
+          Dit is de meest gewone 'rol'. Elke menselijke gebruiker die in de POMS backend moet kunnen zal deze rol nodig hebben.
 	      </td>
 		    <td>Alles wat niet gedelete is</td>
-		    <td>NOEMBARGO</td>
+		    <td><a href="#noembargo">NOEMBARGO</a></td>
 		    <td>
 			    In principe alle type objecten behalve:
 			    <ul>
@@ -146,30 +175,46 @@ bronnen aanpassen
      </td>
    </tr>
 
+   <tr>
+     <th> media_archivist</th><td>	 	 	 	 	BROADCAST</td>
+   </tr>
+   <tr>
+     <th>media_upload</th>
+	 	 <td>De mogelijkheid om te uploaden bij het 'bronnen' tabje</td>
+   </tr>
+   <tr>
+     <th>media_mis</th>
+     <td>OWNER van ownable fields aanpassen</td>
+   </tr>
 
+   <tr>
+     <th>media_schedule</th>
+     <td>EXTRA_TYPES
 
-media_archivist	 	 	 	 	BROADCAST
-media_upload	 	 	 	 	De mogelijkheid om te uploaden bij het 'bronnen' tabje
-media_mis
-OWNER van ownable fields aanpassen
+     SCHEDULE
 
+     niet-authorative predictions bewerken
+     </td>
+   </tr>
+   <tr>
 
-media_schedule
-EXTRA_TYPES
-
-SCHEDULE
-
-niet-authorative predictions bewerken
-
-
-media_mergeall	 	 	 	 	objecten samenvoegen
-media_mergeepisode	 	 	 	 	uitzendingen samenvoegen
-media_mergeseries	 	 	 	 	series samenvoegen
-media_translator
-TRANSLATE
-
-</tr>
-</tbody>
+     <th>media_mergeall</th>
+	 	 <td>objecten samenvoegen
+     </td>
+   </tr>
+   <tr>
+     <th>media_mergeepisode</th>
+	 	 <td>uitzendingen samenvoegen</td>
+   </tr>
+   <tr>
+     <th>media_mergeseries</th>
+	 	 <td>series samenvoegen</td>
+   </tr>
+   <tr>
+     <th>media_translator</th>
+     <td>TRANSLATE</td>
+   </tr>
+    </tbody>
  </table>
 Omschrijving van extra rechten:
 
@@ -198,7 +243,7 @@ Omschrijving van criteria
   </thead>
   <tbody>
     <tr><td>THIRDPARTY</td><td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
-    <tr><td>NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
+    <tr><td id="noembargo">NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
   </tbody>
 </table>
 
