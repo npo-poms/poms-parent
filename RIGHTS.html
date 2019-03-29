@@ -89,31 +89,12 @@
 		    <td>Alles wat niet gedelete is</td>
 		    <td><a href="#noembargo">NOEMBARGO</a></td>
 		    <td>
-			    In principe alle type objecten behalve:
-			    <ul>
-				    <li>Uitzendingen</li>
-				    <li>Promo's</li>
-				    <li>Deprecated types</li>
-			    </ul>
-			    De lijst is overigens inclusief gedefinieerd (niet via uitzonderingen), dus eigenlijk zijn het deze types:
-          <pre><code>
-MediaType.CLIP,
-MediaType.TRAILER,
-MediaType.SERIES,
-MediaType.SEASON,
-MediaType.UMBRELLA,
-MediaType.COLLECTION,
-MediaType.PLAYLIST,
-MediaType.ALBUM,
-MediaType.TRACK,
-MediaType.VISUALRADIO
-</code>			 </pre>
+          <a href="#usercreate">USERCREATE</a>
+
 		    </td>
 		 <td>
-			 <ul>
-         <li>Alles wat tenminste één omroep deelt met de omroepen geässocieerd met deze gebruiker</li>
-			   <li>Alles wat tenminste één portal deelt met de portals geässocieerd met deze gebruiker</li>
-       </ul>
+       <a href="#userwrite">USERWRITE</a>
+
 		 </td>
      <td />
 		 <td rowspan="2">
@@ -155,7 +136,7 @@ MediaType.VISUALRADIO
 			 <a href="#thirdparty">THIRDPARTY</a>
 		 </td>
 		 <td>
-       <a href="#thirdparty">THIRDPARTY</a>
+       <a href="#thirdparty">USERCREATE</a>
 		 </td>
      <td>
        <a href="#thirdparty">THIRDPARTY</a>
@@ -203,7 +184,7 @@ MediaType.VISUALRADIO
 	 	 <td>Alle objecten</td>
      <td />
      <td>
-       <a href="#extratype">EXTRA_TYPES</a>,
+       <a href="#extratypes">EXTRA_TYPES</a>,
        <a href="#broadcast">BROADCAST</a>,
        Herpubliceren,
        objecten samenvoegen,
@@ -303,7 +284,7 @@ MediaType.VISUALRADIO
 
 
  <table>
-  <caption>Omschrijving van extra rechten</caption>
+  <caption>Omschrijving van (extra) rechten</caption>
 	 <thead>
 	   <tr>
 		   <th>NAAM</th>
@@ -321,7 +302,7 @@ MediaType.VISUALRADIO
      </tr>
 	   <tr id="broadcast">
        <td>BROADCAST</td>
-       <td>	Aanmaken van Uitzending-objecten</td>
+       <td>Aanmaken van Uitzending-objecten en promo's</td>
      </tr>
 	   <tr id="episode">
        <td>EPISODE</td>
@@ -335,6 +316,7 @@ MediaType.VISUALRADIO
          vertalingen toevoegen op alle objecten (nog niet mogelijk in de GUI)
        </td>
      </tr>
+
 	 </tbody>
  </table>
 
@@ -344,7 +326,42 @@ MediaType.VISUALRADIO
      <tr><th>NAAM</th><th>OMSCHRIJVING</th></tr>
    </thead>
    <tbody>
-     <tr id="thirdparty"><td>THIRDPARTY</td><td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
+    <tr id="usercreate">
+     <td>USERCREATE</td>
+     <td>  In principe alle type objecten behalve:
+			    <ul>
+				    <li>Uitzendingen</li>
+				    <li>Promo's</li>
+				    <li>Deprecated types</li>
+			    </ul>
+			    De lijst is overigens inclusief gedefinieerd (niet via uitzonderingen), dus eigenlijk zijn het deze types:
+          <pre><code>
+MediaType.CLIP,
+MediaType.TRAILER,
+MediaType.SERIES,
+MediaType.SEASON,
+MediaType.UMBRELLA,
+MediaType.COLLECTION,
+MediaType.PLAYLIST,
+MediaType.ALBUM,
+MediaType.TRACK,
+MediaType.VISUALRADIO
+</code>			 </pre></td>
+   </tr>
+   <tr id="userwrite">
+     <td>
+       USERWRITE
+     </td>
+     <td>
+        <ul>
+         <li>Alles wat tenminste één omroep deelt met de omroepen geässocieerd met deze gebruiker</li>
+			   <li>Alles wat tenminste één portal deelt met de portals geässocieerd met deze gebruiker</li>
+       </ul>
+     </td>
+   </tr>
+     <tr id="thirdparty">
+       <td>THIRDPARTY</td>
+       <td>Alles wat tenminste één 'third party' deelt met de third parties geässocieerd met deze gebruiker</td></tr>
      <tr id="noembargo"><td>NOEMBARGO</td><td>Alles, behalve clips onder embargo van andere omroepen</td></tr>
    </tbody>
  </table>
