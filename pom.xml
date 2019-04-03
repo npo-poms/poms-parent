@@ -48,7 +48,7 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>REL-5.10-SNAPSHOT</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>
@@ -171,12 +171,6 @@
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
     <spring-data-jpa.version>2.1.5.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>2.1.5.RELEASE</spring-data-commons.version>
-
-    <!--
-    Spring Framework 3.2.3+ fully supports Hibernate 4.0 to 4.2.x in its orm.hibernate4 package.
-    Spring Framework 4.0.1+ fully supports Hibernate 4.0 to 4.3.x in its orm.hibernate4 package.
-    CXF 2 will not work with spring 4.
-    -->
 
     <httpcomponents.version>4.5.7</httpcomponents.version>
     <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
@@ -649,11 +643,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
-        <artifactId>api-spring</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
         <artifactId>api-services</artifactId>
         <version>${api.version}</version>
       </dependency>
@@ -779,11 +768,16 @@
         <version>${poms.shared.version}</version>
         <classifier>tests</classifier>
       </dependency>
-       <dependency>
-         <groupId>nl.vpro.media</groupId>
-         <artifactId>media-nep</artifactId>
-         <version>${poms.shared.version}</version>
-       </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-nep</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-npo</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
       <dependency>
         <groupId>nl.vpro.subtitles</groupId>
         <artifactId>subtitles-domain</artifactId>
