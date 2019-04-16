@@ -19,14 +19,14 @@
 		}
 
     table  td {
-		background: #ffe;
+		background: #8f8;
 		}
     table th {
-    background: #fee;
+    background: #888;
 
     }
     table tbody th {
-    background: #fee;
+    background: #888;
     vertical-align: text-top;
     text-align: left;
     }
@@ -34,7 +34,7 @@
     vertical-align: text-top;
     }
     #vind {
-    with: 100px;
+    width: 100px;
     }
 	</style>
   <script
@@ -377,12 +377,17 @@ MediaType.VISUALRADIO
 
    <dt>J+</dt><dd>Via junit getest dat als je vereiste rollen/rechten wel hebt, dat het dan ook mag</dd>
  </dl>
-<p>
-  Merk op dat de rechten via de frontend (selenium dus) in weze secundair zijn. Als iets niet mag, maar het mag via de frontend wel, dan zal dat foutmeldingen geven, maar in elk geval zal er niet werkelijk iets gebeuren wat eigenlijk niet mag.
-</p>
-<p>
-  Junit: nl.vpro.domain.media.MediaServiceImplAuthorizationTest, nl.vpro.spring.security.acl.MediaPermissionEvaluatorImplTest
-</p>
+  <p>
+    Merk op dat de rechten via de frontend (selenium dus) in weze secundair zijn. Als iets niet mag, maar het mag via de frontend wel, dan zal dat foutmeldingen geven, maar in elk geval zal er niet werkelijk iets gebeuren wat eigenlijk niet mag.
+  </p>
+  <p>
+    Junit: nl.vpro.domain.media.MediaServiceImplAuthorizationTest, nl.vpro.spring.security.acl.MediaPermissionEvaluatorImplTest
+  </p>
+
+  <p>
+    <em>De omschrijving van de coverage is nog niet compleet</em>
+  </p>
+
 
 	 </body>
 </html>
