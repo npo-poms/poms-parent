@@ -164,7 +164,7 @@
     <sentry.version>1.7.21</sentry.version>
 
     <spring.version>5.1.5.RELEASE</spring.version>
-    <spring-security.version>5.1.4.RELEASE</spring-security.version>
+    <spring-security.version>5.1.5.RELEASE</spring-security.version>
 
     <cglib.version>3.2.10</cglib.version>
 
