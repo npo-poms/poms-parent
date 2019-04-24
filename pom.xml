@@ -154,7 +154,7 @@
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>4.11.0</newrelic.version>
-    <resteasy.version>3.6.2.Final</resteasy.version>
+    <resteasy.version>3.6.3.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
