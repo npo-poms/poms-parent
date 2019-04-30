@@ -192,6 +192,7 @@
     <postgresql.version>42.2.5.jre7</postgresql.version>
 
     <commons.lang3.version>3.8.1</commons.lang3.version>
+    <jsonwebtoken.version>0.10.6</jsonwebtoken.version>
 
     <!-- Encoding -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -2469,8 +2470,8 @@
        </dependency>
        <dependency>
          <groupId>io.jsonwebtoken</groupId>
-         <artifactId>jjwt</artifactId>
-         <version>0.10.6</version>
+         <artifactId>jjwt-root</artifactId>
+         <version>${jsonwebtoken.version}</version>
        </dependency>
     </dependencies>
   </dependencyManagement>
