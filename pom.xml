@@ -674,23 +674,23 @@
       </dependency>
 
       <dependency>
-        <groupId>nl.vpro.api-client</groupId>
+        <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-utils</artifactId>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api-client</groupId>
-        <artifactId>client-core</artifactId>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>media-backend-api-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api-client</groupId>
-        <artifactId>media-backend-rs-client</artifactId>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>pages-backend-api-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api-client</groupId>
-        <artifactId>client-resteasy</artifactId>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>frontend-api-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
 
@@ -2614,6 +2614,8 @@
           <source>1.8</source>
           <target>1.8</target>
           <encoding>UTF-8</encoding>
+          <showWarnings>true</showWarnings>
+          <showDeprecation>true</showDeprecation>
           <compilerArgs>
             <!-- would this help intellij? It seems not.
             <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
