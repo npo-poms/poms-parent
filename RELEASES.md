@@ -5,5 +5,5 @@
  - [media-server](http://nexus.vpro.nl/content/groups/public/nl/vpro/media/media-server/5.10.5/media-server-5.10.5.war)
  - [media-rs](http://nexus.vpro.nl/content/groups/public/nl/vpro/media/media-rs/5.10.5/media-rs-5.10.5.war)
  - [images-backend](http://nexus.vpro.nl/content/groups/public/nl/vpro/image/image-server/5.10.1/image-server-5.10.1.war)
--frontend - [images-frontend](http://nexus.vpro.nl/content/groups/public/nl/vpro/image/image-server-frontend/5.10.1/image-server-frontend-5.10.1.war)
+ - [images-frontend](http://nexus.vpro.nl/content/groups/public/nl/vpro/image/image-server-frontend/5.10.1/image-server-frontend-5.10.1.war)
 
