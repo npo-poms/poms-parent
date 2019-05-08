@@ -76,6 +76,7 @@ This project provides java clients for the above projects.
 
 ### VPRO shared
 Most projects also depend on a collection of utilities maintained by VPRO but which are not specific for POMS or its subsystems. 
+See https://github.com/vpro/vpro-shared
 
 ### POMS shared
 These modules are specific for POMS, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
