@@ -141,7 +141,7 @@
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
-    <junit.version>4.12</junit.version>
+    <junits.version>4.12</junit.version>
     <mockito.version>2.25.0</mockito.version>
     <bytebuddy.version>1.9.7</bytebuddy.version>
     <assertj.version>3.12.1</assertj.version>
@@ -2349,7 +2349,7 @@
       <!-- I think we should use this now -->
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-validator-provider-11</artifactId>
+        <artifactId>resteasy-validator-provider</artifactId>
         <version>${resteasy.version}</version>
       </dependency>
 
