@@ -183,7 +183,7 @@
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.9.1-1</saxon.version>
-    <javassist.version>3.24.0-GA</javassist.version>
+    <javassist.version>3.25.0-GA</javassist.version>
     <scala.version>2.12.8</scala.version>
 
     <!-- Tied to the ES server version! -->
