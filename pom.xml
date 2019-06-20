@@ -106,6 +106,7 @@
     <vpro.shared.version>2.7-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
+    <checker.version>2.8.2</checker.version>
 
     <!-- External Artifacts -->
     <activemq.version>5.15.8</activemq.version>
@@ -183,7 +184,7 @@
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.9.1-1</saxon.version>
-    <javassist.version>3.24.0-GA</javassist.version>
+    <javassist.version>3.25.0-GA</javassist.version>
     <scala.version>2.12.8</scala.version>
 
     <!-- Tied to the ES server version! -->
@@ -469,10 +470,22 @@
       </dependency>
 
       <dependency>
+        <!--
+         findbugs (with annotation in javax.annotation) is not compatible with java 9 modules
+         because other will also have annotations in that package (split package problem)
+         https://blog.codefx.org/java/jsr-305-java-9/
+        -->
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
         <version>3.0.2</version>
       </dependency>
+      <!-- lets consider checker ? -->
+       <dependency>
+
+         <groupId>org.checkerframework</groupId>
+         <artifactId>checker-qual</artifactId>
+         <version>${checker.version}</version>
+       </dependency>
 
       <dependency>
         <groupId>org.javassist</groupId>
@@ -1975,7 +1988,7 @@
       <dependency>
         <groupId>org.glassfish</groupId>
         <artifactId>javax.el</artifactId>
-        <version>3.0.1-b08</version>
+        <version>3.0.1-b11</version>
         <scope>test</scope>
       </dependency>
       <dependency>
