@@ -82,6 +82,8 @@
   <properties>
 
     <skipITs>true</skipITs>
+    <java.version>8</java.version>
+
     <!-- POMS Artifacts -->
     <!-- these remain unset, and have this pom as parent themselves -->
     <poms.version>5.11.0</poms.version>
@@ -2679,8 +2681,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>8</source>
-          <target>8</target>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
           <encoding>UTF-8</encoding>
           <showWarnings>false</showWarnings>
           <showDeprecation>true</showDeprecation>
