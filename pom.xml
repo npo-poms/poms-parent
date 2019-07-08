@@ -2643,7 +2643,12 @@
          </plugin>
          <plugin>
            <artifactId>maven-compiler-plugin</artifactId>
-           <version>3.8.0</version>
+           <version>3.8.1</version>
+         </plugin>
+         <plugin>
+           <groupId>org.jacoco</groupId>
+           <artifactId>jacoco-maven-plugin</artifactId>
+           <version>0.8.4</version>
          </plugin>
          <plugin>
            <groupId>org.bsc.maven</groupId>
