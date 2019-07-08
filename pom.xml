@@ -114,7 +114,7 @@
     <activemq.version>5.15.9</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
-    <aspectj.version>1.9.2</aspectj.version> <!-- version used by spring-aop -->
+    <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.24.1</camel.version>
     <cas.client.version>3.5.1</cas.client.version>
     <cxf.version>3.3.2</cxf.version>
@@ -122,7 +122,7 @@
     <guava.version>28.0-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.version>0.3-SNAPSHOT</meeuw.i18n.version>
+    <meeuw.i18n.version>0.3</meeuw.i18n.version>
 
     <hibernate.version>5.4.3.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
@@ -147,7 +147,7 @@
 
     <junit.version>4.12</junit.version>
     <mockito.version>2.28.2</mockito.version>
-    <bytebuddy.version>1.9.7</bytebuddy.version>
+    <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version>3.12.2</assertj.version>
     <lombok.version>1.18.8</lombok.version>
     <xmlunit.version>2.6.3</xmlunit.version>
@@ -163,11 +163,11 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.25</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.11.2</log4j2.version>
+    <log4j2.version>2.12.0</log4j2.version>
 
-    <sentry.version>1.7.22</sentry.version>
+    <sentry.version>1.7.23</sentry.version>
 
-    <spring.version>5.1.8.RELEASE</spring.version>
+    <spring.version>5.1.9.RELEASE</spring.version>
     <spring-security.version>5.1.5.RELEASE</spring-security.version>
 
     <cglib.version>3.2.12</cglib.version>
@@ -185,7 +185,7 @@
     <ehcache3.version>3.5.2</ehcache3.version>
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>9.9.1-1</saxon.version>
+    <saxon.version>9.9.1-4</saxon.version>
     <javassist.version>3.25.0-GA</javassist.version>
     <scala.version>2.12.8</scala.version>
 
@@ -1198,7 +1198,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.6</version>
+        <version>1.7</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -2490,7 +2490,7 @@
        <dependency>
         <groupId>org.jasypt</groupId>
         <artifactId>jasypt</artifactId>
-        <version>1.9.2</version>
+        <version>1.9.3</version>
        </dependency>
        <dependency>
          <groupId>org.jminix</groupId>
@@ -2500,7 +2500,7 @@
        <dependency>
          <groupId>com.fasterxml</groupId>
          <artifactId>classmate</artifactId>
-         <version>1.4.0</version>
+         <version>1.5.0</version>
        </dependency>
        <dependency>
          <groupId>org.apache.santuario</groupId>
