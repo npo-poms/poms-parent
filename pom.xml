@@ -122,7 +122,7 @@
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.version>0.3-SNAPSHOT</meeuw.i18n.version>
 
-    <hibernate.version>5.4.1.Final</hibernate.version>
+    <hibernate.version>5.4.3.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
@@ -2675,8 +2675,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>8</source>
+          <target>8</target>
           <encoding>UTF-8</encoding>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
