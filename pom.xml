@@ -2682,7 +2682,7 @@
           <source>8</source>
           <target>8</target>
           <encoding>UTF-8</encoding>
-          <showWarnings>true</showWarnings>
+          <showWarnings>false</showWarnings>
           <showDeprecation>true</showDeprecation>
           <compilerArgs>
             <!-- would this help intellij? It seems not.
