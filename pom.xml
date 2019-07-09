@@ -122,7 +122,7 @@
     <guava.version>28.0-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.version>0.3</meeuw.i18n.version>
+    <meeuw.i18n.version>0.4-SNAPSHOT</meeuw.i18n.version>
 
     <hibernate.version>5.4.3.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
@@ -2684,13 +2684,14 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
           <encoding>UTF-8</encoding>
-          <showWarnings>false</showWarnings>
+          <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
           <compilerArgs>
             <!-- would this help intellij? It seems not.
             <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
             -->
             <arg>-parameters</arg>
+            <arg>-Xlint:none</arg>
           </compilerArgs>
         </configuration>
         <!-- https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9
