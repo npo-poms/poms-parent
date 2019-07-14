@@ -1794,6 +1794,12 @@
         <groupId>org.ektorp</groupId>
         <artifactId>org.ektorp.spring</artifactId>
         <version>${ektorp.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>net.sourceforge.findbugs</groupId>
+            <artifactId>annotations</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
