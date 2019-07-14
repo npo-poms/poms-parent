@@ -122,7 +122,7 @@
     <guava.version>28.0-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.version>0.4-SNAPSHOT</meeuw.i18n.version>
+    <meeuw.i18n.version>0.4</meeuw.i18n.version>
 
     <hibernate.version>5.4.3.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
