@@ -1,4 +1,4 @@
-# Release 5.10.12 (2019-07-17)
+# Release 5.10.12 (2019-07-16)
 
 <a href="https://jira.vpro.nl/issues/?jql=(project%20%3D%20MSE%20AND%20fixVersion%20%3D%20REL-5.10.12)">Bugfix release</a>
  - [media-server](http://nexus.vpro.nl/content/groups/public/nl/vpro/media/media-server/5.10.12/media-server-5.10.12.war)
