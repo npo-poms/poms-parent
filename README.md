@@ -7,7 +7,7 @@ This is the poms parent. This is the parent pom of the several projects in the p
 
 This README serves as a general description of the different systems that this envolves
 
-We're available at (slack)[https://vpro-poms.slack.com/]
+We're available at [slack](https://vpro-poms.slack.com/)
 
 
 ## Deployments
