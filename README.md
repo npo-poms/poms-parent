@@ -7,6 +7,8 @@ This is the poms parent. This is the parent pom of the several projects in the p
 
 This README serves as a general description of the different systems that this envolves
 
+We're available at https://vpro-poms.slack.com/
+
 
 ## Deployments
 This describes schematicly the connections between actual systems relevant to poms.
