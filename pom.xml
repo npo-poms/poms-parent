@@ -774,17 +774,6 @@
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-domain</artifactId>
         <version>${media.domain.version}</version>
-        <exclusions>
-          <exclusion>
-            <!-- Ships with lucene 3.5 -->
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-search-orm</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>geronimo-servlet_2.4_spec</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
        <groupId>nl.vpro.poms</groupId>
