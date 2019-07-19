@@ -788,6 +788,11 @@
       </dependency>
       <dependency>
        <groupId>nl.vpro.poms</groupId>
+       <artifactId>media-gtaa</artifactId>
+       <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+       <groupId>nl.vpro.poms</groupId>
        <artifactId>media-openskos</artifactId>
        <version>${poms.shared.version}</version>
       </dependency>
