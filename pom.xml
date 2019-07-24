@@ -892,6 +892,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-i18n</artifactId>
+        <version>${vpro.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.shared</groupId>
         <artifactId>vpro-shared-logging</artifactId>
         <version>${vpro.shared.version}</version>
       </dependency>
