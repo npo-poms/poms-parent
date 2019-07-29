@@ -782,7 +782,7 @@
       </dependency>
       <dependency>
        <groupId>nl.vpro.poms</groupId>
-       <artifactId>media-openskos</artifactId>
+       <artifactId>gtaa-openskos</artifactId>
        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
