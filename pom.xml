@@ -145,22 +145,22 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>2.28.2</mockito.version>
+    <mockito.version>3.0.0</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version>3.12.2</assertj.version>
     <lombok.version>1.18.8</lombok.version>
     <xmlunit.version>2.6.3</xmlunit.version>
-    <wiremock.version>2.24.0</wiremock.version>
+    <wiremock.version>2.24.1</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.2.0</newrelic.version>
+    <newrelic.version>5.3.0</newrelic.version>
     <resteasy.version>4.2.0.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
-    <slf4j.version>1.7.25</slf4j.version>
+    <slf4j.version>1.7.27</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.12.0</log4j2.version>
 
