@@ -124,7 +124,7 @@
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.version>0.4</meeuw.i18n.version>
 
-    <hibernate.version>5.4.3.Final</hibernate.version>
+    <hibernate.version>5.4.4.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
