@@ -127,7 +127,7 @@
     <hibernate.version>5.4.4.Final</hibernate.version>
     <hibernate.search.version>5.11.2.Final</hibernate.search.version>
 
-    <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
+    <hibernate.validator.version>6.0.17.Final</hibernate.validator.version>
     <flyway.version>5.2.3</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
