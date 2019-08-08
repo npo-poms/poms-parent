@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/npo-poms/poms-parent.svg?)](https://travis-ci.org/npo-poms/poms-parent)
 [![Maven Central](https://img.shields.io/maven-central/v/nl.vpro.poms/poms-parent.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22nl.vpro.poms%22%20AND%20a:%22poms-parent%22)
+[![snapshots](https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg)](https://oss.sonatype.org/content/repositories/staging/nl/vpro/poms/poms-parent/)
+
 
 # The POMS ecosystem
 
