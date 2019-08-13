@@ -2638,7 +2638,7 @@
             <!-- would this help intellij? It seems not.
             <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
             -->
-            <arg>-parameters</arg>
+            <arg>-parameters</arg> <!-- helps hibernate validator to recognize names  -->
             <arg>-Xlint:none</arg>
           </compilerArgs>
         </configuration>
