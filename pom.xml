@@ -2345,32 +2345,9 @@
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jaxrs</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jaxrs-all</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-client</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-client-api</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-core-spi</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-core</artifactId>
+        <artifactId>resteasy-bom</artifactId>
+        <scope>import</scope>
+        <type>pom</type>
         <version>${resteasy.version}</version>
       </dependency>
       <dependency>
@@ -2389,21 +2366,7 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jackson2-provider</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-multipart-provider</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-spring</artifactId>
-        <version>${resteasy.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>javax.ejb</groupId>
         <artifactId>ejb-api</artifactId>
