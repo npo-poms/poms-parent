@@ -117,7 +117,7 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.24.1</camel.version>
     <cas.client.version>3.5.1</cas.client.version>
-    <cxf.version>3.3.2</cxf.version>
+    <cxf.version>3.3.3</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>28.0-jre</guava.version>
     <guice.version>4.2.2</guice.version>
@@ -166,14 +166,14 @@
 
     <sentry.version>1.7.24</sentry.version>
 
-    <spring.version>5.1.8.RELEASE</spring.version>
-    <spring-security.version>5.1.5.RELEASE</spring-security.version>
+    <spring.version>5.1.9.RELEASE</spring.version>
+    <spring-security.version>5.1.6.RELEASE</spring-security.version>
 
-    <cglib.version>3.2.12</cglib.version>
+    <cglib.version>3.3.0</cglib.version>
 
     <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
-    <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
-    <spring-data-commons.version>2.1.9.RELEASE</spring-data-commons.version>
+    <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
+    <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
 
     <httpcomponents.version>4.5.9</httpcomponents.version>
     <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
@@ -186,7 +186,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.9.1-4</saxon.version>
     <javassist.version>3.25.0-GA</javassist.version>
-    <scala.version>2.12.8</scala.version>
+    <scala.version>2.13.0</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>5.5.2</elasticsearch.version>
@@ -432,7 +432,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.12</version>
+        <version>1.13</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
