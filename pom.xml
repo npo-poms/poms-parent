@@ -178,9 +178,8 @@
     <httpcomponents.version>4.5.9</httpcomponents.version>
     <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
     <swagger.version>1.5.22</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
-    <!--
-        <swagger.version>2.0.0-rc2</swagger.version>
-        -->
+    <swagger3.version>2.0.8</swagger3.version>
+
     <ehcache3.version>3.5.2</ehcache3.version>
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -278,6 +277,11 @@
         <artifactId>swagger-annotations</artifactId>
         <version>${swagger.version}</version>
       </dependency>
+       <dependency>
+         <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>${swagger3.version}</version>
+      </dependency>
       <dependency>
         <groupId>io.swagger</groupId>
         <artifactId>swagger-jaxrs</artifactId>
@@ -296,6 +300,16 @@
             <artifactId>jsr311-api</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-jaxrs2</artifactId>
+        <version>${swagger3.version}</version>
+       </dependency>
+       <dependency>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-core</artifactId>
+        <version>${swagger3.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
