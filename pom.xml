@@ -177,7 +177,7 @@
 
     <httpcomponents.version>4.5.9</httpcomponents.version>
     <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
-    <swagger.version>1.5.20</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
+    <swagger.version>1.5.22</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <!--
         <swagger.version>2.0.0-rc2</swagger.version>
         -->
