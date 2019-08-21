@@ -1116,11 +1116,6 @@
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-spring</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
-      <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-npoplayer</artifactId>
         <version>${poms.shared.version}</version>
