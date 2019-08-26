@@ -96,6 +96,7 @@
     <media.version>${poms.version}</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
+    <thesaurus.version>5.11-SNAPSHOT</thesaurus.version>
 
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -1139,6 +1140,11 @@
         <artifactId>poms-shared-test</artifactId>
         <version>${poms.shared.version}</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>poms-thesaurus</artifactId>
+        <version>${thesaurus.version}</version>
       </dependency>
 
       <dependency>
