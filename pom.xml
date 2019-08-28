@@ -1778,10 +1778,11 @@
         <version>3.1.4</version>
       </dependency>
 
+      <!-- this wone should I think be compatible with cxf -->
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
         <artifactId>woodstox-core</artifactId>
-        <version>5.2.1</version>
+        <version>5.0.3</version>
       </dependency>
 
       <dependency>
