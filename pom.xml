@@ -3,7 +3,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-parent</artifactId>
-  <version>5.11.0</version>
+  <version>5.11.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>poms-parent</name>
@@ -48,7 +48,7 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>REL-5.11.0</tag>
+    <tag>REL-5.11-SNAPSHOT</tag>
   </scm>
 
   <prerequisites>
