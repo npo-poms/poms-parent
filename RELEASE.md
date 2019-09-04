@@ -5,3 +5,5 @@ mvn release:branch -DbranchName=REL-5.10-SNAPSHOT -DdevelopmentVersion=5.11-SNAP
 git checkout REL-5.10-SNAPSHOT
 mvn -Pdeploy,ossrh release:prepare release:perform -DreleaseVersion=5.10.0 -DdevelopmentVersion=5.10.1-SNAPSHOT
 ```
+
+If you want to release to vpro nexus, don't use deploy profile
