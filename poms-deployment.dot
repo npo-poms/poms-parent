@@ -19,12 +19,13 @@ subgraph cluster_0  {
   label="Generic backend services"
   labelloc=b
   bgcolor=azure
-  postgresql
+  postgresql_media
+  postgresql_image
   elasticsearch
   sso [ label="SSO" href="https://sso.omroep.nl" fontcolor=blue]
   jms
   ldap
-  keycloak [ label = "Keycloak (will replace sso)" ]
+  keycloak [ label = "Keycloak (will replace sso and gosa)" href="https://ident-test.poms.omroep.nl/auth/" fontcolor=blue]
   gosa [ label="GOSa" href="https://admin.sso.omroep.nl/" fontcolor=blue]
 }
 
@@ -76,7 +77,7 @@ subgraph cluster_5 {
 editors -> {
   magnolia_backend
   poms
-  sso
+  keycloak
 }
 
 users -> {
@@ -91,9 +92,9 @@ backendsystems -> {
 }
 
 poms -> {
-  postgresql
+  postgresql_media
   jms
-  sso
+  keycloak
   ldap
   miranda
   prepr
@@ -130,10 +131,10 @@ media_publish -> {
 pages_publish -> media_publish[dir=none]
 
 images_frontend -> {
-  postgresql
+  postgresql_image
 }[color=darkolivegreen1]
 images_backend -> {
-  postgresql
+  postgresql_image
   jms
   sso
   ldap
@@ -158,5 +159,8 @@ prepr -> metis
 pd -> metis
 
 gosa -> ldap
+
+keycloak -> ldap
+
 
 }
