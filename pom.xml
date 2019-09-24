@@ -136,7 +136,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.9.9.20190807</jackson2.version>
+    <jackson2.version>2.9.10</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
