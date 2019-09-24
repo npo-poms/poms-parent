@@ -120,13 +120,13 @@
     <cas.client.version>3.5.1</cas.client.version>
     <cxf.version>3.3.3</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>28.0-jre</guava.version>
+    <guava.version>29.0-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.version>0.4</meeuw.i18n.version>
 
     <hibernate.version>5.4.4.Final</hibernate.version>
-    <hibernate.search.version>5.11.2.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.3.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.0.17.Final</hibernate.validator.version>
     <flyway.version>5.2.3</flyway.version>
@@ -157,8 +157,8 @@
 
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.3.0</newrelic.version>
-    <resteasy.version>4.2.0.Final</resteasy.version>
+    <newrelic.version>5.6.0</newrelic.version>
+    <resteasy.version>4.3.0.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.27</slf4j.version>
@@ -176,8 +176,8 @@
     <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
 
-    <httpcomponents.version>4.5.9</httpcomponents.version>
-    <httpcomponentscore.version>4.4.11</httpcomponentscore.version>
+    <httpcomponents.version>4.5.10</httpcomponents.version>
+    <httpcomponentscore.version>4.4.12</httpcomponentscore.version>
     <swagger.version>1.5.23</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <swagger3.version>2.0.8</swagger3.version>
 
@@ -1218,7 +1218,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.7</version>
+        <version>1.8</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
