@@ -120,7 +120,7 @@
     <cas.client.version>3.5.1</cas.client.version>
     <cxf.version>3.3.3</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>29.0-jre</guava.version>
+    <guava.version>28.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.version>0.4</meeuw.i18n.version>
