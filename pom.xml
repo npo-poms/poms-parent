@@ -146,7 +146,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>4.12</junit.version>
-    <mockito.version>3.0.0</mockito.version>
+    <mockito.version>3.1.0</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version>3.12.2</assertj.version>
     <lombok.version>1.18.10</lombok.version>
@@ -158,7 +158,7 @@
     <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.6.0</newrelic.version>
-    <resteasy.version>4.3.0.Final</resteasy.version>
+    <resteasy.version>4.3.1.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.27</slf4j.version>
@@ -167,8 +167,8 @@
 
     <sentry.version>1.7.24</sentry.version>
 
-    <spring.version>5.1.9.RELEASE</spring.version>
-    <spring-security.version>5.1.6.RELEASE</spring-security.version>
+    <spring.version>5.2.0.RELEASE</spring.version>
+    <spring-security.version>5.2.0.RELEASE</spring-security.version>
 
     <cglib.version>3.3.0</cglib.version>
 
@@ -2218,7 +2218,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-spring-security-adapter</artifactId>
-        <version>6.0.1</version>
+        <version>7.0.0</version>
       </dependency>
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
