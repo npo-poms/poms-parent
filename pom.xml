@@ -167,8 +167,12 @@
 
     <sentry.version>1.7.24</sentry.version>
 
+    <spring.version>5.1.9.RELEASE</spring.version>
+    <spring-security.version>5.1.6.RELEASE</spring-security.version>
+     <!-- seems to break CAS login:
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
+    -->
 
     <cglib.version>3.3.0</cglib.version>
 
