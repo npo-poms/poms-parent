@@ -109,7 +109,7 @@
     <vpro.shared.version>2.9-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
     <vprofindbugs.version>1.1.0</vprofindbugs.version>
-    <checker.version>2.9.0</checker.version>
+    <checker.version>2.11.1</checker.version>
 
     <!-- External Artifacts -->
     <activemq.version>5.15.9</activemq.version>
@@ -741,7 +741,12 @@
 
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
-        <artifactId>client-utils</artifactId>
+        <artifactId>client-extras</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>client-core</artifactId>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
