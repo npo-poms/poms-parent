@@ -169,10 +169,11 @@
 
     <spring.version>5.1.9.RELEASE</spring.version>
     <spring-security.version>5.1.6.RELEASE</spring-security.version>
-     <!-- seems to break CAS login:
+    <!-- seems to break CAS login:
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
-    -->
+     -->
+    <keycloak.version>7.0.1</keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
 
@@ -193,7 +194,7 @@
     <scala.version>2.13.0</scala.version>
 
     <!-- Tied to the ES server version! -->
-    <elasticsearch.version>5.5.2</elasticsearch.version>
+    <elasticsearch.version>7.4.0</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
 
     <postgresql.version>42.2.5.jre7</postgresql.version>
@@ -2209,7 +2210,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-spring-security-adapter</artifactId>
-        <version>7.0.0</version>
+        <version>${keycloak.version}</version>
       </dependency>
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
