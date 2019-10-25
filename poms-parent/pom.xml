@@ -60,7 +60,8 @@
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
-    <lucene.elasticsearch.version>6.6.0</lucene.elasticsearch.version>
+
+
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.6.0</newrelic.version>
     <resteasy.version>4.3.1.Final</resteasy.version>
@@ -99,8 +100,9 @@
     <scala.version>2.13.0</scala.version>
 
     <!-- Tied to the ES server version! -->
-    <elasticsearch.version>7.4.0</elasticsearch.version>
+    <elasticsearch.version>7.4.1</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
+    <lucene.elasticsearch.version>8.2.0</lucene.elasticsearch.version>
 
     <postgresql.version>42.2.5.jre7</postgresql.version>
 
