@@ -58,7 +58,7 @@
     <xmlunit.version>2.6.3</xmlunit.version>
     <wiremock.version>2.25.0</wiremock.version>
 
-    <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
+    <lucene.version>8.2.0</lucene.version> <!-- linked to hibernate search -->
 
 
 
