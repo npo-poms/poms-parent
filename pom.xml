@@ -107,40 +107,16 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-backend-elasticsearch</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-backend-elasticsearch</artifactId>
-        <type>test-jar</type>
-        <scope>test</scope>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-backend-elasticsearch</artifactId>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
+
+
+
+
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
         <version>${api.version}</version>
       </dependency>
-      <dependency>
-        <groupId>nl.publiekeomroep</groupId>
-        <artifactId>api-backend-thesaurus</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.api</groupId>
-        <artifactId>api-backend-media-search</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-profiles</artifactId>
@@ -251,11 +227,7 @@
        <artifactId>gtaa-openskos</artifactId>
        <version>${poms.shared.version}</version>
       </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
-        <artifactId>media-es-mappings</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-organizations</artifactId>
@@ -345,11 +317,7 @@
         <version>${poms.shared.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.pages</groupId>
-        <artifactId>pages-es-mappings</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
+
 
       <dependency>
         <groupId>nl.vpro.user</groupId>
@@ -410,6 +378,59 @@
         <artifactId>poms-thesaurus</artifactId>
         <version>${thesaurus.version}</version>
       </dependency>
+
+
+         <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <type>test-jar</type>
+        <scope>test</scope>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-elasticsearch</artifactId>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.publiekeomroep</groupId>
+        <artifactId>api-backend-thesaurus</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-media-search</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+       <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>media-es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>pages-es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+       <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>query-es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+
+
       <dependency>
         <groupId>nl.vpro.esper</groupId>
         <artifactId>esper-events</artifactId>
@@ -614,7 +635,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.21.0</version>
+        <version>2.22.0</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
