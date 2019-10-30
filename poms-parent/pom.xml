@@ -15,6 +15,9 @@
 
     <skipITs>true</skipITs>
     <java.version>8</java.version>
+
+    <poms-bom.version>5.12-SNAPSHOT</poms-bom.version>
+
     <checker.version>2.11.1</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.15.9</activemq.version>
@@ -573,7 +576,7 @@
       <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-bom</artifactId>
-        <version>${project.version}</version>
+        <version>${poms-bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
