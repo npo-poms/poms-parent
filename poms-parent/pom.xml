@@ -23,7 +23,7 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.24.1</camel.version>
     <cas.client.version>3.5.1</cas.client.version>
-    <cxf.version>3.3.3</cxf.version>
+    <cxf.version>3.3.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>28.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
@@ -56,22 +56,22 @@
     <assertj.version> 3.12.2</assertj.version>
     <lombok.version>1.18.10</lombok.version>
     <xmlunit.version>2.6.3</xmlunit.version>
-    <wiremock.version>2.25.0</wiremock.version>
+    <wiremock.version>2.25.1</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
 
 
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.6.0</newrelic.version>
-    <resteasy.version>4.3.1.Final</resteasy.version>
+    <newrelic.version>5.8.0</newrelic.version>
+    <resteasy.version>4.4.0.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.12.0</log4j2.version>
 
-    <sentry.version>1.7.24</sentry.version>
+    <sentry.version>1.7.28</sentry.version>
 
     <spring.version>5.1.9.RELEASE</spring.version>
     <spring-security.version>5.1.6.RELEASE</spring-security.version>
@@ -97,7 +97,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.9.1-4</saxon.version>
     <javassist.version>3.25.0-GA</javassist.version>
-    <scala.version>2.13.0</scala.version>
+    <scala.version>2.13.1</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>7.4.1</elasticsearch.version>
@@ -357,7 +357,7 @@
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
-        <version>1.9.3</version>
+        <version>1.9.4</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
