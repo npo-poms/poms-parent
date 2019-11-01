@@ -5,7 +5,9 @@
 
 # The POMS ecosystem
 
-This is the poms parent. This is the parent pom of the several projects in the poms ecosystem. We use the `pom.xml` of this project to synchronize versions of dependencies.
+This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by dutch public broadcasters.
+
+We use the `pom.xml` of this project to synchronize versions of dependencies.
 
 This README serves as a general description of the different systems that this envolves
 
