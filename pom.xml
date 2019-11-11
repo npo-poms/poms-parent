@@ -411,11 +411,6 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.poms</groupId>
-        <artifactId>es-mappings</artifactId>
-        <version>${poms.shared.backend.version}</version>
-      </dependency>
-       <dependency>
-        <groupId>nl.vpro.poms</groupId>
         <artifactId>media-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>

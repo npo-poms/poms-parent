@@ -53,7 +53,7 @@
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
-    <junit.version>5.5.2</junit.version>
+    <junit.version>5.6.0-M1</junit.version>
     <mockito.version>3.1.0</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.14.0</assertj.version>
@@ -62,8 +62,6 @@
     <wiremock.version>2.25.1</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
-
-
 
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.8.0</newrelic.version>
@@ -1934,6 +1932,5 @@
        </dependency>
     </dependencies>
   </dependencyManagement>
-
 
 </project>
