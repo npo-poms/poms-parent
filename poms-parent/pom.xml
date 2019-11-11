@@ -33,18 +33,18 @@
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.version>0.5</meeuw.i18n.version>
 
-    <hibernate.version>5.4.4.Final</hibernate.version>
+    <hibernate.version>5.4.8.Final</hibernate.version>
     <hibernate.search.version>5.11.3.Final</hibernate.search.version>
 
-    <hibernate.validator.version>6.0.17.Final</hibernate.validator.version>
-    <flyway.version>5.2.3</flyway.version>
+    <hibernate.validator.version>6.1.0.Final</hibernate.validator.version>
+    <flyway.version>6.0.8</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.0</jackson2.version>
+    <jackson2.version>2.10.1</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
