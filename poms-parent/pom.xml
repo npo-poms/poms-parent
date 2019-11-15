@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>nl.vpro.poms</groupId>
@@ -58,7 +57,7 @@
     <junit.version>5.6.0-M1</junit.version>
     <mockito.version>3.1.0</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
-    <assertj.version>3.14.0</assertj.version>
+    <assertj.version> 3.14.0</assertj.version>
     <lombok.version>1.18.10</lombok.version>
     <xmlunit.version>2.6.3</xmlunit.version>
     <wiremock.version>2.25.1</wiremock.version>
@@ -509,6 +508,7 @@
 
 
 
+
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
@@ -522,14 +522,12 @@
 
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
+        <artifactId>log4j-bom</artifactId>
         <version>${log4j2.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-to-slf4j</artifactId>
-        <version>${log4j2.version}</version>
-      </dependency>
+
 
       <dependency>
         <groupId>io.sentry</groupId>
@@ -1934,27 +1932,5 @@
        </dependency>
     </dependencies>
   </dependencyManagement>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.2</version>
-        </plugin>
-         <plugin>
-           <artifactId>maven-checkstyle-plugin</artifactId>
-           <version>3.1.0</version>
-         </plugin>
-         <plugin>
-           <artifactId>maven-javadoc-plugin</artifactId>
-           <version>3.1.1</version>
-         </plugin>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>findbugs-maven-plugin</artifactId>
-           <version>3.0.5</version>
-         </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+
 </project>
