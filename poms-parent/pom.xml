@@ -17,7 +17,7 @@
     <skipITs>true</skipITs>
     <java.version>8</java.version>
 
-    <poms-bom.version>5.12-SNAPSHOT</poms-bom.version>
+    <poms-bom.version>5.12.0</poms-bom.version>
 
     <checker.version>2.11.1</checker.version>
     <!-- External Artifacts -->
