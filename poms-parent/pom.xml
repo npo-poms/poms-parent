@@ -589,16 +589,6 @@
         <version>4.01</version>
       </dependency>
 
-
-      <dependency>
-        <groupId>nl.vpro.poms</groupId>
-        <artifactId>poms-bom</artifactId>
-        <version>${poms-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-
       <dependency>
         <groupId>org.elasticsearch</groupId>
         <artifactId>elasticsearch</artifactId>
