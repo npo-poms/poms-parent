@@ -11,10 +11,10 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <poms.version>5.12.0</poms.version>
-    <poms.shared.version>${poms.version}</poms.shared.version>
-    <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
-    <api.version>${poms.version}</api.version>
-    <api.client.version>${poms.version}</api.client.version>
+    <poms.shared.version>5.12.0.pre1</poms.shared.version>
+    <poms.shared.backend.version>5.12.0.pre1</poms.shared.backend.version>
+    <api.version>5.12.0.pre1</api.version>
+    <api.client.version>5.12.0</api.client.version>
     <image.version>${poms.version}</image.version>
     <media.version>${poms.version}</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
