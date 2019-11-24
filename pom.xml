@@ -381,7 +381,7 @@
       </dependency>
 
 
-         <dependency>
+      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <version>${poms.shared.backend.version}</version>
@@ -401,7 +401,7 @@
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.publiekeomroep</groupId>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-thesaurus</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
