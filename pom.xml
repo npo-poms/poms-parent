@@ -7,6 +7,8 @@
   <name>poms-bom</name>
 
   <description>The POMS Bill of Materials manages all versions of the projects in the 'POMS' universe. This can be imported in projects that are not themselves part of it. Poms modules itself will use 'poms-parent' and manage also all external dependencies.</description>
+
+  <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <poms.version>5.12.0</poms.version>
     <poms.shared.version>${poms.version}</poms.shared.version>
