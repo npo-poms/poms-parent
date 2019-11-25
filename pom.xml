@@ -9,7 +9,7 @@
   <description>The POMS Bill of Materials manages all versions of the projects in the 'POMS' universe. This can be imported in projects that are not themselves part of it. Poms modules itself will use 'poms-parent' and manage also all external dependencies.</description>
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
-    <poms.version>5.12.0</poms.version>
+    <poms.version>5.13-SNAPSHOT</poms.version>
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
     <api.version>${poms.version}</api.version>
@@ -27,7 +27,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.9.0</vpro.shared.version>
+    <vpro.shared.version>2.10-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
   </properties>
 
