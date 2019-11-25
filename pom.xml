@@ -28,7 +28,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.9.1-SNAPSHOTNone of the configured nodes are available:</vpro.shared.version>
+    <vpro.shared.version>2.9.1-SNAPSHOT</vpro.shared.version>
     <events.version>2.6.1</events.version>
   </properties>
 
@@ -402,7 +402,7 @@
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.publiekeomroep</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-thesaurus</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
