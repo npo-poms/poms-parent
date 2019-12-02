@@ -31,7 +31,7 @@
     <guava.version>28.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.version>0.5</meeuw.i18n.version>
+    <meeuw.i18n.version>1.0-SNAPSHOT</meeuw.i18n.version>
 
     <hibernate.version>5.4.9.Final</hibernate.version>
     <hibernate.search.version>5.11.3.Final</hibernate.search.version>
@@ -272,20 +272,12 @@
         <artifactId>jaxb-documentation</artifactId>
         <version>0.3</version>
       </dependency>
-       <dependency>
-        <groupId>org.meeuw.i18n</groupId>
-        <artifactId>i18n-regions</artifactId>
-        <version>${meeuw.i18n.version}</version>
-      </dependency>
-       <dependency>
-         <groupId>org.meeuw.i18n</groupId>
-         <artifactId>i18n-regions-countries</artifactId>
-        <version>${meeuw.i18n.version}</version>
-       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
-        <artifactId>i18n-regions-subdivisions</artifactId>
+        <artifactId>i18n-regions-bom</artifactId>
         <version>${meeuw.i18n.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>javax.xml.stream</groupId>
