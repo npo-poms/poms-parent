@@ -41,7 +41,7 @@ The artifacts in 'sharable utilities' are or will be available on maven central,
 
 == Operations and development
 
-== Configuration files and context root
+=== Configuration files and context root
 
 For every deployable we indicate:
 The URL in dev/test and production
@@ -72,42 +72,43 @@ env=[prod|test|dev|location] to automaticly switch between several setting which
 | https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server/[Images Backend] | https://poms.omroep.nl/images[https://poms{otap}.omroep.nl/images] | `${user.home}/conf/images.properties` | http://localhost:8071/images/[8071/images]
 |========
 
-=== Functional Tests
+=== Projects
+==== Functional Tests
 
 See https://github.com/npo-poms/functional-tests
 
-=== GUI and Backend RestServices
+==== GUI and Backend RestServices
 
 Currently the POMS GUI and the POMS Backend API are maintained as one project with two artifacts, which are also always deployed in one tomcat. It would actually be a good idea to deploy the backend API seperately and also redundant. We may do this on the new hosting solution.
 
 We may also split up the project in SCM then.
 
-=== Frontend API
+==== Frontend API
 
-=== Page publisher API
+==== Page publisher API
 
-=== Publisher API
+==== Publisher API
 
-=== NPO API Clients
+==== NPO API Clients
 
 This project provides java clients for the above projects.
 
-=== VPRO shared
+==== VPRO shared
 
 Most projects also depend on a collection of utilities maintained by VPRO but which are not specific for POMS or its subsystems.
 See https://github.com/vpro/vpro-shared
 
-=== POMS shared
+==== POMS shared
 
 These modules are specific for POMS, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
 See https://github.com/npo-poms/poms-shared
 
 Classes from this may also end up outside the POMS projects themselves. Like e.g. CMS's (probably via the api clients)
 
-=== POMS shared backend
+==== POMS shared backend
 
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
 
-=== User backend
+==== User backend
 
 This contains the code to talk to LDAP to acquire user roles
