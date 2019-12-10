@@ -1,3 +1,6 @@
+:open: &#91;
+:close: &#93;
+:otap: {open}|-dev|-test{close}
 = The POMS ecosystem
 :toc:
 
@@ -18,7 +21,7 @@ We're available at link:https://vpro-poms.slack.com/[slack]
 This describes schematicly the connections between actual systems relevant to poms.
 
 This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
-image::https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg[deployment]
+image:https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg[deployment]
 
 
 == Dependencies
@@ -29,7 +32,7 @@ This does not intend to be exhaustive, but merely tries to sketch the big pictur
 
 An important aspect is that dependencies may only be one way and non circular. Often dependencies are both transitive and direct, of which only examples are indicated.
 
-image::https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg
+image:https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg[dependencies]
 
 
 === open source
@@ -49,17 +52,25 @@ The configuration file that is automaticly included and we suggest for developme
 We often support a setting like this:
 env=[prod|test|dev|location] to automaticly switch between several setting which vary between environments predictably.
 
-|===
-|project |url |configuration file |recommended port and context during development
-|===
-| https://github.com/npo-poms/functional-tests[Functional Tests]| | `${user.home}/conf/npo-functional-tests.properties` | - | +
-| https://subversion.vpro.nl/repo/nl/vpro/media/trunk/[GUI] | https://poms.omroep.nl/[https://poms[|-dev|-test].omroep.nl/] | `${user.home}/conf/media.properties` | http://localhost:8071/[8071] |
-| https://subversion.vpro.nl/repo/nl/vpro/media/trunk/media-rs/[Backend] | https://api.poms.omroep.nl[https://api[|-dev|-test].poms.omroep.nl/] | `${user.home}/conf/media-rs.properties` | http://localhost:8071/rs[8071/rs] |
-| https://subversion.vpro.nl/repo/nl/vpro/api/trunk/[Frontend API]| https://rs.poms.omroep.nl/v1[https://rs[|-dev|-test].poms.omroep.nl/v1] | `${user.home}/conf/npo-api.properties` | http://localhost:8071/v1[8070/v1] |
-| https://subversion.vpro.nl/repo/nl/vpro/pages-publish/trunk/[Page publisher API]| https://publish.pages.omroep.nl[https://publish[|-dev|-test].pages.omroep.nl/v1] | `${user.home}/conf/page-publish.properties` | http://localhost:8069[8069] |
-| https://subversion.vpro.nl/repo/nl/publiekeomroep/npo-publish/trunk/[Publisher] | - | `${user.home}/conf/npo-publisher.properties` | - |
-| https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server-frontend/[Images Frontend] | https://images.poms.omroep.nl[https://images[|-dev|-test].poms.omroep.nl/] | `${user.home}/conf/images-frontend.properties` | 8072 |
-| https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server/[Images Backend] | https://poms.omroep.nl/images[https://poms[|-dev|-test].omroep.nl/images] | `${user.home}/conf/images.properties` | http://localhost:8071/images/[8071/images] |
+[options="header"]
+|========
+| project |url |configuration file |recommended port and context during development
+| https://github.com/npo-poms/functional-tests[Functional Tests] | | `${user.home}/conf/npo-functional-tests.properties` | -
+
+| https://subversion.vpro.nl/repo/nl/vpro/media/trunk/[GUI] | https://poms.omroep.nl/[https://poms{otap}.omroep.nl/] | `${user.home}/conf/media.properties` | http://localhost:8071/[8071]
+
+| https://subversion.vpro.nl/repo/nl/vpro/media/trunk/media-rs/[Backend] | https://api.poms.omroep.nl[https://api{otap}.poms.omroep.nl/] | `${user.home}/conf/media-rs.properties` | http://localhost:8071/rs[8071/rs]
+
+| https://subversion.vpro.nl/repo/nl/vpro/api/trunk/[Frontend API]| https://rs.poms.omroep.nl/v1[https://rs{otap}.poms.omroep.nl/v1] | `${user.home}/conf/npo-api.properties` | http://localhost:8071/v1[8070/v1]
+
+| https://subversion.vpro.nl/repo/nl/vpro/pages-publish/trunk/[Page publisher API]| https://publish.pages.omroep.nl[https://publish{otap}.pages.omroep.nl/v1] | `${user.home}/conf/page-publish.properties` | http://localhost:8069[8069]
+
+| https://subversion.vpro.nl/repo/nl/publiekeomroep/npo-publish/trunk/[Publisher] | - | `${user.home}/conf/npo-publisher.properties` | -
+
+| https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server-frontend/[Images Frontend] | https://images.poms.omroep.nl[https://images{otap}.poms.omroep.nl/] | `${user.home}/conf/images-frontend.properties` | 8072
+
+| https://subversion.vpro.nl/repo/nl/vpro/images/trunk/image-server/[Images Backend] | https://poms.omroep.nl/images[https://poms{otap}.omroep.nl/images] | `${user.home}/conf/images.properties` | http://localhost:8071/images/[8071/images]
+|========
 
 === Functional Tests
 
