@@ -450,11 +450,6 @@
     <defaultGoal>install</defaultGoal>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.apache.cxf</groupId>
-          <artifactId>cxf-java2ws-plugin</artifactId>
-          <version>${cxf.version}</version>
-        </plugin>
          <plugin>
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>buildnumber-maven-plugin</artifactId>
