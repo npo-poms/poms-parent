@@ -31,10 +31,10 @@
     <guava.version>28.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.version>1.0.1</meeuw.i18n.version>
+    <meeuw.i18n.bom.version>1.0.2</meeuw.i18n.bom.version>
 
     <hibernate.version>5.4.9.Final</hibernate.version>
-    <hibernate.search.version>5.11.3.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.0.Final</hibernate.validator.version>
     <flyway.version>6.0.8</flyway.version>
@@ -80,7 +80,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>7.0.1</keycloak.version>
+    <keycloak.version>8.0.1</keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
 
@@ -275,7 +275,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-regions-bom</artifactId>
-        <version>${meeuw.i18n.version}</version>
+        <version>${meeuw.i18n.bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
