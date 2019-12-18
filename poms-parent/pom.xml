@@ -80,7 +80,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>7.0.1</keycloak.version>
+    <keycloak.version>8.0.1</keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
 
