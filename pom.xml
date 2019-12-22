@@ -208,11 +208,6 @@
         <artifactId>media-classification</artifactId>
         <version>${media.domain.version}</version>
       </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
-        <artifactId>media-i18n</artifactId>
-        <version>${media.domain.version}</version>
-      </dependency>
 
       <dependency>
         <groupId>nl.vpro.media</groupId>
