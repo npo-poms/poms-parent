@@ -337,13 +337,6 @@
         <version>${user.domain.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-test</artifactId>
-        <version>${poms.shared.version}</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
         <groupId>nl.vpro.image</groupId>
         <artifactId>image-domain</artifactId>
         <version>${image.domain.version}</version>
