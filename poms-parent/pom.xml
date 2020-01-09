@@ -44,7 +44,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.1</jackson2.version>
+    <jackson2.version>2.10.2</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -318,7 +318,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.9.5.4</version>
+        <version>0.9.5.5</version>
       </dependency>
       <dependency>
         <groupId>commons-fileupload</groupId>
