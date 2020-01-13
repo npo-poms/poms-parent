@@ -11,15 +11,15 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <poms.version>5.12.0</poms.version>
-    <poms.shared.version>5.12-SNAPSHOT</poms.shared.version>
-    <poms.shared.backend.version>5.12.0-SNAPSHOT</poms.shared.backend.version>
-    <api.version>5.12-SNAPSHOT</api.version>
-    <api.client.version>5.12.0-SNAPSHOT</api.client.version>
+    <poms.shared.version>5.12.0</poms.shared.version>
+    <poms.shared.backend.version>5.12.0</poms.shared.backend.version>
+    <api.version>5.12.0</api.version>
+    <api.client.version>5.12.0</api.client.version>
     <image.version>${poms.version}</image.version>
     <media.version>${poms.version}</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
-    <thesaurus.version>5.11.1</thesaurus.version>
+    <thesaurus.version>5.12.0</thesaurus.version>
 
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -28,7 +28,7 @@
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
     <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.10-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>2.10.0</vpro.shared.version>
     <events.version>2.6.1</events.version>
   </properties>
 
