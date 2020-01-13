@@ -18,17 +18,17 @@
 
     <poms-bom.version>${project.version}</poms-bom.version>
 
-    <checker.version>2.11.1</checker.version>
+    <checker.version>3.1.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.15.9</activemq.version>
+    <activemq.version>5.15.11</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.24.1</camel.version>
+    <camel.version>2.24.3</camel.version>
     <cas.client.version>3.5.1</cas.client.version>
     <cxf.version>3.3.4</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>28.1-jre</guava.version>
+    <guava.version>28.2-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.bom.version>1.0.2</meeuw.i18n.bom.version>
@@ -44,7 +44,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.1</jackson2.version>
+    <jackson2.version>2.10.2</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -53,8 +53,8 @@
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
-    <junit.version>5.6.0-M1</junit.version>
-    <mockito.version>3.1.0</mockito.version>
+    <junit.version>5.6.0-RC1</junit.version>
+    <mockito.version>3.2.4</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.14.0</assertj.version>
     <lombok.version>1.18.10</lombok.version>
@@ -64,13 +64,13 @@
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.8.0</newrelic.version>
-    <resteasy.version>4.4.1.Final</resteasy.version>
+    <newrelic.version>5.9.0</newrelic.version>
+    <resteasy.version>4.4.2.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.12.1</log4j2.version>
+    <log4j2.version>2.13.0</log4j2.version>
 
     <sentry.version>1.7.28</sentry.version>
 
@@ -308,7 +308,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.5</version>
+        <version>2.6</version>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
@@ -318,7 +318,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.9.5.4</version>
+        <version>0.9.5.5</version>
       </dependency>
       <dependency>
         <groupId>commons-fileupload</groupId>
@@ -354,7 +354,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-vfs2</artifactId>
-        <version>2.3</version>
+        <version>2.5.0</version>
       </dependency>
 
       <dependency>
@@ -1550,12 +1550,6 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <exclusions>
-          <exclusion>
-            <artifactId>commons-logging</artifactId>
-            <groupId>commons-logging</groupId>
-          </exclusion>
-        </exclusions>
         <version>${spring.version}</version>
       </dependency>
       <dependency>
@@ -1567,12 +1561,6 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
         <version>${spring.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
