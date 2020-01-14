@@ -37,7 +37,9 @@ image:https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg[depen
 
 === open source
 
-The artifacts in 'sharable utilities' are or will be available on maven central, which makes them useable also by other parties then https://github.com/vpro[VPRO]
+The artifacts in 'sharable utilities' are  available on maven central and their source code is available on github.  Thich makes them useable also by other parties then https://github.com/vpro[VPRO]
+
+
 
 == Operations and development
 
@@ -105,7 +107,7 @@ See https://github.com/npo-poms/poms-shared
 
 Classes from this may also end up outside the POMS projects themselves. Like e.g. CMS's (probably via the api clients)
 
-==== POMS shared backend
+==== Backend utilities
 
 Sometimes different POMS project share 'backend' code, like repository implementations. These need never be exposed to the outside world.
 

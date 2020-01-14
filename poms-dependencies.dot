@@ -41,7 +41,6 @@ strict digraph {
     resteasy
     hibernate
     angular
-
   }
 
   subgraph cluster_1  {
@@ -61,16 +60,19 @@ strict digraph {
     images
   }
 
+  subgraph cluster_3 {
+    label="Backend utilities"
+    user_backend
+    poms_shared_backend
+  }
+
   subgraph cluster_4  {
     label="Sharable utilities"
     bgcolor=azure
     api_client
     vpro_shared
     poms_shared
-    user_backend
-
   }
-
 
   vpro_shared -> {
     slf4j
@@ -112,7 +114,6 @@ strict digraph {
   api_client -> {
     poms_shared
     vpro_shared
-    user_backend
   }
 
 
