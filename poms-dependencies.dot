@@ -62,13 +62,14 @@ strict digraph {
 
   subgraph cluster_3 {
     label="Backend utilities"
+    bgcolor=azure
     user_backend
     poms_shared_backend
   }
 
   subgraph cluster_4  {
     label="Sharable utilities"
-    bgcolor=azure
+    bgcolor=azure2
     api_client
     vpro_shared
     poms_shared
