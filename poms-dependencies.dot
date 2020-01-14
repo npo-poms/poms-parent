@@ -3,10 +3,26 @@ strict digraph {
   vpro_shared  [
                 href="https://github.com/vpro/vpro-shared"
                 fontcolor=blue
+
                 ]
   poms_shared  [
                 href="https://github.com/npo-poms/poms-shared"
                 fontcolor=blue
+   ]
+   i18n_regions  [
+                href="https://github.com/mihxil/i18n-regions"
+                fontcolor=blue
+
+                ]
+   nv_i18n  [
+      href="https://github.com/TakahikoKawasaki/nv-i18n"
+     fontcolor=blue
+
+   ]
+   resteasy [
+      href="https://github.com/resteasy/Resteasy"
+     fontcolor=blue
+
    ]
   api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ]
   poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3]
@@ -35,6 +51,9 @@ strict digraph {
     label="Generic utilities\n(incoming edges are just examples, there are more)"
     //label="Utilities which we don't maintain. These are only some example. Also, not every edge is included";
     labelloc=b
+    vpro_shared
+    i18n_regions
+    nv_i18n
     slf4j[style=dashed]
     guava[style=dashed]
     spring[style=dashed]
@@ -71,20 +90,24 @@ strict digraph {
     label="Sharable utilities"
     bgcolor=azure2
     api_client
-    vpro_shared
     poms_shared
   }
 
   vpro_shared -> {
     slf4j
     guava
+    i18n_regions
   }
-  poms_shared -> vpro_shared
+  poms_shared -> {
+     vpro_shared
+     i18n_regions
+  }
   poms_shared_backend -> {
     vpro_shared
     poms_shared
     slf4j
   }[color=cyan3]
+  i18n_regions -> nv_i18n
 
   api -> {
     poms_shared
@@ -128,7 +151,6 @@ strict digraph {
   magnolia -> {
     api_client
     vpro_shared
-    poms_shared
   }[color=cornsilk4]
 
 
