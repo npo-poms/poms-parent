@@ -24,6 +24,20 @@ strict digraph {
      fontcolor=blue
 
    ]
+   spring[
+     style=dashed
+     href="https://github.com/spring-projects/spring-framework"
+     fontcolor=blue
+  ]
+   guava [
+     href="https://github.com/google/guava"
+     fontcolor=blue
+     style=dashed
+  ]
+   hibernate [
+     href="https://github.com/hibernate/"
+     fontcolor=blue
+  ]
   api_client [ href="https://github.com/npo-poms/api-clients" fontcolor=blue ]
   poms_backend [ label="POMS  & POMS Backend API" href="https://subversion.vpro.nl/viewvc/nl/vpro/media" fontcolor=blue color=darkgoldenrod3]
   poms_gui [ label="Angular GUI for POMS" href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" fontcolor=blue ]
@@ -55,8 +69,8 @@ strict digraph {
     i18n_regions
     nv_i18n
     slf4j[style=dashed]
-    guava[style=dashed]
-    spring[style=dashed]
+    guava
+    spring
     resteasy
     hibernate
     angular
