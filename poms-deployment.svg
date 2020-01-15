@@ -12,8 +12,8 @@
 <text text-anchor="middle" x="1067" y="-7.8" font-family="Times,serif" font-size="14.00" fill="#000000">Deployments relevant for POMS</text>
 <g id="clust1" class="cluster">
 <title>cluster_0</title>
-<polygon fill="#f0ffff" stroke="#000000" points="1023,-31 1023,-144.9533 1933,-144.9533 1933,-31 1023,-31"/>
-<text text-anchor="middle" x="1478" y="-38.8" font-family="Times,serif" font-size="14.00" fill="#000000">Generic backend services</text>
+<polygon fill="#f0ffff" stroke="#000000" points="993,-31 993,-144.9533 1903,-144.9533 1903,-31 993,-31"/>
+<text text-anchor="middle" x="1448" y="-38.8" font-family="Times,serif" font-size="14.00" fill="#000000">Generic backend services</text>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_1</title>
@@ -22,13 +22,13 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_3</title>
-<polygon fill="none" stroke="#000000" points="1240,-342.8234 1240,-500.8234 1608,-500.8234 1608,-342.8234 1240,-342.8234"/>
-<text text-anchor="middle" x="1424" y="-485.6234" font-family="Times,serif" font-size="14.00" fill="#000000">World</text>
+<polygon fill="none" stroke="#000000" points="1105,-342.8234 1105,-500.8234 1581,-500.8234 1581,-342.8234 1105,-342.8234"/>
+<text text-anchor="middle" x="1343" y="-485.6234" font-family="Times,serif" font-size="14.00" fill="#000000">World</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_2</title>
-<polygon fill="none" stroke="#000000" points="1248,-350.8234 1248,-425.8234 1600,-425.8234 1600,-350.8234 1248,-350.8234"/>
-<text text-anchor="middle" x="1424" y="-410.6234" font-family="Times,serif" font-size="14.00" fill="#000000">VPRO</text>
+<polygon fill="none" stroke="#000000" points="1113,-350.8234 1113,-425.8234 1465,-425.8234 1465,-350.8234 1113,-350.8234"/>
+<text text-anchor="middle" x="1289" y="-410.6234" font-family="Times,serif" font-size="14.00" fill="#000000">VPRO</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
@@ -70,60 +70,60 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="500.1494,-223.1605 490.2536,-219.3759 495.6294,-228.5056 500.1494,-223.1605"/>
 </g>
 <!-- postgresql_media -->
-<g id="node10" class="node">
+<g id="node11" class="node">
 <title>postgresql_media</title>
-<ellipse fill="none" stroke="#000000" cx="1106" cy="-99.4767" rx="74.9875" ry="18"/>
-<text text-anchor="middle" x="1106" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">postgresql_media</text>
+<ellipse fill="none" stroke="#000000" cx="1076" cy="-99.4767" rx="74.9875" ry="18"/>
+<text text-anchor="middle" x="1076" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">postgresql_media</text>
 </g>
 <!-- poms&#45;&gt;postgresql_media -->
 <g id="edge10" class="edge">
 <title>poms&#45;&gt;postgresql_media</title>
-<path fill="none" stroke="#0000ff" d="M1348.9914,-274.3901C1343.382,-272.1652 1337.5174,-269.8852 1332,-267.8234 1321.8618,-264.0348 1318.4895,-265.0277 1309,-259.8234 1238.5987,-221.2129 1167.5222,-158.3266 1131.0499,-123.9027"/>
-<polygon fill="#0000ff" stroke="#0000ff" points="1133.4618,-121.3665 1123.805,-117.008 1128.6361,-126.4373 1133.4618,-121.3665"/>
+<path fill="none" stroke="#0000ff" d="M1354.3761,-271.8171C1302.5119,-239.7084 1174.6885,-160.574 1111.9336,-121.7228"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="1113.5084,-118.5814 1103.1635,-116.2934 1109.8237,-124.5331 1113.5084,-118.5814"/>
 </g>
 <!-- jms_ingest -->
-<g id="node13" class="node">
+<g id="node14" class="node">
 <title>jms_ingest</title>
-<ellipse fill="none" stroke="#000000" cx="1292" cy="-99.4767" rx="93.1765" ry="37.4533"/>
-<text text-anchor="start" x="1234" y="-110.7767" font-family="Times,serif" font-size="14.00" fill="#000000">JMS ActiveMQ</text>
-<text text-anchor="start" x="1234" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">(broadcast ingests,</text>
-<text text-anchor="middle" x="1292" y="-80.7767" font-family="Times,serif" font-size="14.00" fill="#000000">internal SOAP calls)</text>
+<ellipse fill="none" stroke="#000000" cx="1429" cy="-99.4767" rx="93.1765" ry="37.4533"/>
+<text text-anchor="start" x="1371" y="-110.7767" font-family="Times,serif" font-size="14.00" fill="#000000">JMS ActiveMQ</text>
+<text text-anchor="start" x="1371" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">(broadcast ingests,</text>
+<text text-anchor="middle" x="1429" y="-80.7767" font-family="Times,serif" font-size="14.00" fill="#000000">internal SOAP calls)</text>
 </g>
 <!-- poms&#45;&gt;jms_ingest -->
 <g id="edge11" class="edge">
 <title>poms&#45;&gt;jms_ingest</title>
-<path fill="none" stroke="#0000ff" d="M1365.9702,-268.684C1364.234,-265.7683 1362.5146,-262.7396 1361,-259.8234 1341.6957,-222.6535 1323.1248,-178.8842 1310.1216,-146.474"/>
-<polygon fill="#0000ff" stroke="#0000ff" points="1313.2209,-144.7963 1306.2702,-136.8002 1306.7174,-147.3856 1313.2209,-144.7963"/>
+<path fill="none" stroke="#0000ff" d="M1373.7662,-267.8419C1369.8557,-241.5404 1365.5613,-191.5185 1381,-152.9533 1382.4707,-149.2797 1384.3138,-145.6954 1386.4144,-142.2348"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="1389.3524,-144.1388 1392.1013,-133.9068 1383.5716,-140.1913 1389.3524,-144.1388"/>
 </g>
 <!-- jms_publish -->
-<g id="node14" class="node">
+<g id="node15" class="node">
 <title>jms_publish</title>
-<ellipse fill="none" stroke="#000000" cx="1778" cy="-99.4767" rx="74.9067" ry="26.7407"/>
-<text text-anchor="start" x="1733" y="-103.2767" font-family="Times,serif" font-size="14.00" fill="#000000">JMS ActiveMQ</text>
-<text text-anchor="middle" x="1778" y="-88.2767" font-family="Times,serif" font-size="14.00" fill="#000000">(publication)</text>
+<ellipse fill="none" stroke="#000000" cx="1748" cy="-99.4767" rx="74.9067" ry="26.7407"/>
+<text text-anchor="start" x="1703" y="-103.2767" font-family="Times,serif" font-size="14.00" fill="#000000">JMS ActiveMQ</text>
+<text text-anchor="middle" x="1748" y="-88.2767" font-family="Times,serif" font-size="14.00" fill="#000000">(publication)</text>
 </g>
 <!-- poms&#45;&gt;jms_publish -->
 <g id="edge12" class="edge">
 <title>poms&#45;&gt;jms_publish</title>
-<path fill="none" stroke="#0000ff" d="M1391.7863,-269.343C1419.5626,-239.6966 1482.9054,-178.1208 1551,-152.9533 1580.8537,-141.9195 1663.3775,-153.628 1694,-144.9533 1707.4812,-141.1344 1721.2137,-134.8825 1733.5632,-128.2196"/>
-<polygon fill="#0000ff" stroke="#0000ff" points="1735.2795,-131.27 1742.2878,-123.3242 1731.8541,-125.1653 1735.2795,-131.27"/>
+<path fill="none" stroke="#0000ff" d="M1386.5637,-268.4465C1404.1239,-238.5261 1444.6529,-178.0771 1498,-152.9533 1531.4118,-137.218 1628.4279,-154.8818 1664,-144.9533 1677.4958,-141.1865 1691.2334,-134.9523 1703.583,-128.2898"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="1705.3005,-131.3394 1712.3068,-123.3919 1701.8736,-125.2356 1705.3005,-131.3394"/>
 </g>
 <!-- ldap -->
-<g id="node15" class="node">
+<g id="node16" class="node">
 <title>ldap</title>
-<ellipse fill="none" stroke="#000000" cx="1898" cy="-99.4767" rx="27" ry="18"/>
-<text text-anchor="middle" x="1898" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">ldap</text>
+<ellipse fill="none" stroke="#000000" cx="1868" cy="-99.4767" rx="27" ry="18"/>
+<text text-anchor="middle" x="1868" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">ldap</text>
 </g>
 <!-- poms&#45;&gt;ldap -->
 <g id="edge13" class="edge">
 <title>poms&#45;&gt;ldap</title>
-<path fill="none" stroke="#0000ff" d="M1404.3058,-273.9088C1410.0761,-271.6726 1416.1814,-269.5106 1422,-267.8234 1440.67,-262.4097 1447.6559,-268.6017 1465,-259.8234 1526.9644,-228.4616 1514.7844,-179.4016 1579,-152.9533 1608.0866,-140.9735 1833.8792,-159.0516 1862,-144.9533 1870.5404,-140.6716 1877.6951,-133.3174 1883.3181,-125.7562"/>
-<polygon fill="#0000ff" stroke="#0000ff" points="1886.5541,-127.2139 1889.2069,-116.9565 1880.7365,-123.3207 1886.5541,-127.2139"/>
+<path fill="none" stroke="#0000ff" d="M1404.3447,-274.0392C1410.1122,-271.7936 1416.2064,-269.5947 1422,-267.8234 1438.0892,-262.9041 1443.6212,-266.6464 1459,-259.8234 1533.4925,-226.7736 1530.8748,-179.2805 1608,-152.9533 1631.5694,-144.9078 1809.7782,-156.1978 1832,-144.9533 1840.5244,-140.6399 1847.6749,-133.2775 1853.2992,-125.7185"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="1856.5321,-127.1812 1859.1912,-116.9254 1850.717,-123.2845 1856.5321,-127.1812"/>
 </g>
 <!-- keycloak -->
-<g id="node17" class="node">
+<g id="node18" class="node">
 <title>keycloak</title>
-<g id="a_node17"><a xlink:href="https://ident-test.poms.omroep.nl/auth/" xlink:title="Keycloak\l(replaces sso,gosa)">
+<g id="a_node18"><a xlink:href="https://ident-test.poms.omroep.nl/auth/" xlink:title="Keycloak\l(replaces sso,gosa)">
 <ellipse fill="none" stroke="#000000" cx="2032" cy="-201.9533" rx="86.0347" ry="26.7407"/>
 <text text-anchor="start" x="1979" y="-205.7533" font-family="Times,serif" font-size="14.00" fill="#0000ff">Keycloak</text>
 <text text-anchor="middle" x="2032" y="-190.7533" font-family="Times,serif" font-size="14.00" fill="#0000ff">(replaces sso,gosa)</text>
@@ -137,7 +137,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="1993.9311,-235.4448 2000.2536,-226.9432 1990.0094,-229.6465 1993.9311,-235.4448"/>
 </g>
 <!-- metis -->
-<g id="node23" class="node">
+<g id="node24" class="node">
 <title>metis</title>
 <ellipse fill="none" stroke="#000000" cx="666" cy="-99.4767" rx="30.5947" ry="18"/>
 <text text-anchor="middle" x="666" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">metis</text>
@@ -149,7 +149,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="633.2297,-117.1487 640.5415,-109.4813 630.0442,-110.9154 633.2297,-117.1487"/>
 </g>
 <!-- pd -->
-<g id="node24" class="node">
+<g id="node25" class="node">
 <title>pd</title>
 <ellipse fill="none" stroke="#000000" cx="703" cy="-201.9533" rx="27" ry="18"/>
 <text text-anchor="middle" x="703" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">pd</text>
@@ -161,7 +161,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="715.924,-227.2906 708.6731,-219.5656 709.5241,-230.1262 715.924,-227.2906"/>
 </g>
 <!-- prepr -->
-<g id="node25" class="node">
+<g id="node26" class="node">
 <title>prepr</title>
 <ellipse fill="none" stroke="#000000" cx="628" cy="-201.9533" rx="29.795" ry="18"/>
 <text text-anchor="middle" x="628" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">prepr</text>
@@ -173,7 +173,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="642.0893,-227.0501 634.5417,-219.6147 635.8052,-230.134 642.0893,-227.0501"/>
 </g>
 <!-- miranda -->
-<g id="node26" class="node">
+<g id="node27" class="node">
 <title>miranda</title>
 <ellipse fill="none" stroke="#000000" cx="865" cy="-201.9533" rx="40.0939" ry="18"/>
 <text text-anchor="middle" x="865" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">miranda</text>
@@ -185,7 +185,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="882.8004,-226.1639 874.4087,-219.6963 876.9355,-229.9854 882.8004,-226.1639"/>
 </g>
 <!-- pluto -->
-<g id="node27" class="node">
+<g id="node28" class="node">
 <title>pluto</title>
 <ellipse fill="none" stroke="#000000" cx="777" cy="-201.9533" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="777" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">pluto</text>
@@ -197,7 +197,7 @@
 <polygon fill="#0000ff" stroke="#0000ff" points="791.1003,-227.0324 783.5496,-219.6001 784.8174,-230.1188 791.1003,-227.0324"/>
 </g>
 <!-- nep -->
-<g id="node28" class="node">
+<g id="node29" class="node">
 <title>nep</title>
 <ellipse fill="none" stroke="#000000" cx="950" cy="-201.9533" rx="27" ry="18"/>
 <text text-anchor="middle" x="950" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">nep</text>
@@ -212,34 +212,34 @@
 <g id="node2" class="node">
 <title>poms_backend</title>
 <g id="a_node2"><a xlink:href="https://api.poms.omroep.nl/" xlink:title="POMS backend API">
-<ellipse fill="none" stroke="#000000" cx="1516" cy="-285.8234" rx="85.2851" ry="18"/>
-<text text-anchor="middle" x="1516" y="-282.1234" font-family="Times,serif" font-size="14.00" fill="#0000ff">POMS backend API</text>
+<ellipse fill="none" stroke="#000000" cx="1608" cy="-285.8234" rx="85.2851" ry="18"/>
+<text text-anchor="middle" x="1608" y="-282.1234" font-family="Times,serif" font-size="14.00" fill="#0000ff">POMS backend API</text>
 </a>
 </g>
 </g>
 <!-- poms_backend&#45;&gt;jms_ingest -->
 <g id="edge21" class="edge">
 <title>poms_backend&#45;&gt;jms_ingest</title>
-<path fill="none" stroke="#ff7f00" d="M1508.9801,-267.614C1496.844,-238.6458 1469.1235,-182.3455 1427,-152.9533 1414.6236,-144.3175 1408.2839,-149.8239 1394,-144.9533 1383.2839,-141.2994 1372.1494,-136.9461 1361.3449,-132.4028"/>
-<polygon fill="#ff7f00" stroke="#ff7f00" points="1362.5238,-129.1001 1351.9538,-128.374 1359.764,-135.5331 1362.5238,-129.1001"/>
+<path fill="none" stroke="#ff7f00" d="M1592.0253,-267.8745C1568.8837,-242.0338 1524.4774,-193.0478 1485,-152.9533 1481.1684,-149.0618 1477.1426,-145.0587 1473.0808,-141.0774"/>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="1475.3741,-138.4255 1465.7647,-133.9634 1470.4942,-143.4441 1475.3741,-138.4255"/>
 </g>
 <!-- poms_backend&#45;&gt;ldap -->
 <g id="edge22" class="edge">
 <title>poms_backend&#45;&gt;ldap</title>
-<path fill="none" stroke="#ff7f00" d="M1560.7812,-270.4357C1567.1616,-267.3754 1573.4374,-263.8428 1579,-259.8234 1629.7994,-223.1169 1614.5918,-180.2674 1671,-152.9533 1709.235,-134.4391 1824.1541,-164.2504 1862,-144.9533 1870.511,-140.6137 1877.6582,-133.2445 1883.2833,-125.6873"/>
-<polygon fill="#ff7f00" stroke="#ff7f00" points="1886.5139,-127.1541 1889.1782,-116.8997 1880.7007,-123.2545 1886.5139,-127.1541"/>
+<path fill="none" stroke="#ff7f00" d="M1610.698,-267.3685C1616.1481,-237.5173 1631.5126,-179.3264 1671,-152.9533 1700.7889,-133.0578 1800.1507,-161.3494 1832,-144.9533 1840.4941,-140.5805 1847.6368,-133.2028 1853.2632,-125.6479"/>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="1856.4907,-127.12 1859.1616,-116.8673 1850.68,-123.2166 1856.4907,-127.12"/>
 </g>
 <!-- poms_backend&#45;&gt;metis -->
 <g id="edge23" class="edge">
 <title>poms_backend&#45;&gt;metis</title>
-<path fill="none" stroke="#ff7f00" d="M1464.4094,-271.4256C1370.0103,-245.4092 1162.9045,-189.848 986,-152.9533 885.9217,-132.0813 766.9005,-113.9246 706.102,-105.1245"/>
-<polygon fill="#ff7f00" stroke="#ff7f00" points="706.5463,-101.6525 696.1498,-103.6925 705.5493,-108.5811 706.5463,-101.6525"/>
+<path fill="none" stroke="#ff7f00" d="M1546.2836,-273.3267C1525.5295,-269.0875 1502.2533,-264.2931 1481,-259.8234 1260.749,-213.5034 1207.0564,-195.2629 986,-152.9533 885.3295,-133.6853 766.0887,-114.7892 705.5451,-105.472"/>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="706.0569,-102.0096 695.6418,-103.9529 704.9955,-108.9287 706.0569,-102.0096"/>
 </g>
 <!-- poms_backend&#45;&gt;nep -->
 <g id="edge24" class="edge">
 <title>poms_backend&#45;&gt;nep</title>
-<path fill="none" stroke="#ff7f00" d="M1456.5557,-272.8535C1445.1381,-270.8135 1433.238,-268.9945 1422,-267.8234 1398.0699,-265.3296 1010.1359,-271.3187 989,-259.8234 976.5708,-253.0634 967.3656,-240.4283 961.0295,-228.685"/>
-<polygon fill="#ff7f00" stroke="#ff7f00" points="964.1097,-227.0172 956.5564,-219.5876 957.828,-230.1059 964.1097,-227.0172"/>
+<path fill="none" stroke="#ff7f00" d="M1548.8105,-272.8691C1537.3159,-270.8134 1525.3225,-268.9848 1514,-267.8234 1499.4911,-266.3351 1001.8239,-266.7711 989,-259.8234 976.5599,-253.0835 967.3537,-240.4502 961.0198,-228.7029"/>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="964.0994,-227.0337 956.549,-219.6012 957.8165,-230.12 964.0994,-227.0337"/>
 </g>
 <!-- api -->
 <g id="node3" class="node">
@@ -257,16 +257,16 @@
 <polygon fill="#6495ed" stroke="#6495ed" points="500.1612,-223.1262 490.26,-219.3556 495.6488,-228.4777 500.1612,-223.1262"/>
 </g>
 <!-- elasticsearch -->
-<g id="node12" class="node">
+<g id="node13" class="node">
 <title>elasticsearch</title>
-<ellipse fill="none" stroke="#000000" cx="1628" cy="-99.4767" rx="57.3905" ry="18"/>
-<text text-anchor="middle" x="1628" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">elasticsearch</text>
+<ellipse fill="none" stroke="#000000" cx="1598" cy="-99.4767" rx="57.3905" ry="18"/>
+<text text-anchor="middle" x="1598" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">elasticsearch</text>
 </g>
 <!-- api&#45;&gt;elasticsearch -->
 <g id="edge26" class="edge">
 <title>api&#45;&gt;elasticsearch</title>
-<path fill="none" stroke="#6495ed" d="M1251.5795,-267.9291C1268.8415,-237.7872 1308.3299,-177.7555 1361,-152.9533 1401.4424,-133.9091 1519.5892,-159.0811 1562,-144.9533 1576.0971,-140.2573 1589.9169,-131.5667 1601.2382,-123.0308"/>
-<polygon fill="#6495ed" stroke="#6495ed" points="1603.6966,-125.549 1609.3717,-116.6023 1599.356,-120.0572 1603.6966,-125.549"/>
+<path fill="none" stroke="#6495ed" d="M1254.0181,-267.951C1275.4322,-237.8424 1323.3921,-177.8594 1381,-152.9533 1411.6398,-139.7066 1499.3647,-155.6059 1531,-144.9533 1545.3662,-140.1158 1559.5169,-131.2853 1571.0848,-122.6838"/>
+<polygon fill="#6495ed" stroke="#6495ed" points="1573.2677,-125.4201 1579.0178,-116.5214 1568.9734,-119.892 1573.2677,-125.4201"/>
 </g>
 <!-- pages_publish -->
 <g id="node4" class="node">
@@ -297,47 +297,47 @@
 <!-- pages_publish&#45;&gt;elasticsearch -->
 <g id="edge28" class="edge">
 <title>pages_publish&#45;&gt;elasticsearch</title>
-<path fill="none" stroke="#8fbc8f" d="M1728.4588,-273.8264C1700.5371,-267.278 1671.5753,-260.3829 1671,-259.8234 1635.1422,-224.9505 1628.1401,-163.6686 1627.3493,-127.8106"/>
-<polygon fill="#8fbc8f" stroke="#8fbc8f" points="1630.8476,-127.5313 1627.2783,-117.5558 1623.8477,-127.5799 1630.8476,-127.5313"/>
+<path fill="none" stroke="#8fbc8f" d="M1728.4899,-273.7916C1700.5799,-267.2302 1671.6195,-260.3335 1671,-259.8234 1629.7375,-225.8466 1610.7925,-163.5399 1602.9232,-127.4123"/>
+<polygon fill="#8fbc8f" stroke="#8fbc8f" points="1606.3356,-126.629 1600.9058,-117.5313 1599.4771,-128.0294 1606.3356,-126.629"/>
 </g>
 <!-- pages_publish&#45;&gt;ldap -->
 <g id="edge29" class="edge">
 <title>pages_publish&#45;&gt;ldap</title>
-<path fill="none" stroke="#8fbc8f" d="M1726.7199,-274.1772C1713.5352,-270.1769 1702.0137,-265.3066 1698,-259.8234 1669.945,-221.4964 1665.2424,-187.3478 1698,-152.9533 1710.5822,-139.7424 1845.7756,-153.2964 1862,-144.9533 1870.4961,-140.5844 1877.6393,-133.2076 1883.2655,-125.6525"/>
-<polygon fill="#8fbc8f" stroke="#8fbc8f" points="1886.4934,-127.1239 1889.1635,-116.8711 1880.6824,-123.221 1886.4934,-127.1239"/>
+<path fill="none" stroke="#8fbc8f" d="M1726.7199,-274.1772C1713.5352,-270.1769 1702.0137,-265.3066 1698,-259.8234 1669.945,-221.4964 1665.4301,-187.5256 1698,-152.9533 1708.2277,-142.0968 1818.7729,-151.8464 1832,-144.9533 1840.4722,-140.5382 1847.6092,-133.1495 1853.2371,-125.5976"/>
+<polygon fill="#8fbc8f" stroke="#8fbc8f" points="1856.4607,-127.0763 1859.1401,-116.8258 1850.6533,-123.1681 1856.4607,-127.0763"/>
 </g>
 <!-- media_publish&#45;&gt;elasticsearch -->
 <g id="edge30" class="edge">
 <title>media_publish&#45;&gt;elasticsearch</title>
-<path fill="none" stroke="#bf3eff" d="M1752.9744,-185.0397C1736.2557,-173.7237 1713.7852,-158.4823 1694,-144.9533 1682.9425,-137.3923 1670.8684,-129.0871 1660.1058,-121.6666"/>
-<polygon fill="#bf3eff" stroke="#bf3eff" points="1662.0188,-118.7343 1651.8001,-115.9363 1658.0436,-124.4961 1662.0188,-118.7343"/>
+<path fill="none" stroke="#bf3eff" d="M1743.4174,-186.2097C1720.4662,-175.3877 1689.9118,-160.2572 1664,-144.9533 1652.1824,-137.9737 1639.6738,-129.6216 1628.7609,-121.9907"/>
+<polygon fill="#bf3eff" stroke="#bf3eff" points="1630.5782,-118.989 1620.3947,-116.0655 1626.5325,-124.7014 1630.5782,-118.989"/>
 </g>
 <!-- media_publish&#45;&gt;jms_publish -->
 <g id="edge31" class="edge">
 <title>media_publish&#45;&gt;jms_publish</title>
-<path fill="none" stroke="#bf3eff" d="M1778,-183.6325C1778,-170.5983 1778,-152.6356 1778,-136.652"/>
-<polygon fill="#bf3eff" stroke="#bf3eff" points="1781.5001,-136.5059 1778,-126.5059 1774.5001,-136.5059 1781.5001,-136.5059"/>
+<path fill="none" stroke="#bf3eff" d="M1772.6366,-183.6325C1768.7845,-170.4742 1763.462,-152.2931 1758.7495,-136.1959"/>
+<polygon fill="#bf3eff" stroke="#bf3eff" points="1762.0815,-135.1197 1755.9128,-126.5059 1755.3634,-137.0865 1762.0815,-135.1197"/>
 </g>
 <!-- images_frontend -->
 <g id="node6" class="node">
 <title>images_frontend</title>
 <g id="a_node6"><a xlink:href="https://images.poms.omroep.nl" xlink:title="Images">
-<ellipse fill="none" stroke="#000000" cx="1656" cy="-285.8234" rx="37.0935" ry="18"/>
-<text text-anchor="middle" x="1656" y="-282.1234" font-family="Times,serif" font-size="14.00" fill="#0000ff">Images</text>
+<ellipse fill="none" stroke="#000000" cx="1468" cy="-285.8234" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="1468" y="-282.1234" font-family="Times,serif" font-size="14.00" fill="#0000ff">Images</text>
 </a>
 </g>
 </g>
 <!-- postgresql_image -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>postgresql_image</title>
-<ellipse fill="none" stroke="#000000" cx="1478" cy="-99.4767" rx="74.9875" ry="18"/>
-<text text-anchor="middle" x="1478" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">postgresql_image</text>
+<ellipse fill="none" stroke="#000000" cx="1243" cy="-99.4767" rx="74.9875" ry="18"/>
+<text text-anchor="middle" x="1243" y="-95.7767" font-family="Times,serif" font-size="14.00" fill="#000000">postgresql_image</text>
 </g>
 <!-- images_frontend&#45;&gt;postgresql_image -->
 <g id="edge33" class="edge">
 <title>images_frontend&#45;&gt;postgresql_image</title>
-<path fill="none" stroke="#caff70" d="M1636.6403,-270.2553C1632.705,-266.9062 1628.6542,-263.3198 1625,-259.8234 1577.9601,-214.8134 1527.6137,-157.7107 1499.7452,-125.2124"/>
-<polygon fill="#caff70" stroke="#caff70" points="1502.316,-122.8333 1493.1599,-117.5026 1496.9933,-127.3796 1502.316,-122.8333"/>
+<path fill="none" stroke="#caff70" d="M1449.2036,-270.2561C1409.9471,-237.7435 1319.0183,-162.4356 1272.1277,-123.6004"/>
+<polygon fill="#caff70" stroke="#caff70" points="1274.1126,-120.6999 1264.1785,-117.0169 1269.6476,-126.091 1274.1126,-120.6999"/>
 </g>
 <!-- images_backend -->
 <g id="node7" class="node">
@@ -363,25 +363,25 @@
 <!-- images_backend&#45;&gt;postgresql_image -->
 <g id="edge35" class="edge">
 <title>images_backend&#45;&gt;postgresql_image</title>
-<path fill="none" stroke="#caff70" d="M1099.1251,-269.09C1103.7987,-266.0743 1108.5741,-262.9073 1113,-259.8234 1177.2254,-215.0714 1179.5837,-180.1137 1253,-152.9533 1282.4341,-142.0642 1363.8078,-153.519 1394,-144.9533 1411.7037,-139.9307 1429.8427,-130.7174 1444.7131,-121.8903"/>
-<polygon fill="#caff70" stroke="#caff70" points="1446.8261,-124.7001 1453.5166,-116.485 1443.1633,-118.7348 1446.8261,-124.7001"/>
+<path fill="none" stroke="#caff70" d="M1085.9799,-268.038C1106.7132,-241.9809 1147.2377,-192.2605 1185,-152.9533 1194.5087,-143.0556 1205.4606,-132.7124 1215.2687,-123.7892"/>
+<polygon fill="#caff70" stroke="#caff70" points="1217.7497,-126.265 1222.8399,-116.973 1213.0662,-121.0626 1217.7497,-126.265"/>
 </g>
 <!-- images_backend&#45;&gt;jms_ingest -->
 <g id="edge36" class="edge">
 <title>images_backend&#45;&gt;jms_ingest</title>
-<path fill="none" stroke="#caff70" d="M1073.5157,-267.7799C1077.0163,-238.5202 1088.4187,-181.1604 1125,-152.9533 1136.5251,-144.0666 1175.9774,-148.8482 1190,-144.9533 1201.457,-141.771 1213.2784,-137.5036 1224.6322,-132.8534"/>
-<polygon fill="#caff70" stroke="#caff70" points="1226.1952,-135.9926 1234.0411,-128.8728 1223.4677,-129.5458 1226.1952,-135.9926"/>
+<path fill="none" stroke="#caff70" d="M1123.8002,-273.368C1133.8871,-269.807 1144.0867,-265.3472 1153,-259.8234 1209.335,-224.9107 1197.5075,-182.1625 1257,-152.9533 1285.1085,-139.1528 1296.7926,-153.2028 1327,-144.9533 1338.4706,-141.8207 1350.2992,-137.5791 1361.656,-132.9396"/>
+<polygon fill="#caff70" stroke="#caff70" points="1363.2165,-136.08 1371.0664,-128.9645 1360.4926,-129.6317 1363.2165,-136.08"/>
 </g>
 <!-- images_backend&#45;&gt;ldap -->
 <g id="edge37" class="edge">
 <title>images_backend&#45;&gt;ldap</title>
-<path fill="none" stroke="#caff70" d="M1124.4273,-273.6697C1133.602,-271.6451 1143.068,-269.6212 1152,-267.8234 1171.9142,-263.815 1177.4646,-265.3921 1197,-259.8234 1320.3197,-224.6702 1339.3187,-178.4036 1465,-152.9533 1486.6212,-148.5751 1842.2396,-154.76 1862,-144.9533 1870.5577,-140.7063 1877.7168,-133.3611 1883.3387,-125.7974"/>
-<polygon fill="#caff70" stroke="#caff70" points="1886.5778,-127.2496 1889.2238,-116.9905 1880.7577,-123.3603 1886.5778,-127.2496"/>
+<path fill="none" stroke="#caff70" d="M1123.4868,-273.4238C1132.9369,-271.3804 1142.7397,-269.4137 1152,-267.8234 1181.5566,-262.7474 1190.1135,-267.881 1219,-259.8234 1329.9082,-228.8865 1342.7144,-178.4419 1455,-152.9533 1475.4294,-148.3159 1813.2397,-154.2762 1832,-144.9533 1840.5554,-140.7017 1847.714,-133.3553 1853.336,-125.792"/>
+<polygon fill="#caff70" stroke="#caff70" points="1856.5747,-127.2449 1859.2216,-116.986 1850.7549,-123.3551 1856.5747,-127.2449"/>
 </g>
 <!-- sso -->
-<g id="node16" class="node">
+<g id="node17" class="node">
 <title>sso</title>
-<g id="a_node16"><a xlink:href="https://sso.omroep.nl" xlink:title="SSO">
+<g id="a_node17"><a xlink:href="https://sso.omroep.nl" xlink:title="SSO">
 <ellipse fill="none" stroke="#000000" cx="1900" cy="-201.9533" rx="27.0966" ry="18"/>
 <text text-anchor="middle" x="1900" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#0000ff">SSO</text>
 </a>
@@ -394,7 +394,7 @@
 <polygon fill="#caff70" stroke="#caff70" points="1892.1975,-230.1372 1893.46,-219.6179 1885.9131,-227.0539 1892.1975,-230.1372"/>
 </g>
 <!-- wikimedia -->
-<g id="node29" class="node">
+<g id="node30" class="node">
 <title>wikimedia</title>
 <ellipse fill="none" stroke="#000000" cx="65" cy="-201.9533" rx="49.2915" ry="18"/>
 <text text-anchor="middle" x="65" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">wikimedia</text>
@@ -406,7 +406,7 @@
 <polygon fill="#caff70" stroke="#caff70" points="85.6787,-225.1052 76.7217,-219.4463 80.1948,-229.4557 85.6787,-225.1052"/>
 </g>
 <!-- pixabay -->
-<g id="node30" class="node">
+<g id="node31" class="node">
 <title>pixabay</title>
 <ellipse fill="none" stroke="#000000" cx="344" cy="-201.9533" rx="39.7935" ry="18"/>
 <text text-anchor="middle" x="344" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">pixabay</text>
@@ -418,7 +418,7 @@
 <polygon fill="#caff70" stroke="#caff70" points="361.8596,-226.0534 353.4519,-219.6066 356.0042,-229.8894 361.8596,-226.0534"/>
 </g>
 <!-- flickr -->
-<g id="node31" class="node">
+<g id="node32" class="node">
 <title>flickr</title>
 <ellipse fill="none" stroke="#000000" cx="256" cy="-201.9533" rx="29.795" ry="18"/>
 <text text-anchor="middle" x="256" y="-198.2533" font-family="Times,serif" font-size="14.00" fill="#000000">flickr</text>
@@ -429,113 +429,140 @@
 <path fill="none" stroke="#caff70" d="M1001.193,-285.193C815.3085,-283.3061 325.5724,-276.7489 295,-259.8234 282.6218,-252.9705 273.4211,-240.3273 267.0747,-228.6026"/>
 <polygon fill="#caff70" stroke="#caff70" points="270.1576,-226.9407 262.5909,-219.5248 263.8814,-230.0407 270.1576,-226.9407"/>
 </g>
+<!-- functional_tests -->
+<g id="node10" class="node">
+<title>functional_tests</title>
+<g id="a_node10"><a xlink:href="https://jenkins.vpro.nl/job/POMS%20Functional%20Tests/" xlink:title="functional_tests">
+<ellipse fill="#f0ffff" stroke="#000000" cx="1347" cy="-451.8234" rx="68.4888" ry="18"/>
+<text text-anchor="middle" x="1347" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#0000ff">functional_tests</text>
+</a>
+</g>
+</g>
+<!-- functional_tests&#45;&gt;poms_backend -->
+<g id="edge49" class="edge">
+<title>functional_tests&#45;&gt;poms_backend</title>
+<path fill="none" stroke="#c0c0c0" d="M1396.0864,-439.2532C1405.3148,-437.2022 1414.9175,-435.2767 1424,-433.8234 1444.0452,-430.6159 1497.5474,-436.1919 1515,-425.8234 1557.9683,-400.2962 1585.0708,-346.2566 1598.3032,-313.2854"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1601.6347,-314.3739 1601.9668,-303.7842 1595.1034,-311.8554 1601.6347,-314.3739"/>
+</g>
+<!-- functional_tests&#45;&gt;api -->
+<g id="edge50" class="edge">
+<title>functional_tests&#45;&gt;api</title>
+<path fill="none" stroke="#c0c0c0" d="M1396.5363,-439.3787C1405.6341,-437.34 1415.0751,-435.3864 1424,-433.8234 1438.9872,-431.1986 1481.8892,-437.1934 1492,-425.8234 1516.5132,-398.2572 1517.4247,-369.5511 1492,-342.8234 1479.7318,-329.9264 1349.1347,-339.6443 1332,-334.8234 1312.0592,-329.213 1291.6392,-318.5693 1275.3012,-308.6317"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1277.0047,-305.5687 1266.6735,-303.2199 1273.2851,-311.4986 1277.0047,-305.5687"/>
+</g>
+<!-- functional_tests&#45;&gt;pages_publish -->
+<g id="edge51" class="edge">
+<title>functional_tests&#45;&gt;pages_publish</title>
+<path fill="none" stroke="#c0c0c0" d="M1395.6392,-439.1197C1404.9969,-437.0551 1414.7607,-435.159 1424,-433.8234 1454.6217,-429.3967 1533.5845,-435.4158 1563,-425.8234 1639.0066,-401.0375 1714.4126,-342.8556 1753.1779,-309.8272"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1755.5952,-312.3643 1760.8809,-303.1821 1751.0228,-307.0639 1755.5952,-312.3643"/>
+</g>
 <!-- sso&#45;&gt;ldap -->
 <g id="edge45" class="edge">
 <title>sso&#45;&gt;ldap</title>
-<path fill="none" stroke="#c0c0c0" d="M1899.6424,-183.6325C1899.3395,-168.1129 1898.9003,-145.6061 1898.5522,-127.7723"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1902.049,-127.5686 1898.3545,-117.6388 1895.0504,-127.7052 1902.049,-127.5686"/>
+<path fill="none" stroke="#c0c0c0" d="M1894.426,-184.1032C1889.4933,-168.3067 1882.2189,-145.0111 1876.5504,-126.8584"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1879.8318,-125.6243 1873.5101,-117.1222 1873.15,-127.7109 1879.8318,-125.6243"/>
 </g>
 <!-- keycloak&#45;&gt;ldap -->
 <g id="edge48" class="edge">
 <title>keycloak&#45;&gt;ldap</title>
-<path fill="none" stroke="#c0c0c0" d="M1999.2199,-176.8847C1976.1002,-159.2039 1945.5493,-135.84 1924.0815,-119.4225"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1926.1208,-116.5759 1916.0512,-113.2813 1921.8684,-122.1363 1926.1208,-116.5759"/>
+<path fill="none" stroke="#c0c0c0" d="M1993.1343,-177.6678C1963.5193,-159.1626 1923.4107,-134.1004 1896.668,-117.3901"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1898.4808,-114.3957 1888.1456,-112.0648 1894.7714,-120.3321 1898.4808,-114.3957"/>
 </g>
 <!-- users -->
-<g id="node18" class="node">
+<g id="node19" class="node">
 <title>users</title>
-<ellipse fill="none" stroke="#000000" cx="1324" cy="-451.8234" rx="29.4969" ry="18"/>
-<text text-anchor="middle" x="1324" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">users</text>
+<ellipse fill="none" stroke="#000000" cx="1142" cy="-451.8234" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="1142" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">users</text>
 </g>
 <!-- users&#45;&gt;api -->
 <g id="edge4" class="edge">
 <title>users&#45;&gt;api</title>
-<path fill="none" stroke="#c0c0c0" d="M1345.9441,-439.5783C1351.0685,-437.247 1356.6081,-435.1298 1362,-433.8234 1375.0735,-430.6558 1594.6466,-435.4911 1604,-425.8234 1629.6499,-399.3116 1629.6981,-369.2884 1604,-342.8234 1593.4685,-331.9776 1346.5939,-338.768 1332,-334.8234 1311.8577,-329.379 1291.2815,-318.6389 1274.8965,-308.5979"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1276.5762,-305.5189 1266.2543,-303.1296 1272.8333,-311.4342 1276.5762,-305.5189"/>
+<path fill="none" stroke="#c0c0c0" d="M1163.9389,-439.5568C1169.0636,-437.2266 1174.6046,-435.1153 1180,-433.8234 1195.6201,-430.0831 1457.8009,-437.3368 1469,-425.8234 1494.721,-399.3806 1494.3127,-369.6573 1469,-342.8234 1458.5369,-331.7315 1346.6608,-339.0145 1332,-334.8234 1312.0828,-329.1296 1291.665,-318.4784 1275.3223,-308.5573"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1277.0252,-305.4942 1266.6914,-303.1569 1273.3121,-311.4283 1277.0252,-305.4942"/>
 </g>
 <!-- users&#45;&gt;images_frontend -->
 <g id="edge5" class="edge">
 <title>users&#45;&gt;images_frontend</title>
-<path fill="none" stroke="#c0c0c0" d="M1345.9413,-439.5669C1351.0658,-437.2361 1356.6062,-435.1221 1362,-433.8234 1376.3197,-430.3756 1615.7192,-435.2935 1627,-425.8234 1659.1103,-398.8671 1661.4729,-346.5366 1659.3639,-314.0498"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1662.833,-313.5331 1658.5137,-303.8587 1655.8572,-314.115 1662.833,-313.5331"/>
+<path fill="none" stroke="#c0c0c0" d="M1163.937,-439.5487C1169.0617,-437.2188 1174.6033,-435.1098 1180,-433.8234 1196.8665,-429.8029 1479.8976,-438.2401 1492,-425.8234 1521.3256,-395.7362 1500.987,-343.687 1484.1009,-312.2348"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1486.9707,-310.1961 1479.03,-303.1821 1480.8635,-313.6171 1486.9707,-310.1961"/>
 </g>
 <!-- magnolia_frontend -->
-<g id="node21" class="node">
+<g id="node22" class="node">
 <title>magnolia_frontend</title>
-<ellipse fill="none" stroke="#000000" cx="1336" cy="-376.8234" rx="79.8859" ry="18"/>
-<text text-anchor="middle" x="1336" y="-373.1234" font-family="Times,serif" font-size="14.00" fill="#000000">magnolia_frontend</text>
+<ellipse fill="none" stroke="#000000" cx="1201" cy="-376.8234" rx="79.8859" ry="18"/>
+<text text-anchor="middle" x="1201" y="-373.1234" font-family="Times,serif" font-size="14.00" fill="#000000">magnolia_frontend</text>
 </g>
 <!-- users&#45;&gt;magnolia_frontend -->
 <g id="edge6" class="edge">
 <title>users&#45;&gt;magnolia_frontend</title>
-<path fill="none" stroke="#c0c0c0" d="M1326.9049,-433.668C1328.2802,-425.072 1329.9544,-414.6085 1331.4896,-405.0133"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1334.9563,-405.4989 1333.0803,-395.0715 1328.0443,-404.393 1334.9563,-405.4989"/>
+<path fill="none" stroke="#c0c0c0" d="M1154.8021,-435.5495C1162.3641,-425.9368 1172.1088,-413.5494 1180.6977,-402.6314"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1183.5531,-404.6625 1186.9851,-394.6389 1178.0514,-400.3345 1183.5531,-404.6625"/>
 </g>
 <!-- backendsystems -->
-<g id="node19" class="node">
+<g id="node20" class="node">
 <title>backendsystems</title>
-<ellipse fill="none" stroke="#000000" cx="1530" cy="-451.8234" rx="69.5877" ry="18"/>
-<text text-anchor="middle" x="1530" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">backendsystems</text>
+<ellipse fill="none" stroke="#000000" cx="1503" cy="-451.8234" rx="69.5877" ry="18"/>
+<text text-anchor="middle" x="1503" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">backendsystems</text>
 </g>
 <!-- backendsystems&#45;&gt;poms_backend -->
 <g id="edge7" class="edge">
 <title>backendsystems&#45;&gt;poms_backend</title>
-<path fill="none" stroke="#c0c0c0" d="M1596.4692,-446.4204C1644.5763,-441.8166 1702.43,-434.5654 1710,-425.8234 1734.148,-397.9367 1735.0227,-369.9279 1710,-342.8234 1702.439,-334.6333 1620.712,-337.9057 1610,-334.8234 1589.4069,-328.8978 1568.1005,-318.2257 1550.9899,-308.3507"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1552.3324,-305.0774 1541.9468,-302.9818 1548.7588,-311.0965 1552.3324,-305.0774"/>
+<path fill="none" stroke="#c0c0c0" d="M1571.3647,-448.1758C1604.9838,-444.8019 1640.5154,-438.3104 1651,-425.8234 1674.7206,-397.5723 1662.7143,-377.8029 1651,-342.8234 1647.2026,-331.4842 1640.1611,-320.5968 1632.8597,-311.4309"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1635.3023,-308.8996 1626.1668,-303.5337 1629.9621,-313.4254 1635.3023,-308.8996"/>
 </g>
 <!-- backendsystems&#45;&gt;pages_publish -->
 <g id="edge8" class="edge">
 <title>backendsystems&#45;&gt;pages_publish</title>
-<path fill="none" stroke="#c0c0c0" d="M1597.0395,-446.7702C1652.0355,-442.0476 1722.4937,-434.4443 1733,-425.8234 1766.2995,-398.4995 1776.1345,-346.7413 1778.9613,-314.3888"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1782.4659,-314.445 1779.6751,-304.2244 1775.4831,-313.9546 1782.4659,-314.445"/>
+<path fill="none" stroke="#c0c0c0" d="M1572.3872,-450.4403C1653.7112,-448.0857 1779.3227,-441.8706 1794,-425.8234 1821.6692,-395.5718 1807.0405,-344.8113 1793.6828,-313.4365"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1796.7293,-311.6759 1789.4458,-303.9816 1790.3414,-314.5385 1796.7293,-311.6759"/>
 </g>
 <!-- editors -->
-<g id="node20" class="node">
+<g id="node21" class="node">
 <title>editors</title>
-<ellipse fill="none" stroke="#000000" cx="1407" cy="-451.8234" rx="35.9954" ry="18"/>
-<text text-anchor="middle" x="1407" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">editors</text>
+<ellipse fill="none" stroke="#000000" cx="1225" cy="-451.8234" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="1225" y="-448.1234" font-family="Times,serif" font-size="14.00" fill="#000000">editors</text>
 </g>
 <!-- editors&#45;&gt;poms -->
 <g id="edge1" class="edge">
 <title>editors&#45;&gt;poms</title>
-<path fill="none" stroke="#c0c0c0" d="M1433.0504,-439.4508C1438.8412,-437.1886 1445.0344,-435.1324 1451,-433.8234 1470.8798,-429.4612 1619.9262,-440.5259 1634,-425.8234 1659.5084,-399.1755 1659.5878,-369.395 1634,-342.8234 1617.6491,-325.8439 1443.3986,-344.7104 1422,-334.8234 1410.922,-329.7049 1401.323,-320.4649 1393.8692,-311.3772"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1396.4863,-309.0366 1387.6461,-303.1969 1390.9151,-313.2748 1396.4863,-309.0366"/>
+<path fill="none" stroke="#c0c0c0" d="M1251.6562,-439.4181C1257.5778,-437.158 1263.908,-435.1108 1270,-433.8234 1282.0747,-431.2717 1483.4319,-434.7058 1492,-425.8234 1517.6104,-399.2735 1516.5589,-370.3488 1492,-342.8234 1481.5764,-331.1407 1435.953,-341.9261 1422,-334.8234 1411.2823,-329.3675 1401.8385,-320.2435 1394.4055,-311.3379"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1397.0738,-309.0678 1388.1657,-303.3322 1391.5527,-313.3711 1397.0738,-309.0678"/>
 </g>
 <!-- editors&#45;&gt;keycloak -->
 <g id="edge2" class="edge">
 <title>editors&#45;&gt;keycloak</title>
-<path fill="none" stroke="#c0c0c0" d="M1433.0456,-439.4287C1438.8367,-437.168 1445.0313,-435.1178 1451,-433.8234 1540.543,-414.4038 1567.7716,-446.6405 1657,-425.8234 1753.6821,-403.2673 1775.8521,-385.8727 1861,-334.8234 1910.7033,-305.0245 1962.5476,-262.9388 1995.9348,-234.1661"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1998.3394,-236.7136 2003.5982,-227.516 1993.7515,-231.4267 1998.3394,-236.7136"/>
+<path fill="none" stroke="#c0c0c0" d="M1251.6529,-439.4024C1257.5747,-437.1433 1263.9058,-435.1005 1270,-433.8234 1323.3153,-422.6504 1461.0975,-433.6896 1515,-425.8234 1672.3408,-402.8619 1718.4417,-405.2542 1861,-334.8234 1913.7367,-308.7689 1965.8836,-264.9321 1998.4636,-234.7805"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="2001.003,-237.1977 2005.9123,-227.8089 1996.2196,-232.087 2001.003,-237.1977"/>
 </g>
 <!-- magnolia_backend -->
-<g id="node22" class="node">
+<g id="node23" class="node">
 <title>magnolia_backend</title>
-<ellipse fill="none" stroke="#000000" cx="1513" cy="-376.8234" rx="79.0865" ry="18"/>
-<text text-anchor="middle" x="1513" y="-373.1234" font-family="Times,serif" font-size="14.00" fill="#000000">magnolia_backend</text>
+<ellipse fill="none" stroke="#000000" cx="1378" cy="-376.8234" rx="79.0865" ry="18"/>
+<text text-anchor="middle" x="1378" y="-373.1234" font-family="Times,serif" font-size="14.00" fill="#000000">magnolia_backend</text>
 </g>
 <!-- editors&#45;&gt;magnolia_backend -->
 <g id="edge3" class="edge">
 <title>editors&#45;&gt;magnolia_backend</title>
-<path fill="none" stroke="#c0c0c0" d="M1427.9422,-437.0058C1442.8422,-426.4634 1463.1568,-412.0898 1480.1964,-400.0335"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1482.6207,-402.6057 1488.7625,-393.9726 1478.5776,-396.8914 1482.6207,-402.6057"/>
+<path fill="none" stroke="#c0c0c0" d="M1253.2462,-440.5306C1270.7281,-433.5404 1289.8808,-425.8801 1290,-425.8234 1307.0261,-417.7185 1325.3228,-407.7473 1340.7986,-398.9201"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1342.6349,-401.9016 1349.5536,-393.8778 1339.1413,-395.8357 1342.6349,-401.9016"/>
 </g>
 <!-- magnolia_frontend&#45;&gt;api -->
 <g id="edge44" class="edge">
 <title>magnolia_frontend&#45;&gt;api</title>
-<path fill="none" stroke="#c0c0c0" d="M1317.8759,-359.2777C1303.663,-345.5184 1283.6983,-326.1909 1267.8153,-310.8148"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1270.0085,-308.0666 1260.3892,-303.6257 1265.1396,-313.0959 1270.0085,-308.0666"/>
+<path fill="none" stroke="#c0c0c0" d="M1209.1003,-358.8447C1214.9966,-345.7578 1223.0851,-327.8053 1229.7664,-312.9761"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1232.9997,-314.3198 1233.9165,-303.7647 1226.6176,-311.4443 1232.9997,-314.3198"/>
 </g>
 <!-- magnolia_backend&#45;&gt;poms_backend -->
 <g id="edge42" class="edge">
 <title>magnolia_backend&#45;&gt;poms_backend</title>
-<path fill="none" stroke="#c0c0c0" d="M1513.6071,-358.4082C1514.0246,-345.7443 1514.5872,-328.6792 1515.062,-314.2775"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1518.5726,-314.0106 1515.404,-303.9006 1511.5764,-313.7799 1518.5726,-314.0106"/>
+<path fill="none" stroke="#c0c0c0" d="M1430.1165,-363.1256C1455.7657,-355.7828 1486.9162,-345.9572 1514,-334.8234 1532.814,-327.0892 1552.9051,-316.8991 1569.6631,-307.8157"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1571.5214,-310.7882 1578.6009,-302.9058 1568.1511,-304.653 1571.5214,-310.7882"/>
 </g>
 <!-- magnolia_backend&#45;&gt;pages_publish -->
 <g id="edge43" class="edge">
 <title>magnolia_backend&#45;&gt;pages_publish</title>
-<path fill="none" stroke="#c0c0c0" d="M1581.1776,-367.4718C1617.8985,-361.0103 1663.4464,-350.6613 1702,-334.8234 1718.2602,-328.1436 1734.9375,-318.1661 1748.6758,-308.9544"/>
-<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1750.9939,-311.6078 1757.2456,-303.0539 1747.0242,-305.8422 1750.9939,-311.6078"/>
+<path fill="none" stroke="#c0c0c0" d="M1453.1848,-370.8344C1534.2441,-363.7141 1657.6277,-350.7648 1702,-334.8234 1719.0749,-328.6889 1736.3351,-318.3679 1750.2626,-308.7759"/>
+<polygon fill="#c0c0c0" stroke="#c0c0c0" points="1752.3485,-311.5875 1758.4724,-302.9417 1748.2936,-305.8815 1752.3485,-311.5875"/>
 </g>
 <!-- pd&#45;&gt;metis -->
 <g id="edge47" class="edge">
