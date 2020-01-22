@@ -13,10 +13,10 @@
     <poms.version>5.13-SNAPSHOT</poms.version>
     <poms.shared.version>${poms.version}</poms.shared.version>
     <poms.shared.backend.version>${poms.version}</poms.shared.backend.version>
-    <api.version>5.12-SNAPSHOT</api.version>
+    <api.version>5.13-SNAPSHOT</api.version>
     <api.client.version>${poms.version}</api.client.version>
     <image.version>${poms.version}</image.version>
-    <media.version>5.12-SNAPSHOT</media.version>
+    <media.version>5.13-SNAPSHOT</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
     <thesaurus.version>5.12.0</thesaurus.version>
