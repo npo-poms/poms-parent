@@ -19,16 +19,10 @@
     <media.version>5.13-SNAPSHOT</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
-    <thesaurus.version>5.12.0</thesaurus.version>
-
+    <thesaurus.version>5.12.1</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-
-    <!-- dependency provided by VPRO -->
-    <js.version>0.4.1</js.version>
-    <vpro-camel.version>1.3.1</vpro-camel.version>
-    <events.version>2.6.1</events.version>
   </properties>
 
   <modules>
@@ -184,24 +178,6 @@
         <artifactId>frontend-api-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
-
-
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-filewatcher</artifactId>
-        <version>${vpro-camel.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-newrelic</artifactId>
-        <version>${vpro-camel.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-json</artifactId>
-        <version>1.2</version>
-      </dependency>
-
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-classification</artifactId>
@@ -412,11 +388,6 @@
         <groupId>nl.vpro.poms</groupId>
         <artifactId>query-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.esper</groupId>
-        <artifactId>esper-events</artifactId>
-        <version>${events.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

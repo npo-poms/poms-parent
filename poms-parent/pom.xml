@@ -17,6 +17,11 @@
     <java.version>8</java.version>
 
     <poms-bom.version>${project.version}</poms-bom.version>
+
+    <!-- dependency provided by VPRO -->
+    <js.version>0.4.1</js.version>
+    <vpro-camel.version>1.3.1</vpro-camel.version>
+    <events.version>2.6.1</events.version>
     <vpro.shared.version>2.10.0</vpro.shared.version>
 
     <checker.version>3.1.0</checker.version>
@@ -1920,6 +1925,26 @@
          <artifactId>jjwt-impl</artifactId>
          <version>${jsonwebtoken.version}</version>
        </dependency>
+       <dependency>
+         <groupId>nl.vpro.camel</groupId>
+         <artifactId>camel-filewatcher</artifactId>
+         <version>${vpro-camel.version}</version>
+       </dependency>
+       <dependency>
+         <groupId>nl.vpro.camel</groupId>
+         <artifactId>camel-newrelic</artifactId>
+         <version>${vpro-camel.version}</version>
+       </dependency>
+       <dependency>
+         <groupId>nl.vpro.camel</groupId>
+         <artifactId>camel-json</artifactId>
+         <version>1.2</version>
+       </dependency>
+       <dependency>
+        <groupId>nl.vpro.esper</groupId>
+        <artifactId>esper-events</artifactId>
+        <version>${events.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
