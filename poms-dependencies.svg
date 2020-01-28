@@ -33,7 +33,7 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="#e0eeee" stroke="#000000" points="157.8403,-307 157.8403,-549 289.8403,-549 289.8403,-307 157.8403,-307"/>
+<polygon fill="#f0ffff" stroke="#000000" points="157.8403,-307 157.8403,-549 289.8403,-549 289.8403,-307 157.8403,-307"/>
 <text text-anchor="middle" x="223.8403" y="-533.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sharable utilities</text>
 </g>
 <!-- vpro_shared -->
@@ -176,7 +176,7 @@
 <title>poms_backend</title>
 <g id="a_node10"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/media" xlink:title="POMS &#160;&amp; POMS Backend API">
 <ellipse fill="none" stroke="#cd950c" cx="734.8403" cy="-688" rx="125.3778" ry="18"/>
-<text text-anchor="middle" x="734.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">POMS &#160;&amp; POMS Backend API</text>
+<text text-anchor="middle" x="734.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">POMS &#160;&amp; POMS Backend API</text>
 </a>
 </g>
 </g>
@@ -215,7 +215,7 @@
 <title>poms_gui</title>
 <g id="a_node11"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" xlink:title="Angular GUI for POMS">
 <ellipse fill="none" stroke="#000000" cx="548.8403" cy="-500" rx="98.5829" ry="18"/>
-<text text-anchor="middle" x="548.8403" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Angular GUI for POMS</text>
+<text text-anchor="middle" x="548.8403" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#006400">Angular GUI for POMS</text>
 </a>
 </g>
 </g>
@@ -230,7 +230,7 @@
 <title>user_backend</title>
 <g id="a_node16"><a xlink:href="https://subversion.vpro.nl/repo/nl/vpro/user" xlink:title="user_backend">
 <ellipse fill="none" stroke="#000000" cx="857.8403" cy="-406" rx="60.3893" ry="18"/>
-<text text-anchor="middle" x="857.8403" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">user_backend</text>
+<text text-anchor="middle" x="857.8403" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#006400">user_backend</text>
 </a>
 </g>
 </g>
@@ -257,7 +257,7 @@
 <title>poms_shared_backend</title>
 <g id="a_node12"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" xlink:title="poms_shared_backend">
 <ellipse fill="none" stroke="#00cdcd" cx="685.8403" cy="-406" rx="93.6835" ry="18"/>
-<text text-anchor="middle" x="685.8403" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">poms_shared_backend</text>
+<text text-anchor="middle" x="685.8403" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#006400">poms_shared_backend</text>
 </a>
 </g>
 </g>
@@ -284,7 +284,7 @@
 <title>api</title>
 <g id="a_node13"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" xlink:title="Frontend API">
 <ellipse fill="none" stroke="#6495ed" cx="938.8403" cy="-688" rx="60.3893" ry="18"/>
-<text text-anchor="middle" x="938.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Frontend API</text>
+<text text-anchor="middle" x="938.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Frontend API</text>
 </a>
 </g>
 </g>
@@ -323,7 +323,7 @@
 <title>media_publish</title>
 <g id="a_node14"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" xlink:title="Media Publisher">
 <ellipse fill="none" stroke="#bf3eff" cx="520.8403" cy="-688" rx="70.6878" ry="18"/>
-<text text-anchor="middle" x="520.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Media Publisher</text>
+<text text-anchor="middle" x="520.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Media Publisher</text>
 </a>
 </g>
 </g>
@@ -338,7 +338,7 @@
 <title>pages_publish</title>
 <g id="a_node15"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/pages-publish/" xlink:title="Pages Publisher">
 <ellipse fill="none" stroke="#8fbc8f" cx="734.8403" cy="-500" rx="68.7879" ry="18"/>
-<text text-anchor="middle" x="734.8403" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Pages Publisher</text>
+<text text-anchor="middle" x="734.8403" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#006400">Pages Publisher</text>
 </a>
 </g>
 </g>
@@ -377,7 +377,7 @@
 <title>images</title>
 <g id="a_node17"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" xlink:title="Images Frontend &amp; Backend">
 <ellipse fill="none" stroke="#caff70" cx="1132.8403" cy="-688" rx="115.8798" ry="18"/>
-<text text-anchor="middle" x="1132.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Images Frontend &amp; Backend</text>
+<text text-anchor="middle" x="1132.8403" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Images Frontend &amp; Backend</text>
 </a>
 </g>
 </g>
@@ -409,7 +409,7 @@
 <g id="node18" class="node">
 <title>functional_tests</title>
 <g id="a_node18"><a xlink:href="https://github.com/npo-poms/functional-tests" xlink:title="Functional integration tests">
-<ellipse fill="#e0eeee" stroke="#000000" cx="109.8403" cy="-594" rx="109.6807" ry="18"/>
+<ellipse fill="#e0eeee" stroke="#9acd32" cx="109.8403" cy="-594" rx="109.6807" ry="18"/>
 <text text-anchor="middle" x="109.8403" y="-590.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Functional integration tests</text>
 </a>
 </g>

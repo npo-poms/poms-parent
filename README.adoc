@@ -42,7 +42,7 @@ The artifacts in 'sharable utilities' are  available on maven central and their 
 
 The image is clickable and links to several version control repositories.
 
-The azure blocks we consider part of the 'poms ecosystem'. The darker azure block is open source.
+The azure blocks we consider part of the 'poms ecosystem'. The ones with blue links are open source, and point to public repositories. The green links point to private repositories.
 
 == Operations and development
 
