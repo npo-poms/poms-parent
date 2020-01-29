@@ -34,11 +34,6 @@ digraph poms_universe {
       // gosa [ label="GOSa" href="https://admin.sso.omroep.nl/" fontcolor=blue
 
     }
-   subgraph cluster_1  {
-    label="Single signon"
-    sso [ label="SSO" href="https://sso.omroep.nl" fontcolor=blue]
-    keycloak [ label = "Keycloak\l(replaces sso,gosa)" href="https://ident-test.poms.omroep.nl/auth/" fontcolor=blue]
-}
 
 
 subgraph cluster_3  {
@@ -51,6 +46,7 @@ subgraph cluster_2  {
   label="VPRO"
   magnolia_frontend
   magnolia_backend
+  amara_importer
 }
 
 }
@@ -75,6 +71,7 @@ subgraph cluster_5  {
   miranda
   pluto
   nep
+  keycloak [ label = "Keycloak" href="https://ident.poms.omroep.nl/auth/" fontcolor=blue]
 }
 
 subgraph cluster_6 {
@@ -85,6 +82,7 @@ subgraph cluster_6 {
   wikimedia
   pixabay
   flickr
+  amara
 }
 
 editors -> {
@@ -181,6 +179,11 @@ functional_tests -> {
   poms_backend
   pages_publish
   api
+}
+
+amara_importer -> {
+  poms_backend
+  amara
 }
 
 }

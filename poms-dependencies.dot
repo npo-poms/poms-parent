@@ -15,6 +15,10 @@ strict digraph {
    nv_i18n  [
       href="https://github.com/TakahikoKawasaki/nv-i18n"
      fontcolor=blue
+   ]
+   amara_importer[
+      href="https://github.com/vpro/amara-poms"
+     fontcolor=blue
 
    ]
    resteasy [
@@ -124,6 +128,7 @@ strict digraph {
     label="VPRO"
     magnolia
     vpro_rs
+    amara_importer
   }
   subgraph cluster_2  {
     label="POMS Services"
@@ -232,7 +237,14 @@ strict digraph {
     angular
    }
 
-  functional_tests -> api_client
+  functional_tests -> {
+     api_client
+  }
+
+  amara_importer -> {
+     api_client
+     amara
+  }
 
 
 }
