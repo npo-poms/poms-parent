@@ -14,7 +14,9 @@ We use the `pom.xml` of this project to synchronize versions of dependencies.
 
 This README serves as a general description of the different systems that this envolves
 
-We're available at link:https://vpro-poms.slack.com/[slack]
+We're available at link:https://vpro-poms.slack.com/[slack]. 
+
+Documentation is maintained at https://wiki.publiekeomroep.nl/display/poms/[wiki of NPO] (needs password)
 
 == Deployments
 
