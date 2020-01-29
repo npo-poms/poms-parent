@@ -1,6 +1,6 @@
 
 
-all: poms-dependencies.png poms-deployment.png poms-dependencies.svg poms-deployment.svg README.html
+all: poms-dependencies.png poms-deployment.png poms-dependencies.svg poms-deployment.svg index.html
 
 %.png: %.dot
 	 dot  -Tpng $< -o $@
@@ -9,5 +9,9 @@ all: poms-dependencies.png poms-deployment.png poms-dependencies.svg poms-deploy
 	 dot  -Tsvg $< -o $@
 
 # sudo gem install asciidoctor
+
+index.html: README.adoc
+	asciidoctor $< -o $@
+
 %.html: %.adoc
 	asciidoctor $<
