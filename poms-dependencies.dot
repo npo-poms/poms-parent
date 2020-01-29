@@ -21,6 +21,12 @@ strict digraph {
      fontcolor=blue
 
    ]
+   amara_java[
+      href="https://github.com/vpro/amara-java"
+     fontcolor=blue
+
+   ]
+
    resteasy [
       href="https://github.com/resteasy/Resteasy"
      fontcolor=blue
@@ -122,6 +128,7 @@ strict digraph {
     resteasy
     hibernate
     angular
+    amara_java
   }
 
   subgraph cluster_1  {
@@ -243,7 +250,8 @@ strict digraph {
 
   amara_importer -> {
      api_client
-     amara
+     amara_java
+     vpro_shared
   }
 
 
