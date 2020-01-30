@@ -14,7 +14,7 @@ We use the `pom.xml` of this project to synchronize versions of dependencies.
 
 This README serves as a general description of the different systems that this envolves
 
-We're available at link:https://vpro-poms.slack.com/[slack]. 
+We're available at link:https://vpro-poms.slack.com/[slack].
 
 Documentation is maintained at https://wiki.publiekeomroep.nl/display/poms/[wiki of NPO] (needs password)
 
@@ -23,7 +23,7 @@ Documentation is maintained at https://wiki.publiekeomroep.nl/display/poms/[wiki
 This describes schematicly the connections between actual systems relevant to poms.
 
 This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
-image:https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg[deployment]
+image:https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg[title=deployment, link=https://rawgit.com/npo-poms/poms-parent/master/poms-deployment.svg, window="_blank"]
 
 
 == Dependencies
@@ -35,7 +35,7 @@ This does not intend to be exhaustive, but merely tries to sketch the big pictur
 An important aspect is that dependencies may only be one way and non circular. Often dependencies are both transitive and direct, of which only examples are indicated.
 
 
-image:https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg[dependencies]
+image:https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg[title=dependencies, link=https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg, window="_blank"]
 
 
 === source code repositories
