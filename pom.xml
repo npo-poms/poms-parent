@@ -103,14 +103,6 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-bom</artifactId>
-        <type>pom</type>
-        <scope>import</scope>
-        <version>${vpro.shared.version}</version>
-      </dependency>
-
-      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
         <version>${api.version}</version>

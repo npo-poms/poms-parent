@@ -124,6 +124,14 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>nl.vpro.shared</groupId>
+        <artifactId>vpro-shared-bom</artifactId>
+        <type>pom</type>
+        <scope>import</scope>
+        <version>${vpro.shared.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>cglib</groupId>
         <artifactId>cglib</artifactId>
         <version>${cglib.version}</version>
