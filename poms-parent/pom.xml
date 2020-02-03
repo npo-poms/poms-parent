@@ -1670,9 +1670,11 @@
         <version>${spring-security.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-spring-security-adapter</artifactId>
+        <groupId>org.keycloak.bom</groupId>
+        <artifactId>keycloak-adapter-bom</artifactId>
         <version>${keycloak.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
