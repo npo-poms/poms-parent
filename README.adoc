@@ -6,7 +6,7 @@
 
 image:https://travis-ci.org/npo-poms/poms-parent.svg?[Build Status,link=https://travis-ci.org/npo-poms/poms-parent]
 image:https://img.shields.io/maven-central/v/nl.vpro.poms/poms-parent.svg?label=Maven%20Central[Maven Central,link=https://search.maven.org/search?q=g:%22nl.vpro.poms%22%20AND%20a:%22poms-parent%22]
-image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg[snapshots,link=https://oss.sonatype.org/content/repositories/staging/nl/vpro/poms/poms-parent/]
+image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/poms/poms-parent/]
 
 This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by dutch public broadcasters.
 
