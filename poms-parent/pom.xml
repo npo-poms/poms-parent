@@ -38,7 +38,11 @@
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.bom.version>1.0.2</meeuw.i18n.bom.version>
 
-    <hibernate.version>5.4.11.Final</hibernate.version>
+    <hibernate.version>5.4.10.Final</hibernate.version> <!--upping it to .11 makes tests in query in nl.vpro.domain.media.maintenance.MaintenanceRepositoryImpl.findNonPlayableMediaForDeletion fail
+    I don't know why yet.
+    -->
+
+
     <hibernate.search.version>5.11.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
