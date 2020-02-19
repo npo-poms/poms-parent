@@ -19,7 +19,7 @@
     <media.version>5.13-SNAPSHOT</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
     <user.version>${poms.version}</user.version>
-    <thesaurus.version>5.12.1</thesaurus.version>
+    <thesaurus.version>5.13-SNAPSHOT</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
