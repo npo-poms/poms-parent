@@ -140,7 +140,7 @@ media_publish -> {
   elasticsearch
   jms_publish
 }[color=darkorchid1]
-pages_publish -> media_publish[dir=none]
+
 
 images_frontend -> {
   postgresql_image
