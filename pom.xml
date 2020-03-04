@@ -18,6 +18,8 @@
     <image.version>${poms.version}</image.version>
     <media.version>${poms.version}</media.version>
     <npo-publish.version>${poms.version}</npo-publish.version>
+    <pages-publish.version>${poms.version}</pages-publish.version>
+
     <user.version>${poms.version}</user.version>
     <thesaurus.version>5.12.1</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
@@ -145,6 +147,14 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-server</artifactId>
+        <version>${api.version}</version>
+        <type>war</type>
+      </dependency>
+
+
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs-services</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
@@ -244,6 +254,18 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
+        <artifactId>media-server</artifactId>
+        <version>${media.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-rs</artifactId>
+        <version>${media.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
         <artifactId>media-test</artifactId>
         <version>${media.domain.version}</version>
         <scope>test</scope>
@@ -318,6 +340,18 @@
         <artifactId>image-ws</artifactId>
         <version>${image.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-server</artifactId>
+        <version>${image.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-server-frontend</artifactId>
+        <version>${image.version}</version>
+        <type>war</type>
+      </dependency>
 
       <dependency>
         <groupId>nl.vpro.poms</groupId>
@@ -341,7 +375,7 @@
       </dependency>
 
 
-         <dependency>
+      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <version>${poms.shared.backend.version}</version>
@@ -385,6 +419,26 @@
         <artifactId>query-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>push-es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.publiekeomroep.npo-publish</groupId>
+        <artifactId>npo-publish-webapp</artifactId>
+        <version>${npo-publish.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-publish-webapp</artifactId>
+        <version>${pages-publish.version}</version>
+        <type>war</type>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
