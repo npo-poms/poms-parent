@@ -308,22 +308,17 @@
       </dependency>
 
 
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-persistence</artifactId>
+        <version>${user.version}</version>
+      </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-ldap</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-npo</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-domain</artifactId>
-        <version>${user.version}</version>
-      </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
