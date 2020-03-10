@@ -53,7 +53,7 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.2.20200130</jackson2.version>
+    <jackson2.version>2.10.3</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -67,19 +67,19 @@
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.15.0</assertj.version>
     <lombok.version>1.18.12</lombok.version>
-    <xmlunit.version>2.6.3</xmlunit.version>
+    <xmlunit.version>2.6.4</xmlunit.version>
     <wiremock.version>2.26.0</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.10.0</newrelic.version>
-    <resteasy.version>4.4.2.Final</resteasy.version>
+    <resteasy.version>4.5.2.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.0</log4j2.version>
+    <log4j2.version>2.13.1</log4j2.version>
 
     <sentry.version>1.7.28</sentry.version>
 
@@ -89,7 +89,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>8.0.2</keycloak.version>
+    <keycloak.version>9.0.0</keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
 
@@ -97,7 +97,7 @@
     <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
 
-    <httpcomponents.version>4.5.11</httpcomponents.version>
+    <httpcomponents.version>4.5.12</httpcomponents.version>
     <httpcomponentscore.version>4.4.13</httpcomponentscore.version>
     <swagger.version>1.5.23</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <swagger3.version>2.0.8</swagger3.version>
@@ -114,7 +114,7 @@
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
     <lucene.elasticsearch.version>8.2.0</lucene.elasticsearch.version>
 
-    <postgresql.version>42.2.5.jre7</postgresql.version>
+    <postgresql.version>42.2.10.jre7</postgresql.version>
 
     <commons.lang3.version>3.9</commons.lang3.version>
     <jsonwebtoken.version>0.11.0</jsonwebtoken.version>
