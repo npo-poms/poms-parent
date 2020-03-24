@@ -12,15 +12,15 @@
   <properties>
     <poms.version>5.12.0</poms.version>
 
-    <poms.shared.version>5.12.5</poms.shared.version>
+    <poms.shared.version>5.12.7</poms.shared.version>
     <poms.shared.backend.version>5.12.2</poms.shared.backend.version>
     <api.version>5.12.2</api.version>
     <api.client.version>5.12.2</api.client.version>
     <image.version>5.12.2</image.version>
     <media.version>5.12.0</media.version>
     <npo-publish.version>5.12.3</npo-publish.version>
-    <pages-publish.version>5.12.0</pages-publish.version>
-    <user.version>5.12.1</user.version>
+    <pages-publish.version>5.12.1</pages-publish.version>
+    <user.version>5.12.5</user.version>
     <thesaurus.version>5.12.1</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
@@ -70,7 +70,7 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>REL-5.10.1</tag>
+    <tag>5.12.5</tag>
   </scm>
 
   <prerequisites>
@@ -308,22 +308,17 @@
       </dependency>
 
 
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-persistence</artifactId>
+        <version>${user.version}</version>
+      </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-ldap</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-npo</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-domain</artifactId>
-        <version>${user.version}</version>
-      </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
@@ -690,7 +685,6 @@
             </configuration>
           </plugin>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <version>1.6</version>
             <executions>
@@ -721,7 +715,6 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
             <version>3.0.1</version>
             <executions>
