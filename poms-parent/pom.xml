@@ -62,8 +62,8 @@
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
-    <junit.version>5.6.0</junit.version>
-    <mockito.version>3.3.0</mockito.version>
+    <junit.version>5.6.1</junit.version>
+    <mockito.version>3.3.3</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.15.0</assertj.version>
     <lombok.version>1.18.12</lombok.version>
