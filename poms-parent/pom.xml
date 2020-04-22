@@ -33,8 +33,8 @@
     <camel.version>2.25.0</camel.version>
     <cxf.version>3.3.5</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
-    <guava.version>28.2-jre</guava.version>
-    <guice.version>4.2.2</guice.version>
+    <guava.version>29.0-jre</guava.version>
+    <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.1</quartz.version>
     <meeuw.i18n.bom.version>1.0.2</meeuw.i18n.bom.version>
 
@@ -46,7 +46,7 @@
     <hibernate.search.version>5.11.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.3.0</flyway.version>
+    <flyway.version>6.4.0</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -62,19 +62,19 @@
 
     <validation.api.version>2.0.1.Final</validation.api.version>
 
-    <junit.version>5.6.1</junit.version>
+    <junit.version>5.6.2</junit.version>
     <mockito.version>3.3.3</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.15.0</assertj.version>
     <lombok.version>1.18.12</lombok.version>
     <xmlunit.version>2.6.4</xmlunit.version>
-    <wiremock.version>2.26.0</wiremock.version>
+    <wiremock.version>2.26.3</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.10.0</newrelic.version>
-    <resteasy.version>4.5.2.Final</resteasy.version>
+    <newrelic.version>5.11.0</newrelic.version>
+    <resteasy.version>4.5.3.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
