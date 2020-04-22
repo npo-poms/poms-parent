@@ -24,13 +24,13 @@
     <events.version>2.7-SNAPSHOT</events.version>
     <vpro.shared.version>2.12-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.1.0</checker.version>
+    <checker.version>3.3.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.15.11</activemq.version>
+    <activemq.version>5.15.12</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
-    <camel.version>2.25.0</camel.version>
+    <camel.version>2.25.1</camel.version>
     <cxf.version>3.3.5</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>29.0-jre</guava.version>
@@ -81,7 +81,6 @@
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.13.1</log4j2.version>
 
-    <sentry.version>1.7.30</sentry.version>
 
     <spring.version>5.1.13.RELEASE</spring.version>
     <spring-security.version>5.1.7.RELEASE</spring-security.version>
@@ -114,10 +113,10 @@
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
     <lucene.elasticsearch.version>8.2.0</lucene.elasticsearch.version>
 
-    <postgresql.version>42.2.10.jre7</postgresql.version>
+    <postgresql.version>42.2.12.jre7</postgresql.version>
 
-    <commons.lang3.version>3.9</commons.lang3.version>
-    <jsonwebtoken.version>0.11.0</jsonwebtoken.version>
+    <commons.lang3.version>3.10</commons.lang3.version>
+    <jsonwebtoken.version>0.11.1</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -542,18 +541,6 @@
         <version>3.4.2</version>
       </dependency>
 
-
-
-      <dependency>
-        <groupId>io.sentry</groupId>
-        <artifactId>sentry-log4j</artifactId>
-        <version>${sentry.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.sentry</groupId>
-        <artifactId>sentry-spring</artifactId>
-        <version>${sentry.version}</version>
-      </dependency>
 
 
       <!-- not doing this yet -->
