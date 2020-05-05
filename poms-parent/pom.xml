@@ -20,7 +20,7 @@
 
     <!-- dependency provided by VPRO -->
     <js.version>0.4.1</js.version>
-    <vpro-camel.version>1.3.1</vpro-camel.version>
+    <vpro-camel.version>1.4.0</vpro-camel.version>
     <events.version>2.7-SNAPSHOT</events.version>
     <vpro.shared.version>2.12-SNAPSHOT</vpro.shared.version>
 
@@ -31,7 +31,7 @@
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.1</camel.version>
-    <cxf.version>3.3.5</cxf.version>
+    <cxf.version>3.3.6</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>29.0-jre</guava.version>
     <guice.version>4.2.3</guice.version>
@@ -46,14 +46,14 @@
     <hibernate.search.version>5.11.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.4.0</flyway.version>
+    <flyway.version>6.4.1</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.3</jackson2.version>
+    <jackson2.version>2.11.0</jackson2.version>
 
     <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
     <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
@@ -65,7 +65,7 @@
     <junit.version>5.6.2</junit.version>
     <mockito.version>3.3.3</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
-    <assertj.version> 3.15.0</assertj.version>
+    <assertj.version> 3.16.0</assertj.version>
     <lombok.version>1.18.12</lombok.version>
     <xmlunit.version>2.6.4</xmlunit.version>
     <wiremock.version>2.26.3</wiremock.version>
@@ -79,7 +79,7 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.1</log4j2.version>
+    <log4j2.version>2.13.2</log4j2.version>
 
 
     <spring.version>5.1.13.RELEASE</spring.version>
@@ -1481,7 +1481,7 @@
        <dependency>
          <groupId>com.fasterxml</groupId>
          <artifactId>classmate</artifactId>
-         <version>1.5.0</version>
+         <version>1.5.1</version>
        </dependency>
        <dependency>
          <groupId>org.apache.santuario</groupId>
