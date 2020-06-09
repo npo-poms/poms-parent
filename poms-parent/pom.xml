@@ -67,7 +67,7 @@
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.16.0</assertj.version>
     <lombok.version>1.18.12</lombok.version>
-    <xmlunit.version>2.6.4</xmlunit.version>
+    <xmlunit.version>2.7.0</xmlunit.version>
     <wiremock.version>2.26.3</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
@@ -1361,6 +1361,12 @@
       <dependency>
         <groupId>org.xmlunit</groupId>
         <artifactId>xmlunit-matchers</artifactId>
+        <version>${xmlunit.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.xmlunit</groupId>
+        <artifactId>xmlunit-assertj</artifactId>
         <version>${xmlunit.version}</version>
         <scope>test</scope>
       </dependency>
