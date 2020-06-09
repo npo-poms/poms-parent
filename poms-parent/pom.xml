@@ -46,7 +46,7 @@
     <hibernate.search.version>5.11.4.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.4.1</flyway.version>
+    <flyway.version>6.4.3</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -65,7 +65,7 @@
     <junit.version>5.6.2</junit.version>
     <mockito.version>3.3.3</mockito.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
-    <assertj.version> 3.16.0</assertj.version>
+    <assertj.version> 3.16.1</assertj.version>
     <lombok.version>1.18.12</lombok.version>
     <xmlunit.version>2.7.0</xmlunit.version>
     <wiremock.version>2.26.3</wiremock.version>
@@ -73,14 +73,13 @@
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>5.11.0</newrelic.version>
+    <newrelic.version>5.12.1</newrelic.version>
     <resteasy.version>4.5.3.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.2</log4j2.version>
-
+    <log4j2.version>2.13.3</log4j2.version>
 
     <spring.version>5.1.13.RELEASE</spring.version>
     <spring-security.version>5.1.7.RELEASE</spring-security.version>
@@ -88,15 +87,13 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>10.0.0</keycloak.version>
+    <keycloak.version>10.0.2</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
     <!--
     <keycloak.admin.client.version>8.0.0.VPRO-RESTEASY4</keycloak.admin.client.version>
     -->
 
     <cglib.version>3.3.0</cglib.version>
-
-    <spring.ldap.version>2.3.2.RELEASE</spring.ldap.version>
     <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
 
@@ -1269,17 +1266,6 @@
         <artifactId>spring-data-commons</artifactId>
         <version>${spring-data-commons.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.ldap</groupId>
-        <artifactId>spring-ldap-core</artifactId>
-        <version>${spring.ldap.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
 
       <dependency>
         <groupId>org.springframework.security</groupId>
@@ -1323,11 +1309,6 @@
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-core</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-ldap</artifactId>
         <version>${spring-security.version}</version>
       </dependency>
       <dependency>
