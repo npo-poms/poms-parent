@@ -74,7 +74,7 @@
 
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.12.1</newrelic.version>
-    <resteasy.version>4.5.3.Final</resteasy.version>
+    <resteasy.version>4.5.4.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
@@ -110,7 +110,7 @@
     <scala.version>2.13.1</scala.version>
 
     <!-- Tied to the ES server version! -->
-    <elasticsearch.version>7.4.1</elasticsearch.version>
+    <elasticsearch.version>7.7.1</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
     <lucene.elasticsearch.version>8.2.0</lucene.elasticsearch.version>
 
