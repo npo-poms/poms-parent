@@ -36,7 +36,7 @@
     <guava.version>29.0-jre</guava.version>
     <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.1</quartz.version>
-    <meeuw.i18n.bom.version>1.1-SNAPSHOT</meeuw.i18n.bom.version>
+    <meeuw.i18n.bom.version>1.1.0</meeuw.i18n.bom.version>
 
     <hibernate.version>5.4.17.Final</hibernate.version> <!--upping it to .11 makes tests in query in nl.vpro.domain.media.maintenance.MaintenanceRepositoryImpl.findNonPlayableMediaForDeletion fail
     I don't know why yet.
