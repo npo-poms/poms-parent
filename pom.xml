@@ -1,7 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.poms</groupId>
+<<<<<<< HEAD
   <version>5.12.0</version>
+=======
+  <version>5.12.6-SNAPSHOT</version>
+>>>>>>> e6b64061cb20b289ea5ae31db85efda9422855f3
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
@@ -11,25 +15,20 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <poms.version>5.12.0</poms.version>
-    <poms.shared.version>5.12-SNAPSHOT</poms.shared.version>
-    <poms.shared.backend.version>5.12.0-SNAPSHOT</poms.shared.backend.version>
-    <api.version>5.12-SNAPSHOT</api.version>
-    <api.client.version>5.12.0-SNAPSHOT</api.client.version>
-    <image.version>${poms.version}</image.version>
-    <media.version>${poms.version}</media.version>
-    <npo-publish.version>${poms.version}</npo-publish.version>
-    <user.version>${poms.version}</user.version>
-    <thesaurus.version>5.11.1</thesaurus.version>
 
+    <poms.shared.version>5.12.8-SNAPSHOT</poms.shared.version>
+    <poms.shared.backend.version>5.12.2</poms.shared.backend.version>
+    <api.version>5.12.2</api.version>
+    <api.client.version>5.12.3</api.client.version>
+    <image.version>5.12.2</image.version>
+    <media.version>5.12.0</media.version>
+    <npo-publish.version>5.12.3</npo-publish.version>
+    <pages-publish.version>5.12.1</pages-publish.version>
+    <user.version>5.12.5</user.version>
+    <thesaurus.version>5.12.1</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
-
-    <!-- dependency provided by VPRO -->
-    <js.version>0.4.1</js.version>
-    <vpro-camel.version>1.3.1</vpro-camel.version>
-    <vpro.shared.version>2.10-SNAPSHOT</vpro.shared.version>
-    <events.version>2.6.1</events.version>
   </properties>
 
   <modules>
@@ -75,7 +74,11 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
+<<<<<<< HEAD
     <tag>REL-5.12.0</tag>
+=======
+    <tag>5.12.5</tag>
+>>>>>>> e6b64061cb20b289ea5ae31db85efda9422855f3
   </scm>
 
   <prerequisites>
@@ -109,10 +112,6 @@
 
   <dependencyManagement>
     <dependencies>
-
-
-
-
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media</artifactId>
@@ -156,6 +155,14 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-server</artifactId>
+        <version>${api.version}</version>
+        <type>war</type>
+      </dependency>
+
+
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs-services</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
@@ -185,24 +192,6 @@
         <artifactId>frontend-api-client</artifactId>
         <version>${api.client.version}</version>
       </dependency>
-
-
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-filewatcher</artifactId>
-        <version>${vpro-camel.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-newrelic</artifactId>
-        <version>${vpro-camel.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.camel</groupId>
-        <artifactId>camel-json</artifactId>
-        <version>1.2</version>
-      </dependency>
-
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-classification</artifactId>
@@ -273,6 +262,18 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
+        <artifactId>media-server</artifactId>
+        <version>${media.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-rs</artifactId>
+        <version>${media.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
         <artifactId>media-test</artifactId>
         <version>${media.domain.version}</version>
         <scope>test</scope>
@@ -315,34 +316,22 @@
       </dependency>
 
 
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend</artifactId>
+        <version>${user.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.user</groupId>
+        <artifactId>user-backend-persistence</artifactId>
+        <version>${user.version}</version>
+      </dependency>
 
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-ldap</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-npo</artifactId>
-        <version>${user.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-backend-domain</artifactId>
-        <version>${user.version}</version>
-      </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
         <version>${user.domain.version}</version>
       </dependency>
-      <dependency>
-        <groupId>nl.vpro.user</groupId>
-        <artifactId>user-test</artifactId>
-        <version>${poms.shared.version}</version>
-        <scope>test</scope>
-      </dependency>
-
       <dependency>
         <groupId>nl.vpro.image</groupId>
         <artifactId>image-domain</artifactId>
@@ -353,6 +342,18 @@
         <groupId>nl.vpro.image</groupId>
         <artifactId>image-ws</artifactId>
         <version>${image.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-server</artifactId>
+        <version>${image.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-server-frontend</artifactId>
+        <version>${image.version}</version>
+        <type>war</type>
       </dependency>
 
       <dependency>
@@ -377,7 +378,7 @@
       </dependency>
 
 
-         <dependency>
+      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <version>${poms.shared.backend.version}</version>
@@ -421,21 +422,25 @@
         <artifactId>query-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
-
-
       <dependency>
-        <groupId>nl.vpro.esper</groupId>
-        <artifactId>esper-events</artifactId>
-        <version>${events.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>nl.vpro.shared</groupId>
-        <artifactId>vpro-shared-bom</artifactId>
-        <version>${vpro.shared.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>push-es-mappings</artifactId>
+        <version>${poms.shared.backend.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>nl.publiekeomroep.npo-publish</groupId>
+        <artifactId>npo-publish-webapp</artifactId>
+        <version>${npo-publish.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.vpro.pages</groupId>
+        <artifactId>pages-publish-webapp</artifactId>
+        <version>${pages-publish.version}</version>
+        <type>war</type>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
@@ -688,7 +693,6 @@
             </configuration>
           </plugin>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <version>1.6</version>
             <executions>
@@ -719,7 +723,6 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
             <version>3.0.1</version>
             <executions>
