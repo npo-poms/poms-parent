@@ -1,11 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.poms</groupId>
-<<<<<<< HEAD
-  <version>5.12.0</version>
-=======
   <version>5.12.6-SNAPSHOT</version>
->>>>>>> e6b64061cb20b289ea5ae31db85efda9422855f3
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
