@@ -70,7 +70,7 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>HEAD</tag>
+    <tag>REL-5.13-SNAPSHOT</tag>
   </scm>
 
   <distributionManagement>
