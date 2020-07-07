@@ -1074,7 +1074,7 @@
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>2.5.1</version>
+        <version>2.5.0</version> <!-- 2.5.1 makes some tests in nl.vpro.domain.media.maintenance.MaintenanceRepositoryImplTest fail, I don't know why yet.-->
         <scope>test</scope>
       </dependency>
       <dependency>
