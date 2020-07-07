@@ -31,7 +31,7 @@
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.1</camel.version>
-    <cxf.version>3.3.6</cxf.version>
+    <cxf.version>3.3.7</cxf.version>
     <ektorp.version>1.5.0</ektorp.version>
     <guava.version>29.0-jre</guava.version>
     <guice.version>4.2.3</guice.version>
@@ -43,10 +43,10 @@
     -->
 
 
-    <hibernate.search.version>5.11.4.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.5.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.4.3</flyway.version>
+    <flyway.version>6.5.0</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -74,7 +74,7 @@
 
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.12.1</newrelic.version>
-    <resteasy.version>4.5.4.Final</resteasy.version>
+    <resteasy.version>4.5.5.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
@@ -107,7 +107,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>9.9.1-4</saxon.version>
     <javassist.version>3.26.0-GA</javassist.version>
-    <scala.version>2.13.1</scala.version>
+    <scala.version>2.13.3</scala.version>
 
     <!-- Tied to the ES server version! -->
     <elasticsearch.version>7.8.0</elasticsearch.version>
@@ -1074,7 +1074,7 @@
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>2.5.0</version>
+        <version>2.5.1</version>
         <scope>test</scope>
       </dependency>
       <dependency>
