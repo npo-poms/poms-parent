@@ -845,7 +845,7 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>3.0.0-alpha-2</version>
+        <version>3.0.4</version>
       </dependency>
 
       <!-- woodstox version compatible with wss4j-ws-security-common -->
@@ -1157,13 +1157,13 @@
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-core</artifactId>
-        <version>1.0-groovy-2.4</version>
+        <version>2.0-M3-groovy-3.0</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-spring</artifactId>
-        <version>1.0-groovy-2.4</version>
+        <version>2.0-M3-groovy-3.0</version>
         <scope>test</scope>
       </dependency>
 
