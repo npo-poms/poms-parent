@@ -249,7 +249,7 @@
 <!-- poms_gui -->
 <g id="node13" class="node">
 <title>poms_gui</title>
-<g id="a_node13"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui" xlink:title="Angular GUI for POMS">
+<g id="a_node13"><a xlink:href="https://git.vpro.nl/npo/media-gui.git" xlink:title="Angular GUI for POMS">
 <ellipse fill="none" stroke="#000000" cx="845" cy="-500" rx="98.5829" ry="18"/>
 <text text-anchor="middle" x="845" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#006400">Angular GUI for POMS</text>
 </a>
@@ -264,7 +264,7 @@
 <!-- user_backend -->
 <g id="node18" class="node">
 <title>user_backend</title>
-<g id="a_node18"><a xlink:href="https://subversion.vpro.nl/repo/nl/vpro/user" xlink:title="user_backend">
+<g id="a_node18"><a xlink:href="https://git.vpro.nl/npo/user.git" xlink:title="user_backend">
 <ellipse fill="none" stroke="#000000" cx="1471" cy="-406" rx="60.3893" ry="18"/>
 <text text-anchor="middle" x="1471" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#006400">user_backend</text>
 </a>
@@ -318,7 +318,7 @@
 <!-- api -->
 <g id="node15" class="node">
 <title>api</title>
-<g id="a_node15"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/api/" xlink:title="Frontend API">
+<g id="a_node15"><a xlink:href="https://git.vpro.nl/npo/user.git" xlink:title="Frontend API">
 <ellipse fill="none" stroke="#6495ed" cx="871" cy="-688" rx="60.3893" ry="18"/>
 <text text-anchor="middle" x="871" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Frontend API</text>
 </a>
@@ -411,7 +411,7 @@
 <!-- images -->
 <g id="node19" class="node">
 <title>images</title>
-<g id="a_node19"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/images/" xlink:title="Images Frontend &amp; Backend">
+<g id="a_node19"><a xlink:href="https://git.vpro.nl/npo/images.git" xlink:title="Images Frontend &amp; Backend">
 <ellipse fill="none" stroke="#caff70" cx="1065" cy="-688" rx="115.8798" ry="18"/>
 <text text-anchor="middle" x="1065" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Images Frontend &amp; Backend</text>
 </a>

@@ -58,17 +58,17 @@ strict digraph {
   ]
   poms_gui [
     label="Angular GUI for POMS"
-    href="https://subversion.vpro.nl/viewvc/nl/vpro/media-gui"
+    href="https://git.vpro.nl/npo/media-gui.git"
     fontcolor=darkgreen
   ]
   poms_shared_backend [
     href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/"
-   fontcolor=darkgreen
-   color=cyan3
+    fontcolor=darkgreen
+    color=cyan3
   ]
   api [
      label="Frontend API"
-     href="https://subversion.vpro.nl/viewvc/nl/vpro/api/"
+     href="https://git.vpro.nl/npo/user.git"
      fontcolor=darkgreen
      color=cornflowerblue
   ]
@@ -85,12 +85,12 @@ strict digraph {
     color=darkseagreen
   ]
   user_backend [
-    href="https://subversion.vpro.nl/repo/nl/vpro/user"
+    href="https://git.vpro.nl/npo/user.git"
     fontcolor=darkgreen
   ]
   images [
     label="Images Frontend & Backend"
-    href="https://subversion.vpro.nl/viewvc/nl/vpro/images/"
+    href="https://git.vpro.nl/npo/images.git"
     fontcolor=darkgreen
     color=darkolivegreen1
   ]
