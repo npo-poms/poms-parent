@@ -210,7 +210,7 @@
 <!-- poms_backend -->
 <g id="node12" class="node">
 <title>poms_backend</title>
-<g id="a_node12"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/media" xlink:title="POMS &#160;&amp; POMS Backend API">
+<g id="a_node12"><a xlink:href="https://git.vpro.nl/npo/media.git" xlink:title="POMS &#160;&amp; POMS Backend API">
 <ellipse fill="none" stroke="#cd950c" cx="667" cy="-688" rx="125.3778" ry="18"/>
 <text text-anchor="middle" x="667" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">POMS &#160;&amp; POMS Backend API</text>
 </a>
@@ -291,7 +291,7 @@
 <!-- poms_shared_backend -->
 <g id="node14" class="node">
 <title>poms_shared_backend</title>
-<g id="a_node14"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/" xlink:title="poms_shared_backend">
+<g id="a_node14"><a xlink:href="https://git.vpro.nl/npo/poms-shared-backend.git" xlink:title="poms_shared_backend">
 <ellipse fill="none" stroke="#00cdcd" cx="1299" cy="-406" rx="93.6835" ry="18"/>
 <text text-anchor="middle" x="1299" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#006400">poms_shared_backend</text>
 </a>
@@ -357,7 +357,7 @@
 <!-- media_publish -->
 <g id="node16" class="node">
 <title>media_publish</title>
-<g id="a_node16"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/" xlink:title="Media Publisher">
+<g id="a_node16"><a xlink:href="https://git.vpro.nl/npo/npo-publish.git" xlink:title="Media Publisher">
 <ellipse fill="none" stroke="#bf3eff" cx="453" cy="-688" rx="70.6878" ry="18"/>
 <text text-anchor="middle" x="453" y="-684.3" font-family="Times,serif" font-size="14.00" fill="#006400">Media Publisher</text>
 </a>
@@ -372,7 +372,7 @@
 <!-- pages_publish -->
 <g id="node17" class="node">
 <title>pages_publish</title>
-<g id="a_node17"><a xlink:href="https://subversion.vpro.nl/viewvc/nl/vpro/pages-publish/" xlink:title="Pages Publisher">
+<g id="a_node17"><a xlink:href="https://git.vpro.nl/npo/pages-publish.git" xlink:title="Pages Publisher">
 <ellipse fill="none" stroke="#8fbc8f" cx="1112" cy="-500" rx="68.7879" ry="18"/>
 <text text-anchor="middle" x="1112" y="-496.3" font-family="Times,serif" font-size="14.00" fill="#006400">Pages Publisher</text>
 </a>

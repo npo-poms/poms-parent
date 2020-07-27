@@ -52,7 +52,7 @@ strict digraph {
   ]
   poms_backend [
     label="POMS  & POMS Backend API"
-    href="https://subversion.vpro.nl/viewvc/nl/vpro/media"
+    href="https://git.vpro.nl/npo/media.git"
     fontcolor=darkgreen
     color=darkgoldenrod3
   ]
@@ -62,7 +62,7 @@ strict digraph {
     fontcolor=darkgreen
   ]
   poms_shared_backend [
-    href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/poms-shared-backend/"
+    href="https://git.vpro.nl/npo/poms-shared-backend.git"
     fontcolor=darkgreen
     color=cyan3
   ]
@@ -74,13 +74,13 @@ strict digraph {
   ]
   media_publish [
     label="Media Publisher"
-    href="https://subversion.vpro.nl/viewvc/nl/publiekeomroep/npo-publish/"
+    href="https://git.vpro.nl/npo/npo-publish.git"
     fontcolor=darkgreen
     color=darkorchid1
   ]
   pages_publish [
     label="Pages Publisher"
-    href="https://subversion.vpro.nl/viewvc/nl/vpro/pages-publish/"
+    href="https://git.vpro.nl/npo/pages-publish.git"
     fontcolor=darkgreen
     color=darkseagreen
   ]
