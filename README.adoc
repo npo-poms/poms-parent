@@ -118,4 +118,4 @@ Sometimes different POMS project share 'backend' code, like repository implement
 
 ==== User backend
 
-This contains the code to talk to LDAP to acquire user roles
+This contains the code to talk to keycloak to acquire user roles/groups
