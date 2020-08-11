@@ -554,6 +554,11 @@
            <artifactId>flyway-maven-plugin</artifactId>
            <version>${flyway.version}</version>
          </plugin>
+        <plugin>
+          <groupId>org.codehaus.gmaven</groupId>
+          <artifactId>gmaven-plugin</artifactId>
+          <version>1.5</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
