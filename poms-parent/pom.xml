@@ -64,6 +64,8 @@
 
     <junit.version>5.6.2</junit.version>
     <mockito.version>3.3.3</mockito.version>
+    <spock.version>2.0-M3-groovy-3.0</spock.version>
+    <groovy.version>3.05</groovy.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version> 3.16.1</assertj.version>
     <lombok.version>1.18.12</lombok.version>
@@ -845,7 +847,7 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>3.0.4</version>
+        <version>${groovy.version}</version>
       </dependency>
 
       <!-- woodstox version compatible with wss4j-ws-security-common -->
@@ -1157,13 +1159,13 @@
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-core</artifactId>
-        <version>2.0-M3-groovy-3.0</version>
+        <version>${spock.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-spring</artifactId>
-        <version>2.0-M3-groovy-3.0</version>
+        <version>${spock.version}</version>
         <scope>test</scope>
       </dependency>
 
