@@ -12,14 +12,14 @@
   <properties>
     <snapshot>5.15-SNAPSHOT</snapshot>
     <poms.shared.version>${snapshot}</poms.shared.version>
-    <poms.shared.backend.version>5.14.0</poms.shared.backend.version>
-    <api.version>5.14.0</api.version>
-    <api.client.version>5.14.0</api.client.version>
-    <image.version>5.14.0</image.version>
-    <media.version>5.14.0</media.version>
-    <npo-publish.version>5.14.0</npo-publish.version>
-    <pages-publish.version>5.14.0</pages-publish.version>
-    <user.version>5.14.0</user.version>
+    <poms.shared.backend.version>${snapshot}</poms.shared.backend.version>
+    <api.version>${snapshot}</api.version>
+    <api.client.version>${snapshot}</api.client.version>
+    <image.version>${snapshot}</image.version>
+    <media.version>${snapshot}</media.version>
+    <npo-publish.version>${snapshot}</npo-publish.version>
+    <pages-publish.version>${snapshot}</pages-publish.version>
+    <user.version>${snapshot}</user.version>
     <thesaurus.version>5.13.0</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
