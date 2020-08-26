@@ -63,7 +63,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.6.2</junit.version>
-    <mockito.version>3.5.5</mockito.version>
+    <mockito.version>3.5.7</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
     <groovy.version>3.0.5</groovy.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
@@ -119,7 +119,7 @@
 
     <postgresql.version>42.2.16.jre7</postgresql.version>
 
-    <commons.lang3.version>3.10</commons.lang3.version>
+    <commons.lang3.version>3.11</commons.lang3.version>
     <jsonwebtoken.version>0.11.2</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -663,7 +663,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.8</version>
+        <version>1.9</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
