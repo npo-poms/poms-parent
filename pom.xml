@@ -11,7 +11,7 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <snapshot>5.15-SNAPSHOT</snapshot>
-    <poms.shared.version>5.15.0</poms.shared.version>
+    <poms.shared.version>5.15.1</poms.shared.version>
     <poms.shared.backend.version>5.15.0</poms.shared.backend.version>
     <api.version>5.15.0</api.version>
     <api.client.version>5.15.0</api.client.version>
