@@ -5,4 +5,4 @@ git checkout REL-5.10-SNAPSHOT
 mvn -Pdeploy,ossrh release:prepare release:perform -DreleaseVersion=5.10.0 -DdevelopmentVersion=5.10.1-SNAPSHOT
 ----
 
-If you want to release to vpro nexus, don't use deploy profile
+If you want to release to vpro nexus, don't use the profiles.
