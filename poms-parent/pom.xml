@@ -45,7 +45,7 @@
     <hibernate.search.version>5.11.5.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.5.0</flyway.version>
+    <flyway.version>6.5.5</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
