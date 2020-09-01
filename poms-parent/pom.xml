@@ -32,7 +32,6 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.2</camel.version>
     <cxf.version>3.3.7</cxf.version>
-    <ektorp.version>1.5.0</ektorp.version>
     <guava.version>29.0-jre</guava.version>
     <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.2</quartz.version>
@@ -884,24 +883,6 @@
         <artifactId>jackson-xc</artifactId>
         <version>${jackson.version}</version>
       </dependency>
-
-      <dependency>
-        <groupId>org.ektorp</groupId>
-        <artifactId>org.ektorp</artifactId>
-        <version>${ektorp.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ektorp</groupId>
-        <artifactId>org.ektorp.spring</artifactId>
-        <version>${ektorp.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>net.sourceforge.findbugs</groupId>
-            <artifactId>annotations</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-
       <dependency>
         <groupId>com.fasterxml.jackson</groupId>
         <artifactId>jackson-bom</artifactId>
