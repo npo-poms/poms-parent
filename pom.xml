@@ -11,14 +11,14 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <snapshot>5.16-SNAPSHOT</snapshot>
-    <poms.shared.version>${snapshot}</poms.shared.version>
-    <poms.shared.backend.version>5.15.0</poms.shared.backend.version>
-    <api.version>5.15.0</api.version>
-    <api.client.version>5.15.0</api.client.version>
-    <image.version>5.15.0</image.version>
-    <media.version>5.15.1</media.version>
-    <npo-publish.version>5.15.0</npo-publish.version>
-    <pages-publish.version>5.15.0</pages-publish.version>
+    <poms.shared.version>5.16.0</poms.shared.version>
+    <poms.shared.backend.version>5.16.0</poms.shared.backend.version>
+    <api.version>5.16.0</api.version>
+    <api.client.version>5.16.0</api.client.version>
+    <image.version>5.16.0</image.version>
+    <media.version>5.16.0</media.version>
+    <npo-publish.version>5.16.0</npo-publish.version>
+    <pages-publish.version>5.16.0</pages-publish.version>
     <user.version>${snapshot}</user.version>
     <thesaurus.version>5.13.0</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
