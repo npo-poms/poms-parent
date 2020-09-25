@@ -62,7 +62,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.7.0</junit.version>
-    <mockito.version>3.5.7</mockito.version>
+    <mockito.version>3.5.11</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
     <groovy.version>3.0.5</groovy.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
@@ -75,7 +75,7 @@
 
     <mycila.version>2.9.ga</mycila.version>
     <newrelic.version>5.12.1</newrelic.version>
-    <resteasy.version>4.5.6.Final</resteasy.version>
+    <resteasy.version>4.5.8.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
@@ -88,7 +88,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>11.0.1</keycloak.version>
+    <keycloak.version>11.0.2</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
     <!--
     <keycloak.admin.client.version>8.0.0.VPRO-RESTEASY4</keycloak.admin.client.version>

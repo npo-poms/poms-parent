@@ -30,9 +30,6 @@ digraph poms_universe {
       elasticsearch
       jms_ingest [ label = "JMS ActiveMQ\l(broadcast ingests,\linternal SOAP calls)" ]
       jms_publish [ label = "JMS ActiveMQ\l(publication)" ]
-      ldap
-      // gosa [ label="GOSa" href="https://admin.sso.omroep.nl/" fontcolor=blue
-
     }
 
 
@@ -107,7 +104,6 @@ poms -> {
   jms_publish
   jms_ingest
   keycloak
-  ldap
   miranda
   prepr
   pd
@@ -119,10 +115,9 @@ poms -> {
 
 poms_backend -> {
   jms_ingest
-  ldap
   metis
-  ldap
   nep
+  keycloak
 }[color=darkorange1]
 
 api -> {
@@ -132,7 +127,7 @@ api -> {
 
 pages_publish-> {
   elasticsearch
-  ldap
+  keycloak
   gtaa
 }[color=darkseagreen]
 
@@ -145,11 +140,11 @@ media_publish -> {
 images_frontend -> {
   postgresql_image
 }[color=darkolivegreen1]
+
 images_backend -> {
   postgresql_image
   jms_ingest
-  sso
-  ldap
+  keycloak
   thineye
   wikimedia
   pixabay
@@ -165,14 +160,8 @@ magnolia_frontend -> {
   api
 }
 
-sso -> ldap
-
 prepr -> metis
 pd -> metis
-
-//gosa -> ldap
-
-keycloak -> ldap
 
 
 functional_tests -> {
