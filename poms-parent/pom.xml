@@ -286,6 +286,12 @@
         <artifactId>jaxb-documentation</artifactId>
         <version>0.3</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.meeuw.util</groupId>
+        <artifactId>mihxil-functional</artifactId>
+        <version>0.2</version>
+      </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-regions-bom</artifactId>
