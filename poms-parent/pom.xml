@@ -116,7 +116,7 @@
     <lucene.elasticsearch.version>8.5.1</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.2.16.jre7</postgresql.version>
+    <postgresql.version>42.2.14</postgresql.version>
 
     <commons.lang3.version>3.11</commons.lang3.version>
     <jsonwebtoken.version>0.11.2</jsonwebtoken.version>
