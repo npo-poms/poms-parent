@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.poms</groupId>
-  <version>5.20.0</version>
+  <version>5.20.1-SNAPSHOT</version>
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
@@ -71,7 +71,7 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>REL-5.20.0</tag>
+    <tag>REL-5.20-SNAPSHOT</tag>
   </scm>
 
   <distributionManagement>
