@@ -45,7 +45,7 @@
     <hibernate.search.version>5.11.5.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>6.5.5</flyway.version>
+    <flyway.version>7.2.1</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -62,13 +62,13 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.7.0</junit.version>
-    <mockito.version>3.5.11</mockito.version>
+    <mockito.version>3.6.0</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
-    <groovy.version>3.0.5</groovy.version>
+    <groovy.version>3.0.6</groovy.version>
     <bytebuddy.version>1.9.14</bytebuddy.version>
-    <assertj.version> 3.17.0</assertj.version>
-    <lombok.version>1.18.12</lombok.version>
-    <xmlunit.version>2.7.0</xmlunit.version>
+    <assertj.version>3.18.1</assertj.version>
+    <lombok.version>1.18.16</lombok.version>
+    <xmlunit.version>2.8.1</xmlunit.version>
     <wiremock.version>2.26.3</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
@@ -80,7 +80,7 @@
     <ejb.version>3.0</ejb.version>
     <slf4j.version>1.7.28</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.3</log4j2.version>
+    <log4j2.version>2.14.0</log4j2.version>
 
     <spring.version>5.1.16.RELEASE</spring.version>
     <spring-security.version>5.1.10.RELEASE</spring-security.version>
@@ -88,7 +88,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>11.0.2</keycloak.version>
+    <keycloak.version>11.0.3</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
     <!--
     <keycloak.admin.client.version>8.0.0.VPRO-RESTEASY4</keycloak.admin.client.version>
@@ -290,7 +290,7 @@
       <dependency>
         <groupId>org.meeuw.util</groupId>
         <artifactId>mihxil-functional</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
