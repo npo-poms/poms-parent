@@ -292,7 +292,7 @@
         <version>${media.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.poms</groupId>
+        <groupId>nl.vpro.media</groupId>
         <artifactId>media-tva</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
