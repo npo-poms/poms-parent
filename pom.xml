@@ -291,6 +291,12 @@
         <artifactId>media-gtaa</artifactId>
         <version>${media.version}</version>
       </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>media-tva</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+
 
       <dependency>
         <groupId>nl.vpro.pages</groupId>
@@ -343,7 +349,6 @@
         <version>${image.version}</version>
         <type>war</type>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-shared</artifactId>
