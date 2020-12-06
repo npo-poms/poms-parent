@@ -95,8 +95,8 @@
     <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
     <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
 
-    <httpcomponents.version>4.5.12</httpcomponents.version>
-    <httpcomponentscore.version>4.4.13</httpcomponentscore.version>
+    <httpcomponents.version>4.5.13</httpcomponents.version>
+    <httpcomponentscore.version>4.4.14</httpcomponentscore.version>
     <swagger.version>1.5.23</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <swagger3.version>2.0.8</swagger3.version>
 
@@ -1050,6 +1050,12 @@
         <groupId>javax.ws.rs</groupId>
         <artifactId>javax.ws.rs-api</artifactId>
         <version>${ws.rs-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-ri</artifactId>
+        <version>2.3.0</version>
+        <type>pom</type>
       </dependency>
 
       <dependency>
