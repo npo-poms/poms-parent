@@ -29,7 +29,7 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.2</camel.version>
     <cxf.version>3.3.7</cxf.version>
-    <guava.version>29.0-jre</guava.version>
+    <guava.version>30.1-jre</guava.version>
     <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.1.0</meeuw.i18n.bom.version>
