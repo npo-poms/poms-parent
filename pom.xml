@@ -12,7 +12,7 @@
   <properties>
     <poms.version>5.12.0</poms.version>
 
-    <poms.shared.version>5.12.8-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>5.12.12</poms.shared.version>
     <poms.shared.backend.version>5.12.2</poms.shared.backend.version>
     <api.version>5.12.2</api.version>
     <api.client.version>5.12.3</api.client.version>
@@ -70,11 +70,6 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-<<<<<<< HEAD
-    <tag>REL-5.12.0</tag>
-=======
-    <tag>5.12.5</tag>
->>>>>>> e6b64061cb20b289ea5ae31db85efda9422855f3
   </scm>
 
   <prerequisites>
