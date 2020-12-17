@@ -13,14 +13,13 @@
     <current.version>5.20</current.version>
     <patch.version>.0</patch.version>
     <poms.default.version>${current.version}${patch.version}</poms.default.version>
-
-    <poms.shared.version>5.20.2-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>${current.version}.2</poms.shared.version>
     <poms.shared.backend.version>${poms.default.version}</poms.shared.backend.version>
     <api.version>${poms.default.version}</api.version>
     <api.client.version>${poms.default.version}</api.client.version>
     <image.version>${poms.default.version}</image.version>
-    <media.version>${poms.default.version}</media.version>
-    <npo-publish.version>${poms.default.version}</npo-publish.version>
+    <media.version>${current.version}.2</media.version>
+    <npo-publish.version>${current.version}.1</npo-publish.version>
     <pages-publish.version>${poms.default.version}</pages-publish.version>
     <user.version>${poms.default.version}</user.version>
     <thesaurus.version>5.13.0</thesaurus.version>
