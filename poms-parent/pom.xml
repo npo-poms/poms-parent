@@ -65,7 +65,7 @@
     <bytebuddy.version>1.9.14</bytebuddy.version>
     <assertj.version>3.18.1</assertj.version>
     <lombok.version>1.18.16</lombok.version>
-    <xmlunit.version>2.8.1</xmlunit.version>
+    <xmlunit.version>2.8.2</xmlunit.version>
     <wiremock.version>2.27.2</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
