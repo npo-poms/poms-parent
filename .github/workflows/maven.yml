@@ -20,5 +20,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Create settings.xml
+      uses: s4u/maven-settings-action@v1
+      with:
+        servers: '[{"id": "ossrh", "username": "${{secrets.SONATYPE_USERNAME}}", "password": "${{secrets.SONATYPE_PASSWORD}}"}]'  
     - name: Build with Maven
       run: mvn -B -Pdeploy deploy --file pom.xml
