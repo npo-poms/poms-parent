@@ -1507,8 +1507,7 @@
        <dependency>
          <groupId>io.jsonwebtoken</groupId>
          <artifactId>jjwt-api</artifactId>
-         <version>${json
-         webtoken.version}</version>
+         <version>${jsonwebtoken.version}</version>
        </dependency>
        <dependency>
          <groupId>io.jsonwebtoken</groupId>
