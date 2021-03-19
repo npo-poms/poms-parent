@@ -95,9 +95,17 @@ strict digraph {
     color=darkolivegreen1
   ]
   functional_tests [
-    label="Functional integration tests"
+    label="Functional fitnesse tests"
     href="https://github.com/npo-poms/functional-tests"
     fontcolor=blue
+    color=yellowgreen
+    fillcolor=azure2
+    style=filled
+  ]
+  api_tests [
+    label="Functional api tests"
+    href="https://git.vpro.nl/npo/test/api-tests"
+    fontcolor=darkgreen
     color=yellowgreen
     fillcolor=azure2
     style=filled
@@ -244,7 +252,7 @@ strict digraph {
     angular
    }
 
-  functional_tests -> {
+  api_tests -> {
      api_client
   }
 
