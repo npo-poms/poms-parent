@@ -14,10 +14,17 @@ digraph poms_universe {
     images_backend [ label = "Images Backend" href="https://poms.omroep.nl/images/" fontcolor=blue ]
     gtaa [ label ="B&G Thesaurus"  href="http://gtaa.beeldengeluid.nl/" fontcolor=blue]
     thineye
-    functional_tests [
+    api_tests [
        fillcolor=azure
        style=filled
-       href="https://jenkins.vpro.nl/job/POMS%20Functional%20Tests/"
+       href="https://git.vpro.nl/npo/test/api-tests/pipelines"
+       fontcolor="blue"
+    ]
+
+    fitnesse_tests [
+       fillcolor=azure
+       style=filled
+       href="https://jenkins.vpro.nl/view/POMS/job/POMS-Fitnesse-Tests/"
        fontcolor="blue"
     ]
 
@@ -38,7 +45,8 @@ subgraph cluster_3  {
   users
   backendsystems
   editors
-  functional_tests
+  api_tests
+  fitnesse_tests
 subgraph cluster_2  {
   label="VPRO"
   magnolia_frontend
@@ -164,11 +172,18 @@ prepr -> metis
 pd -> metis
 
 
-functional_tests -> {
+api_tests -> {
   poms_backend
   pages_publish
   api
 }
+
+fitnesse_tests -> {
+  poms_backend
+  poms
+  api
+}
+
 
 amara_importer -> {
   poms_backend
