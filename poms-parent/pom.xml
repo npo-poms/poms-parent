@@ -70,7 +70,6 @@
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
-    <newrelic.version>6.1.0</newrelic.version>
     <resteasy.version>4.6.0.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.0</ejb.version>
@@ -149,16 +148,6 @@
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
         <version>${guice.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.newrelic.agent.java</groupId>
-        <artifactId>newrelic-api</artifactId>
-        <version>${newrelic.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.newrelic.agent.java</groupId>
-        <artifactId>newrelic-agent</artifactId>
-        <version>${newrelic.version}</version>
       </dependency>
       <dependency>
         <groupId>com.joestelmach</groupId>
@@ -1522,11 +1511,6 @@
        <dependency>
          <groupId>nl.vpro.camel</groupId>
          <artifactId>camel-filewatcher</artifactId>
-         <version>${vpro-camel.version}</version>
-       </dependency>
-       <dependency>
-         <groupId>nl.vpro.camel</groupId>
-         <artifactId>camel-newrelic</artifactId>
          <version>${vpro-camel.version}</version>
        </dependency>
        <dependency>
