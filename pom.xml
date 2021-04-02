@@ -10,7 +10,7 @@
 
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
-    <current.version>5.26</current.version>
+    <current.version>5.27</current.version>
     <patch.version>-SNAPSHOT</patch.version>
     <poms.default.version>${current.version}${patch.version}</poms.default.version>
 
