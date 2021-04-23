@@ -2,8 +2,7 @@
 
 # get new version from bom
 export NS=http://maven.apache.org/POM/4.0.0
-export MAVEN_OPTS=[INFO] gpg: signing failed: Inappropriate ioctl for device
--Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+export MAVEN_OPTS=-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
 
 # determin current version
 SNAPSHOT_VERSION=`xmllint  --noout  --shell  pom.xml << EOF |  grep -E -v '^(\/|text).*'
