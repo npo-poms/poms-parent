@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-
 # get new version from bom
 export NS=http://maven.apache.org/POM/4.0.0
 export MAVEN_OPTS=-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+
+
+# TODO
+# set poms.xml/properties/patch.version to .0
 
 # determin current version
 SNAPSHOT_VERSION=`xmllint  --noout  --shell  pom.xml << EOF |  grep -E -v '^(\/|text).*'
@@ -25,6 +28,7 @@ git checkout REL-$SNAPSHOT_VERSION
 git branch -l
 # this command will make and deploy the actual release.
 # echo it for review, it then can be copy/pasted to execute
-echo mvn -Pdeploy release:prepare release:perform -DreleaseVersion=$TARGET_VERSION -DdevelopmentVersion=$BRANCH_DEVELOPMENT_VERSION
+echo mvn -Pdeploy release:prepare release:perform -Dtag=REL-$TARGET_VERSION =DreleaseVersion=$TARGET_VERSION -DdevelopmentVersion=$BRANCH_DEVELOPMENT_VERSION
+echo git push --set-upstream origin REL-$SNAPSHOT_VERSION ; git checkout master
 
 
