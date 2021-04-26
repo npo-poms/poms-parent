@@ -1,3 +1,3 @@
 [submodule "release/shunit2"]
 	path = release/shunit2
-	url = git@github.com:kward/shunit2.git
+	url = https://github.com/kward/shunit2.git
