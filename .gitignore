@@ -1,3 +1,6 @@
 *.iml
 target
 .idea
+/release/poms-shared/
+/release/user/
+/release/vpro-shared/
