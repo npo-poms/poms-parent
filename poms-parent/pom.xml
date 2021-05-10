@@ -20,7 +20,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>2.26-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.11.0</checker.version>
+    <checker.version>3.13.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.15.14</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
