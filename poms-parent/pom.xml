@@ -32,17 +32,15 @@
     <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.2.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.6.6</micrometer.version>
+    <micrometer.version>1.7.0</micrometer.version>
 
-    <hibernate.version>5.4.10.Final</hibernate.version> <!--upping it to .11 makes tests in query in nl.vpro.domain.media.maintenance.MaintenanceRepositoryImpl.findNonPlayableMediaForDeletion fail
-    I don't know why yet.
-    -->
+    <hibernate.version>5.4.32.Final</hibernate.version>
 
 
-    <hibernate.search.version>5.11.5.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.9.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.1.2.Final</hibernate.validator.version>
-    <flyway.version>7.5.0</flyway.version>
+    <flyway.version>7.9.2</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -59,9 +57,9 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.7.1</junit.version>
-    <mockito.version>3.9.0</mockito.version>
+    <mockito.version>3.10.0</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
-    <groovy.version>3.0.7</groovy.version>
+    <groovy.version>3.0.8</groovy.version>
     <bytebuddy.version>1.11.0</bytebuddy.version>
     <assertj.version>3.19.0</assertj.version>
     <lombok.version>1.18.20</lombok.version>
@@ -84,7 +82,7 @@
     <spring.version>5.2.0.RELEASE</spring.version>
     <spring-security.version>5.2.0.RELEASE</spring-security.version>
      -->
-    <keycloak.version>12.0.4</keycloak.version>
+    <keycloak.version>13.0.1</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
