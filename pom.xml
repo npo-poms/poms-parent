@@ -397,6 +397,11 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
+        <artifactId>api-backend-semantic</artifactId>
+        <version>${poms.shared.backend.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-media-search</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
