@@ -11,7 +11,7 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <current.version>5.28</current.version>
-    <patch.version>-SNAPSHOT</patch.version>
+    <patch.version>.0</patch.version>
     <poms.default.version>${current.version}${patch.version}</poms.default.version>
 
     <poms.shared.version>${poms.default.version}</poms.shared.version>
