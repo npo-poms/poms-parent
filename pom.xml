@@ -590,12 +590,6 @@
                 <requireMavenVersion>
                   <version>3.5</version>
                 </requireMavenVersion>
-                <requireReleaseDeps>
-                  <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
-                  <excludes>
-                    <exclude>${project.groupId}:*</exclude>
-                  </excludes>
-                </requireReleaseDeps>
               </rules>
             </configuration>
           </execution>
@@ -773,6 +767,36 @@
                 <goals>
                   <goal>jar</goal>
                 </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>validate</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <executions>
+              <execution>
+                <id>enforce-maven</id>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <requireReleaseDeps>
+                      <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
+                      <excludes>
+                        <exclude>${project.groupId}:*</exclude>
+                      </excludes>
+                    </requireReleaseDeps>
+                  </rules>
+                </configuration>
               </execution>
             </executions>
           </plugin>
