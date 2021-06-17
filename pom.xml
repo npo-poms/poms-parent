@@ -590,6 +590,12 @@
                 <requireMavenVersion>
                   <version>3.5</version>
                 </requireMavenVersion>
+                <requireReleaseDeps>
+                  <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
+                  <excludes>
+                    <exclude>${project.groupId}:*</exclude>
+                  </excludes>
+                </requireReleaseDeps>
               </rules>
             </configuration>
           </execution>
