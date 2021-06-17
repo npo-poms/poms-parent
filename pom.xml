@@ -591,7 +591,7 @@
                   <version>3.5</version>
                 </requireMavenVersion>
                 <requireReleaseDeps>
-                  <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
+                  <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
                   <excludes>
                     <exclude>${project.groupId}:*</exclude>
                   </excludes>
