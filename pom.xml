@@ -11,7 +11,7 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <current.version>5.29</current.version>
-    <patch.version>-SNAPSHOT</patch.version>
+    <patch.version>.0</patch.version>
     <poms.default.version>${current.version}${patch.version}</poms.default.version>
 
     <poms.shared.version>${poms.default.version}</poms.shared.version>
@@ -71,7 +71,6 @@
     <connection>scm:git:git://git@github.com/npo-poms/poms-parent.git</connection>
     <developerConnection>scm:git:git@github.com:npo-poms/poms-parent.git</developerConnection>
     <url>https://github.com/vpro/poms-parent</url>
-    <tag>REL-5.19-SNAPSHOT</tag>
   </scm>
 
   <distributionManagement>
