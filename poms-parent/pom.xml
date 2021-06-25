@@ -79,7 +79,7 @@
     <spring.version>5.2.15.RELEASE</spring.version>
     <spring-security.version>5.3.9.RELEASE</spring-security.version>
 
-    <keycloak.version>13.0.1</keycloak.version>
+    <keycloak.version>14.0.0</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
