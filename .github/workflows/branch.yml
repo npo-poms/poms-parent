@@ -19,6 +19,6 @@ jobs:
       run: |
          RELEASE_VERSION=`mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed -r 's/-SNAPSHOT/.0-SNAPSHOT/'`
          echo $GITHUB_REPOSITORY
-         mvn --batch-mode -Dproject.scm.developerConnection=https://github.com/$GITHUB_REPOSITORY.git" -DreleaseVersion=${RELEASE_VERSION} release:branch
+         mvn --batch-mode -Dproject.scm.developerConnection=https://github.com/$GITHUB_REPOSITORY.git -DreleaseVersion=${RELEASE_VERSION} release:branch
 
 
