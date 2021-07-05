@@ -3,28 +3,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/REL-')
     steps:
-    - name : echo
-      run : echo {{ $github.ref }}
     - uses: actions/checkout@v2
-    - name: Cache local Maven repository
-      uses: actions/cache@v2
-      with:
-        path: ~/.m2/repository
-        key: maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          maven-
-      if: always()
-
     - name: Create settings.xml
       uses: s4u/maven-settings-action@v1
       with:
         servers: '[{"id": "vpro-ossrh", "username": "vpro", "password": "${{secrets.SONATYPE_PASSWORD}}"}, {"id": "gpg.passphrase", "passphrase": "${{secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }}"}]'
-    -
-      name: Import GPG key
+    - name: Import GPG key
       id: import_gpg
       uses: crazy-max/ghaction-import-gpg@v3
       with:
@@ -33,7 +21,7 @@ jobs:
     - uses: oleksiyrudenko/gha-git-credentials@v2.1
       with:
         global: true
-        name: 'github'
+        name: 'github $GITHUB_ACTOR'
         email: 'digitaal-techniek@vpro.nl'
         token: '${{ secrets.GITHUB_TOKEN  }}'
     - name: Release
