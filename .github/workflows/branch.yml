@@ -18,6 +18,6 @@ jobs:
     - name: Release branch with Maven
       run: |
          RELEASE_VERSION=`mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed -r 's/-SNAPSHOT/.0-SNAPSHOT/'`
-         mvn --batch-mode -DreleaseVersion=${RELEASE_VERSION} release:branch
+         mvn --batch-mode -Darguments="-Dproject.scm.developerConnection=https://github.com/$GITHUB_REPOSITORY.git" -DreleaseVersion=${RELEASE_VERSION} release:branch
 
 
