@@ -7,6 +7,8 @@ jobs:
   branch:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
+    env:
+      MAVEN_OPTS: '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn'
     steps:
     - uses: actions/checkout@v2
     - uses: oleksiyrudenko/gha-git-credentials@v2.1
@@ -18,7 +20,6 @@ jobs:
     - name: Release branch with Maven
       run: |
          RELEASE_VERSION=`mvn help:evaluate -Dexpression=project.version -q -DforceStdout | sed -r 's/-SNAPSHOT/.0-SNAPSHOT/'`
-         echo $GITHUB_REPOSITORY
-         mvn --batch-mode -Dproject.scm.developerConnection=https://github.com/$GITHUB_REPOSITORY.git -DreleaseVersion=${RELEASE_VERSION} release:branch
+         mvn --batch-mode  -DreleaseVersion=${RELEASE_VERSION} release:branch
 
 
