@@ -27,7 +27,7 @@ jobs:
     - name: Create settings.xml
       uses: s4u/maven-settings-action@v1
       with:
-        servers: '[{"id": "vpro-ossrh", "username": "vpro", "password": "${{secrets.SONATYPE_PASSWORD}}"}]'  
+        servers: '[{"id": "vpro-ossrh", "username": "vpro", "password": "${{secrets.SONATYPE_PASSWORD}}"}]'
     - uses: actions/cache@v1
       with:
         path: ~/.m2/repository
