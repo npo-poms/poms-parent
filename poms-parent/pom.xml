@@ -98,8 +98,7 @@
     <javassist.version>3.26.0-GA</javassist.version>
     <scala.version>2.13.3</scala.version>
 
-    <!-- Tied to the ES server version! -->
-    <elasticsearch.version>7.10.2</elasticsearch.version>
+    <elasticsearch.version>7.13.2</elasticsearch.version>
     <elasticsearch.icu.version>${elasticsearch.version}</elasticsearch.icu.version>
     <lucene.elasticsearch.version>8.7.0</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
