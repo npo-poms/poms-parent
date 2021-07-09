@@ -14,7 +14,7 @@
     <patch.version>.0</patch.version>
     <poms.default.version>${current.version}${patch.version}</poms.default.version>
 
-    <poms.shared.version>${poms.default.version}</poms.shared.version>
+    <poms.shared.version>5.30.1</poms.shared.version>
     <poms.shared.backend.version>${poms.default.version}</poms.shared.backend.version>
     <api.version>${poms.default.version}</api.version>
     <api.client.version>${poms.default.version}</api.client.version>
