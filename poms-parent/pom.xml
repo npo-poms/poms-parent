@@ -94,7 +94,7 @@
     <ehcache3.version>3.5.2</ehcache3.version>
     <ehcache.version>2.10.6</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>10.3</saxon.version>
+    <saxon.version>10.5</saxon.version>
     <javassist.version>3.26.0-GA</javassist.version>
     <scala.version>2.13.3</scala.version>
 
