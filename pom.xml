@@ -12,9 +12,7 @@
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>5.31-SNAPSHOT</poms.shared.version>
-    <user.domain.version>${poms.shared.version}</user.domain.version>
-    <image.domain.version>${poms.shared.version}</image.domain.version>
-    <media.domain.version>${poms.shared.version}</media.domain.version>
+
 
     <!-- these may not have -->
     <api.client.version>5.30.0</api.client.version>
@@ -104,6 +102,12 @@
         <version>${poms.shared.version}</version>
       </dependency>
 
+       <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-domain</artifactId>
+        <version>${poms.shared.version}</version>
+       </dependency>
+
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-extras</artifactId>
@@ -132,13 +136,13 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-classification</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
 
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-domain</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
        <groupId>nl.vpro.poms</groupId>
@@ -154,7 +158,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-organizations</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
@@ -187,21 +191,22 @@
         <artifactId>subtitles-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
+
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-test</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-rs-services</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-odi</artifactId>
-        <version>${media.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
@@ -236,12 +241,12 @@
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
-        <version>${user.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.image</groupId>
         <artifactId>image-domain</artifactId>
-        <version>${image.domain.version}</version>
+        <version>${poms.shared.version}</version>
       </dependency>
 
       <dependency>
