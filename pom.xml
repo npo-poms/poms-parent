@@ -10,33 +10,19 @@
 
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
-    <current.version>5.31</current.version>
-    <patch.version>-SNAPSHOT</patch.version>
-    <poms.default.version>${current.version}${patch.version}</poms.default.version>
-
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>${poms.default.version}</poms.shared.version>
+    <poms.shared.version>5.31-SNAPSHOT</poms.shared.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
     <media.domain.version>${poms.shared.version}</media.domain.version>
 
     <!-- these may not have -->
+    <api.client.version>5.30.0</api.client.version>
+    <thesaurus.version>5.13.0</thesaurus.version>
+
+    <!-- @ vpro only -->
     <poms.shared.backend.version>5.30.0</poms.shared.backend.version>
     <user.version>5.30.0</user.version>
-    <thesaurus.version>5.13.0</thesaurus.version>
-    <api.client.version>5.30.0</api.client.version>
-
-    <!--
-    these are the versions of the deployables themselves
-    It is actually questionably whether these must be in the bom.
-    -->
-   <!--
-    <api.version>${poms.default.version}</api.version>
-    <image.version>${poms.default.version}</image.version>
-    <media.version>${poms.default.version}</media.version>
-    <npo-publish.version>${poms.default.version}</npo-publish.version>
-    <pages-publish.version>${poms.default.version}</pages-publish.version>
-   -->
 
   </properties>
 
