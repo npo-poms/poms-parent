@@ -342,7 +342,7 @@
          <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-dependency-plugin</artifactId>
-           <version>3.1.2</version>
+           <version>3.2.0</version>
          </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -409,12 +409,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.1.2</version>
         </plugin>
          <plugin>
            <groupId>org.codehaus.mojo</groupId>
@@ -433,7 +433,7 @@
          <plugin>
            <groupId>org.bsc.maven</groupId>
            <artifactId>maven-processor-plugin</artifactId>
-           <version>3.3.3</version>
+           <version>3.3.4</version>
            <dependencies>
              <dependency>
                <groupId>org.hibernate</groupId>
