@@ -32,7 +32,7 @@
     <guice.version>4.2.3</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.2.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.7.2</micrometer.version>
+    <micrometer.version>1.7.3</micrometer.version>
 
     <hibernate.version>5.4.32.Final</hibernate.version>
 
@@ -40,7 +40,7 @@
     <hibernate.search.version>5.11.9.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.0.Final</hibernate.validator.version>
-    <flyway.version>7.12.1</flyway.version>
+    <flyway.version>7.13.0</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -57,7 +57,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.7.1</junit.version>
-    <mockito.version>3.11.1</mockito.version>
+    <mockito.version>3.11.2</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
     <groovy.version>3.0.8</groovy.version>
     <bytebuddy.version>1.11.0</bytebuddy.version>
@@ -1075,7 +1075,7 @@
       <dependency>
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.13.1</version>
+        <version>1.14.2</version>
       </dependency>
       <!--
       <dependency>
