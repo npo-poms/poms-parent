@@ -5,9 +5,9 @@ name: build
 
 on:
   push:
-    branches: [ master, "REL-*" ]
+    branches: [ main, "REL-*" ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 
