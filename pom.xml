@@ -22,7 +22,7 @@
     <media.version>${poms.default.version}</media.version>
     <npo-publish.version>${poms.default.version}</npo-publish.version>
     <pages-publish.version>${poms.default.version}</pages-publish.version>
-    <user.version>${poms.default.version}</user.version>
+    <user.version>5.30.1</user.version>
     <thesaurus.version>5.13.0</thesaurus.version>
     <user.domain.version>${poms.shared.version}</user.domain.version>
     <image.domain.version>${poms.shared.version}</image.domain.version>
