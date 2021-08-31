@@ -272,36 +272,36 @@
 
 
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <type>test-jar</type>
         <scope>test</scope>
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
         <classifier>tests</classifier>
         <scope>test</scope>
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-thesaurus</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-semantic</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
-        <groupId>nl.vpro.api</groupId>
+        <groupId>nl.vpro.poms</groupId>
         <artifactId>api-backend-media-search</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
