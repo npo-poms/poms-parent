@@ -19,7 +19,7 @@
     <thesaurus.version>5.13.0</thesaurus.version>
 
     <!-- @ vpro only -->
-    <poms.shared.backend.version>5.30.0</poms.shared.backend.version>
+    <poms.shared.backend.version>5.31-SNAPSHOT</poms.shared.backend.version>
     <user.version>5.30.1</user.version>
 
   </properties>
