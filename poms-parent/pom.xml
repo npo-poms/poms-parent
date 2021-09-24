@@ -64,7 +64,7 @@
     <assertj.version>3.20.2</assertj.version>
     <lombok.version>1.18.20</lombok.version>
     <xmlunit.version>2.8.2</xmlunit.version>
-    <wiremock.version>2.27.2</wiremock.version>
+    <wiremock.version>2.31.1</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
@@ -487,13 +487,13 @@
       </dependency>
       <dependency>
         <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-standalone</artifactId>
+        <artifactId>wiremock-jre8-standalone</artifactId>
         <version>${wiremock.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock</artifactId>
+        <artifactId>wiremock-jre8</artifactId>
         <version>${wiremock.version}</version>
         <scope>test</scope>
       </dependency>
