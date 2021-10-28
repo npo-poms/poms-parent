@@ -264,7 +264,7 @@
       <dependency>
         <groupId>org.meeuw</groupId>
         <artifactId>jaxb-documentation</artifactId>
-        <version>0.3</version>
+        <version>0.4</version>
       </dependency>
 
       <dependency>
