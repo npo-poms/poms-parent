@@ -57,7 +57,7 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.8.1</junit.version>
-    <mockito.version>4.0.0</mockito.version>
+    <mockito.version>4.1.0</mockito.version>
     <spock.version>2.0-M3-groovy-3.0</spock.version>
     <groovy.version>3.0.8</groovy.version>
     <bytebuddy.version>1.11.0</bytebuddy.version>
