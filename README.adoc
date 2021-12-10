@@ -119,3 +119,7 @@ Sometimes different POMS project share 'backend' code, like repository implement
 ==== User backend
 
 This contains the code to talk to keycloak to acquire user roles/groups
+
+== Rights
+
+The rights matrix of the POMs GUI can be found link:RIGHTS.html[here]
