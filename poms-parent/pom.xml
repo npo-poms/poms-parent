@@ -91,8 +91,8 @@
     <swagger.version>1.5.23</swagger.version> <!-- bigger versions don't seem to work well with ui 2.x versions ? -->
     <swagger3.version>2.0.8</swagger3.version>
 
-    <ehcache3.version>3.5.2</ehcache3.version>
-    <ehcache.version>2.10.6</ehcache.version>
+    <ehcache3.version>3.9.7</ehcache3.version>
+    <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>10.6</saxon.version>
     <javassist.version>3.26.0-GA</javassist.version>
