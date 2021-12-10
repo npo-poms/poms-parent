@@ -20,7 +20,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>2.29-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.17.0</checker.version>
+    <checker.version>3.20.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.15.14</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
@@ -28,7 +28,7 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.4</camel.version>
     <cxf.version>3.3.7</cxf.version>
-    <guava.version>30.1.1-jre</guava.version>
+    <guava.version>31.0.1-jre</guava.version>
     <guice.version>5.0.1</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.3.0</meeuw.i18n.bom.version>
@@ -40,7 +40,7 @@
     <hibernate.search.version>5.11.9.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.0.Final</hibernate.validator.version>
-    <flyway.version>8.2.0</flyway.version>
+    <flyway.version>8.2.1</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -58,13 +58,13 @@
 
     <junit.version>5.8.2</junit.version>
     <mockito.version>4.1.0</mockito.version>
-    <spock.version>2.0-M3-groovy-3.0</spock.version>
+    <spock.version>2.1-M2-groovy-3.0</spock.version>
     <groovy.version>3.0.9</groovy.version>
     <bytebuddy.version>1.11.0</bytebuddy.version>
     <assertj.version>3.21.0</assertj.version>
     <lombok.version>1.18.22</lombok.version>
     <xmlunit.version>2.8.3</xmlunit.version>
-    <wiremock.version>2.31.0</wiremock.version>
+    <wiremock.version>2.32.0</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
@@ -1508,7 +1508,7 @@
        <dependency>
          <groupId>com.hierynomus</groupId>
          <artifactId>sshj</artifactId>
-         <version>0.31.0</version>
+         <version>0.32.0</version>
        </dependency>
        <dependency>
          <!-- highly recommended by sshj-->
