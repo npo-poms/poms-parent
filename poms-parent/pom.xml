@@ -57,7 +57,8 @@
     <validation.api.version>2.0.1.Final</validation.api.version>
 
     <junit.version>5.8.2</junit.version>
-    <testcontainers.version>1.16.2</testcontainers.version>
+    <testcontainers.version>1.16.3</testcontainers.version>
+    <testcontainers-keycloak.version>1.9.0</testcontainers-keycloak.version>
     <mockito.version>4.2.0</mockito.version>
     <spock.version>2.1-M2-groovy-3.0</spock.version>
     <groovy.version>3.0.9</groovy.version>
@@ -492,6 +493,12 @@
         <version>${testcontainers.version}</version>
         <scope>test</scope>
       </dependency>
+       <dependency>
+         <groupId>com.github.dasniko</groupId>
+         <artifactId>testcontainers-keycloak</artifactId>
+         <version>${testcontainers-keycloak.version}</version>
+         <scope>test</scope>
+       </dependency>
       <dependency>
         <groupId>ru.lanwen.wiremock</groupId>
         <artifactId>wiremock-junit5</artifactId>
