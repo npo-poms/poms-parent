@@ -228,6 +228,7 @@
         <artifactId>swagger-core</artifactId>
         <version>${swagger.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-core</artifactId>
@@ -240,25 +241,6 @@
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-xjc</artifactId>
-        <version>${jaxb.version}</version>
-      </dependency>
-
-      <!-- http://stackoverflow.com/questions/26413431/which-artifacts-should-i-use-for-jaxb-ri-in-my-maven-project
-           Use org.glassfish ?
-           -->
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-core</artifactId>
-        <version>${jaxb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>${jaxb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-xjc</artifactId>
         <version>${jaxb.version}</version>
       </dependency>
