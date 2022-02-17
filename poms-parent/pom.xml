@@ -49,8 +49,7 @@
 
     <jackson2.version>2.10.5.20201202</jackson2.version> <!-- 2.11.0 breaks io.swagger.jackson.ModelResolver -->
 
-    <jaxb.version>2.2.11</jaxb.version> <!-- version compatible with java 8 -->
-    <jaxb.version.JAXB-1062>2.2.12</jaxb.version.JAXB-1062> <!-- See: https://java.net/jira/browse/JAXB-1062 -->
+    <jaxb.version>2.3.6</jaxb.version>
 
     <ws.rs-api.version>2.1.1</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
@@ -228,21 +227,12 @@
         <artifactId>swagger-core</artifactId>
         <version>${swagger.version}</version>
       </dependency>
-
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-core</artifactId>
+        <artifactId>jaxb-bom</artifactId>
         <version>${jaxb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-runtime</artifactId>
-        <version>${jaxb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.glassfish.jaxb</groupId>
-        <artifactId>jaxb-xjc</artifactId>
-        <version>${jaxb.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>
@@ -451,11 +441,7 @@
         <version>3.1.0</version>
         <scope>provided</scope>
       </dependency>
-      <dependency>
-        <groupId>javax.xml.bind</groupId>
-        <artifactId>jaxb-api</artifactId>
-        <version>${jaxb.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
