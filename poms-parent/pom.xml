@@ -34,10 +34,10 @@
     <meeuw.i18n.bom.version>1.4.3-SNAPSHOT</meeuw.i18n.bom.version>
     <micrometer.version>1.8.2</micrometer.version>
 
-    <hibernate.version>5.4.32.Final</hibernate.version>
+    <hibernate.version>5.6.5.Final</hibernate.version>
 
 
-    <hibernate.search.version>5.11.9.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.10.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.0.Final</hibernate.validator.version>
     <flyway.version>8.5.0</flyway.version>
@@ -1052,16 +1052,11 @@
         <version>2.3.1</version>
       </dependency>
       <dependency>
-        <groupId>com.sun.xml.ws</groupId>
-        <artifactId>jaxws-ri</artifactId>
-        <version>2.3.3</version>
+        <groupId>org.glassfish.metro</groupId>
+        <artifactId>metro-bom</artifactId>
+        <version>2.4.8</version>
         <type>pom</type>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.xml.ws</groupId>
-        <artifactId>jaxws-ri-bom</artifactId>
-        <version>2.3.3</version>
-        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>
