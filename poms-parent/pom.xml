@@ -853,10 +853,10 @@
       <dependency>
         <groupId>org.codehaus.woodstox</groupId>
         <artifactId>stax2-api</artifactId>
-        <version>3.1.4</version>
+        <version>4.2.1</version>
       </dependency>
 
-      <!-- this wone should I think be compatible with cxf -->
+      <!-- this one should I think be compatible with cxf -->
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
         <artifactId>woodstox-core</artifactId>
