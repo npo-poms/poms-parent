@@ -28,11 +28,11 @@
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.4</camel.version>
     <cxf.version>3.3.7</cxf.version>
-    <guava.version>31.0.1-jre</guava.version>
+    <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.4.2</meeuw.i18n.bom.version>
-    <micrometer.version>1.8.2</micrometer.version>
+    <micrometer.version>1.8.3</micrometer.version>
 
     <hibernate.version>5.6.5.Final</hibernate.version>
 
@@ -40,7 +40,7 @@
     <hibernate.search.version>5.11.10.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.2.Final</hibernate.validator.version>
-    <flyway.version>8.5.0</flyway.version>
+    <flyway.version>8.5.1</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -58,7 +58,7 @@
     <junit.version>5.8.2</junit.version>
     <testcontainers.version>1.16.3</testcontainers.version>
     <testcontainers-keycloak.version>1.9.0</testcontainers-keycloak.version>
-    <mockito.version>4.3.1</mockito.version>
+    <mockito.version>4.4.0</mockito.version>
     <spock.version>2.1-M2-groovy-3.0</spock.version>
     <groovy.version>3.0.9</groovy.version>
     <bytebuddy.version>1.12.7</bytebuddy.version>
@@ -95,7 +95,7 @@
     <ehcache3.version>3.9.7</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>10.6</saxon.version>
+    <saxon.version>11.2</saxon.version>
     <javassist.version>3.28.0-GA</javassist.version>
     <scala.version>2.13.8</scala.version>
 
