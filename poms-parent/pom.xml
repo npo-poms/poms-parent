@@ -40,7 +40,7 @@
     <hibernate.search.version>5.11.10.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.2.Final</hibernate.validator.version>
-    <flyway.version>8.5.1</flyway.version>
+    <flyway.version>8.5.4</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
@@ -57,7 +57,7 @@
 
     <junit.version>5.8.2</junit.version>
     <testcontainers.version>1.16.3</testcontainers.version>
-    <testcontainers-keycloak.version>1.9.0</testcontainers-keycloak.version>
+    <testcontainers-keycloak.version>2.1.2</testcontainers-keycloak.version>
     <mockito.version>4.4.0</mockito.version>
     <spock.version>2.1-M2-groovy-3.0</spock.version>
     <groovy.version>3.0.9</groovy.version>
