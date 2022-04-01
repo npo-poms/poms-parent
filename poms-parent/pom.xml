@@ -77,7 +77,7 @@
     <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.17.2</log4j2.version>
 
-    <spring.version>5.2.19.RELEASE</spring.version>
+    <spring.version>5.2.20.RELEASE</spring.version>
     <spring-security.version>5.3.13.RELEASE</spring-security.version>
 
     <keycloak.version>16.1.1</keycloak.version>
