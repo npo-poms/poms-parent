@@ -11,7 +11,7 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>5.31.1-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>5.32-SNAPSHOT</poms.shared.version>
 
     <!-- these may not have -->
     <api.client.version>5.31.0</api.client.version>
