@@ -931,7 +931,7 @@
       <dependency>
         <groupId>org.glassfish</groupId>
         <artifactId>jakarta.el</artifactId>
-        <version>3.0.4</version> <!-- from version 4.* unwards also the _package_ becomes jakarta.el (rather then javax.el). That would be more hassle to upgrade -->
+        <version>3.0.4</version> <!-- from version 4.* onwards also the _package_ becomes jakarta.el (rather then javax.el). That would be more hassle to upgrade -->
         <!-- As of Tomcat7 it is provided by Tomcat, Tomcat 6 needs a server add-on Needed here to run validation tests -->
         <scope>test</scope>
       </dependency>
