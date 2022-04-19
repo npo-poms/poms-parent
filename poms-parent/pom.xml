@@ -929,9 +929,9 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>javax.el</artifactId>
-        <version>2.2.6</version>
+        <groupId>org.glassfish</groupId>
+        <artifactId>jakarta.el</artifactId>
+        <version>4.0.2</version>
         <!-- As of Tomcat7 it is provided by Tomcat, Tomcat 6 needs a server add-on Needed here to run validation tests -->
         <scope>test</scope>
       </dependency>
