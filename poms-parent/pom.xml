@@ -81,7 +81,7 @@
     <spring.web.version>5.2.20.RELEASE</spring.web.version>
     <spring-security.version>5.3.13.RELEASE</spring-security.version>
 
-    <keycloak.version>16.1.1</keycloak.version>
+    <keycloak.version>17.0.1</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
