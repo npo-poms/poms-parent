@@ -11,16 +11,16 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>5.32-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>5.32.0</poms.shared.version>
 
     <!-- these may not have -->
-    <api.client.version>5.32-SNAPSHOT</api.client.version>
+    <api.client.version>5.32.0</api.client.version>
     <thesaurus.version>5.31.0</thesaurus.version>
 
     <!-- @ vpro only -->
-    <poms.shared.backend.version>5.32-SNAPSHOT</poms.shared.backend.version>
-    <user.version>5.32-SNAPSHOT</user.version>
-    <api.version>5.32-SNAPSHOT</api.version>
+    <poms.shared.backend.version>5.32.0</poms.shared.backend.version>
+    <user.version>5.32.0</user.version>
+    <api.version>5.32.0</api.version>
 
   </properties>
 
