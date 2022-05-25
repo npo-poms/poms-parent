@@ -367,7 +367,7 @@
          </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.11.0</version>
+          <version>3.12.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -392,7 +392,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
+          <version>3.0.0-M2</version>
         </plugin>
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
@@ -413,7 +413,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
           <configuration>
             <filesets>
               <fileset>
@@ -433,7 +433,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>3.3.0</version>
         </plugin>
          <plugin>
            <groupId>org.codehaus.mojo</groupId>
@@ -527,7 +527,6 @@
         -->
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
         <version>2.10</version>
         <configuration>
@@ -536,9 +535,8 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
+        <version>3.0.0-M6</version>
         <configuration>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
@@ -554,9 +552,8 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.22.2</version>
+        <version>3.0.0-M6</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
@@ -581,12 +578,11 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.10.0</version>
+        <version>2.11.0</version>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.3</version>
+        <version>3.0.0-M5</version>
         <configuration>
           <branchName>REL-${project.version}</branchName>
           <tagNameFormat>REL-@{project.version}</tagNameFormat>
@@ -612,7 +608,7 @@
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.8</version>
+            <version>1.6.13</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>vpro-ossrh</serverId>
@@ -622,7 +618,7 @@
           </plugin>
           <plugin>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <version>3.0.1</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
