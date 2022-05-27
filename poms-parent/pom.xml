@@ -22,7 +22,7 @@
 
     <checker.version>3.21.3</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.16.3</activemq.version>
+    <activemq.version>5.16.5</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
@@ -32,7 +32,7 @@
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.5.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.8.4</micrometer.version>
+    <micrometer.version>1.9.0</micrometer.version>
 
     <hibernate.version>5.6.5.Final</hibernate.version>
 
@@ -58,14 +58,14 @@
     <junit.version>5.8.2</junit.version>
     <testcontainers.version>1.17.1</testcontainers.version>
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
-    <mockito.version>4.5.0</mockito.version>
+    <mockito.version>4.5.1</mockito.version>
     <spock.version>2.1-M2-groovy-3.0</spock.version>
     <groovy.version>3.0.9</groovy.version>
-    <bytebuddy.version>1.12.7</bytebuddy.version>
+    <bytebuddy.version>1.12.10</bytebuddy.version>
     <assertj.version>3.22.0</assertj.version>
     <lombok.version>1.18.24</lombok.version>
     <xmlunit.version>2.9.0</xmlunit.version>
-    <wiremock.version>2.32.0</wiremock.version>
+    <wiremock.version>2.33.2</wiremock.version>
 
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
@@ -81,7 +81,7 @@
     <spring.web.version>5.2.22.RELEASE</spring.web.version>
     <spring-security.version>5.3.13.RELEASE</spring-security.version>
 
-    <keycloak.version>17.0.1</keycloak.version>
+    <keycloak.version>18.0.0</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -96,8 +96,8 @@
     <ehcache3.version>3.9.7</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>11.2</saxon.version>
-    <javassist.version>3.28.0-GA</javassist.version>
+    <saxon.version>11.3</saxon.version>
+    <javassist.version>3.29.0-GA</javassist.version>
     <scala.version>2.13.8</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
@@ -111,7 +111,7 @@
     <postgresql.version>42.3.3</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
-    <jsonwebtoken.version>0.11.2</jsonwebtoken.version>
+    <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -899,7 +899,7 @@
       <dependency>
         <groupId>io.openapitools.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-hal</artifactId>
-        <version>1.0.7</version>
+        <version>1.0.9</version>
       </dependency>
       <dependency>
         <groupId>org.scala-lang</groupId>
