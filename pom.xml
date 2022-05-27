@@ -666,6 +666,7 @@
               <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
               <outputDirectory>${delombok.output}</outputDirectory>
               <addOutputDirectory>false</addOutputDirectory>
+              <encoding>UTF-8</encoding>
             </configuration>
             <executions>
               <execution>
