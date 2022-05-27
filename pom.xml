@@ -689,8 +689,10 @@
               </execution>
             </executions>
             <configuration>
-              <sourcepath>${project.build.directory}/generated-sources/delombok</sourcepath>
-              <sourcepath>${project.build.directory}/generated-sources/apt</sourcepath>
+              <sourcepath>
+                ${project.build.directory}/generated-sources/delombok;
+                ${project.build.directory}/generated-sources/apt
+              </sourcepath>
             </configuration>
           </plugin>
         </plugins>
