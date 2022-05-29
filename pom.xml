@@ -11,16 +11,16 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>5.33-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>5.33.0</poms.shared.version>
 
     <!-- these may not have -->
-    <api.client.version>5.33-SNAPSHOT</api.client.version>
+    <api.client.version>5.33.0</api.client.version>
     <thesaurus.version>5.31.0</thesaurus.version>
 
     <!-- @ vpro only -->
-    <poms.shared.backend.version>5.33-SNAPSHOT</poms.shared.backend.version>
-    <user.version>5.33-SNAPSHOT</user.version>
-    <api.version>5.33-SNAPSHOT</api.version>
+    <poms.shared.backend.version>5.33.0</poms.shared.backend.version>
+    <user.version>5.33.0</user.version>
+    <api.version>5.33.0</api.version>
 
   </properties>
 
@@ -58,7 +58,7 @@
   <licenses>
     <license>
       <name>GPLv3</name>
-      <url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+      <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
     </license>
   </licenses>
 
@@ -86,11 +86,6 @@
     <system>JIRA</system>
     <url>https://jira.vpro.nl/</url>
   </issueManagement>
-
-  <ciManagement>
-    <system>jenkins</system>
-    <url>https://jenkins.vpro.nl/</url>
-  </ciManagement>
 
 
   <dependencyManagement>
@@ -473,9 +468,9 @@
            <version>${flyway.version}</version>
          </plugin>
         <plugin>
-          <groupId>org.codehaus.gmaven</groupId>
-          <artifactId>gmaven-plugin</artifactId>
-          <version>1.5</version>
+          <groupId>org.codehaus.gmavenplus</groupId>
+          <artifactId>gmavenplus-plugin</artifactId>
+          <version>1.13.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
