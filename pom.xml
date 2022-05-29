@@ -471,6 +471,13 @@
           <groupId>org.codehaus.gmavenplus</groupId>
           <artifactId>gmavenplus-plugin</artifactId>
           <version>1.13.1</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.groovy</groupId>
+              <artifactId>groovy</artifactId>
+              <version>4.0.2</version>
+            </dependency>
+          </dependencies>
         </plugin>
       </plugins>
     </pluginManagement>
