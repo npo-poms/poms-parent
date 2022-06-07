@@ -11,16 +11,16 @@
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>5.33.0</poms.shared.version>
+    <poms.shared.version>5.34-SNAPSHOT</poms.shared.version>
 
     <!-- these may not have -->
-    <api.client.version>5.33.0</api.client.version>
-    <thesaurus.version>5.31.0</thesaurus.version>
+    <api.client.version>5.34-SNAPSHOT</api.client.version>
+    <thesaurus.version>5.34-SNAPSHOT</thesaurus.version>
 
     <!-- @ vpro only -->
-    <poms.shared.backend.version>5.33.0</poms.shared.backend.version>
+    <poms.shared.backend.version>5.34-SNAPSHOT</poms.shared.backend.version>
     <user.version>5.33.0</user.version>
-    <api.version>5.33.0</api.version>
+    <api.version>5.34-SNAPSHOT</api.version>
 
   </properties>
 
@@ -538,7 +538,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M6</version>
+        <version>3.0.0-M7</version>
         <configuration>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
@@ -555,7 +555,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.0.0-M6</version>
+        <version>3.0.0-M7</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
