@@ -20,14 +20,14 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>2.32-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.22.1</checker.version>
+    <checker.version>3.22.2</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.16.5</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.4</camel.version>
-    <cxf.version>3.5.2</cxf.version>
+    <cxf.version>3.5.3</cxf.version>
     <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
@@ -56,13 +56,13 @@
     <validation.api.version>2.0.2</validation.api.version>
 
     <junit.version>5.8.2</junit.version>
-    <testcontainers.version>1.17.2</testcontainers.version>
+    <testcontainers.version>1.17.3</testcontainers.version>
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
     <mockito.version>4.6.1</mockito.version>
     <spock.version>2.2-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.3</groovy.version>
     <bytebuddy.version>1.12.10</bytebuddy.version>
-    <assertj.version>3.22.0</assertj.version>
+    <assertj.version>3.23.1</assertj.version>
     <lombok.version>1.18.24</lombok.version>
     <xmlunit.version>2.9.0</xmlunit.version>
     <wiremock.version>2.33.2</wiremock.version>
@@ -81,7 +81,7 @@
     <spring.web.version>5.2.22.RELEASE</spring.web.version>
     <spring-security.version>5.3.13.RELEASE</spring-security.version>
 
-    <keycloak.version>18.0.1</keycloak.version>
+    <keycloak.version>18.0.2</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
