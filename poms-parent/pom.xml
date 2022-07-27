@@ -3,7 +3,7 @@
   <parent>
     <groupId>nl.vpro.poms</groupId>
     <artifactId>poms-bom</artifactId>
-    <version>5.34.1-SNAPSHOT</version>
+    <version>5.34.1</version>
   </parent>
   <artifactId>poms-parent</artifactId>
   <packaging>pom</packaging>
