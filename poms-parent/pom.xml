@@ -55,7 +55,7 @@
 
     <validation.api.version>2.0.2</validation.api.version>
 
-    <junit.version>5.9.0-RC1</junit.version>
+    <junit.version>5.9.0</junit.version>
     <testcontainers.version>1.17.3</testcontainers.version>
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
     <mockito.version>4.6.1</mockito.version>
@@ -81,7 +81,7 @@
     <spring.web.version>5.2.22.RELEASE</spring.web.version>
     <spring-security.version>5.3.13.RELEASE</spring-security.version>
 
-    <keycloak.version>18.0.2</keycloak.version>
+    <keycloak.version>19.0.1</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -117,6 +117,32 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <doclint>none</doclint>
+          <additionalJOption>-quiet</additionalJOption>
+          <failOnError>false</failOnError>
+          <detectLinks>true</detectLinks>
+          <links combine.children="append">
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-i18n/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-test/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-validation/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-xml/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch-client/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-configuration/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-hibernate/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-jackson2/${vpro.shared.version}/</link>
+          </links>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencyManagement>
     <dependencies>
@@ -1075,7 +1101,7 @@
       <dependency>
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.15.1</version>
+        <version>1.15.2</version>
       </dependency>
       <!--
       <dependency>

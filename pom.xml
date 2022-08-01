@@ -475,7 +475,7 @@
             <dependency>
               <groupId>org.apache.groovy</groupId>
               <artifactId>groovy</artifactId>
-              <version>4.0.2</version>
+              <version>4.0.4</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -597,6 +597,11 @@
             <doclint>none</doclint>
             <additionalJOption>-quiet</additionalJOption>
             <failOnError>false</failOnError>
+            <detectLinks>true</detectLinks>
+            <links combine.children="append">
+              <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/package-list</link>
+
+            </links>
           </configuration>
         </plugin>
     </plugins>
