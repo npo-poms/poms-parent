@@ -20,14 +20,14 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>2.32.0</vpro.shared.version>
 
-    <checker.version>3.22.2</checker.version>
+    <checker.version>3.23.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.16.5</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.3</aspectj.version> <!-- version used by spring-aop -->
     <camel.version>2.25.4</camel.version>
-    <cxf.version>3.5.3</cxf.version>
+    <cxf.version>3.3.7</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
