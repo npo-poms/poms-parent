@@ -18,7 +18,7 @@
     <thesaurus.version>5.34.0</thesaurus.version>
 
     <!-- @ vpro only -->
-    <poms.shared.backend.version>5.34.0</poms.shared.backend.version>
+    <poms.shared.backend.version>5.35-SNAPSHOT</poms.shared.backend.version>
     <user.version>5.33.0</user.version>
     <api.version>5.34.0</api.version>
 
