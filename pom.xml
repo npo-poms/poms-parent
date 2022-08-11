@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.poms</groupId>
@@ -5,34 +6,26 @@
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
-
   <description>The POMS Bill of Materials manages all versions of the projects in the 'POMS' universe. This can be imported in projects that are not themselves part of it. Poms modules itself will use 'poms-parent' and manage also all external dependencies.</description>
-
   <url>https://github.com/npo-poms/poms-parent</url>
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>5.35-SNAPSHOT</poms.shared.version>
-
     <!-- these may not have -->
     <api.client.version>5.35-SNAPSHOT</api.client.version>
     <thesaurus.version>5.34.0</thesaurus.version>
-
     <!-- @ vpro only -->
     <poms.shared.backend.version>5.35-SNAPSHOT</poms.shared.backend.version>
     <user.version>5.33.0</user.version>
     <api.version>5.34.0</api.version>
-
   </properties>
-
   <modules>
     <module>poms-parent</module>
   </modules>
-
   <organization>
     <name>NPO</name>
     <url>https://over.npo.nl/</url>
   </organization>
-
   <developers>
     <developer>
       <name>soarten</name>
@@ -53,22 +46,18 @@
       <organizationUrl>https://www.vpro.nl/</organizationUrl>
     </developer>
   </developers>
-
-
   <licenses>
     <license>
       <name>GPLv3</name>
       <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
     </license>
   </licenses>
-
   <scm>
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
     <url>https://github.com/npo-poms/poms-parent.git</url>
     <tag>HEAD</tag>
   </scm>
-
   <distributionManagement>
     <repository>
       <id>nexus</id>
@@ -81,28 +70,22 @@
       <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
-
   <issueManagement>
     <system>JIRA</system>
     <url>https://jira.vpro.nl/</url>
   </issueManagement>
-
-
   <dependencyManagement>
     <dependencies>
-
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs-services</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
-       <dependency>
+      <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-domain</artifactId>
         <version>${poms.shared.version}</version>
-       </dependency>
-
+      </dependency>
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-extras</artifactId>
@@ -133,23 +116,21 @@
         <artifactId>media-classification</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
-       <groupId>nl.vpro.poms</groupId>
-       <artifactId>gtaa-domain</artifactId>
-       <version>${poms.shared.version}</version>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>gtaa-domain</artifactId>
+        <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
-       <groupId>nl.vpro.poms</groupId>
-       <artifactId>gtaa-openskos</artifactId>
-       <version>${poms.shared.version}</version>
+        <groupId>nl.vpro.poms</groupId>
+        <artifactId>gtaa-openskos</artifactId>
+        <version>${poms.shared.version}</version>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-organizations</artifactId>
@@ -186,7 +167,6 @@
         <artifactId>subtitles-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-test</artifactId>
@@ -208,8 +188,6 @@
         <artifactId>media-tva</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
-
       <dependency>
         <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-domain</artifactId>
@@ -220,8 +198,6 @@
         <artifactId>pages-rs-services</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
-
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-backend</artifactId>
@@ -232,8 +208,6 @@
         <artifactId>user-backend-persistence</artifactId>
         <version>${user.version}</version>
       </dependency>
-
-
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs</artifactId>
@@ -254,7 +228,6 @@
         <artifactId>api-services</artifactId>
         <version>${api.version}</version>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.user</groupId>
         <artifactId>user-domain</artifactId>
@@ -265,7 +238,6 @@
         <artifactId>image-domain</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-
       <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-shared</artifactId>
@@ -286,8 +258,6 @@
         <artifactId>poms-thesaurus</artifactId>
         <version>${thesaurus.version}</version>
       </dependency>
-
-
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-backend-elasticsearch</artifactId>
@@ -332,7 +302,7 @@
         <artifactId>pages-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
-       <dependency>
+      <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>query-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
@@ -342,24 +312,21 @@
         <artifactId>push-es-mappings</artifactId>
         <version>${poms.shared.backend.version}</version>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
-
-
   <build>
     <defaultGoal>install</defaultGoal>
     <pluginManagement>
       <plugins>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>buildnumber-maven-plugin</artifactId>
-           <version>3.0.0</version>
-         </plugin>
-         <plugin>
-           <artifactId>maven-dependency-plugin</artifactId>
-           <version>3.3.0</version>
-         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>buildnumber-maven-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.12.0</version>
@@ -430,43 +397,38 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>properties-maven-plugin</artifactId>
-           <version>1.1.0</version>
-         </plugin>
-         <plugin>
-           <artifactId>maven-compiler-plugin</artifactId>
-           <version>3.10.1</version>
-         </plugin>
-         <plugin>
-           <groupId>org.jacoco</groupId>
-           <artifactId>jacoco-maven-plugin</artifactId>
-           <version>0.8.8</version>
-         </plugin>
-         <plugin>
-           <groupId>org.bsc.maven</groupId>
-           <artifactId>maven-processor-plugin</artifactId>
-           <version>3.3.2</version>
-           <!-- <version>4.5</version> needs java 11 -->
-           <dependencies>
-             <dependency>
-               <groupId>org.hibernate</groupId>
-               <artifactId>hibernate-jpamodelgen</artifactId>
-               <version>${hibernate.version}</version>
-             </dependency>
-           </dependencies>
-         </plugin>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>build-helper-maven-plugin</artifactId>
-           <version>3.3.0</version>
-         </plugin>
-         <plugin>
-           <groupId>org.flywaydb</groupId>
-           <artifactId>flyway-maven-plugin</artifactId>
-           <version>${flyway.version}</version>
-         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <version>1.1.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.8</version>
+        </plugin>
+        <plugin>
+          <groupId>org.bsc.maven</groupId>
+          <artifactId>maven-processor-plugin</artifactId>
+          <version>3.3.2</version>
+          <!-- <version>4.5</version> needs java 11 -->
+          <dependencies>
+            <dependency>
+              <groupId>org.hibernate</groupId>
+              <artifactId>hibernate-jpamodelgen</artifactId>
+              <version>${hibernate.version}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
         <plugin>
           <groupId>org.codehaus.gmavenplus</groupId>
           <artifactId>gmavenplus-plugin</artifactId>
@@ -481,7 +443,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-
     <plugins>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -514,7 +475,8 @@
             <!-- would this help intellij? It seems not.
             <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
             -->
-            <arg>-parameters</arg> <!-- helps hibernate validator to recognize names  -->
+            <arg>-parameters</arg>
+            <!-- helps hibernate validator to recognize names  -->
             <arg>-Xlint:none</arg>
           </compilerArgs>
         </configuration>
@@ -589,24 +551,22 @@
           <branchName>REL-${project.version}</branchName>
           <tagNameFormat>REL-@{project.version}</tagNameFormat>
         </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.4.0</version>
-          <configuration>
-            <doclint>none</doclint>
-            <additionalJOption>-quiet</additionalJOption>
-            <failOnError>false</failOnError>
-            <detectLinks>true</detectLinks>
-            <links combine.children="append">
-              <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/package-list</link>
-
-            </links>
-          </configuration>
-        </plugin>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.4.0</version>
+        <configuration>
+          <doclint>none</doclint>
+          <additionalJOption>-quiet</additionalJOption>
+          <failOnError>false</failOnError>
+          <detectLinks>true</detectLinks>
+          <links combine.children="append">
+            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/package-list</link>
+          </links>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-
   <profiles>
     <profile>
       <id>ossrh</id>
@@ -727,7 +687,6 @@
       </build>
     </profile>
   </profiles>
-
   <repositories>
     <repository>
       <id>sonatype_snapshot</id>
@@ -740,5 +699,4 @@
       </snapshots>
     </repository>
   </repositories>
-
 </project>
