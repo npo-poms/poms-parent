@@ -74,7 +74,6 @@
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
     <slf4j.version>1.7.32</slf4j.version>
-    <log4j.version>1.2.17</log4j.version>
     <log4j2.version>2.18.0</log4j2.version>
 
     <spring.version>5.2.22.RELEASE</spring.version>
@@ -533,17 +532,6 @@
         <version>${micrometer.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>apache-log4j-extras</artifactId>
-        <version>${log4j.version}</version>
       </dependency>
 
       <dependency>
@@ -1155,11 +1143,6 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
         <version>${slf4j.version}</version>
       </dependency>
       <dependency>
