@@ -96,7 +96,7 @@
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>11.4</saxon.version>
-    <javassist.version>3.29.0-GA</javassist.version>
+    <javassist.version>3.29.1-GA</javassist.version>
     <scala.version>2.13.8</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
@@ -1089,7 +1089,7 @@
       <dependency>
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.15.2</version>
+        <version>1.15.3</version>
       </dependency>
       <!--
       <dependency>
