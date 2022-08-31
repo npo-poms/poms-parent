@@ -11,7 +11,7 @@
 
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>6.0.0</poms.shared.version>
+    <poms.shared.version>6.1-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
     <api.client.version>6.0.0</api.client.version>
     <thesaurus.version>5.34.0</thesaurus.version>
@@ -356,7 +356,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0-M2</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
@@ -448,7 +448,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <id>enforce-maven</id>
@@ -548,7 +548,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.0.0-M6</version>
         <configuration>
           <branchName>REL-${project.version}</branchName>
           <tagNameFormat>REL-@{project.version}</tagNameFormat>
@@ -673,7 +673,7 @@
         <plugins>
           <plugin>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>3.0.0</version>
+            <version>3.1.0</version>
             <configuration>
               <rules>
                 <requireReleaseDeps>
