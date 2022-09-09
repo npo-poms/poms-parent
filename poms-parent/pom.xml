@@ -34,7 +34,7 @@
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
     <micrometer.version>1.9.3</micrometer.version>
 
-    <hibernate.version>5.6.5.Final</hibernate.version>
+    <hibernate.version>5.6.11.Final</hibernate.version>
 
 
     <hibernate.search.version>5.11.10.Final</hibernate.search.version>
