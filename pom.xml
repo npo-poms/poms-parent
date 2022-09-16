@@ -579,6 +579,10 @@
   <profiles>
     <profile>
       <id>ossrh</id>
+       <!--
+        prepare for deployment to sonatype
+        i.e. configure the sonatype plugin, and switch on gpg signing.
+      -->
       <build>
         <plugins>
           <plugin>
@@ -620,6 +624,10 @@
     </profile>
     <profile>
       <id>deploy</id>
+      <!--
+        attach sources, attach (delomboked) javadoc
+        in other words do everything for a proper deployment
+      -->
       <build>
         <plugins>
           <plugin>
