@@ -32,7 +32,7 @@
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.9.3</micrometer.version>
+    <micrometer.version>1.9.4</micrometer.version>
 
     <hibernate.version>5.6.11.Final</hibernate.version>
 
