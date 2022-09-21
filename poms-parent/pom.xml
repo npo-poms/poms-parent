@@ -59,7 +59,7 @@
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
     <mockito.version>4.8.0</mockito.version>
     <spock.version>2.2-M3-groovy-4.0</spock.version>
-    <groovy.version>4.0.4</groovy.version>
+    <groovy.version>4.0.5</groovy.version>
     <bytebuddy.version>1.12.13</bytebuddy.version>
     <assertj.version>3.23.1</assertj.version>
     <lombok.version>1.18.24</lombok.version>
