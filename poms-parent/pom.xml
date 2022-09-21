@@ -54,7 +54,7 @@
     <ws.rs-api.version>2.1.6</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
 
-    <junit.version>5.9.0</junit.version>
+    <junit.version>5.9.1</junit.version>
     <testcontainers.version>1.17.3</testcontainers.version>
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
     <mockito.version>4.8.0</mockito.version>
@@ -96,7 +96,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>11.4</saxon.version>
     <javassist.version>3.29.1-GA</javassist.version>
-    <scala.version>2.13.8</scala.version>
+    <scala.version>2.13.9</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
