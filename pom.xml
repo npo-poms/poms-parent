@@ -24,7 +24,8 @@
 
     <validation.api.version>2.0.2</validation.api.version>
 
-
+    <EXTRA_TEST_OPTS></EXTRA_TEST_OPTS>
+    <!-- EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS-->
   </properties>
 
   <modules>
@@ -511,7 +512,7 @@
         <version>3.0.0-M7</version>
         <configuration>
           <!-- E.g. some tests in nl.vpro.api.rs.filter.ApiMediaFilterTest may fail otherwise -->
-          <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+          <argLine>${EXTRA_TEST_OPTS}</argLine>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
           </systemPropertyVariables>
