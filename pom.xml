@@ -438,18 +438,6 @@
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
-        <plugin>
-          <groupId>org.codehaus.gmavenplus</groupId>
-          <artifactId>gmavenplus-plugin</artifactId>
-          <version>1.13.1</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.groovy</groupId>
-              <artifactId>groovy</artifactId>
-              <version>4.0.4</version>
-            </dependency>
-          </dependencies>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
