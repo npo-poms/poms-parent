@@ -21,6 +21,7 @@
     <api.version>6.1.0</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
+    <delombok.lombok.version>1.18.24</delombok.lombok.version>
 
     <validation.api.version>2.0.2</validation.api.version>
 
@@ -637,6 +638,13 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-maven-plugin</artifactId>
             <version>1.18.20.0</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${delombok.lombok.version}</version>
+              </dependency>
+            </dependencies>
             <configuration>
               <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
               <outputDirectory>${delombok.output}</outputDirectory>
