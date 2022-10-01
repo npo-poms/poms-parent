@@ -62,7 +62,7 @@
     <groovy.version>4.0.5</groovy.version>
     <bytebuddy.version>1.12.13</bytebuddy.version>
     <assertj.version>3.23.1</assertj.version>
-    <lombok.version>1.18.24</lombok.version>
+
     <xmlunit.version>2.9.0</xmlunit.version>
     <wiremock.version>2.34.0</wiremock.version>
 
