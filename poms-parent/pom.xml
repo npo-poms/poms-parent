@@ -32,7 +32,7 @@
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.9.4</micrometer.version>
+    <micrometer.version>1.9.5</micrometer.version>
 
     <hibernate.version>5.6.11.Final</hibernate.version>
 
@@ -57,9 +57,9 @@
     <junit.version>5.9.1</junit.version>
     <testcontainers.version>1.17.3</testcontainers.version>
     <testcontainers-keycloak.version>1.10.0</testcontainers-keycloak.version> <!-- 2.* needs java 11 -->
-    <mockito.version>4.8.0</mockito.version>
+    <mockito.version>4.8.1</mockito.version>
     <spock.version>2.2-M3-groovy-4.0</spock.version>
-    <groovy.version>4.0.5</groovy.version>
+    <groovy.version>4.0.6</groovy.version>
     <bytebuddy.version>1.12.13</bytebuddy.version>
     <assertj.version>3.23.1</assertj.version>
 
@@ -69,7 +69,7 @@
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
     <mycila.version>2.9.ga</mycila.version>
-    <resteasy.version>4.7.6.Final</resteasy.version>
+    <resteasy.version>4.7.7.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
     <slf4j.version>1.7.32</slf4j.version>
@@ -96,7 +96,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>11.4</saxon.version>
     <javassist.version>3.29.2-GA</javassist.version>
-    <scala.version>2.13.9</scala.version>
+    <scala.version>2.13.10</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
