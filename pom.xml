@@ -26,7 +26,7 @@
 
     <validation.api.version>2.0.2</validation.api.version>
 
-    <java.version>11</java.version>
+    <java.version>17</java.version>
 
     <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS>
   </properties>
