@@ -75,9 +75,9 @@
     <slf4j.version>1.7.32</slf4j.version>
     <log4j2.version>2.19.0</log4j2.version>
 
-    <spring.version>5.2.22.RELEASE</spring.version>
-    <spring.web.version>5.2.22.RELEASE</spring.web.version>
-    <spring-security.version>5.3.13.RELEASE</spring-security.version>
+    <spring.version>5.3.23</spring.version>
+    <spring.web.version>5.3.23</spring.web.version>
+    <spring-security.version>5.7.5</spring-security.version>
 
     <keycloak.version>19.0.3</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
