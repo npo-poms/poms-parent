@@ -86,8 +86,8 @@
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
-    <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
+    <spring-data-jpa.version>2.7.5</spring-data-jpa.version>
+    <spring-data-commons.version>2.7.5</spring-data-commons.version>
 
     <httpcomponents.version>4.5.13</httpcomponents.version>
     <httpcomponentscore.version>4.4.15</httpcomponentscore.version>
