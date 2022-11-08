@@ -70,6 +70,9 @@
 
     <mycila.version>2.9.ga</mycila.version>
     <resteasy.version>4.7.7.Final</resteasy.version>
+    <!--
+        <resteasy.version>5.0.4.Final</resteasy.version>
+    -->
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
     <slf4j.version>1.7.32</slf4j.version>
@@ -505,16 +508,10 @@
         <version>${testcontainers.version}</version>
         <scope>test</scope>
       </dependency>
-       <dependency>
-         <groupId>com.github.dasniko</groupId>
-         <artifactId>testcontainers-keycloak</artifactId>
-         <version>${testcontainers-keycloak.version}</version>
-         <scope>test</scope>
-       </dependency>
       <dependency>
-        <groupId>ru.lanwen.wiremock</groupId>
-        <artifactId>wiremock-junit5</artifactId>
-        <version>1.3.1</version>
+        <groupId>com.github.dasniko</groupId>
+        <artifactId>testcontainers-keycloak</artifactId>
+        <version>${testcontainers-keycloak.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
