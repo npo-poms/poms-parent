@@ -39,7 +39,7 @@
 
     <hibernate.search.version>5.11.11.Final</hibernate.search.version>
 
-    <hibernate.validator.version>6.2.2.Final</hibernate.validator.version>
+    <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
     <flyway.version>9.6.0</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
