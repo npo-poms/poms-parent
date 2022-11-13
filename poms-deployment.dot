@@ -35,8 +35,7 @@ digraph poms_universe {
       postgresql_media
       postgresql_image
       elasticsearch
-      jms_ingest [ label = "JMS ActiveMQ\l(broadcast ingests,\linternal SOAP calls)" ]
-      jms_publish [ label = "JMS ActiveMQ\l(publication)" ]
+      jms [ label = "JMS ActiveMQ" ]
     }
 
 
@@ -109,8 +108,7 @@ backendsystems -> {
 
 poms -> {
   postgresql_media
-  jms_publish
-  jms_ingest
+  jms
   keycloak
   miranda
   prepr
@@ -121,7 +119,7 @@ poms -> {
 }[color=blue]
 
 poms_backend -> {
-  jms_ingest
+  jms
   nep
   keycloak
 }[color=darkorange1]
@@ -139,7 +137,7 @@ pages_publish-> {
 
 media_publish -> {
   elasticsearch
-  jms_publish
+  jms
 }[color=darkorchid1]
 
 
@@ -149,7 +147,7 @@ images_frontend -> {
 
 images_backend -> {
   postgresql_image
-  jms_ingest
+  jms
   keycloak
   thineye
   wikimedia
