@@ -20,7 +20,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.0-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.26.0</checker.version>
+    <checker.version>3.27.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.16.5</activemq.version> <!-- activemq-camel perished in 5.17 -->
     <apacheds.version>1.5.5</apacheds.version>
@@ -40,7 +40,7 @@
     <hibernate.search.version>5.11.11.Final</hibernate.search.version>
 
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
-    <flyway.version>9.6.0</flyway.version>
+    <flyway.version>9.8.1</flyway.version>
 
     <jackson.version>1.7.3</jackson.version>
     <!-- See MSE-2065 HibSearch has acd ..
