@@ -1458,6 +1458,14 @@
         <version>${resteasy.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.jboss.resteasy.spring</groupId>
+        <artifactId>resteasy-spring-bom</artifactId>
+        <version>2.0.1.Final</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--
+      <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-client-api</artifactId>
         <version>${resteasy.version}</version>
@@ -1466,12 +1474,14 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-core</artifactId>
         <version>${resteasy.version}</version>
-      </dependency>
+        </dependency>
+        -->
       <dependency>
         <groupId>jakarta.ejb</groupId>
         <artifactId>jakarta.ejb-api</artifactId>
         <version>${ejb.version}</version>
       </dependency>
+
       <dependency>
         <groupId>jakarta.security.enterprise</groupId>
         <artifactId>jakarta.security.enterprise-api</artifactId>
