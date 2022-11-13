@@ -16,7 +16,7 @@ This README serves as a general description of the different systems that this e
 
 We're available at link:https://vpro-poms.slack.com/[slack].
 
-Documentation is maintained at https://wiki.publiekeomroep.nl/display/poms/[wiki of NPO] (needs password)
+Documentation is maintained at https://wiki.vpro.nl/display/poms/[wiki of NPO] (needs password, and your ip in proper range)
 
 == Deployments
 
