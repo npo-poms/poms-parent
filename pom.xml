@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>nl.vpro.poms</groupId>
   <version>${revision}${changelist}</version>
+  
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
@@ -17,12 +19,12 @@
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>7.1-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
-    <api.client.version>6.2.0</api.client.version>
+    <api.client.version>7.1-SNAPSHOT</api.client.version>
     <thesaurus.version>6.0.0</thesaurus.version>
     <!-- @ vpro only -->
     <poms.shared.backend.version>7.1-SNAPSHOT</poms.shared.backend.version>
-    <user.version>6.2.0</user.version>
-    <api.version>6.1.0</api.version>
+    <user.version>7.1-SNAPSHOT</user.version>
+    <api.version>7.1-SNAPSHOT</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
 
