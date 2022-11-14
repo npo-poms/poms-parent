@@ -28,9 +28,11 @@ jobs:
           server-id: vpro-ossrh
           server-username: SONATYPE_USERNAME
           server-password: SONATYPE_PASSWORD
+          gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
+          gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
       - name: Build with Maven
         run: |
-          mvn -B -Dchangelist=.${GITHUB_HEAD_REF##*/}-SNAPSHOT -P"npm" -U -fae deploy
+          mvn -B -Dchangelist=.${GITHUB_HEAD_REF##*/}-SNAPSHOT -Pdeploy,ossrh deploy  -Dgpg.skip=false
         env:
           SONATYPE_USERNAME: vpro
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD}}
