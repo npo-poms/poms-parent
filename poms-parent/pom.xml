@@ -3,7 +3,7 @@
   <parent>
     <groupId>nl.vpro.poms</groupId>
     <artifactId>poms-bom</artifactId>
-    <version>${revision}${changelist}</version>
+    <version>7.1-SNAPSHOT</version>
   </parent>
   <artifactId>poms-parent</artifactId>
   <packaging>pom</packaging>
@@ -12,9 +12,6 @@
   <description>Parent POM for POMS and related projects</description>
 
   <properties>
-    <revision>7.1</revision>
-    <changelist>-SNAPSHOT</changelist>
-    
     <skipITs>true</skipITs>
 
     <!-- dependency provided by VPRO -->

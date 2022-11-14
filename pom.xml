@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.vpro.poms</groupId>
-  <version>${revision}${changelist}</version>
+  <version>7.1-SNAPSHOT</version>
   <artifactId>poms-bom</artifactId>
   <packaging>pom</packaging>
   <name>poms-bom</name>
@@ -10,9 +10,6 @@
   <url>https://github.com/npo-poms/poms-parent</url>
 
   <properties>
-    <!-- CI friendly versioning of pom.xml -->
-    <revision>7.1</revision>
-    <changelist>-SNAPSHOT</changelist>
     
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>7.1-SNAPSHOT</poms.shared.version>
