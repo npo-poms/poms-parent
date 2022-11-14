@@ -47,7 +47,10 @@
      hard dependency on this version-->
 
 
-    <jackson2.version>2.10.5.20201202</jackson2.version> <!-- 2.11.0 breaks io.swagger.jackson.ModelResolver -->
+    <jackson2.version>2.14.0</jackson2.version> 
+    <!-- 2.11.0 breaks io.swagger.jackson.ModelResolver 
+ But 2.10 doesn't work with org.apache.camel.component.jackson.AbstractJacksonDataFormat    
+    -->
 
     <jaxb.version>2.3.6</jaxb.version>
 
