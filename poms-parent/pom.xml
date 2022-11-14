@@ -16,7 +16,7 @@
     <skipITs>true</skipITs>
 
     <!-- dependency provided by VPRO -->
-    <vpro-camel.version>1.5-SNAPSHOT</vpro-camel.version> 
+    <vpro-camel.version>1.5-SNAPSHOT</vpro-camel.version>
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.0-SNAPSHOT</vpro.shared.version>
 
@@ -658,11 +658,6 @@
         <version>1.0.7</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-camel</artifactId>
-        <version>${activemq.version}</version>
-      </dependency>
 
       <dependency>
         <groupId>org.apache.activemq</groupId>
