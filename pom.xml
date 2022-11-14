@@ -15,9 +15,6 @@
   <url>https://github.com/npo-poms/poms-parent</url>
 
   <properties>
-    <!-- CI friendly versioning of pom.xml -->
-    <revision>7.1</revision>
-    <changelist>-SNAPSHOT</changelist>
     
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>7.1-SNAPSHOT</poms.shared.version>
