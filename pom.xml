@@ -3,11 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>nl.vpro.poms</groupId>
-  <version>${revision}${changelist}</version>
-  
   <artifactId>poms-bom</artifactId>
-  <packaging>pom</packaging>
+  <version>7.1.upgrade_camel-SNAPSHOT</version>
+
+  
   <name>poms-bom</name>
+  <packaging>pom</packaging>
+
+  
   <description>The POMS Bill of Materials manages all versions of the projects in the 'POMS' universe. This can be imported in projects that are not themselves part of it. Poms modules itself will use 'poms-parent' and manage also all external dependencies.</description>
   <url>https://github.com/npo-poms/poms-parent</url>
 
