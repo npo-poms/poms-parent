@@ -3,7 +3,9 @@
   <parent>
     <groupId>nl.vpro.poms</groupId>
     <artifactId>poms-bom</artifactId>
+ 
     <version>7.1.upgrade_camel-SNAPSHOT</version>
+ 
   </parent>
   <artifactId>poms-parent</artifactId>
   <packaging>pom</packaging>
@@ -12,7 +14,6 @@
   <description>Parent POM for POMS and related projects</description>
 
   <properties>
-
     <skipITs>true</skipITs>
 
     <!-- dependency provided by VPRO -->
