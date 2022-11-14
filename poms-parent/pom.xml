@@ -12,6 +12,8 @@
   <description>Parent POM for POMS and related projects</description>
 
   <properties>
+    <revision>7.1</revision>
+    <changelist>-SNAPSHOT</changelist>
 
     <skipITs>true</skipITs>
 
