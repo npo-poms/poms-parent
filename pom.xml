@@ -3,6 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>nl.vpro.poms</groupId>
+ 
   <artifactId>poms-bom</artifactId>
   <version>7.1.upgrade_camel-SNAPSHOT</version>
 
