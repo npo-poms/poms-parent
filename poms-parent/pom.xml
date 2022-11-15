@@ -110,7 +110,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.3.3</postgresql.version>
+    <postgresql.version>42.5.0</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
@@ -124,9 +124,11 @@
     <plugins>
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.4.0</version>
         <configuration>
           <doclint>none</doclint>
           <additionalJOption>-quiet</additionalJOption>
+          <additionalJOption>-J-Dhttp.agent=maven-javadoc-plugin-${project.name}</additionalJOption>
           <failOnError>false</failOnError>
           <detectLinks>true</detectLinks>
           <links combine.children="append">
@@ -140,6 +142,8 @@
             <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-configuration/${vpro.shared.version}/</link>
             <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-hibernate/${vpro.shared.version}/</link>
             <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-jackson2/${vpro.shared.version}/</link>
+            <link>https://www.javadoc.io/doc/org.meeuw.i18n/i18n-regions-countries/${meeuw.i18n.bom.version}/</link>
+
           </links>
         </configuration>
       </plugin>
@@ -149,7 +153,7 @@
     <profile>
       <id>deploy</id>
       <!--
-        attach sources, attach (delomboked) javadoc
+        attach sources, attach (delombokked) javadoc
         in other words do everything for a proper deployment
       -->
       <build>
