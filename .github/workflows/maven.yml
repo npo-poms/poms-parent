@@ -25,7 +25,7 @@ jobs:
         gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
         gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
     - name: Build with Maven
-      run: mvn -U -B -Pdeploy,ossrh deploy --file pom.xml  -Dgpg.skip=false
+      run: mvn -U -B -Possrh deploy --file pom.xml  -Dgpg.skip=false
       env:
         SONATYPE_USERNAME: vpro
         SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
