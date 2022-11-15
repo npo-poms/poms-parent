@@ -41,11 +41,6 @@
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
     <flyway.version>9.8.1</flyway.version>
 
-    <jackson.version>1.7.3</jackson.version>
-    <!-- See MSE-2065 HibSearch has acd ..
-     hard dependency on this version-->
-
-
     <jackson2.version>2.14.0</jackson2.version> 
     <!-- 2.11.0 breaks io.swagger.jackson.ModelResolver 
  But 2.10 doesn't work with org.apache.camel.component.jackson.AbstractJacksonDataFormat    
@@ -966,27 +961,7 @@
         <artifactId>woodstox-core</artifactId>
         <version>5.0.3</version>
       </dependency>
-
-      <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-core-asl</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-jaxrs</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-mapper-asl</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-xc</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
+      
       <dependency>
         <groupId>com.fasterxml.jackson</groupId>
         <artifactId>jackson-bom</artifactId>
