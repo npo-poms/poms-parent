@@ -1,18 +1,14 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>nl.vpro.poms</groupId> 
-  <version>7.2-SNAPSHOT</version>
- 
-  <artifactId>poms-bom</artifactId>
-  <version>7.1.upgrade_camel-SNAPSHOT</version>
 
-  
+  <groupId>nl.vpro.poms</groupId>
+  <artifactId>poms-bom</artifactId>
+  <version>7.2-SNAPSHOT</version>
   <name>poms-bom</name>
   <packaging>pom</packaging>
 
-  
+
   <description>The POMS Bill of Materials manages all versions of the projects in the 'POMS' universe. This can be imported in projects that are not themselves part of it. Poms modules itself will use 'poms-parent' and manage also all external dependencies.</description>
   <url>https://github.com/npo-poms/poms-parent</url>
 
