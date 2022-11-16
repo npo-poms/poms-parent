@@ -18,7 +18,7 @@
     <thesaurus.version>6.0.0</thesaurus.version>
     <!-- @ vpro only -->
     <poms.shared.backend.version>7.1.0</poms.shared.backend.version>
-    <user.version>7.1.0</user.version>
+    <user.version>7.1.1</user.version>
     <api.version>7.1.0</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
