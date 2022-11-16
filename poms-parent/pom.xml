@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>nl.vpro.poms</groupId>
-    <artifactId>poms-bom</artifactId> 
+    <artifactId>poms-bom</artifactId>
     <version>7.2-SNAPSHOT</version>
   </parent>
   <artifactId>poms-parent</artifactId>
@@ -17,14 +17,14 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.5-SNAPSHOT</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>3.0.0</vpro.shared.version>
+    <vpro.shared.version>3.1-SNAPSHOT</vpro.shared.version>
 
     <checker.version>3.27.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.17.2</activemq.version> 
+    <activemq.version>5.17.2</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
-    <aspectj.version>1.9.9.1</aspectj.version> 
+    <aspectj.version>1.9.9.1</aspectj.version>
     <camel.version>3.19.0</camel.version>
     <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
@@ -37,14 +37,14 @@
     <hibernate.search.version>5.11.11.Final</hibernate.search.version>
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
-    
+
     <flyway.version>9.8.1</flyway.version>
 
-    <jackson2.version>2.14.0</jackson2.version> 
+    <jackson2.version>2.14.0</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
-    
+
     <junit.version>5.9.1</junit.version>
     <testcontainers.version>1.17.5</testcontainers.version>
     <testcontainers-keycloak.version>2.4.0</testcontainers-keycloak.version>
@@ -55,7 +55,7 @@
     <assertj.version>3.23.1</assertj.version>
     <xmlunit.version>2.9.0</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
-    
+
     <resteasy.version>5.0.4.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
@@ -252,7 +252,7 @@
         <artifactId>natty</artifactId>
         <version>0.13</version>
       </dependency>
-      
+
       <dependency>
         <groupId>io.swagger</groupId>
         <artifactId>swagger-annotations</artifactId>
@@ -925,7 +925,7 @@
         <artifactId>woodstox-core</artifactId>
         <version>5.0.3</version>
       </dependency>
-      
+
       <dependency>
         <groupId>com.fasterxml.jackson</groupId>
         <artifactId>jackson-bom</artifactId>
@@ -1605,5 +1605,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
- 
+
 </project>
