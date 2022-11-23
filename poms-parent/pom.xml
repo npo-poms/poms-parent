@@ -40,7 +40,7 @@
 
     <flyway.version>9.8.2</flyway.version>
 
-    <jackson2.version>2.14.0</jackson2.version>
+    <jackson2.version>2.14.1</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
