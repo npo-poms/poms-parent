@@ -59,7 +59,7 @@
     <resteasy.version>5.0.4.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>1.7.32</slf4j.version>
+    <slf4j.version>2.0.4</slf4j.version>
     <log4j2.version>2.19.0</log4j2.version>
 
     <spring.version>5.3.24</spring.version>
@@ -93,7 +93,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.5.0</postgresql.version>
+    <postgresql.version>42.5.1</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
