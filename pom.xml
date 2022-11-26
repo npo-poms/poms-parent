@@ -20,7 +20,7 @@
     <api.client.version>7.2-SNAPSHOT</api.client.version>
     <thesaurus.version>6.0.0</thesaurus.version>
     <!-- @ vpro only -->
-    <poms.shared.backend.version>7.1.0</poms.shared.backend.version>
+    <poms.shared.backend.version>7.2-SNAPSHOT</poms.shared.backend.version>
     <user.version>7.1.1</user.version>
     <api.version>7.1.0</api.version>
 
