@@ -335,7 +335,7 @@
       <dependency>
         <groupId>org.meeuw.util</groupId>
         <artifactId>mihxil-functional</artifactId>
-        <version>1.6</version>
+        <version>1.7</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
