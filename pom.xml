@@ -21,7 +21,7 @@
     <thesaurus.version>6.0.0</thesaurus.version>
     <!-- @ vpro only -->
     <poms.shared.backend.version>7.2-SNAPSHOT</poms.shared.backend.version>
-    <user.version>7.1.1</user.version>
+    <user.version>7.2-SNAPSHOT</user.version>
     <api.version>7.1.0</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
@@ -656,5 +656,6 @@
       <id>sonatype</id>
       <url>https://oss.sonatype.org/service/local/repositories/releases/content</url>
     </repository>
+
   </repositories>
 </project>
