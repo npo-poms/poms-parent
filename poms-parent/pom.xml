@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.1-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.27.0</checker.version>
+    <checker.version>3.28.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.17.2</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
@@ -38,7 +38,7 @@
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
-    <flyway.version>9.8.2</flyway.version>
+    <flyway.version>9.9.0</flyway.version>
 
     <jackson2.version>2.14.1</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
@@ -59,7 +59,7 @@
     <resteasy.version>5.0.4.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.4</slf4j.version>
+    <slf4j.version>2.0.5</slf4j.version>
     <log4j2.version>2.19.0</log4j2.version>
 
     <spring.version>5.3.24</spring.version>
@@ -73,7 +73,7 @@
     <spring-data-jpa.version>2.7.5</spring-data-jpa.version>
     <spring-data-commons.version>2.7.5</spring-data-commons.version>
 
-    <httpcomponents.version>4.5.13</httpcomponents.version>
+    <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.15</httpcomponentscore.version>
     <swagger.version>1.6.9</swagger.version>
     <swagger3.version>2.2.7</swagger3.version>
@@ -1216,7 +1216,7 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
+
         <version>${spring.version}</version>
       </dependency>
       <dependency>
