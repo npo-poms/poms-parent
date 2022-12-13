@@ -56,7 +56,7 @@
     <xmlunit.version>2.9.0</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
 
-    <resteasy.version>5.0.4.Final</resteasy.version>
+    <resteasy.version>5.0.5.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
     <slf4j.version>2.0.6</slf4j.version>
