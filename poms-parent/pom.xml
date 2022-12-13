@@ -21,7 +21,7 @@
 
     <checker.version>3.28.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.17.2</activemq.version>
+    <activemq.version>5.17.3</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.9.1</aspectj.version>
@@ -38,7 +38,7 @@
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
     <lucene.version>5.5.5</lucene.version> <!-- linked to hibernate search -->
 
-    <flyway.version>9.9.0</flyway.version>
+    <flyway.version>9.10.0</flyway.version>
 
     <jackson2.version>2.14.1</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
@@ -59,7 +59,7 @@
     <resteasy.version>5.0.4.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.5</slf4j.version>
+    <slf4j.version>2.0.6</slf4j.version>
     <log4j2.version>2.19.0</log4j2.version>
 
     <spring.version>5.3.24</spring.version>
@@ -1117,7 +1117,7 @@
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>2.5.0</version> <!-- 2.5.1 makes some tests in nl.vpro.domain.media.maintenance.MaintenanceRepositoryImplTest fail, I don't know why yet.-->
+        <version>2.7.1</version>
         <scope>test</scope>
       </dependency>
       <dependency>
