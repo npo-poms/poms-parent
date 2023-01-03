@@ -1608,7 +1608,12 @@
         <groupId>nl.vpro.esper</groupId>
         <artifactId>esper-events</artifactId>
         <version>${events.version}</version>
-      </dependency>
+       </dependency>
+       <dependency>
+         <groupId>info.picocli</groupId>
+         <artifactId>picocli</artifactId>
+         <version>4.7.0</version>
+       </dependency>
     </dependencies>
   </dependencyManagement>
 
