@@ -19,12 +19,12 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.1-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.28.0</checker.version>
+    <checker.version>3.29.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.17.3</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
-    <aspectj.version>1.9.9.1</aspectj.version>
+    <aspectj.version>1.9.19</aspectj.version>
     <camel.version>3.20.0</camel.version>
     <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
@@ -45,14 +45,14 @@
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>  <!-- 2.1 conflicts with swagger 1.5.16 -->
 
-    <junit.version>5.9.1</junit.version>
+    <junit.version>5.9.2</junit.version>
     <testcontainers.version>1.17.6</testcontainers.version>
     <testcontainers-keycloak.version>2.4.0</testcontainers-keycloak.version>
     <mockito.version>4.11.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.7</groovy.version>
     <bytebuddy.version>1.12.21</bytebuddy.version>
-    <assertj.version>3.23.1</assertj.version>
+    <assertj.version>3.24.0</assertj.version>
     <xmlunit.version>2.9.0</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
 
@@ -62,8 +62,8 @@
     <slf4j.version>2.0.6</slf4j.version>
     <log4j2.version>2.19.0</log4j2.version>
 
-    <spring.version>5.3.24</spring.version>
-    <spring.web.version>5.3.24</spring.web.version>
+    <spring.version>5.3.25</spring.version>
+    <spring.web.version>5.3.25</spring.web.version>
     <spring-security.version>5.7.5</spring-security.version>
 
     <keycloak.version>20.0.2</keycloak.version>
