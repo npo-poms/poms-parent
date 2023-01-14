@@ -25,13 +25,13 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.19</aspectj.version>
-    <camel.version>3.20.0</camel.version>
+    <camel.version>3.20.1</camel.version>
     <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.10.2</micrometer.version>
+    <micrometer.version>1.10.3</micrometer.version>
 
     <hibernate.version>5.6.14.Final</hibernate.version>
     <hibernate.search.version>5.11.11.Final</hibernate.search.version>
@@ -51,9 +51,9 @@
     <mockito.version>4.11.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.7</groovy.version>
-    <bytebuddy.version>1.12.21</bytebuddy.version>
-    <assertj.version>3.24.0</assertj.version>
-    <xmlunit.version>2.9.0</xmlunit.version>
+    <bytebuddy.version>1.12.22</bytebuddy.version>
+    <assertj.version>3.24.1</assertj.version>
+    <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
 
     <resteasy.version>5.0.5.Final</resteasy.version>
@@ -66,7 +66,7 @@
     <spring.web.version>5.3.25</spring.web.version>
     <spring-security.version>5.7.5</spring-security.version>
 
-    <keycloak.version>20.0.2</keycloak.version>
+    <keycloak.version>20.0.3</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -76,12 +76,12 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
     <swagger.version>1.6.9</swagger.version>
-    <swagger3.version>2.2.7</swagger3.version>
+    <swagger3.version>2.2.8</swagger3.version>
 
     <ehcache3.version>3.9.7</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>11.4</saxon.version>
+    <saxon.version>12.0</saxon.version>
     <javassist.version>3.29.2-GA</javassist.version>
     <scala.version>2.13.10</scala.version>
 
