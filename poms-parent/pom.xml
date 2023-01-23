@@ -1608,11 +1608,6 @@
          <version>${vpro-camel.version}</version>
        </dependency>
        <dependency>
-         <groupId>nl.vpro.camel</groupId>
-         <artifactId>camel-json</artifactId>
-         <version>1.2</version>
-       </dependency>
-       <dependency>
         <groupId>nl.vpro.esper</groupId>
         <artifactId>esper-events</artifactId>
         <version>${events.version}</version>
