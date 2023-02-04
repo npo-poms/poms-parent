@@ -26,7 +26,7 @@
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
 
-    <lombok.version>1.18.24</lombok.version>
+    <lombok.version>1.18.26</lombok.version>
 
     <validation.api.version>2.0.2</validation.api.version>
 

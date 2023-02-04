@@ -15,11 +15,11 @@
     <skipITs>true</skipITs>
 
     <!-- dependency provided by VPRO -->
-    <vpro-camel.version>1.5.0</vpro-camel.version>
+    <vpro-camel.version>1.5.1</vpro-camel.version>
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.2-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.29.0</checker.version>
+    <checker.version>3.30.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.17.3</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
@@ -46,9 +46,9 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>9.11.0</flyway.version>
+    <flyway.version>9.14.1</flyway.version>
 
-    <jackson2.version>2.14.1</jackson2.version>
+    <jackson2.version>2.14.2</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
@@ -58,7 +58,7 @@
     <testcontainers-keycloak.version>2.4.0</testcontainers-keycloak.version>
     <mockito.version>5.1.1</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
-    <groovy.version>4.0.7</groovy.version>
+    <groovy.version>4.0.8</groovy.version>
     <bytebuddy.version>1.12.22</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
@@ -751,7 +751,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
-        <version>1.9.0</version>
+        <version>1.10.0</version>
       </dependency>
 
       <dependency>
@@ -1576,7 +1576,7 @@
        <dependency>
          <groupId>com.hierynomus</groupId>
          <artifactId>sshj</artifactId>
-         <version>0.34.0</version>
+         <version>0.35.0</version>
        </dependency>
        <dependency>
          <!-- highly recommended by sshj-->
@@ -1623,7 +1623,7 @@
        <dependency>
          <groupId>info.picocli</groupId>
          <artifactId>picocli</artifactId>
-         <version>4.7.0</version>
+         <version>4.7.1</version>
        </dependency>
     </dependencies>
   </dependencyManagement>
