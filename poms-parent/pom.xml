@@ -59,7 +59,7 @@
     <mockito.version>5.1.1</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.8</groovy.version>
-    <bytebuddy.version>1.12.22</bytebuddy.version>
+    <bytebuddy.version>1.12.23</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
