@@ -15,7 +15,7 @@
   <properties>
 
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>7.2.3-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>7.2.3</poms.shared.version>
     <!-- these may not have -->
     <api.client.version>7.2.0</api.client.version>
     <thesaurus.version>6.0.0</thesaurus.version>
