@@ -613,14 +613,14 @@
         <version>3.4.4</version>
       </dependency>
 
-
-
-      <!-- not doing this yet -->
+      
+      <!-- hibernate wants ehcache 3, we need to start using this.-->
       <dependency>
         <groupId>org.ehcache</groupId>
         <artifactId>ehcache</artifactId>
         <version>${ehcache3.version}</version>
       </dependency>
+      <!-- rather than this -->
       <dependency>
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache</artifactId>
