@@ -25,19 +25,19 @@
     <apacheds.version>1.5.5</apacheds.version>
     <!-- Apache DS 1.5.5 wordt ondersteund, maar 1.5.6 en 1.5.7 op dit moment niet: https://jira.springsource.org/browse/LDAP-219?focusedCommentId=59558&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-59558 -->
     <aspectj.version>1.9.19</aspectj.version>
-    <camel.version>3.20.1</camel.version>
+    <camel.version>3.20.2</camel.version>
     <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.10.3</micrometer.version>
+    <micrometer.version>1.10.4</micrometer.version>
 
     <hibernate.version>5.6.14.Final</hibernate.version>
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
 
 
-    <hibernate.search.version>5.11.11.Final</hibernate.search.version>
+    <hibernate.search.version>5.11.12.Final</hibernate.search.version>
     <lucene.version>5.5.5</lucene.version>
 
     <!--
@@ -58,7 +58,7 @@
     <testcontainers-keycloak.version>2.4.0</testcontainers-keycloak.version>
     <mockito.version>4.11.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
-    <groovy.version>4.0.8</groovy.version>
+    <groovy.version>4.0.9</groovy.version>
     <bytebuddy.version>1.12.23</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
@@ -101,7 +101,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.5.1</postgresql.version>
+    <postgresql.version>42.5.3</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
@@ -613,7 +613,7 @@
         <version>3.4.4</version>
       </dependency>
 
-      
+
       <!-- hibernate wants ehcache 3, we need to start using this.-->
       <dependency>
         <groupId>org.ehcache</groupId>
@@ -1021,8 +1021,8 @@
       </dependency>
       <dependency>
         <!-- deprecate this see
-         https://hibernate.atlassian.net/browse/HHH-12441 
-        --> 
+         https://hibernate.atlassian.net/browse/HHH-12441
+        -->
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-ehcache</artifactId>
         <version>${hibernate.version}</version>
