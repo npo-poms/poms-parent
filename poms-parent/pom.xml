@@ -46,7 +46,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>9.14.1</flyway.version>
+    <flyway.version>9.15.0</flyway.version>
 
     <jackson2.version>2.14.2</jackson2.version>
     <jaxb.version>2.3.6</jaxb.version>
@@ -68,13 +68,13 @@
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
     <slf4j.version>2.0.6</slf4j.version>
-    <log4j2.version>2.19.0</log4j2.version>
+    <log4j2.version>2.20.0</log4j2.version>
 
     <spring.version>5.3.25</spring.version>
     <spring.web.version>5.3.25</spring.web.version>
     <spring-security.version>5.7.5</spring-security.version>
 
-    <keycloak.version>20.0.3</keycloak.version>
+    <keycloak.version>20.0.5</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -102,7 +102,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.5.3</postgresql.version>
+    <postgresql.version>42.5.4</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
@@ -396,7 +396,7 @@
       <dependency>
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
-        <version>1.4</version>
+        <version>1.5</version>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
