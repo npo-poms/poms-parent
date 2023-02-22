@@ -59,7 +59,7 @@
     <mockito.version>4.11.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.9</groovy.version>
-    <bytebuddy.version>1.12.23</bytebuddy.version>
+    <bytebuddy.version>1.14.0</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
@@ -85,7 +85,7 @@
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
     <swagger.version>1.6.9</swagger.version>
     <swagger3.version>2.2.8</swagger3.version>
-    <swagger3-parser.version>2.1.11</swagger3-parser.version>
+    <swagger3-parser.version>2.1.12</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
