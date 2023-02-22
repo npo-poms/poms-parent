@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>3.2-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.30.0</checker.version>
+    <checker.version>3.31.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.17.3</activemq.version>
     <apacheds.version>1.5.5</apacheds.version>
@@ -482,14 +482,11 @@
         <artifactId>jsr305</artifactId>
         <version>3.0.2</version>
       </dependency>
-      <!-- lets consider checker ? -->
-       <dependency>
-
-         <groupId>org.checkerframework</groupId>
-         <artifactId>checker-qual</artifactId>
-         <version>${checker.version}</version>
-       </dependency>
-
+      <dependency>
+        <groupId>org.checkerframework</groupId>
+        <artifactId>checker-qual</artifactId>
+        <version>${checker.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
