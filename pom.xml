@@ -503,7 +503,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M8</version>
+        <version>3.0.0-M9</version>
         <configuration>
           <!-- E.g. some tests in nl.vpro.api.rs.filter.ApiMediaFilterTest may fail otherwise -->
           <argLine>${EXTRA_TEST_OPTS}</argLine>
@@ -522,7 +522,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.0.0-M8</version>
+        <version>3.0.0-M9</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
