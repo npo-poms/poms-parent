@@ -628,12 +628,6 @@
         <artifactId>ehcache-management</artifactId>
         <version>${ehcache3.version}</version>
       </dependency>
-      <!-- rather than this -->
-      <dependency>
-        <groupId>net.sf.ehcache</groupId>
-        <artifactId>ehcache</artifactId>
-        <version>${ehcache.version}</version>
-      </dependency>
 
       <dependency>
         <groupId>net.sf.json-lib</groupId>
@@ -1027,20 +1021,7 @@
         <artifactId>hibernate-java8</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
-      <dependency>
-        <!-- deprecate this see
-         https://hibernate.atlassian.net/browse/HHH-12441
-        -->
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-ehcache</artifactId>
-        <version>${hibernate.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache-core</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-jcache</artifactId>
