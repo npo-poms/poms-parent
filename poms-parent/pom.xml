@@ -623,6 +623,11 @@
         <artifactId>ehcache</artifactId>
         <version>${ehcache3.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.ehcache.modules</groupId>
+        <artifactId>ehcache-management</artifactId>
+        <version>${ehcache3.version}</version>
+      </dependency>
       <!-- rather than this -->
       <dependency>
         <groupId>net.sf.ehcache</groupId>
