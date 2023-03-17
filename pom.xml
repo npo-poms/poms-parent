@@ -21,7 +21,7 @@
 
     <!-- currenly maintained @ vpro only -->
     <poms.shared.backend.version>7.3.0</poms.shared.backend.version>
-    <user.version>7.3.0</user.version>
+    <user.version>7.4-SNAPSHOT</user.version>
     <api.version>7.3.0</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
