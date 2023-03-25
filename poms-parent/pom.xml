@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.6.0</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>3.3.0</vpro.shared.version>
+    <vpro.shared.version>3.3.1</vpro.shared.version>
 
     <checker.version>3.32.0</checker.version>
     <!-- External Artifacts -->
@@ -56,7 +56,7 @@
     <testcontainers-keycloak.version>2.5.0</testcontainers-keycloak.version>
     <mockito.version>4.11.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
-    <groovy.version>4.0.9</groovy.version>
+    <groovy.version>4.0.10</groovy.version>
     <bytebuddy.version>1.14.2</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
@@ -65,11 +65,11 @@
     <resteasy.version>5.0.5.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.6</slf4j.version>
+    <slf4j.version>2.0.7</slf4j.version>
     <log4j2.version>2.20.0</log4j2.version>
 
-    <spring.version>5.3.25</spring.version>
-    <spring.web.version>5.3.25</spring.web.version>
+    <spring.version>5.3.26</spring.version>
+    <spring.web.version>5.3.26</spring.web.version>
     <spring-security.version>5.7.5</spring-security.version>
 
     <keycloak.version>21.0.1</keycloak.version>
@@ -81,8 +81,8 @@
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
-    <swagger.version>1.6.9</swagger.version>
-    <swagger3.version>2.2.8</swagger3.version>
+
+    <swagger3.version>2.2.9</swagger3.version>
     <swagger3-parser.version>2.1.12</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
@@ -100,7 +100,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.5.4</postgresql.version>
+    <postgresql.version>42.6.0</postgresql.version>
 
     <commons.lang3.version>3.12.0</commons.lang3.version>
     <jsonwebtoken.version>0.11.5</jsonwebtoken.version>
@@ -261,67 +261,31 @@
       </dependency>
 
       <dependency>
-        <groupId>io.swagger</groupId>
-        <artifactId>swagger-annotations</artifactId>
-        <version>${swagger.version}</version>
-      </dependency>
-      <dependency>
         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-annotations</artifactId>
         <version>${swagger3.version}</version>
-       </dependency>
-       <dependency>
-         <groupId>io.swagger.parser.v3</groupId>
-         <artifactId>swagger-parser</artifactId>
-         <version>${swagger3-parser.version}</version>
-       </dependency>
-      <dependency>
-        <groupId>io.swagger</groupId>
-        <artifactId>swagger-jaxrs</artifactId>
-        <version>${swagger.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>jsr311-api</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
-        <groupId>io.swagger.core.v3</groupId>
-        <artifactId>swagger-jaxrs2</artifactId>
-        <version>${swagger3.version}</version>
+        <groupId>io.swagger.parser.v3</groupId>
+        <artifactId>swagger-parser</artifactId>
+        <version>${swagger3-parser.version}</version>
+      </dependency>
+       <dependency>
+         <groupId>io.swagger.core.v3</groupId>
+         <artifactId>swagger-jaxrs2</artifactId>
+         <version>${swagger3.version}</version>
        </dependency>
        <dependency>
-        <groupId>io.swagger.core.v3</groupId>
+         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-core</artifactId>
         <version>${swagger3.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>jakarta.activation</groupId>
-        <artifactId>jakarta.activation-api</artifactId>
+       </dependency>
+       <dependency>
+         <groupId>jakarta.activation</groupId>
+         <artifactId>jakarta.activation-api</artifactId>
         <version>1.2.2</version>
-      </dependency>
-      <dependency>
-        <groupId>io.swagger</groupId>
-        <artifactId>swagger-core</artifactId>
-        <version>${swagger.version}</version>
-        <exclusions>
-          <exclusion>
-            <!-- we're using jakarta.validation -->
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+       </dependency>
+
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-bom</artifactId>
@@ -379,7 +343,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
-        <version>1.22</version>
+        <version>1.23.0</version>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
