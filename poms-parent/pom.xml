@@ -21,7 +21,7 @@
 
     <checker.version>3.33.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.17.4</activemq.version> <!-- 5.18.x gives issues with javax.jmx.Message -->
+    <activemq.version>5.17.3</activemq.version> <!-- 5.18.x gives issues with javax.jmx.Message -->
     <aspectj.version>1.9.19</aspectj.version>
     <camel.version>3.20.3</camel.version>
     <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
