@@ -21,10 +21,10 @@
 
     <checker.version>3.33.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.17.3</activemq.version> <!-- 5.18.x gives issues with javax.jmx.Message -->
+    <activemq.version>5.18.1</activemq.version>
     <aspectj.version>1.9.19</aspectj.version>
     <camel.version>3.20.3</camel.version>
-    <cxf.version>3.3.13</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
+    <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>31.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
@@ -722,6 +722,11 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-jms</artifactId>
+      </dependency>
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
@@ -782,6 +787,10 @@
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId> <!-- we need 2 -->
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -793,6 +802,12 @@
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-rt-transports-jms</artifactId>
         <version>${cxf.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId> <!-- we need 2 -->
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.cxf</groupId>
