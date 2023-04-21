@@ -4,7 +4,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-bom</artifactId>
-  <version>7.5-SNAPSHOT</version>
+  <version>7.6-SNAPSHOT</version>
   <name>poms-bom</name>
   <packaging>pom</packaging>
 
