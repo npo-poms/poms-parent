@@ -51,7 +51,7 @@
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
 
-    <junit.version>5.9.2</junit.version>
+    <junit.version>5.9.3</junit.version>
     <testcontainers.version>1.18.0</testcontainers.version>
     <testcontainers-keycloak.version>2.5.0</testcontainers-keycloak.version>
     <mockito.version>4.11.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
