@@ -491,12 +491,12 @@
       <dependency>
         <groupId>jakarta.servlet.jsp.jstl</groupId>
         <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-        <version>1.2.7</version>
+        <version>1.2.7</version> <!-- 2.0 is tomcat 10, afaik -->
       </dependency>
       <dependency>
         <groupId>org.glassfish.web</groupId>
         <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-        <version>1.2.6</version>
+        <version>1.2.6</version><!-- 2.0 is tomcat 10, afaik -->
       </dependency>
       <dependency>
         <groupId>jakarta.servlet</groupId>
