@@ -70,7 +70,7 @@
 
     <spring.version>5.3.27</spring.version>
     <spring.web.version>5.3.27</spring.web.version>
-    <spring-security.version>5.7.5</spring-security.version>
+    <spring-security.version>5.7.8</spring-security.version>
 
     <keycloak.version>21.1.1</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
