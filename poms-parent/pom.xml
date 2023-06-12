@@ -722,6 +722,17 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-activemq</artifactId>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+          </exclusion>
+        </exclusions>
+        <version>${camel.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
