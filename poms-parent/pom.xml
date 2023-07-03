@@ -21,7 +21,7 @@
 
     <checker.version>3.35.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.18.1</activemq.version>
+    <activemq.version>5.18.2</activemq.version>
     <aspectj.version>1.9.19</aspectj.version>
     <camel.version>3.21.0</camel.version>
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
@@ -70,14 +70,14 @@
 
     <spring.version>5.3.28</spring.version>
     <spring.web.version>5.3.28</spring.web.version>
-    <spring-security.version>5.7.9</spring-security.version>
+    <spring-security.version>5.8.4</spring-security.version>
 
     <keycloak.version>21.1.2</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>2.7.5</spring-data-jpa.version>
-    <spring-data-commons.version>2.7.5</spring-data-commons.version>
+    <spring-data-jpa.version>2.7.13</spring-data-jpa.version>
+    <spring-data-commons.version>2.7.13</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
@@ -879,7 +879,7 @@
       <dependency>
         <groupId>org.apache.xbean</groupId>
         <artifactId>xbean-spring</artifactId>
-        <version>3.4</version>
+        <version>3.4.3</version>
       </dependency>
 
       <dependency>
@@ -1081,7 +1081,7 @@
       <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>metro-bom</artifactId>
-        <version>2.4.8</version>
+        <version>2.4.9</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -1094,7 +1094,7 @@
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>2.7.1</version>
+        <version>2.7.2</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1519,7 +1519,7 @@
        <dependency>
          <groupId>org.apache.santuario</groupId>
          <artifactId>xmlsec</artifactId>
-         <version>2.2.3</version>
+         <version>2.2.4</version>
        </dependency>
        <dependency>
          <groupId>org.bouncycastle</groupId>
