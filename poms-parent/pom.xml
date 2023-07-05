@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>5.18.2</activemq.version>
     <aspectj.version>1.9.19</aspectj.version>
-    <camel.version>3.20.6</camel.version>
+    <camel.version>3.20.6</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>32.1.1-jre</guava.version>
     <guice.version>5.1.0</guice.version>
