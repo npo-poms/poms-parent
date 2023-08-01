@@ -72,7 +72,7 @@
     <spring.web.version>5.3.28</spring.web.version>
     <spring-security.version>5.8.4</spring-security.version>
 
-    <keycloak.version>22.0.2</keycloak.version>
+    <keycloak.version>22.0.1</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
