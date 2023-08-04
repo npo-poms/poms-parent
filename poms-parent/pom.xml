@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>4.0-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.35.0</checker.version>
+    <checker.version>3.37.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.2</activemq.version>
     <aspectj.version>1.9.19</aspectj.version>
@@ -54,7 +54,7 @@
     <junit.version>5.10.0</junit.version>
     <testcontainers.version>1.18.3</testcontainers.version>
     <testcontainers-keycloak.version>2.5.0</testcontainers-keycloak.version>
-    <mockito.version>4.11.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
+    <mockito.version>5.4.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.13</groovy.version>
     <bytebuddy.version>1.14.5</bytebuddy.version>
@@ -88,7 +88,7 @@
     <ehcache3.version>3.10.8</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>12.2</saxon.version>
+    <saxon.version>12.3</saxon.version>
     <javassist.version>3.29.2-GA</javassist.version>
     <scala.version>2.13.11</scala.version>
 
