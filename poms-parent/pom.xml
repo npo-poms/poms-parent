@@ -47,7 +47,7 @@
     <flyway.version>9.21.1</flyway.version>
 
     <jackson2.version>2.15.2</jackson2.version>
-    <jaxb.version>2.3.6</jaxb.version>
+    <jaxb.version>2.3.8</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
 
@@ -76,8 +76,8 @@
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>2.7.13</spring-data-jpa.version>
-    <spring-data-commons.version>2.7.13</spring-data-commons.version>
+    <spring-data-jpa.version>2.7.14</spring-data-jpa.version>
+    <spring-data-commons.version>2.7.14</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
@@ -1377,7 +1377,7 @@
       <dependency>
         <groupId>org.jboss.spec.javax.ws.rs</groupId>
         <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
-        <version>1.0.0.Final</version>
+        <version>1.0.3.Final</version>
         <scope>provided</scope> <!-- by -->
       </dependency>
 
