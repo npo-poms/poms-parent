@@ -22,14 +22,14 @@
     <checker.version>3.37.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.2</activemq.version>
-    <aspectj.version>1.9.19</aspectj.version>
+    <aspectj.version>1.9.20</aspectj.version>
     <camel.version>3.20.6</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>32.1.2-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.11.2</micrometer.version>
+    <micrometer.version>1.11.3</micrometer.version>
 
     <hibernate.version>5.6.15.Final</hibernate.version>
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
@@ -57,7 +57,7 @@
     <mockito.version>5.4.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.13</groovy.version>
-    <bytebuddy.version>1.14.5</bytebuddy.version>
+    <bytebuddy.version>1.14.6</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.0</wiremock.version>
