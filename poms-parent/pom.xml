@@ -44,7 +44,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>9.21.1</flyway.version>
+    <flyway.version>9.21.2</flyway.version>
 
     <jackson2.version>2.15.2</jackson2.version>
     <jaxb.version>2.3.8</jaxb.version>
@@ -52,9 +52,9 @@
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
 
     <junit.version>5.10.0</junit.version>
-    <testcontainers.version>1.18.3</testcontainers.version>
+    <testcontainers.version>1.19.0</testcontainers.version>
     <testcontainers-keycloak.version>2.5.0</testcontainers-keycloak.version>
-    <mockito.version>5.4.0</mockito.version> <!-- in 5.0.0 something goes wrong with Mock.reset -->
+    <mockito.version>5.5.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.13</groovy.version>
     <bytebuddy.version>1.14.6</bytebuddy.version>
