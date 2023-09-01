@@ -258,6 +258,13 @@
         <groupId>io.github.natty-parser</groupId>
         <artifactId>natty</artifactId>
         <version>1.0.1</version>
+        <exclusions>
+          <!-- See https://github.com/natty-parser/natty/issues/59 -->
+          <exclusion>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
 
