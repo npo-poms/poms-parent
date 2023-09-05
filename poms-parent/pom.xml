@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>4.0-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.37.0</checker.version>
+    <checker.version>3.38.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.2</activemq.version>
     <aspectj.version>1.9.20</aspectj.version>
@@ -44,7 +44,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>9.21.2</flyway.version>
+    <flyway.version>9.22.0</flyway.version>
 
     <jackson2.version>2.15.2</jackson2.version>
     <jaxb.version>2.3.8</jaxb.version>
@@ -65,7 +65,7 @@
     <resteasy.version>5.0.8.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.7</slf4j.version>
+    <slf4j.version>2.0.9</slf4j.version>
     <log4j2.version>2.20.0</log4j2.version>
 
     <spring.version>5.3.29</spring.version>
@@ -1588,7 +1588,7 @@
        <dependency>
          <groupId>info.picocli</groupId>
          <artifactId>picocli</artifactId>
-         <version>4.7.4</version>
+         <version>4.7.5</version>
        </dependency>
     </dependencies>
   </dependencyManagement>
