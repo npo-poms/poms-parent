@@ -22,7 +22,7 @@
     <checker.version>3.38.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.2</activemq.version>
-    <aspectj.version>1.9.20</aspectj.version>
+    <aspectj.version>1.9.20.1</aspectj.version>
     <camel.version>3.20.6</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>32.1.2-jre</guava.version>
@@ -57,10 +57,10 @@
     <mockito.version>5.5.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.13</groovy.version>
-    <bytebuddy.version>1.14.6</bytebuddy.version>
+    <bytebuddy.version>1.14.7</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
-    <wiremock.version>2.35.0</wiremock.version>
+    <wiremock.version>3.0.4</wiremock.version>
 
     <resteasy.version>5.0.8.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
@@ -90,7 +90,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.3</saxon.version>
     <javassist.version>3.29.2-GA</javassist.version>
-    <scala.version>2.13.11</scala.version>
+    <scala.version>2.13.12</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
