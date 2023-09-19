@@ -29,7 +29,7 @@
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.11.3</micrometer.version>
+    <micrometer.version>1.11.4</micrometer.version>
 
     <hibernate.version>5.6.15.Final</hibernate.version>
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
@@ -57,7 +57,7 @@
     <mockito.version>5.5.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.13</groovy.version>
-    <bytebuddy.version>1.14.7</bytebuddy.version>
+    <bytebuddy.version>1.14.8</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>3.1.0</wiremock.version>
