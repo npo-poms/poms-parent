@@ -10,8 +10,8 @@ all: poms-dependencies.png poms-deployment.png poms-dependencies.svg poms-deploy
 
 # sudo gem install asciidoctor
 
-index.html: README.adoc
-	asciidoctor $< -o $@
+index.html: README.adoc Makefile
+	asciidoctor $< -o $@ --attribute=htmled=true
 
 %.html: %.adoc
 	asciidoctor $<
