@@ -8,7 +8,11 @@ image:https://github.com/npo-poms/poms-parent/workflows/build/badge.svg?[Build S
 image:https://img.shields.io/maven-central/v/nl.vpro.poms/poms-parent.svg?label=Maven%20Central[Maven Central,link=https://search.maven.org/search?q=g:%22nl.vpro.poms%22%20AND%20a:%22poms-parent%22]
 image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/poms/poms-parent/]
 
-This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by dutch public broadcasters.
+ifndef::htmled[]
+link:https://npo-poms.github.io/poms-parent/[This page in on github pages]
+endif::[]
+
+This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by Dutch public broadcasters.
 
 We use the `pom.xml` of this project to synchronize versions of dependencies.
 
