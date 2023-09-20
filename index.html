@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <title>The POMS ecosystem</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -208,13 +208,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -393,7 +390,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -467,7 +464,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span class="image"><a class="image" href="https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/poms/poms-parent/"><img src="https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg" alt="snapshots"></a></span></p>
 </div>
 <div class="paragraph">
-<p>This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by dutch public broadcasters.</p>
+<p><a href="https://npo-poms.github.io/poms-parent/">This page in on github pages</a></p>
+</div>
+<div class="paragraph">
+<p>This is the poms parent. This is the parent pom of the several projects in the poms ('Publieke Omroep Media Services') ecosystem, which are used by Dutch public broadcasters.</p>
 </div>
 <div class="paragraph">
 <p>We use the <code>pom.xml</code> of this project to synchronize versions of dependencies.</p>
@@ -487,7 +487,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_deployments">Deployments</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This describes schematicly the connections between actual systems relevant to poms.</p>
+<p>This describes schematically the connections between actual systems relevant to poms.</p>
 </div>
 <div class="paragraph">
 <p>This does not intend to be exhaustive, but merely tries to sketch the big picture. Especially the part 'World' contains mainly examples.
@@ -499,13 +499,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_dependencies">Dependencies</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This describes schematicly the dependencies between the several modules relevant to poms.</p>
+<p>This describes schematically the dependencies between the several modules relevant to poms.</p>
 </div>
 <div class="paragraph">
 <p>This does not intend to be exhaustive, but merely tries to sketch the big picture.</p>
 </div>
 <div class="paragraph">
-<p>An important aspect is that dependencies may only be one way and non circular. Often dependencies are both transitive and direct, of which only examples are indicated.</p>
+<p>An important aspect is that dependencies may only be one way and non-circular. Often dependencies are both transitive and direct, of which only examples are indicated.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><a class="image" href="https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg" target="_blank" rel="noopener"><img src="https://rawgit.com/npo-poms/poms-parent/master/poms-dependencies.svg" alt="poms dependencies" title="dependencies"></a></span></p>
@@ -532,14 +532,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>For every deployable we indicate:
 The URL in test/acc and production
-The port and application context we suggest for development. Configure your application like this and you would have minimal configuration to do to get things up and running on your development machine.</p>
+The port and application context we suggest for development. Configure your application like this, and you would have minimal configuration to do to get things up and running on your development machine.</p>
 </div>
 <div class="paragraph">
-<p>The configuration file that is automaticly included and we suggest for development. We suggest that you maintain configuration you need for development in this file.</p>
+<p>The configuration file that is automatically included, and we suggest for development. We suggest that you maintain configuration you need for development in this file.</p>
 </div>
 <div class="paragraph">
 <p>We often support a setting like this:
-env=[prod|acc|test|localhost] to automaticly switch between several setting which vary between environments predictably.</p>
+env=[prod|acc|test|localhost] to automatically switch between several setting which vary between environments predictably.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -619,10 +619,7 @@ env=[prod|acc|test|localhost] to automaticly switch between several setting whic
 <div class="sect3">
 <h4 id="_gui_and_backend_restservices">GUI and Backend RestServices</h4>
 <div class="paragraph">
-<p>Currently the POMS GUI and the POMS Backend API are maintained as one project with two artifacts, which are also always deployed in one tomcat. It would actually be a good idea to deploy the backend API seperately and also redundant. We may do this on the new hosting solution.</p>
-</div>
-<div class="paragraph">
-<p>We may also split up the project in SCM then.</p>
+<p>Currently, the POMS GUI and the POMS Backend API are maintained as one project with two artifacts. They can be run in one tomcat, but on openshift they are in separate tomcat deployments. The API is even deployed redundantly.</p>
 </div>
 </div>
 <div class="sect3">
@@ -653,7 +650,7 @@ See <a href="https://github.com/vpro/vpro-shared" class="bare">https://github.co
 <div class="sect3">
 <h4 id="_poms_shared">POMS shared</h4>
 <div class="paragraph">
-<p>These modules are specific for POMS, and most noticably contain the domain classes shared by most projects, like the 'domain' objects and services.
+<p>These modules are specific for POMS, and most noticeably contain the domain classes shared by most projects, like the 'domain' objects and services.
 See <a href="https://github.com/npo-poms/poms-shared" class="bare">https://github.com/npo-poms/poms-shared</a></p>
 </div>
 <div class="paragraph">
@@ -679,14 +676,14 @@ See <a href="https://github.com/npo-poms/poms-shared" class="bare">https://githu
 <h2 id="_rights">Rights</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The rights matrix of the POMs GUI can be found <a href="RIGHTS.html">here</a></p>
+<p>The rights matrix of the POMs GUI can be found <a href="https://npo-poms.github.io/poms-parent/RIGHTS.html">here</a></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-11-13 20:32:03 +0100
+Last updated 2023-09-20 11:42:47 +0200
 </div>
 </div>
 </body>
