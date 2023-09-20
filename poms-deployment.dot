@@ -75,6 +75,7 @@ subgraph cluster_5  {
   miranda
   pluto
   nep
+  sourcing_service
   keycloak [ label = "Keycloak" href="https://ident.poms.omroep.nl/auth/" fontcolor=blue]
 }
 
@@ -115,12 +116,15 @@ poms -> {
   pd
   pluto
   nep
+  sourcing_service
   gtaa
 }[color=blue]
 
 poms_backend -> {
+  postgresql_media
   jms
   nep
+  sourcing_service
   keycloak
 }[color=darkorange1]
 
