@@ -44,7 +44,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>9.22.1</flyway.version>
+    <flyway.version>9.22.2</flyway.version>
 
     <jackson2.version>2.15.2</jackson2.version>
     <jaxb.version>2.3.8</jaxb.version>
@@ -82,7 +82,7 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.15</swagger3.version>
+    <swagger3.version>2.2.16</swagger3.version>
     <swagger3-parser.version>2.1.16</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
