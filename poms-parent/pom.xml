@@ -72,7 +72,7 @@
     <spring.web.version>5.3.30</spring.web.version>
     <spring-security.version>5.8.7</spring-security.version>
 
-    <keycloak.version>22.0.4</keycloak.version>
+    <keycloak.version>21.1.2</keycloak.version> <!-- 22 is jakarta.* ! -->
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
