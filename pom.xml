@@ -447,7 +447,7 @@
         <plugin>
           <groupId>org.bsc.maven</groupId>
           <artifactId>maven-processor-plugin</artifactId>
-          <version>4.5</version>
+          <version>5.0</version>
           <dependencies>
             <dependency>
               <groupId>org.hibernate</groupId>
