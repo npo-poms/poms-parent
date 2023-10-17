@@ -25,7 +25,7 @@
     <aspectj.version>1.9.20.1</aspectj.version>
     <camel.version>3.20.7</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
-    <guava.version>32.1.2-jre</guava.version>
+    <guava.version>32.1.3-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
@@ -57,7 +57,7 @@
     <mockito.version>5.6.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.15</groovy.version>
-    <bytebuddy.version>1.14.8</bytebuddy.version>
+    <bytebuddy.version>1.14.9</bytebuddy.version>
     <assertj.version>3.24.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.1</wiremock.version> <!-- 3.x is jakarta -->
@@ -83,8 +83,8 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.16</swagger3.version>
-    <swagger3-parser.version>2.1.16</swagger3-parser.version>
+    <swagger3.version>2.2.17</swagger3.version>
+    <swagger3-parser.version>2.1.17</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
