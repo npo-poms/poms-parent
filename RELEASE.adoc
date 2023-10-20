@@ -34,7 +34,7 @@ A release branch can be created with the following github action: https://github
 
 == Release
 
-A release branch can be _released_ via https://github.com/npo-poms/poms-parent/actions/workflows/release.yml[release].  This results a tag with this scheme: `REL-<major>.<minor>.<patch>`, and the artifacts are via sonatype published to sonatype.
+A release branch can be _released_ via https://github.com/npo-poms/poms-parent/actions/workflows/release.yml[release].  This results a tag with this scheme: `REL-<major>.<minor>.<patch>`, and the artifacts are via sonatype published to maven central.
 
 If this for some reason fails, it can be https://github.com/npo-poms/poms-parent/actions/workflows/maven.yml[retried by triggering the normal maven build] on the tag.
 
