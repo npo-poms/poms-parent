@@ -1,3 +1,45 @@
+= Releasing
+
+== Main branch
+
+The main branch is the development branch. It is (for most projects) never released, only branched.
+
+The pom.xml-version of the main branch is  `REL-<major>.<minor>-SNAPSHOT`
+
+=== Updating major version
+
+This can best be done manually, using maven
+[source, bash]
+----
+mvn -DnewVersion=REL-<major>.0-SNAPSHOT versions:set
+----
+
+And then commit and push the new `pom.xmls`.
+
+
+== Release branch
+Most POMS-projects are released from release branches (as is the practice at VPRO).
+
+NOTE:: 
+    Some VPRO-projects are released directly from main. Normally these are quite inactive projects.
+    These projects do not have a patch version. main is `REL-<major>.<minor>-SNAPSHOT` and a release are `REL-<major>.<minor>`
+
+
+
+Release branches have a name according to this scheme: `REL-<major>.<minor>-SNAPSHOT`
+
+The pom.xml-version of a release branch is  `REL-<major>.<minor>.<patch>-SNAPSHOT`
+
+A release branch can be created with the following github action: https://github.com/npo-poms/poms-parent/actions/workflows/branch.yml[create branch]. This will branch main, update the version in both this new branch (to include an initial patchversion `.0`) and in main (to increase the minor version by one)
+
+== Release
+
+A release branch can be _released_ via https://github.com/npo-poms/poms-parent/actions/workflows/release.yml[release].  This results a tag with this scheme: `REL-<major>.<minor>.<patch>`, and the artifacts are via sonatype published to sonatype.
+
+If this for some reason fails, it can be https://github.com/npo-poms/poms-parent/actions/workflows/maven.yml[retried by triggering the normal maven build] on the tag.
+
+
+== Manual
 [source,bash]
 ----
 mvn release:branch -DbranchName=REL-5.10-SNAPSHOT -DdevelopmentVersion=5.11-SNAPSHOT
@@ -6,3 +48,5 @@ mvn -Pdeploy,ossrh release:prepare release:perform -DreleaseVersion=5.10.0 -Ddev
 ----
 
 If you want to release to vpro nexus, don't use the profiles.
+
+
