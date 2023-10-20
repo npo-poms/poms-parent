@@ -38,6 +38,8 @@ A release branch can be _released_ via https://github.com/npo-poms/poms-parent/a
 
 If this for some reason fails, it can be https://github.com/npo-poms/poms-parent/actions/workflows/maven.yml[retried by triggering the normal maven build] on the tag.
 
+Something it is sufficient to manually 'release' repositories in https://oss.sonatype.org/#stagingRepositories (use credentials from 1password). 
+
 
 == Manual
 [source,bash]
