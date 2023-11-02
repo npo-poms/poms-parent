@@ -21,7 +21,7 @@
 
     <checker.version>3.39.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.18.2</activemq.version>
+    <activemq.version>5.18.3</activemq.version>
     <aspectj.version>1.9.20.1</aspectj.version>
     <camel.version>3.20.7</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
@@ -47,7 +47,7 @@
     <flyway.version>9.22.3</flyway.version>
 
     <jackson2.version>2.15.3</jackson2.version>
-    <jaxb.version>2.3.8</jaxb.version>
+    <jaxb.version>2.3.9</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
 
@@ -77,14 +77,14 @@
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>2.7.14</spring-data-jpa.version>
-    <spring-data-commons.version>2.7.14</spring-data-commons.version>
+    <spring-data-jpa.version>2.7.17</spring-data-jpa.version>
+    <spring-data-commons.version>2.7.17</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.17</swagger3.version>
-    <swagger3-parser.version>2.1.17</swagger3-parser.version>
+    <swagger3.version>2.2.18</swagger3.version>
+    <swagger3-parser.version>2.1.18</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
@@ -372,7 +372,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.14.0</version>
+        <version>2.15.0</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
@@ -925,7 +925,7 @@
       <dependency>
         <groupId>org.codehaus.woodstox</groupId>
         <artifactId>stax2-api</artifactId>
-        <version>4.2.1</version>
+        <version>4.2.2</version>
       </dependency>
 
       <!-- this one should I think be compatible with cxf -->
@@ -1554,7 +1554,7 @@
        <dependency>
          <groupId>org.apache.santuario</groupId>
          <artifactId>xmlsec</artifactId>
-         <version>2.2.5</version>
+         <version>2.2.6</version>
        </dependency>
        <dependency>
          <groupId>org.bouncycastle</groupId>
