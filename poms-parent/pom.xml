@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>4.2-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.39.0</checker.version>
+    <checker.version>3.40.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.3</activemq.version>
     <aspectj.version>1.9.20.1</aspectj.version>
@@ -46,7 +46,7 @@
 
     <flyway.version>9.22.3</flyway.version>
 
-    <jackson2.version>2.15.3</jackson2.version>
+    <jackson2.version>2.16.0</jackson2.version>
     <jaxb.version>2.3.9</jaxb.version>
 
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
@@ -352,7 +352,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
-        <version>1.24.0</version>
+        <version>1.25.0</version>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
@@ -730,7 +730,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.10.0</version>
+        <version>1.11.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
