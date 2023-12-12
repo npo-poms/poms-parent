@@ -14,9 +14,9 @@
 
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>7.10.1</poms.shared.version>
+    <poms.shared.version>7.10.1-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
-    <api.client.version>7.10.1</api.client.version>
+    <api.client.version>7.10.1-SNAPSHOT</api.client.version>
     <thesaurus.version>7.2.0</thesaurus.version>
 
     <!-- currenly maintained @ vpro only -->
