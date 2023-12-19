@@ -20,7 +20,7 @@
     <thesaurus.version>7.2.0</thesaurus.version>
 
     <!-- currenly maintained @ vpro only -->
-    <poms.shared.backend.version>7.10.0</poms.shared.backend.version>
+    <poms.shared.backend.version>7.11-SNAPSHOT</poms.shared.backend.version>
     <user.version>7.10.0</user.version>
     <api.version>7.10.0</api.version>
 
