@@ -66,8 +66,9 @@
     <resteasy.version>5.0.9.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.9</slf4j.version>
+    <slf4j.version>2.0.10</slf4j.version>
     <log4j2.version>2.22.1</log4j2.version>
+
 
     <spring.version>5.3.31</spring.version>
     <spring.web.version>5.3.31</spring.web.version>
