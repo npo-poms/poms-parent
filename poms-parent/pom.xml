@@ -19,7 +19,7 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>4.3-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.40.0</checker.version>
+    <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>5.18.3</activemq.version>
     <aspectj.version>1.9.21</aspectj.version>
@@ -58,7 +58,7 @@
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.17</groovy.version>
     <bytebuddy.version>1.14.11</bytebuddy.version>
-    <assertj.version>3.24.2</assertj.version>
+    <assertj.version>3.25.1</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
     <wiremock.version>2.35.1</wiremock.version> <!-- 3.x is jakarta -->
 
@@ -91,7 +91,7 @@
     <ehcache.version>2.10.9.2</ehcache.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.4</saxon.version>
-    <javassist.version>3.29.2-GA</javassist.version>
+    <javassist.version>3.30.2-GA</javassist.version>
     <scala.version>2.13.12</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
@@ -104,7 +104,7 @@
 
     <postgresql.version>42.7.1</postgresql.version>
 
-    <commons.lang3.version>3.13.0</commons.lang3.version>
+    <commons.lang3.version>3.14.0</commons.lang3.version>
     <jsonwebtoken.version>0.12.3</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
