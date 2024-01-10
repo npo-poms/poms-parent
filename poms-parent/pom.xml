@@ -29,7 +29,7 @@
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
-    <micrometer.version>1.12.1</micrometer.version>
+    <micrometer.version>1.12.2</micrometer.version>
 
     <hibernate.version>5.6.15.Final</hibernate.version>
     <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
@@ -66,7 +66,7 @@
     <resteasy.version>5.0.9.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>3.2.6</ejb.version>
-    <slf4j.version>2.0.10</slf4j.version>
+    <slf4j.version>2.0.11</slf4j.version>
     <log4j2.version>2.22.1</log4j2.version>
 
 
