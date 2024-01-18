@@ -1,0 +1,16 @@
+= DASHBOARD
+
+== VPRO
+
+++++
+<iframe src="https://console-openshift-console.apps.cluster.chp4.io/dev-monitoring/ns/vpro-prod/alerts"></iframe>
+++++
+
+== NPO
+
+
+=== Openshift
+
+++++
+<iframe src="https://console-openshift-console.apps.cluster.chp4.io/dev-monitoring/ns/poms-stack-prod/alerts"></iframe>
+++++
