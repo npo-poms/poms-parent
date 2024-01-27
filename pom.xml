@@ -4,7 +4,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-bom</artifactId>
-  <version>7.11-SNAPSHOT</version>
+  <version>8.0-SNAPSHOT</version>
   <name>poms-bom</name>
   <packaging>pom</packaging>
 
@@ -28,7 +28,7 @@
 
     <lombok.version>1.18.30</lombok.version>
 
-    <validation.api.version>2.0.2</validation.api.version>
+    <validation.api.version>3.0.2</validation.api.version>
 
     <java.version>17</java.version>
 
