@@ -17,7 +17,7 @@
     <poms.shared.version>8.0-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
     <api.client.version>8.0-SNAPSHOT</api.client.version>
-    <thesaurus.version>7.2.0</thesaurus.version>
+    <thesaurus.version>8.0-SNAPSHOT</thesaurus.version>
 
     <!-- currenly maintained @ vpro only -->
     <poms.shared.backend.version>8.0-SNAPSHOT</poms.shared.backend.version>
