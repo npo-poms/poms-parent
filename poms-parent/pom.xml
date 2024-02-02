@@ -74,7 +74,7 @@
     <spring.web.version>6.1.3</spring.web.version>
     <spring-security.version>6.2.1</spring-security.version>
 
-    <keycloak.version>23.0.4</keycloak.version> 
+    <keycloak.version>23.0.6</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -105,7 +105,7 @@
     <postgresql.version>42.7.1</postgresql.version>
 
     <commons.lang3.version>3.14.0</commons.lang3.version>
-    <jsonwebtoken.version>0.12.3</jsonwebtoken.version>
+    <jsonwebtoken.version>0.12.5</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -485,7 +485,7 @@
       <dependency>
         <groupId>jakarta.mail</groupId>
         <artifactId>jakarta.mail-api</artifactId>
-        <version>2.1.1</version>
+        <version>2.1.2</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
@@ -501,7 +501,7 @@
       <dependency>
         <groupId>jakarta.servlet.jsp.jstl</groupId>
         <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-        <version>3.0.0</version> 
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.web</groupId>
@@ -630,7 +630,7 @@
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path-assert</artifactId>
-        <version>2.8.0</version>
+        <version>2.9.0</version>
         <scope>test</scope>
       </dependency>
 
@@ -1076,12 +1076,12 @@
       <dependency>
         <groupId>jakarta.websocket</groupId>
         <artifactId>jakarta.websocket-api</artifactId>
-        <version>2.1.1</version> 
+        <version>2.1.1</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.tyrus.bundles</groupId>
         <artifactId>tyrus-standalone-client</artifactId>
-        <version>2.1.5</version> 
+        <version>2.1.5</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1530,7 +1530,7 @@
         <artifactId>cors-filter</artifactId>
         <version>3.0</version>
       </dependency>
-     
+
       <dependency>
         <groupId>org.jasypt</groupId>
         <artifactId>jasypt</artifactId>
