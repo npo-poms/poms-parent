@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>5.18.3</activemq.version>
     <aspectj.version>1.9.21</aspectj.version>
-    <camel.version>3.20.9</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
+    <camel.version>4.3.0</camel.version>
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>33.0.0-jre</guava.version>
     <guice.version>5.1.0</guice.version>
@@ -34,8 +34,7 @@
     <hibernate.version>5.6.15.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
 
-
-    <hibernate.search.version>5.11.12.Final</hibernate.search.version>
+    <hibernate.search.version>6.2.3.Final</hibernate.search.version>
     <lucene.version>5.5.5</lucene.version>
 
     <!--
@@ -1016,13 +1015,13 @@
         <version>${hibernate.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.search</groupId>
         <artifactId>hibernate-search-engine</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-search-orm</artifactId>
+        <groupId>org.hibernate.search</groupId>
+        <artifactId>hibernate-search-mapper-orm-jakarta</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
