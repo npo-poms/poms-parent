@@ -60,7 +60,7 @@
     <bytebuddy.version>1.14.11</bytebuddy.version>
     <assertj.version>3.25.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
-    <wiremock.version>2.35.1</wiremock.version> <!-- 3.x is jakarta -->
+    <wiremock.version>3.3.1</wiremock.version>
 
 
     <resteasy.version>6.2.7.Final</resteasy.version>
@@ -546,7 +546,6 @@
         <version>${testcontainers-keycloak.version}</version>
         <scope>test</scope>
       </dependency>
-      <!--
       <dependency>
         <groupId>org.wiremock</groupId>
         <artifactId>wiremock-standalone</artifactId>
@@ -556,19 +555,6 @@
       <dependency>
         <groupId>org.wiremock</groupId>
         <artifactId>wiremock</artifactId>
-        <version>${wiremock.version}</version>
-        <scope>test</scope>
-        </dependency>
-      -->
-      <dependency>
-        <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-jre8-standalone</artifactId>
-        <version>${wiremock.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-jre8</artifactId>
         <version>${wiremock.version}</version>
         <scope>test</scope>
       </dependency>
