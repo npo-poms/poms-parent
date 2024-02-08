@@ -21,7 +21,7 @@
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.18.3</activemq.version>
+    <activemq.version>6.0.1</activemq.version>
     <aspectj.version>1.9.21</aspectj.version>
     <camel.version>4.3.0</camel.version>
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
