@@ -541,6 +541,12 @@
         <scope>test</scope>
       </dependency>
       <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>kafka</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>com.github.dasniko</groupId>
         <artifactId>testcontainers-keycloak</artifactId>
         <version>${testcontainers-keycloak.version}</version>
@@ -1328,6 +1334,11 @@
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-aspects</artifactId>
         <version>${spring-security.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-oauth2-core</artifactId>
+        <version>2.5.</version>
       </dependency>
 
       <dependency>
