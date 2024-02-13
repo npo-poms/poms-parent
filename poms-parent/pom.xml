@@ -756,6 +756,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.camel.kafkaconnector</groupId>
+        <artifactId>camel-aws-s3-source-kafka-connector</artifactId>
+        <version>3.20.6</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
