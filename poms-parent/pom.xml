@@ -26,7 +26,7 @@
     <camel.version>4.3.0</camel.version>
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>33.0.0-jre</guava.version>
-    <guice.version>5.1.0</guice.version>
+    <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.12.2</micrometer.version>
