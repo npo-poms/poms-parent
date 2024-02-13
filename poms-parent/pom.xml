@@ -3,7 +3,7 @@
   <parent>
     <groupId>nl.vpro.poms</groupId>
     <artifactId>poms-bom</artifactId>
-    <version>7.12-SNAPSHOT</version>
+    <version>8.0-SNAPSHOT</version>
   </parent>
   <artifactId>poms-parent</artifactId>
   <packaging>pom</packaging>
@@ -17,25 +17,24 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.6.0</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>4.2.1</vpro.shared.version>
+    <vpro.shared.version>5.0-SNAPSHOT</vpro.shared.version>
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>5.18.3</activemq.version>
+    <activemq.version>6.0.1</activemq.version>
     <aspectj.version>1.9.21</aspectj.version>
-    <camel.version>3.20.9</camel.version> <!-- TODO: upgrading to 2.21.0 gives some issues related to conversion of streams -->
+    <camel.version>4.3.0</camel.version>
     <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>33.0.0-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
-    <meeuw.i18n.bom.version>1.6.1</meeuw.i18n.bom.version>
+    <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.12.2</micrometer.version>
 
     <hibernate.version>5.6.15.Final</hibernate.version>
-    <hibernate.validator.version>6.2.5.Final</hibernate.validator.version>
+    <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
 
-
-    <hibernate.search.version>5.11.12.Final</hibernate.search.version>
+    <hibernate.search.version>6.2.3.Final</hibernate.search.version>
     <lucene.version>5.5.5</lucene.version>
 
     <!--
@@ -47,9 +46,9 @@
     <flyway.version>10.5.0</flyway.version>
 
     <jackson2.version>2.16.1</jackson2.version>
-    <jaxb.version>2.3.9</jaxb.version>
+    <jaxb.version>4.0.4</jaxb.version>
 
-    <ws.rs-api.version>2.1.6</ws.rs-api.version>
+    <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>5.10.1</junit.version>
     <testcontainers.version>1.19.4</testcontainers.version>
@@ -60,21 +59,21 @@
     <bytebuddy.version>1.14.11</bytebuddy.version>
     <assertj.version>3.25.2</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
-    <wiremock.version>2.35.1</wiremock.version> <!-- 3.x is jakarta -->
+    <wiremock.version>3.3.1</wiremock.version>
 
 
-    <resteasy.version>5.0.9.Final</resteasy.version>
+    <resteasy.version>6.2.7.Final</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
-    <ejb.version>3.2.6</ejb.version>
+    <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.11</slf4j.version>
     <log4j2.version>2.22.1</log4j2.version>
 
 
-    <spring.version>5.3.31</spring.version>
-    <spring.web.version>5.3.31</spring.web.version>
-    <spring-security.version>5.8.9</spring-security.version>
+    <spring.version>6.1.3</spring.version>
+    <spring.web.version>6.1.3</spring.web.version>
+    <spring-security.version>6.2.1</spring-security.version>
 
-    <keycloak.version>21.1.2</keycloak.version> <!-- 22 is jakarta.* ! -->
+    <keycloak.version>23.0.6</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -105,7 +104,7 @@
     <postgresql.version>42.7.1</postgresql.version>
 
     <commons.lang3.version>3.14.0</commons.lang3.version>
-    <jsonwebtoken.version>0.12.3</jsonwebtoken.version>
+    <jsonwebtoken.version>0.12.5</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -174,7 +173,7 @@
               </dependency>
               <dependency>
                 <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
+                <artifactId>hibernate-core-jakarta</artifactId>
                 <version>${hibernate.version}</version>
               </dependency>
               <dependency>
@@ -282,7 +281,7 @@
       </dependency>
        <dependency>
          <groupId>io.swagger.core.v3</groupId>
-         <artifactId>swagger-jaxrs2</artifactId>
+         <artifactId>swagger-jaxrs2-jakarta</artifactId>
          <version>${swagger3.version}</version>
        </dependency>
        <dependency>
@@ -293,7 +292,7 @@
        <dependency>
          <groupId>jakarta.activation</groupId>
          <artifactId>jakarta.activation-api</artifactId>
-        <version>1.2.2</version>
+        <version>2.1.2</version>
        </dependency>
 
       <dependency>
@@ -306,8 +305,8 @@
 
       <dependency>
         <groupId>org.jboss.spec.javax.xml.bind</groupId>
-        <artifactId>jboss-jaxb-api_2.3_spec</artifactId>
-        <version>2.0.1.Final</version>
+        <artifactId>jboss-jaxb-api_3.0_spec</artifactId>
+        <version>1.0.1.Final</version>
         <scope>provided</scope> <!-- jaxb-runtime depends on jakarta.xml.bind:jakarta.xml.bind-api with same api -->
       </dependency>
 
@@ -315,7 +314,7 @@
       <dependency>
         <groupId>org.meeuw</groupId>
         <artifactId>jaxb-documentation</artifactId>
-        <version>0.4</version>
+        <version>0.5</version>
       </dependency>
 
       <dependency>
@@ -336,9 +335,9 @@
         <version>1.0-2</version>
       </dependency>
       <dependency>
-        <groupId>javax.inject</groupId>
-        <artifactId>javax.inject</artifactId>
-        <version>1</version>
+        <groupId>jakarta.inject</groupId>
+        <artifactId>jakarta.inject-api</artifactId>
+        <version>2.0.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -485,33 +484,33 @@
       <dependency>
         <groupId>jakarta.mail</groupId>
         <artifactId>jakarta.mail-api</artifactId>
-        <version>1.6.7</version>
+        <version>2.1.2</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
         <artifactId>jakarta.annotation-api</artifactId>
-        <version>1.3.5</version>
+        <version>2.1.1</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet.jsp</groupId>
         <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>2.3.6</version>
+        <version>3.1.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet.jsp.jstl</groupId>
         <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-        <version>1.2.7</version> <!-- 2.0 is tomcat 10, afaik -->
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.web</groupId>
         <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-        <version>1.2.6</version><!-- 2.0 is tomcat 10, afaik -->
+        <version>3.0.1</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
-        <version>4.0.4</version>
+        <version>6.0.0</version>
         <scope>provided</scope>
       </dependency>
 
@@ -552,7 +551,6 @@
         <version>${testcontainers-keycloak.version}</version>
         <scope>test</scope>
       </dependency>
-      <!--
       <dependency>
         <groupId>org.wiremock</groupId>
         <artifactId>wiremock-standalone</artifactId>
@@ -562,19 +560,6 @@
       <dependency>
         <groupId>org.wiremock</groupId>
         <artifactId>wiremock</artifactId>
-        <version>${wiremock.version}</version>
-        <scope>test</scope>
-        </dependency>
-      -->
-      <dependency>
-        <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-jre8-standalone</artifactId>
-        <version>${wiremock.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.tomakehurst</groupId>
-        <artifactId>wiremock-jre8</artifactId>
         <version>${wiremock.version}</version>
         <scope>test</scope>
       </dependency>
@@ -609,11 +594,17 @@
       </dependency>
 
 
-      <!-- hibernate wants ehcache 3, we need to start using this.-->
       <dependency>
         <groupId>org.ehcache</groupId>
         <artifactId>ehcache</artifactId>
         <version>${ehcache3.version}</version>
+        <classifier>jakarta</classifier>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.ehcache.modules</groupId>
@@ -636,7 +627,7 @@
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path-assert</artifactId>
-        <version>2.8.0</version>
+        <version>2.9.0</version>
         <scope>test</scope>
       </dependency>
 
@@ -989,14 +980,13 @@
       <dependency>
         <groupId>org.glassfish</groupId>
         <artifactId>jakarta.el</artifactId>
-        <version>3.0.4</version> <!-- from version 4.* onwards also the _package_ becomes jakarta.el (rather then javax.el). That would be more hassle to upgrade -->
-        <!-- As of Tomcat7 it is provided by Tomcat, Tomcat 6 needs a server add-on Needed here to run validation tests -->
+        <version>4.0.2</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>jakarta.el</groupId>
         <artifactId>jakarta.el-api</artifactId>
-        <version>3.0.3</version>
+        <version>5.0.1</version>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
@@ -1012,15 +1002,8 @@
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
+        <artifactId>hibernate-core-jakarta</artifactId>
         <version>${hibernate.version}</version>
-        <exclusions>
-          <exclusion>
-            <!-- jakarta.xml.bind:jakarta.xml.bind-api -->
-            <groupId>javax.xml</groupId>
-            <artifactId>jaxm-api</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
@@ -1050,13 +1033,13 @@
         <version>${hibernate.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.search</groupId>
         <artifactId>hibernate-search-engine</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-search-orm</artifactId>
+        <groupId>org.hibernate.search</groupId>
+        <artifactId>hibernate-search-mapper-orm-jakarta</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
@@ -1091,17 +1074,17 @@
       <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
-        <version>2.2.3</version>
+        <version>3.1.0</version>
       </dependency>
       <dependency>
         <groupId>jakarta.websocket</groupId>
         <artifactId>jakarta.websocket-api</artifactId>
-        <version>1.1.2</version> <!-- 2 is jakarta.*  namespace -->
+        <version>2.1.1</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.tyrus.bundles</groupId>
         <artifactId>tyrus-standalone-client</artifactId>
-        <version>1.20</version> <!-- 2.x is jakarta namespace (i presume) -->
+        <version>2.1.5</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1118,7 +1101,7 @@
       <dependency>
         <groupId>jakarta.transaction</groupId>
         <artifactId>jakarta.transaction-api</artifactId>
-        <version>1.3.3</version>
+        <version>2.0.1</version>
       </dependency>
       <dependency>
         <groupId>jakarta.ws.rs</groupId>
@@ -1129,12 +1112,12 @@
       <dependency>
         <groupId>jakarta.xml.ws</groupId>
         <artifactId>jakarta.xml.ws-api</artifactId>
-        <version>2.3.3</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>metro-bom</artifactId>
-        <version>2.4.10</version>
+        <version>4.0.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -1350,7 +1333,7 @@
       <dependency>
         <groupId>jakarta.jms</groupId>
         <artifactId>jakarta.jms-api</artifactId>
-        <version>2.0.3</version>
+        <version>3.1.0</version>
       </dependency>
 
       <dependency>
@@ -1512,7 +1495,7 @@
       <dependency>
         <groupId>org.jboss.resteasy.spring</groupId>
         <artifactId>resteasy-spring-bom</artifactId>
-        <version>2.0.1.Final</version>
+        <version>3.1.1.Final</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -1537,7 +1520,7 @@
       <dependency>
         <groupId>jakarta.security.enterprise</groupId>
         <artifactId>jakarta.security.enterprise-api</artifactId>
-        <version>1.0.2</version>
+        <version>3.0.0</version>
       </dependency>
 
       <dependency>
@@ -1551,25 +1534,12 @@
         <version>1.0</version>
       </dependency>
       <dependency>
-        <!-- we normally use org.ebaysf.web.cors, but that project seems to be disbanded
-             lets try this one
-        -->
         <groupId>com.thetransactioncompany</groupId>
         <artifactId>cors-filter</artifactId>
-        <version>2.10</version>
+        <version>3.0</version>
       </dependency>
+
       <dependency>
-        <groupId>org.ebaysf.web</groupId>
-        <artifactId>cors-filter</artifactId>
-        <version>1.0.1</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-       <dependency>
         <groupId>org.jasypt</groupId>
         <artifactId>jasypt</artifactId>
         <version>1.9.3</version>
