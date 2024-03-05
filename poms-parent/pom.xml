@@ -1347,7 +1347,7 @@
         <version>${spring-security.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.springframework.security.oauth</groupId>
+        <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-oauth2-core</artifactId>
         <version>${spring-security.version}</version>
       </dependency>
