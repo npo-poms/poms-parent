@@ -1343,23 +1343,10 @@
 
       <dependency>
         <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-acl</artifactId>
+        <artifactId>spring-security-bom</artifactId>
         <version>${spring-security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-aspects</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-oauth2-core</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-oauth2-resource-server</artifactId>
-        <version>${spring-security.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>
@@ -1373,6 +1360,8 @@
         <artifactId>keycloak-admin-client</artifactId>
         <version>${keycloak.admin.client.version}</version>
       </dependency>
+
+      <!-- DEPRECATED-->
       <dependency>
         <groupId>org.keycloak.bom</groupId>
         <artifactId>keycloak-adapter-bom</artifactId>
@@ -1380,6 +1369,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
         <artifactId>spring-mvc-cache-control</artifactId>
