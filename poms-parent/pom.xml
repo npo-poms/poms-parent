@@ -21,10 +21,10 @@
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.0.1</activemq.version>
+    <activemq.version>6.1.0</activemq.version>
     <aspectj.version>1.9.21</aspectj.version>
     <camel.version>4.3.0</camel.version>
-    <cxf.version>3.4.10</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
+    <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>33.0.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
@@ -69,11 +69,11 @@
     <log4j2.version>2.22.1</log4j2.version>
 
 
-    <spring.version>6.1.3</spring.version>
-    <spring.web.version>6.1.3</spring.web.version>
-    <spring-security.version>6.2.1</spring-security.version>
+    <spring.version>6.1.5</spring.version>
+    <spring.web.version>6.1.5</spring.web.version>
+    <spring-security.version>6.2.3</spring-security.version>
 
-    <keycloak.version>23.0.6</keycloak.version>
+    <keycloak.version>24.0.2</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
@@ -798,6 +798,13 @@
             <artifactId>geronimo-javamail_1.4_spec</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <!-- seems to be used by resteasy ? -->
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>3.5.3.Final</version>
+        <scope>runtime</scope>
       </dependency>
       <dependency>
         <!-- Clashes with Resteasy!!! -->
