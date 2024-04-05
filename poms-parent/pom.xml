@@ -22,10 +22,10 @@
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.1.0</activemq.version>
-    <aspectj.version>1.9.21</aspectj.version>
-    <camel.version>4.3.0</camel.version>
+    <aspectj.version>1.9.22</aspectj.version>
+    <camel.version>4.5.0</camel.version>
     <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
-    <guava.version>33.0.0-jre</guava.version>
+    <guava.version>33.1.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
@@ -43,23 +43,23 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>10.5.0</flyway.version>
+    <flyway.version>10.11.0</flyway.version>
 
-    <jackson2.version>2.16.1</jackson2.version>
-    <jaxb.version>4.0.4</jaxb.version>
+    <jackson2.version>2.17.0</jackson2.version>
+    <jaxb.version>4.0.5</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>5.10.1</junit.version>
-    <testcontainers.version>1.19.4</testcontainers.version>
+    <testcontainers.version>1.19.7</testcontainers.version>
     <testcontainers-keycloak.version>2.6.0</testcontainers-keycloak.version>
-    <mockito.version>5.10.0</mockito.version>
+    <mockito.version>5.11.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
     <bytebuddy.version>1.14.11</bytebuddy.version>
-    <assertj.version>3.25.2</assertj.version>
+    <assertj.version>3.25.3</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
-    <wiremock.version>3.3.1</wiremock.version>
+    <wiremock.version>3.5.2</wiremock.version>
 
 
     <resteasy.version>6.2.7.Final</resteasy.version>
@@ -83,7 +83,7 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.20</swagger3.version>
+    <swagger3.version>2.2.21</swagger3.version>
     <swagger3-parser.version>2.1.20</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
@@ -91,7 +91,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.4</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
-    <scala.version>2.13.12</scala.version>
+    <scala.version>2.13.13</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
@@ -101,7 +101,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.1</postgresql.version>
+    <postgresql.version>42.7.3</postgresql.version>
 
     <commons.lang3.version>3.14.0</commons.lang3.version>
     <jsonwebtoken.version>0.12.5</jsonwebtoken.version>
@@ -347,12 +347,12 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.9.0</version>
+        <version>2.10.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
-        <version>1.25.0</version>
+        <version>1.26.1</version>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
@@ -372,7 +372,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.15.1</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
@@ -388,7 +388,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.16.0</version>
+        <version>1.16.1</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -1496,7 +1496,7 @@
       <dependency>
         <groupId>org.jboss.resteasy.spring</groupId>
         <artifactId>resteasy-spring-bom</artifactId>
-        <version>3.1.1.Final</version>
+        <version>3.1.2.Final</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
