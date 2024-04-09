@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.6.0</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>4.3.0-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>4.3.0</vpro.shared.version>
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
@@ -28,7 +28,7 @@
     <guava.version>33.0.0-jre</guava.version>
     <guice.version>5.1.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
-    <meeuw.i18n.bom.version>1.8-SNAPSHOT</meeuw.i18n.bom.version>
+    <meeuw.i18n.bom.version>1.8.0</meeuw.i18n.bom.version>
     <micrometer.version>1.12.2</micrometer.version>
 
     <hibernate.version>5.6.15.Final</hibernate.version>
@@ -333,7 +333,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-iso-639</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.2</version>
       </dependency>
       <dependency>
         <groupId>javax.xml.stream</groupId>
