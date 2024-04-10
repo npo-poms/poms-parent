@@ -956,6 +956,12 @@
         <groupId>io.openapitools.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-hal</artifactId>
         <version>1.0.9</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-jaxb-annotations</artifactId> <!-- we need jakarta! -->
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.scala-lang</groupId>
