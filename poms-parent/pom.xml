@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.6.0</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>4.3.1</vpro.shared.version>
+    <vpro.shared.version>4.3.2-SNAPSHOT</vpro.shared.version>
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
@@ -36,6 +36,7 @@
 
 
     <hibernate.search.version>5.11.12.Final</hibernate.search.version>
+    <hibernate.search6.version>6.2.3.Final</hibernate.search6.version>
     <lucene.version>5.5.5</lucene.version>
 
     <!--
@@ -1068,6 +1069,16 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-search-orm</artifactId>
         <version>${hibernate.search.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.search</groupId>
+        <artifactId>hibernate-search-mapper-orm</artifactId>
+        <version>${hibernate.search6.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.search</groupId>
+        <artifactId>hibernate-search-backend-lucene</artifactId>
+        <version>${hibernate.search6.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
