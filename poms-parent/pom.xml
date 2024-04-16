@@ -36,14 +36,10 @@
 
 
     <hibernate.search.version>5.11.12.Final</hibernate.search.version>
-    <hibernate.search6.version>6.2.3.Final</hibernate.search6.version>
-    <lucene.version>5.5.5</lucene.version>
-
-    <!--
-    <hibernate.search.version>6.1.7.Final</hibernate.search.version>
-    <lucene.version>8.11.1</lucene.version>
-    -->
-    <!-- linked to hibernate search -->
+    <lucene.version>5.5.5</lucene.version><!-- linked to hibernate search -->
+    
+    <hibernate.search6.version>6.2.4.Final</hibernate.search6.version>
+    <lucene8.version>8.11.2</lucene8.version><!-- linked to hibernate search -->
 
     <flyway.version>10.5.0</flyway.version>
 
@@ -53,7 +49,7 @@
     <ws.rs-api.version>2.1.6</ws.rs-api.version>
 
     <junit.version>5.10.1</junit.version>
-    <testcontainers.version>1.19.6</testcontainers.version>
+    <testcontainers.version>1.19.7</testcontainers.version>
     <testcontainers-keycloak.version>2.6.0</testcontainers-keycloak.version>
     <mockito.version>5.10.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
