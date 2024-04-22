@@ -34,8 +34,8 @@
     <hibernate.version>5.6.15.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
 
-    <hibernate.search.version>6.2.3.Final</hibernate.search.version>
-    <lucene.version>5.5.5</lucene.version>
+    <hibernate.search.version>6.2.4.Final</hibernate.search.version>
+    <lucene.version>8.11.2</lucene.version>
 
     <!--
     <hibernate.search.version>6.1.7.Final</hibernate.search.version>
