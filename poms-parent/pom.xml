@@ -29,7 +29,7 @@
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.12.2</micrometer.version>
+    <micrometer.version>1.12.5</micrometer.version>
 
     <hibernate.version>6.5.0.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
@@ -56,10 +56,10 @@
     <mockito.version>5.11.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
-    <bytebuddy.version>1.14.11</bytebuddy.version>
+    <bytebuddy.version>1.14.14</bytebuddy.version>
     <assertj.version>3.25.3</assertj.version>
     <xmlunit.version>2.9.1</xmlunit.version>
-    <wiremock.version>3.5.2</wiremock.version>
+    <wiremock.version>3.5.4</wiremock.version>
 
 
     <resteasy.version>6.2.7.Final</resteasy.version>
@@ -69,11 +69,11 @@
     <log4j2.version>2.22.1</log4j2.version>
 
 
-    <spring.version>6.1.5</spring.version>
-    <spring.web.version>6.1.5</spring.web.version>
-    <spring-security.version>6.2.3</spring-security.version>
+    <spring.version>6.1.6</spring.version>
+    <spring.web.version>6.1.6</spring.web.version>
+    <spring-security.version>6.2.4</spring-security.version>
 
-    <keycloak.version>24.0.2</keycloak.version>
+    <keycloak.version>24.0.4</keycloak.version>
     <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
