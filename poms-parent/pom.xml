@@ -74,7 +74,7 @@
     <spring-security.version>6.2.4</spring-security.version>
 
     <keycloak.version>24.0.4</keycloak.version>
-    <keycloak.admin.client.version>${keycloak.version}</keycloak.admin.client.version>
+    <keycloak.admin.client.version>24.0.3</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>2.7.18</spring-data-jpa.version>
@@ -1339,16 +1339,7 @@
         <artifactId>keycloak-admin-client</artifactId>
         <version>${keycloak.admin.client.version}</version>
       </dependency>
-
-      <!-- DEPRECATED-->
-      <dependency>
-        <groupId>org.keycloak.bom</groupId>
-        <artifactId>keycloak-adapter-bom</artifactId>
-        <version>${keycloak.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
+      
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
         <artifactId>spring-mvc-cache-control</artifactId>
