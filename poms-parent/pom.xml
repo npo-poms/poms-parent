@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>1.6.0</vpro-camel.version>
     <events.version>2.7.0</events.version>
-    <vpro.shared.version>5.0.0</vpro.shared.version>
+    <vpro.shared.version>5.1-SNAPSHOT</vpro.shared.version>
 
     <checker.version>3.42.0</checker.version>
     <!-- External Artifacts -->
@@ -31,11 +31,11 @@
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.12.2</micrometer.version>
 
-    <hibernate.version>5.6.15.Final</hibernate.version>
+    <hibernate.version>6.5.0.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
 
-    <hibernate.search.version>6.2.4.Final</hibernate.search.version>
-    <lucene.version>8.11.2</lucene.version>
+    <hibernate.search.version>7.1.1.Final</hibernate.search.version>
+    <lucene.version>9.9.2</lucene.version>
 
     <!--
     <hibernate.search.version>6.1.7.Final</hibernate.search.version>
@@ -173,7 +173,7 @@
               </dependency>
               <dependency>
                 <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core-jakarta</artifactId>
+                <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
               </dependency>
               <dependency>
@@ -417,17 +417,10 @@
          <version>${lucene.version}</version>
        </dependency>
 
-      <!--
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-analyzers</artifactId>
-        <version>${lucene.version}</version>
-        </dependency>
-        -->
 
       <dependency>
         <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-analyzers-common</artifactId>
+        <artifactId>lucene-analyzers</artifactId>
         <version>${lucene.version}</version>
       </dependency>
 
@@ -761,6 +754,13 @@
         <version>3.7.0</version>
       </dependency>
       <dependency>
+        <groupId>software.amazon.msk</groupId>
+        <artifactId>aws-msk-iam-auth</artifactId>
+        <version>2.1.0</version>
+      </dependency>
+      
+      
+      <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
@@ -1014,7 +1014,7 @@
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core-jakarta</artifactId>
+        <artifactId>hibernate-core</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
       <dependency>
@@ -1038,12 +1038,6 @@
         <artifactId>hibernate-jcache</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
-
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-entitymanager</artifactId>
-        <version>${hibernate.version}</version>
-      </dependency>
       <dependency>
         <groupId>org.hibernate.search</groupId>
         <artifactId>hibernate-search-engine</artifactId>
@@ -1051,7 +1045,7 @@
       </dependency>
       <dependency>
         <groupId>org.hibernate.search</groupId>
-        <artifactId>hibernate-search-mapper-orm-jakarta</artifactId>
+        <artifactId>hibernate-search-mapper-orm</artifactId>
         <version>${hibernate.search.version}</version>
       </dependency>
       <dependency>
