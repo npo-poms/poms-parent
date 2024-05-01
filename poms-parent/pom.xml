@@ -19,9 +19,9 @@
     <events.version>2.7.0</events.version>
     <vpro.shared.version>5.1-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.42.0</checker.version>
+    <checker.version>3.43.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.1.0</activemq.version>
+    <activemq.version>6.1.2</activemq.version>
     <aspectj.version>1.9.22</aspectj.version>
     <camel.version>4.5.0</camel.version>
     <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
@@ -29,7 +29,7 @@
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.12.5</micrometer.version>
+    <micrometer.version>1.12.4</micrometer.version>
 
     <hibernate.version>6.5.0.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
@@ -58,7 +58,7 @@
     <groovy.version>4.0.18</groovy.version>
     <bytebuddy.version>1.14.14</bytebuddy.version>
     <assertj.version>3.25.3</assertj.version>
-    <xmlunit.version>2.9.1</xmlunit.version>
+    <xmlunit.version>2.10.0</xmlunit.version>
     <wiremock.version>3.5.4</wiremock.version>
 
 
@@ -91,7 +91,7 @@
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.4</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
-    <scala.version>2.13.13</scala.version>
+    <scala.version>2.13.14</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
@@ -372,7 +372,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.16.0</version>
+        <version>2.16.1</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
@@ -388,7 +388,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.16.1</version>
+        <version>1.17.0</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -721,7 +721,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.11.0</version>
+        <version>1.12.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -758,8 +758,8 @@
         <artifactId>aws-msk-iam-auth</artifactId>
         <version>2.1.0</version>
       </dependency>
-      
-      
+
+
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
@@ -1027,7 +1027,7 @@
         <artifactId>hibernate-jpamodelgen</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-jcache</artifactId>
@@ -1334,7 +1334,7 @@
         <artifactId>keycloak-admin-client</artifactId>
         <version>${keycloak.admin.client.version}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>net.rossillo.mvc.cache</groupId>
         <artifactId>spring-mvc-cache-control</artifactId>
