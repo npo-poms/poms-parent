@@ -23,13 +23,13 @@
     <!-- External Artifacts -->
     <activemq.version>6.1.2</activemq.version>
     <aspectj.version>1.9.22</aspectj.version>
-    <camel.version>4.5.0</camel.version>
+    <camel.version>4.6.0</camel.version>
     <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
     <guava.version>33.2.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.12.5</micrometer.version>
+    <micrometer.version>1.13.0</micrometer.version>
 
     <hibernate.version>6.5.0.Final</hibernate.version>
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
@@ -43,20 +43,20 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>10.12.0</flyway.version>
+    <flyway.version>10.13.0</flyway.version>
 
-    <jackson2.version>2.17.0</jackson2.version>
+    <jackson2.version>2.17.1</jackson2.version>
     <jaxb.version>4.0.5</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>5.10.1</junit.version>
-    <testcontainers.version>1.19.7</testcontainers.version>
+    <testcontainers.version>1.19.8</testcontainers.version>
     <testcontainers-keycloak.version>2.6.0</testcontainers-keycloak.version>
-    <mockito.version>5.11.0</mockito.version>
+    <mockito.version>5.12.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
-    <bytebuddy.version>1.14.14</bytebuddy.version>
+    <bytebuddy.version>1.14.15</bytebuddy.version>
     <assertj.version>3.25.3</assertj.version>
     <xmlunit.version>2.10.0</xmlunit.version>
     <wiremock.version>3.5.4</wiremock.version>
@@ -84,7 +84,7 @@
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
     <swagger3.version>2.2.21</swagger3.version>
-    <swagger3-parser.version>2.1.20</swagger3-parser.version>
+    <swagger3-parser.version>2.1.22</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
     <ehcache.version>2.10.9.2</ehcache.version>
@@ -292,7 +292,7 @@
        <dependency>
          <groupId>jakarta.activation</groupId>
          <artifactId>jakarta.activation-api</artifactId>
-        <version>2.1.2</version>
+        <version>2.1.3</version>
        </dependency>
 
       <dependency>
@@ -362,7 +362,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.9.5.5</version>
+        <version>0.10.1</version>
       </dependency>
       <dependency>
         <groupId>commons-fileupload</groupId>
@@ -472,7 +472,7 @@
       <dependency>
         <groupId>jakarta.annotation</groupId>
         <artifactId>jakarta.annotation-api</artifactId>
-        <version>2.1.1</version>
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet.jsp</groupId>
@@ -716,7 +716,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
-        <version>1.10.0</version>
+        <version>1.11.0</version>
       </dependency>
 
       <dependency>
@@ -1591,7 +1591,7 @@
        <dependency>
          <groupId>info.picocli</groupId>
          <artifactId>picocli</artifactId>
-         <version>4.7.5</version>
+         <version>4.7.6</version>
        </dependency>
     </dependencies>
   </dependencyManagement>
