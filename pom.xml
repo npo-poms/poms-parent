@@ -20,9 +20,9 @@
     <thesaurus.version>8.0.0</thesaurus.version>
 
     <!-- currenly maintained @ vpro only -->
-    <poms.shared.backend.version>8.0.0</poms.shared.backend.version>
+    <poms.shared.backend.version>8.1-SNAPSHOT</poms.shared.backend.version>
     <user.version>8.1-SNAPSHOT</user.version>
-    <api.version>8.0.0</api.version>
+    <api.version>8.1-SNAPSHOT</api.version>
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
 
