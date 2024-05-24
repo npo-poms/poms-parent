@@ -69,9 +69,8 @@ subgraph cluster_4  {
 subgraph cluster_5  {
   label="NPO Services"
   labelloc=b
-  metis
   pd
-  prepr
+  rcrs
   miranda
   pluto
   nep
@@ -124,8 +123,15 @@ poms_backend -> {
   postgresql_media
   jms
   nep
-  sourcing_service
   keycloak
+}[color=darkorange1]
+
+sourcing_service -> {
+  poms_backend
+}[color=darkorange1]
+
+rcrs -> {
+  poms_backend
 }[color=darkorange1]
 
 api -> {
@@ -167,10 +173,6 @@ magnolia_backend -> {
 magnolia_frontend -> {
   api
 }
-
-prepr -> metis
-pd -> metis
-
 
 api_tests -> {
   poms_backend
