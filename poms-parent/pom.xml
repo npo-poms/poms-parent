@@ -25,7 +25,7 @@
     <aspectj.version>1.9.22</aspectj.version>
     <camel.version>4.6.0</camel.version>
     <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
-    <guava.version>33.2.0-jre</guava.version>
+    <guava.version>33.2.1-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
@@ -43,7 +43,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>10.13.0</flyway.version>
+    <flyway.version>10.14.0</flyway.version>
 
     <jackson2.version>2.17.1</jackson2.version>
     <jaxb.version>4.0.5</jaxb.version>
@@ -56,10 +56,10 @@
     <mockito.version>5.12.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
-    <bytebuddy.version>1.14.16</bytebuddy.version>
-    <assertj.version>3.25.3</assertj.version>
+    <bytebuddy.version>1.14.17</bytebuddy.version>
+    <assertj.version>3.26.0</assertj.version>
     <xmlunit.version>2.10.0</xmlunit.version>
-    <wiremock.version>3.5.4</wiremock.version>
+    <wiremock.version>3.6.0</wiremock.version>
 
 
     <resteasy.version>6.2.7.Final</resteasy.version>
@@ -74,8 +74,8 @@
     <spring.web.version>6.1.6</spring.web.version>
     <spring-security.version>6.2.4</spring-security.version>
 
-    <keycloak.version>24.0.4</keycloak.version>
-    <keycloak.admin.client.version>24.0.4</keycloak.admin.client.version>
+    <keycloak.version>24.0.5</keycloak.version>
+    <keycloak.admin.client.version>24.0.5</keycloak.admin.client.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>3.2.5</spring-data-jpa.version>
@@ -1067,7 +1067,7 @@
       <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.0</version>
       </dependency>
       <dependency>
         <groupId>jakarta.websocket</groupId>
