@@ -1073,7 +1073,7 @@
       <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
-        <version>3.2.0</version>
+        <version>3.1.0</version> <!-- 3.2.0 seems to not yet be working with spring  -->
       </dependency>
       <dependency>
         <groupId>jakarta.websocket</groupId>
