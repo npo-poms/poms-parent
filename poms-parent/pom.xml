@@ -25,11 +25,13 @@
     <aspectj.version>1.9.22</aspectj.version>
     <camel.version>4.6.0</camel.version>
     <cxf.version>4.0.4</cxf.version> <!-- TODO: upgrading to 3.5.x seems to break mtom. e.g. we'll get No attachment for id  on subtitles calls -->
+    <kafka-clients.version>3.6.1</kafka-clients.version>
     <guava.version>33.2.1-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.13.1</micrometer.version>
+    <meeuw.math.version>0.12.0</meeuw.math.version>
 
     <!-- hibernate5.version>5.3.36.Final</hibernate5.version> -->
     <hibernate.version>6.5.2.Final</hibernate.version>
@@ -331,6 +333,12 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.meeuw.math</groupId>
+        <artifactId>mihxil-statistics</artifactId>
+        <version>${meeuw.math.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>javax.xml.stream</groupId>
         <artifactId>stax-api</artifactId>
@@ -749,7 +757,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>kafka-clients</artifactId>
-        <version>3.7.0</version>
+        <version>${kafka-clients.version}</version>
       </dependency>
       <dependency>
         <groupId>software.amazon.msk</groupId>
