@@ -199,6 +199,11 @@
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-berlijn</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
         <groupId>nl.vpro.pages</groupId>
         <artifactId>pages-domain</artifactId>
         <version>${poms.shared.version}</version>
