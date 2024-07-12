@@ -681,16 +681,6 @@
   </profiles>
   <repositories>
     <repository>
-      <id>github-poms-shared-backend</id>
-      <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <id>sonatype_snapshot</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <releases>
@@ -704,5 +694,16 @@
       <id>sonatype</id>
       <url>https://oss.sonatype.org/service/local/repositories/releases/content</url>
     </repository>
+    <repository>
+      <id>github-poms-shared-backend</id>
+      <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+
   </repositories>
 </project>
