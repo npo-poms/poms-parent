@@ -632,6 +632,19 @@
       </distributionManagement>
     </profile>
     <profile>
+      <id>github</id>
+      <distributionManagement>
+        <snapshotRepository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+        </snapshotRepository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+        </repository>
+      </distributionManagement>
+    </profile>
+    <profile>
       <id>validate</id>
       <build>
         <plugins>
