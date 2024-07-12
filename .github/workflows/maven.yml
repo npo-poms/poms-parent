@@ -29,7 +29,7 @@ jobs:
         SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
         SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
         GPG_SECRET_KEY_PASSPHRASE: ${{ secrets.GPG_SECRET_KEY_PASSPHRASE }}
-  github_pacakges:
+  github_packages:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -41,7 +41,7 @@ jobs:
             distribution: 'temurin'
             java-version: 11
             cache: maven       
-      - name: Publish to github pacakge
+      - name: Publish to github packages
         run: mvn -U -B -Pgithub deploy  -Dgpg.skip=false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
