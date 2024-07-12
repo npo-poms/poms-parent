@@ -75,16 +75,14 @@
     <tag>HEAD</tag>
   </scm>
   <distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Nexus releases</name>
-      <url>https://nexus.vpro.nl/content/repositories/releases</url>
-    </repository>
     <snapshotRepository>
-      <id>nexus</id>
-      <name>Nexus snapshots</name>
-      <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
     </snapshotRepository>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+    </repository>
   </distributionManagement>
   <issueManagement>
     <system>JIRA</system>
@@ -645,6 +643,21 @@
       </distributionManagement>
     </profile>
     <profile>
+      <id>vpro</id>
+      <distributionManagement>
+        <repository>
+          <id>nexus</id>
+          <name>Nexus releases</name>
+          <url>https://nexus.vpro.nl/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+          <id>nexus</id>
+          <name>Nexus snapshots</name>
+          <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+    <profile>
       <id>validate</id>
       <build>
         <plugins>
@@ -681,6 +694,5 @@
       <id>sonatype</id>
       <url>https://oss.sonatype.org/service/local/repositories/releases/content</url>
     </repository>
-
   </repositories>
 </project>
