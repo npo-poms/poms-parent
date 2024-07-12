@@ -20,7 +20,7 @@
     <thesaurus.version>8.2-SNAPSHOT</thesaurus.version>
 
     <!-- currenly maintained @ vpro only -->
-    <poms.shared.backend.version>8.1.0</poms.shared.backend.version>
+    <poms.shared.backend.version>8.2-SNAPSHOT</poms.shared.backend.version>
     <user.version>8.2-SNAPSHOT</user.version>
     <api.version>8.1.1</api.version>
 
@@ -680,6 +680,16 @@
     </profile>
   </profiles>
   <repositories>
+    <repository>
+      <id>github</id>
+      <url>https://github.com/orgs/npo-poms/packages</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
     <repository>
       <id>sonatype_snapshot</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
