@@ -19,7 +19,6 @@
     <api.client.version>8.2.0</api.client.version>
     <thesaurus.version>8.2.0</thesaurus.version>
 
-    <!-- currenly maintained @ vpro only -->
     <poms.shared.backend.version>8.2.0</poms.shared.backend.version>
     <user.version>8.2.1</user.version>
     <api.version>8.2.0</api.version>
@@ -33,6 +32,8 @@
     <java.version>17</java.version>
 
     <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS>
+    
+    <github.path>npo-poms/poms-parent</github.path>
   </properties>
 
   <modules>
@@ -71,17 +72,17 @@
   <scm>
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
-    <url>https://github.com/npo-poms/poms-parent.git</url>
+    <url>https://github.com/${github.path}.git</url>
     <tag>REL-8.2-SNAPSHOT</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+      <url>https://maven.pkg.github.com/${github.path}</url>
     </snapshotRepository>
     <repository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+      <url>https://maven.pkg.github.com/${github.path}</url>
     </repository>
   </distributionManagement>
   <issueManagement>
@@ -634,11 +635,11 @@
       <distributionManagement>
         <snapshotRepository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/npo-poms/${project.name}</url>
+          <url>https://maven.pkg.github.com/${github.path}</url>
         </snapshotRepository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/npo-poms/${project.name}</url>
+          <url>https://maven.pkg.github.com/${github.path}</url>
         </repository>
       </distributionManagement>
     </profile>
@@ -695,6 +696,7 @@
       <url>https://oss.sonatype.org/service/local/repositories/releases/content</url>
     </repository>
     <repository>
+      <!-- needs credentials -->
       <id>github-poms-shared-backend</id>
       <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
       <releases>
