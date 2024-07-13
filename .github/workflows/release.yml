@@ -25,7 +25,6 @@ jobs:
       with:
         global: true
         name: 'github $GITHUB_ACTOR'
-        email: 'digitaal-techniek@vpro.nl'
         token: '${{ secrets.GITHUB_TOKEN  }}'
     - name: Release
       run: mvn -ntp -Pdeploy,ossrh --batch-mode   release:prepare release:perform
