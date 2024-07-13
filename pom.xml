@@ -634,11 +634,11 @@
       <distributionManagement>
         <snapshotRepository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+          <url>https://maven.pkg.github.com/npo-poms/${project.name}</url>
         </snapshotRepository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
+          <url>https://maven.pkg.github.com/npo-poms/${project.name}</url>
         </repository>
       </distributionManagement>
     </profile>
@@ -704,6 +704,16 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-
+    <repository>
+      <!-- needs credentials -->
+      <id>vpro</id>
+      <url>https://nexus.vpro.nl/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 </project>
