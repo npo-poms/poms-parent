@@ -31,6 +31,8 @@ jobs:
         GPG_SECRET_KEY_PASSPHRASE: ${{ secrets.GPG_SECRET_KEY_PASSPHRASE }}
   github_packages:
     runs-on: ubuntu-latest
+    env:
+      MAVEN_OPTS: '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn'
     permissions:
       contents: read
       packages: write
