@@ -721,8 +721,8 @@
     </repository>
     <repository>
       <!-- needs credentials -->
-      <id>vpro</id>
-      <url>https://nexus.vpro.nl/content/groups/public</url>
+      <id>gitlab-user</id>
+      <url>https://gitlab.com/api/v4/projects/60050643/packages/maven</url>
       <releases>
         <enabled>true</enabled>
       </releases>
