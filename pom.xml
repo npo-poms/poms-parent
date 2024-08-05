@@ -718,8 +718,20 @@
       </snapshots>
     </repository>
     <repository>
-      <id>gitlab-user</id>
-      <url>https://gitlab.com/api/v4/projects/60050643/packages/maven</url>
+      <!-- needs credentials -->
+      <id>github-poms-shared-backend</id>
+      <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <!-- needs credentials -->
+      <id>gitlab-poms-repo</id>
+      <url>https://gitlab.com/api/v4/groups/90454047/-/packages/maven</url>
       <releases>
         <enabled>true</enabled>
       </releases>
