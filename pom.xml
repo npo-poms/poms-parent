@@ -34,6 +34,7 @@
     <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS>
 
     <github.path>npo-poms/poms-parent</github.path>
+    <gitlab.projectid>${env.CI_PROJECT_ID}</gitlab.projectid>
   </properties>
 
   <modules>
@@ -663,11 +664,11 @@
       <distributionManagement>
         <snapshotRepository>
           <id>gitlab-com</id>
-          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+          <url>https://gitlab.com/api/v4/projects/${gitlab.projectid}/packages/maven</url>
         </snapshotRepository>
         <repository>
           <id>gitlab-com</id>
-          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+          <url>https://gitlab.com/api/v4/projects/${gitlab.projectid}/packages/maven</url>
         </repository>
       </distributionManagement>
     </profile>
@@ -723,6 +724,17 @@
       <!-- needs credentials -->
       <id>gitlab-user</id>
       <url>https://gitlab.com/api/v4/projects/60050643/packages/maven</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <!-- needs credentials -->
+      <id>gitlab-images</id>
+      <url>https://gitlab.com/api/v4/projects/60050595/packages/maven</url>
       <releases>
         <enabled>true</enabled>
       </releases>
