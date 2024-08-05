@@ -4,7 +4,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-bom</artifactId>
-  <version>8.2.3-SNAPSHOT</version>
+  <version>8.2.3</version>
   <name>poms-bom</name>
   <packaging>pom</packaging>
 
@@ -74,7 +74,7 @@
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
     <url>https://github.com/${github.path}.git</url>
-    <tag>REL-8.2-SNAPSHOT</tag>
+    <tag>REL-8.2.3</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
