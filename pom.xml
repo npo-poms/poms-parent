@@ -708,16 +708,6 @@
       <url>https://oss.sonatype.org/service/local/repositories/releases/content</url>
     </repository>
     <repository>
-      <id>github-poms-shared-backend</id>
-      <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <!-- needs credentials -->
       <id>github-poms-shared-backend</id>
       <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
