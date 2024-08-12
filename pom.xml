@@ -224,12 +224,12 @@
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs</artifactId>
-        <version>${api.version}</version>
+        <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs-media-filter</artifactId>
-        <version>${api.version}</version>
+        <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
@@ -239,7 +239,7 @@
       <dependency>
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-services</artifactId>
-        <version>${api.version}</version>
+        <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.user</groupId>
@@ -669,6 +669,19 @@
           <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
         </repository>
       </distributionManagement>
+      <repositories>
+        <repository>
+          <!-- needs credentials -->
+          <id>gitlab-poms-repo</id>
+          <url>https://gitlab.com/api/v4/groups/90454047/-/packages/maven</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
     </profile>
     <profile>
       <id>validate</id>
@@ -718,17 +731,5 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <!-- needs credentials -->
-      <id>gitlab-poms-repo</id>
-      <url>https://gitlab.com/api/v4/groups/90454047/-/packages/maven</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-
   </repositories>
 </project>
