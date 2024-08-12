@@ -225,6 +225,12 @@
         <groupId>nl.vpro.api</groupId>
         <artifactId>api-rs</artifactId>
         <version>${poms.shared.backend.version}</version>
+        <classifier>tests</classifier>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.api</groupId>
+        <artifactId>api-rs</artifactId>
+        <version>${poms.shared.backend.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.api</groupId>
