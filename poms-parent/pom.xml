@@ -66,7 +66,7 @@
     <wiremock.version>3.9.1</wiremock.version>
 
 
-    <resteasy.version>7.0.0.Alpha3</resteasy.version>
+    <resteasy.version>7.0.0.Alpha2</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.16</slf4j.version>
