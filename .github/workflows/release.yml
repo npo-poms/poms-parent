@@ -1,35 +1,39 @@
 ---
 name: release
+run-name: Creating release by ${{ github.actor }} on ${{ github.ref_name }}
 on:
   workflow_dispatch:
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/heads/REL-')
     env:
-      MAVEN_OPTS: '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn'
+      MAVEN_OPTS: -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+    if: startsWith(github.ref, 'refs/heads/REL-')
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: 11
-        cache: maven
-        server-id: vpro-ossrh
-        server-username: SONATYPE_USERNAME
-        server-password: SONATYPE_PASSWORD
-        gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
-        gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
-    - uses: oleksiyrudenko/gha-git-credentials@v2.1.1
-      with:
-        global: true
-        name: 'github $GITHUB_ACTOR'
-        email: 'digitaal-techniek@vpro.nl'
-        token: '${{ secrets.GITHUB_TOKEN  }}'
-    - name: Release
-      run: mvn -ntp -Pdeploy,ossrh --batch-mode   release:prepare release:perform
-      env:
-        SONATYPE_USERNAME: vpro
-        SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
-        GPG_SECRET_KEY_PASSPHRASE: ${{ secrets.GPG_SECRET_KEY_PASSPHRASE }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+          cache: maven
+          server-id: vpro-ossrh
+          server-username: SONATYPE_USERNAME
+          server-password: SONATYPE_PASSWORD
+          gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
+          gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
+      - uses: oleksiyrudenko/gha-git-credentials@v2.1.2
+        with:
+          global: true
+          name: 'github $GITHUB_ACTOR'
+          email: 'digitaal-techniek@vpro.nl'
+          token: '${{ secrets.GITHUB_TOKEN  }}'
+      - name: Release
+        run: |
+          mvn -U --batch-mode  -Darguments=-DskipTests  -DpushChanges=false release:prepare
+          git push --atomic -v --follow-tags
+          mvn -Pdeploy,ossrh --batch-mode -Darguments=-DskipTests release:perform
+        env:
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+          GPG_SECRET_KEY_PASSPHRASE: ${{ secrets.GPG_SECRET_KEY_PASSPHRASE }}
