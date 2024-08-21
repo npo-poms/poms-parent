@@ -15,7 +15,7 @@
     <skipITs>true</skipITs>
 
     <!-- dependency provided by VPRO -->
-    <vpro-camel.version>2.0.0</vpro-camel.version>
+    <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
     <vpro.shared.version>5.3-SNAPSHOT</vpro.shared.version>
 
