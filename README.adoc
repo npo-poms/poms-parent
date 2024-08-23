@@ -68,19 +68,19 @@ env=[prod|acc|test|localhost] to automatically switch between several setting wh
 | project |url |configuration file |recommended port and context during development
 | https://github.com/npo-poms/functional-tests[Functional Tests] | | `${user.home}/conf/npo-functional-tests.properties` | -
 
-| https://git.vpro.nl/npo/media/-/tree/master/media-server[GUI] | https://poms.omroep.nl/[https://poms{otap}.omroep.nl/] | `${user.home}/conf/media.properties` | http://localhost:8071/[8071]
+| https://gitlab.com/npo-identity/poms/media/-/tree/main/media-server[GUI] | https://poms.omroep.nl/[https://poms{otap}.omroep.nl/] | `${user.home}/conf/media.properties` | http://localhost:8071/[8071]
 
-| https://git.vpro.nl/npo/media/-/tree/master/media-rs[Backend] | https://api.poms.omroep.nl[https://api{otap}.poms.omroep.nl/] | `${user.home}/conf/media-rs.properties` | http://localhost:8071/rs[8071/rs]
+| https://gitlab.com/npo-identity/poms/media/-/tree/main/media-rs[Backend] | https://api.poms.omroep.nl[https://api{otap}.poms.omroep.nl/] | `${user.home}/conf/media-rs.properties` | http://localhost:8071/rs[8071/rs]
 
-| https://git.vpro.nl/npo/api[Frontend API]| https://rs.poms.omroep.nl/v1[https://rs{otap}.poms.omroep.nl/v1] | `${user.home}/conf/npo-api.properties` | http://localhost:8071/v1[8070/v1]
+| https://gitlab.com/npo-identity/poms/api[Frontend API]| https://rs.poms.omroep.nl/v1[https://rs{otap}.poms.omroep.nl/v1] | `${user.home}/conf/npo-api.properties` | http://localhost:8071/v1[8070/v1]
 
-| https://git.vpro.nl/npo/pages-publish[Page publisher API]| https://publish.pages.omroep.nl[https://publish{otap}.pages.omroep.nl/v1] | `${user.home}/conf/page-publish.properties` | http://localhost:8069[8069]
+| https://gitlab.com/npo-identity/poms/pages-publisher[Page publisher API]| https://publish.pages.omroep.nl[https://publish{otap}.pages.omroep.nl/v1] | `${user.home}/conf/page-publish.properties` | http://localhost:8069[8069]
 
-| https://git.vpro.nl/npo/npo-publish[Publisher] | - | `${user.home}/conf/npo-publisher.properties` | -
+| https://gitlab.com/npo-identity/poms/npo-publish[Publisher] | - | `${user.home}/conf/npo-publisher.properties` | -
 
-| https://git.vpro.nl/npo/images/-/tree/master/image-server-frontend[Images Frontend] | https://images.poms.omroep.nl[https://images{otap}.poms.omroep.nl/] | `${user.home}/conf/images-frontend.properties` | 8072
+| https://gitlab.com/npo-identity/poms/images/-/tree/main/image-server-frontend[Images Frontend] | https://images.poms.omroep.nl[https://images{otap}.poms.omroep.nl/] | `${user.home}/conf/images-frontend.properties` | 8072
 
-| https://git.vpro.nl/npo/images/-/tree/master/image-server[Images Backend] | https://poms.omroep.nl/images[https://poms{otap}.omroep.nl/images] | `${user.home}/conf/images.properties` | http://localhost:8071/images/[8071/images]
+| https://gitlab.com/npo-identity/poms/images/-/tree/main/image-server[Images Backend] | https://poms.omroep.nl/images[https://poms{otap}.omroep.nl/images] | `${user.home}/conf/images.properties` | http://localhost:8071/images/[8071/images]
 |========
 
 === Projects
