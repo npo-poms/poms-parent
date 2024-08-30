@@ -58,7 +58,7 @@ strict digraph {
   ]
   poms_gui [
     label="Angular GUI for POMS"
-    href="https://git.vpro.nl/npo/media-gui.git"
+    href="https://gitlab.com/npo-identity/poms/media-gui.git"
     fontcolor=darkgreen
   ]
   poms_shared_backend [
