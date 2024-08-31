@@ -670,6 +670,12 @@
     </profile>
     <profile>
       <id>gitlab-com</id>
+      <activation>
+        <!-- for project on gitlab.com we just put a file '.gitlab-com.profile', and this profile will be implicitely enabled -->
+        <file>
+          <exists>.gitlab-com.profile</exists>
+        </file>
+      </activation>
       <distributionManagement>
         <snapshotRepository>
           <id>gitlab-com</id>
