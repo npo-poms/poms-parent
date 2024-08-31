@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>nl.vpro.poms</groupId>
+    <artifactId>poms-parent</artifactId>
+    <version>8.4-SNAPSHOT</version>
+    <relativePath>../poms-parent</relativePath>
+  </parent>
+  <artifactId>poms-parent-private</artifactId>
+  <packaging>pom</packaging>
+  <name>poms-parent-private</name>
+  <url>https://github.com/npo-poms/poms-parent/</url>
+  <description>Parent POM for private poms projects</description>
+
+
+  <profiles>
+    <profile>
+      <id>gitlab-com</id>
+      <activation>
+        <property>
+          <name>!skipGitlabComProfile</name>
+        </property>
+      </activation>
+      <distributionManagement>
+        <snapshotRepository>
+          <id>gitlab-com</id>
+          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+        </snapshotRepository>
+        <repository>
+          <id>gitlab-com</id>
+          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+        </repository>
+      </distributionManagement>
+      <repositories>
+        <repository>
+          <!-- needs credentials -->
+          <id>gitlab-poms-repo</id>
+          <url>https://gitlab.com/api/v4/groups/90454047/-/packages/maven</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+
+  </profiles>
+</project>
