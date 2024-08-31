@@ -37,6 +37,7 @@
 
   <modules>
     <module>poms-parent</module>
+    <module>poms-private</module>
   </modules>
   <organization>
     <name>NPO</name>
@@ -667,32 +668,6 @@
           <url>https://nexus.vpro.nl/content/repositories/snapshots</url>
         </snapshotRepository>
       </distributionManagement>
-    </profile>
-    <profile>
-      <id>gitlab-com</id>
-      <distributionManagement>
-        <snapshotRepository>
-          <id>gitlab-com</id>
-          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
-        </snapshotRepository>
-        <repository>
-          <id>gitlab-com</id>
-          <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
-        </repository>
-      </distributionManagement>
-      <repositories>
-        <repository>
-          <!-- needs credentials -->
-          <id>gitlab-poms-repo</id>
-          <url>https://gitlab.com/api/v4/groups/90454047/-/packages/maven</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-      </repositories>
     </profile>
     <profile>
       <id>validate</id>
