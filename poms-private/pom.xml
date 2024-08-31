@@ -17,9 +17,9 @@
     <profile>
       <id>gitlab-com</id>
       <activation>
-        <property>
-          <name>!skipGitlabComProfile</name>
-        </property>
+        <file>
+          <missing>.skipGitlabComProfile</missing>
+        </file>
       </activation>
       <distributionManagement>
         <snapshotRepository>
