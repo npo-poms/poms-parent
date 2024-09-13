@@ -1,0 +1,80 @@
+
+[%noheader,%format]
+|===
+3+<h| POMS 8.3.x
+3+| CHP4->CHP5, PD -> Berlijn/kafka
+3+|for release in september/oktober 2024
+
+|media
+| ?
+| seems dangerous because of necessary berlijn migration
+
+|media-rs
+| GO
+| seems harmless
+
+
+|media-publish
+| GO
+| seems harmless.
+
+|pages-publish
+| GO
+| seems harmless
+
+| api
+| GO
+| seems harmless
+
+
+| images-backend
+| GO
+| seems harmless
+
+
+| images-frontend
+| GO
+| seems harmless
+
+3+<h| POMS 8.2.x
+3+| Hibernate upgrade
+3+|GO: for release in week of 2024-09-16, to CHP4
+
+|media
+| ?
+| seems dangerous because hibernate
+
+|media-rs
+| GO
+| seems harmless
+
+
+|media-publish
+| GO
+| seems harmless.
+
+|pages-publish
+| GO
+| seems harmless
+
+| api
+| GO
+| seems harmless
+
+
+| images-backend
+| GO
+| seems harmless, though hibernate
+
+
+| images-frontend
+| GO
+| seems harmless, though hibernate
+
+
+3+<h| Keycloak 2.2
+3+| Upgrade of keycloak to 25.0, migration to CHP5
+3+| Will be done 2024-09-16
+| keycloak | GO | upgrade to hibernate 25 was not actually needed, but successfull in test, so lets go.
+
+|===
