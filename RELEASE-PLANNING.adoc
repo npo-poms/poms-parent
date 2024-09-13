@@ -42,7 +42,8 @@
 
 |media
 | ?
-| seems dangerous because hibernate, lucene reindexing!
+| seems dangerous because hibernate, lucene reindexing! 
+3+|acceptance environment used to be connected to kafka. Set to PD for some days now, for last sanity check 
 
 |media-rs
 | GO
@@ -64,12 +65,12 @@
 
 | images-backend
 | GO
-| seems harmless, though hibernate
+| seems harmless, though hibernate (just simple things)
 
 
 | images-frontend
 | GO
-| seems harmless, though hibernate
+| seems harmless, though hibernate (just simple things)
 
 
 3+<h| Keycloak 2.2
