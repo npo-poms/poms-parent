@@ -37,7 +37,7 @@
 | I think rico planned ryncing of data-dir, we need to prepare that sson
 
 3+<h| POMS 8.2.x
-3+| Hibernate upgrade
+3+| hibernate orm en search upgrade, camel upgrade  https://publiekeomroep.atlassian.net/wiki/spaces/POMSA/pages/3904176709/Release+notes+8.2+voor+beheerders
 3+|GO: for release in week of 2024-09-16, to CHP4
 
 |media
