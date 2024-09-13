@@ -7,7 +7,7 @@
 
 |media
 | ?
-| seems dangerous because of necessary berlijn migration
+| seems dangerous because of necessary berlijn migration, need reindex too, we will not copy those
 
 |media-rs
 | GO
@@ -20,7 +20,7 @@
 
 |pages-publish
 | GO
-| seems harmless
+| seems harmless, but look out with since-files
 
 | api
 | GO
@@ -33,8 +33,8 @@
 
 
 | images-frontend
-| GO
-| seems harmless
+| ?
+| I think rico planned ryncing of data-dir, we need to prepare that sson
 
 3+<h| POMS 8.2.x
 3+| Hibernate upgrade
@@ -42,7 +42,7 @@
 
 |media
 | ?
-| seems dangerous because hibernate
+| seems dangerous because hibernate, lucene reindexing!
 
 |media-rs
 | GO
@@ -73,7 +73,7 @@
 
 
 3+<h| Keycloak 2.2
-3+| Upgrade of keycloak to 25.0, migration to CHP5
+3+| Upgrade of keycloak to 21 -> 25, migration to CHP5
 3+| Will be done 2024-09-16
 | keycloak | GO | upgrade to hibernate 25 was not actually needed, but successfull in test, so lets go.
 
