@@ -76,7 +76,7 @@
 
 3+<h| Keycloak 2.2
 3+| Upgrade of keycloak to 21 -> 25, migration to CHP5
-3+| Will be done 2024-09-16
+3+| done 2024-09-16
 | keycloak | GO | upgrade to hibernate 25 was not actually needed, but successfull in test, so lets go.
 
 |===
