@@ -74,7 +74,7 @@ strict digraph {
   ]
   media_publish [
     label="Media Publisher"
-    href="https://gitlab.com/npo-identity/poms/npo-publish"
+    href="https://gitlab.com/npo-identity/poms/media-publish"
     fontcolor=darkgreen
     color=darkorchid1
   ]

@@ -356,7 +356,7 @@
 <!-- media_publish -->
 <g id="node16" class="node">
 <title>media_publish</title>
-<g id="a_node16"><a xlink:href="https://gitlab.com/npo-identity/poms/npo-publish" xlink:title="Media Publisher">
+<g id="a_node16"><a xlink:href="https://gitlab.com/npo-identity/poms/media-publish" xlink:title="Media Publisher">
 <ellipse fill="none" stroke="#bf3eff" cx="1116.08" cy="-416" rx="72.34" ry="18"/>
 <text text-anchor="middle" x="1116.08" y="-410.95" font-family="Times,serif" font-size="14.00" fill="darkgreen">Media Publisher</text>
 </a>
