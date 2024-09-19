@@ -50,7 +50,7 @@ The image is clickable and links to several version control repositories.
 
 The azure blocks we consider part of the 'poms ecosystem'. The ones with blue links are open source, and point to public repositories. The green links point to private repositories.
 
-=== The ``pom.xml``s of this project
+== The ``pom.xml``s of this project
 
 This github project provides three ``pom.xml``s, which extends from each other. They are all the type 'pom', and are meant to be imported or serve as 'parent' for other ``pom.xml``s.
 
