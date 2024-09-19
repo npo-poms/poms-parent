@@ -50,6 +50,14 @@ The image is clickable and links to several version control repositories.
 
 The azure blocks we consider part of the 'poms ecosystem'. The ones with blue links are open source, and point to public repositories. The green links point to private repositories.
 
+=== The ``pom.xml``s of this project
+
+This github project provides three ``pom.xml``s, which extends from each other. They are all the type 'pom', and are meant to be imported or serve as 'parent' for other ``pom.xml``s.
+
+- `nl.vpro.poms:poms-bom` Can be imported in other ``pom.xml``s that are not part of poms itself. It manages the version of all artifacts that are related to poms and relatative
+- `nl.vpro.poms:poms-parent` Is the parent pom of all poms projects. Extends from `poms-bom`, but manages all versions of used libraries.
+- `nl.vpro.poms:poms-parent-private` Is the parent pom of all private poms projects (that live in gitlab). Extends from `poms-parent`, but adds configuration for gitlab as a maven repository
+
 == Operations and development
 
 === Configuration files and context root
