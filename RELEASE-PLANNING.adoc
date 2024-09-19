@@ -15,25 +15,25 @@
 
 
 |media-publish
-| GO
+| GO [.line-through]#acc#/prod
 | seems harmless.
 
 |pages-publish
-| GO
+| GO acc/prod
 | seems harmless, but look out with since-files
 
 | api
-| GO
+| GO acc/prod
 | seems harmless
 
 
 | images-backend
-| GO
+| GO go/acc
 | seems harmless
 
 
 | images-frontend
-| ?
+| GO acc/prod
 | I think rico planned ryncing of data-dir, we need to prepare that soon, see https://publiekeomroep.atlassian.net/servicedesk/customer/portal/7/WHCS-4880[hosting issue]
 
 3+<h| POMS 8.2.x
@@ -52,25 +52,25 @@
 
 
 |media-publish
-| GO
+| GO done 2023-09-18
 | seems harmless.
 
 |pages-publish
-| GO
+| GO done 2023-09-18
 | seems harmless
 
 | api
-| GO
+| GO done 2023-09-18
 | seems harmless
 
 
 | images-backend
-| GO
+| GO done 2023-09-18
 | seems harmless, though hibernate (just simple things)
 
 
 | images-frontend
-| GO
+| GO done 2023-09-18
 | seems harmless, though hibernate (just simple things)
 
 
