@@ -209,8 +209,6 @@ strict digraph {
     #poms_shared_backend
     }[color=darkorchid1]
 
-    media_publish -> pages_publish[label="we plan to merge these" dir=none]
-
 
 
   api_client -> {
