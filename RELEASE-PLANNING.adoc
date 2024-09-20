@@ -4,6 +4,7 @@
 3+<h| POMS 8.3.x
 3+| CHP4->CHP5, PD -> Berlijn/kafka
 3+|for release in september/oktober 2024
+3+| 2024-09-20: media-publish/pages-publish/api/images-frontend are migrated to CHP5-acc
 
 |media
 | ?
