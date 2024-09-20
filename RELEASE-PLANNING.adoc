@@ -19,11 +19,11 @@
 | seems harmless.
 
 |pages-publish
-| GO acc/prod
+| GO [.line-through]#acc#/prod
 | seems harmless, but look out with since-files
 
 | api
-| GO acc/prod
+| GO [.line-through]#acc#/prod
 | seems harmless
 
 
@@ -33,8 +33,8 @@
 
 
 | images-frontend
-| GO acc/prod
-| I think rico planned ryncing of data-dir, we need to prepare that soon, see https://publiekeomroep.atlassian.net/servicedesk/customer/portal/7/WHCS-4880[hosting issue]
+| GO [.line-through]#acc#/prod
+| we added a kopia sidecar to arrange this, see https://publiekeomroep.atlassian.net/servicedesk/customer/portal/7/WHCS-4880[hosting issue]
 
 3+<h| POMS 8.2.x
 3+|https://publiekeomroep.atlassian.net/issues/?filter=13286&atlOrigin=eyJpIjoiOWE0YmE4NzRiY2E2NDk1NmI1OWE2ZWMxN2FiM2I4NWIiLCJwIjoiaiJ9[fixed issues]
