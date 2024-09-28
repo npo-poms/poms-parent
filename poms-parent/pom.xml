@@ -72,8 +72,8 @@
     <log4j2.version>2.23.1</log4j2.version>
 
 
-    <spring.version>6.1.12</spring.version>
-    <spring.web.version>6.1.12</spring.web.version>
+    <spring.version>6.1.13</spring.version>
+    <spring.web.version>6.1.13</spring.web.version>
     <spring-security.version>6.3.1</spring-security.version>
 
     <keycloak.version>25.0.4</keycloak.version>
