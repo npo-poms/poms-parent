@@ -31,7 +31,7 @@
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.13.4</micrometer.version>
-    <meeuw.math.version>0.12.0</meeuw.math.version>
+    <meeuw.math.version>0.13.0</meeuw.math.version>
 
     <hibernate.version>6.6.0.Final</hibernate.version>
     <hibernate.search.version>7.2.0.Final</hibernate.search.version>
