@@ -528,7 +528,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.1</version>
         <configuration>
-          <argLine>${EXTRA_TEST_OPTS}</argLine>
+          <!--
+              <argLine>${EXTRA_TEST_OPTS}</argLine>
+              -->
           <forkCount>${surefire.forkCount}</forkCount>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
