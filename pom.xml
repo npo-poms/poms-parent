@@ -4,7 +4,7 @@
 
   <groupId>nl.vpro.poms</groupId>
   <artifactId>poms-bom</artifactId>
-  <version>8.3.2-SNAPSHOT</version>
+  <version>8.3.2</version>
   <name>poms-bom</name>
   <packaging>pom</packaging>
 
@@ -73,7 +73,7 @@
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
     <url>https://github.com/npo-poms/poms-parent.git</url>
-    <tag>REL-8.3-SNAPSHOT</tag>
+    <tag>REL-8.3.2</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
