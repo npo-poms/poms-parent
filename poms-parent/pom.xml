@@ -33,8 +33,8 @@
     <micrometer.version>1.13.4</micrometer.version>
     <meeuw.math.version>0.13.0</meeuw.math.version>
 
-    <hibernate.version>6.6.0.Final</hibernate.version>
-    <hibernate.search.version>7.2.0.Final</hibernate.search.version>
+    <hibernate.version>6.6.1.Final</hibernate.version>
+    <hibernate.search.version>7.2.1.Final</hibernate.search.version>
     <lucene.version>9.11.1</lucene.version>
 
     <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
