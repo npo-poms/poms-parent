@@ -543,7 +543,7 @@
           <excludes>
             <exclude>**/*ITest.java</exclude>
           </excludes>
-          <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
+          <argLine>-javaagent:${org.mockito:mockito-core:jar}</argLine>
         </configuration>
       </plugin>
       <plugin>
