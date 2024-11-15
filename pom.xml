@@ -30,7 +30,7 @@
 
     <validation.api.version>3.0.2</validation.api.version>
 
-    <java.version>17</java.version>
+    <java.version>21</java.version>
 
     <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS> <!-- needed for instrumentating by javassist -->
     <surefire.forkCount>1</surefire.forkCount><!-- jacoco not working owtheriwse -->
