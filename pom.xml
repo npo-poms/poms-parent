@@ -34,6 +34,9 @@
 
     <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS> <!-- needed for instrumentating by javassist -->
     <surefire.forkCount>1</surefire.forkCount><!-- jacoco not working owtheriwse -->
+
+    <maven.compiler.proc>full</maven.compiler.proc> <!-- https://dzone.com/articles/using-lombok-library-witk-jdk-23 -->
+
   </properties>
 
   <modules>
@@ -434,7 +437,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.11.0</version>
+          <version>3.13.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
