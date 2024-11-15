@@ -542,7 +542,7 @@
           <excludes>
             <exclude>**/*ITest.java</exclude>
           </excludes>
-          <argLine>${EXTRA_TEST_OPTS} cd -javaagent:${org.mockito:mockito-core:jar}</argLine>
+          <argLine>${EXTRA_TEST_OPTS}  -javaagent:${org.mockito:mockito-core:jar}</argLine>
         </configuration>
       </plugin>
       <plugin>
