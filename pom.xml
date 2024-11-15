@@ -32,7 +32,7 @@
 
     <java.version>17</java.version>
 
-    <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS>
+    <EXTRA_TEST_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED</EXTRA_TEST_OPTS> <!-- needed for instrumentating by javassist -->
     <surefire.forkCount>1</surefire.forkCount><!-- jacoco not working owtheriwse -->
   </properties>
 
@@ -528,9 +528,8 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.1</version>
         <configuration>
-          <!--
-              <argLine>${EXTRA_TEST_OPTS}</argLine>
-              -->
+
+
           <forkCount>${surefire.forkCount}</forkCount>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
@@ -543,7 +542,7 @@
           <excludes>
             <exclude>**/*ITest.java</exclude>
           </excludes>
-          <argLine>-javaagent:${org.mockito:mockito-core:jar}</argLine>
+          <argLine>${EXTRA_TEST_OPTS} cd -javaagent:${org.mockito:mockito-core:jar}</argLine>
         </configuration>
       </plugin>
       <plugin>
