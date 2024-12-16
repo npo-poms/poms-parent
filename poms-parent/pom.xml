@@ -32,7 +32,7 @@
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
     <micrometer.version>1.14.1</micrometer.version>
-    <meeuw.math.version>0.13.0</meeuw.math.version>
+    <meeuw.math.version>0.14.0</meeuw.math.version>
 
     <hibernate.version>6.6.3.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
