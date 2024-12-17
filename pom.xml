@@ -354,7 +354,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.12.1</version>
+          <version>3.21.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -375,7 +375,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.7.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
@@ -383,11 +383,11 @@
         </plugin>
         <plugin>
           <artifactId>maven-shade-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.1.3</version>
         </plugin>
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
@@ -408,7 +408,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>3.4.0</version>
           <configuration>
             <filesets>
               <fileset>
@@ -424,7 +424,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.2.1</version>
+          <version>3.3.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -441,7 +441,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.5.0</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
@@ -475,7 +475,7 @@
 
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.0</version>
         <executions>
           <execution>
             <id>enforce-maven</id>
@@ -529,10 +529,8 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.5.2</version>
         <configuration>
-
-
           <forkCount>${surefire.forkCount}</forkCount>
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
@@ -550,7 +548,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.5.2</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
@@ -575,7 +573,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.16.0</version>
+        <version>2.18.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -587,7 +585,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.11.2</version>
         <configuration>
           <doclint>none</doclint>
           <additionalJOption>-quiet</additionalJOption>
