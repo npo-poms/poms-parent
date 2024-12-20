@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>6.1.4</activemq.version>
     <aspectj.version>1.9.22.1</aspectj.version>
-    <camel.version>4.8.1</camel.version>
+    <camel.version>4.9.0</camel.version>
     <cxf.version>4.0.5</cxf.version>
     <awssdk.version>2.27.19</awssdk.version><!-- version  used by camel -->
     <kafka-clients.version>3.8.0</kafka-clients.version>
