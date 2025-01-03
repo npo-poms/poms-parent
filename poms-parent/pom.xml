@@ -27,7 +27,7 @@
     <cxf.version>4.0.5</cxf.version>
     <awssdk.version>2.27.19</awssdk.version><!-- version  used by camel -->
     <kafka-clients.version>3.8.0</kafka-clients.version>
-    <guava.version>33.3.1-jre</guava.version>
+    <guava.version>33.4.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
@@ -47,7 +47,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>10.22.0</flyway.version>
+    <flyway.version>11.1.0</flyway.version>
 
     <jackson2.version>2.18.2</jackson2.version>
     <jaxb.version>4.0.5</jaxb.version>
@@ -57,10 +57,10 @@
     <junit.version>5.11.3</junit.version>
     <testcontainers.version>1.20.4</testcontainers.version>
     <testcontainers-keycloak.version>3.5.1</testcontainers-keycloak.version>
-    <mockito.version>5.14.2</mockito.version>
+    <mockito.version>5.15.2</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
-    <bytebuddy.version>1.15.10</bytebuddy.version>
+    <bytebuddy.version>1.15.11</bytebuddy.version>
     <assertj.version>3.26.3</assertj.version>
     <xmlunit.version>2.10.0</xmlunit.version>
     <wiremock.version>3.9.2</wiremock.version>
@@ -1140,7 +1140,7 @@
         <!-- unhtml -->
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.18.1</version>
+        <version>1.18.3</version>
       </dependency>
       <dependency>
         <!-- unmarkdown -->
