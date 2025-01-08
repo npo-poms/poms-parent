@@ -14,15 +14,15 @@
 
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>8.4-SNAPSHOT</poms.shared.version>
+    <poms.shared.version>8.4.0</poms.shared.version>
     <!-- these may not have -->
-    <api.client.version>8.4-SNAPSHOT</api.client.version>
+    <api.client.version>8.4.0</api.client.version>
     <thesaurus.version>8.2.0</thesaurus.version>
 
-    <!-- currenly maintained @ vpro only -->
-    <poms.shared.backend.version>8.4-SNAPSHOT</poms.shared.backend.version>
-    <user.version>8.4-SNAPSHOT</user.version>
-    <api.version>8.3.0</api.version>
+    <!-- these are private artifacts -->
+    <poms.shared.backend.version>8.4.0</poms.shared.backend.version> <!-- at github/npo-poms -->
+    <user.version>8.4.0</user.version> <!-- at gitlab -->
+    <api.version>8.4.0</api.version> <!-- at gitlab -->
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
 
