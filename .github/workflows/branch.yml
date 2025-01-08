@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-
   branch:
-
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
     env:
       MAVEN_OPTS: '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn'
     steps:
