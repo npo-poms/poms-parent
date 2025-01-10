@@ -684,6 +684,9 @@
               <rules>
                 <requireReleaseDeps>
                   <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
+                  <excludes>
+                    <exclude>${project.groupId}:*</exclude>
+                  </excludes>
                 </requireReleaseDeps>
               </rules>
             </configuration>
