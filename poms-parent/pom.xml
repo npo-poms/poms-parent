@@ -56,7 +56,6 @@
 
     <junit.version>5.11.3</junit.version>
     <testcontainers.version>1.20.4</testcontainers.version>
-    <testcontainers-keycloak.version>3.5.1</testcontainers-keycloak.version>
     <mockito.version>5.15.2</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
@@ -77,8 +76,10 @@
     <spring.web.version>6.1.15</spring.web.version>
     <spring-security.version>6.3.4</spring-security.version>
 
-    <keycloak.version>26.0.5</keycloak.version>
-    <keycloak.admin.client.version>26.0.3</keycloak.admin.client.version>
+    <!-- upgrading to 26 gives some issues in user project so look out with that -->
+    <keycloak.version>25.0.6</keycloak.version>
+    <keycloak.admin.client.version>25.0.6</keycloak.admin.client.version>
+    <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>3.3.5</spring-data-jpa.version>
