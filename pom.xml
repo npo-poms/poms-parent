@@ -14,13 +14,13 @@
 
   <properties>
     <!-- poms shared is expected to receive upgrades on most iterations -->
-    <poms.shared.version>8.4.2</poms.shared.version>
+    <poms.shared.version>8.4.2-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
     <api.client.version>8.4.0</api.client.version>
     <thesaurus.version>8.2.0</thesaurus.version>
 
     <!-- these are private artifacts -->
-    <poms.shared.backend.version>8.4.0</poms.shared.backend.version> <!-- at github/npo-poms -->
+    <poms.shared.backend.version>8.4.3-SNAPSHOT</poms.shared.backend.version> <!-- at github/npo-poms -->
     <user.version>8.4.0</user.version> <!-- at gitlab -->
     <api.version>8.4.0</api.version> <!-- at gitlab -->
 
