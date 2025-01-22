@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.4.2</vpro.shared.version>
+    <vpro.shared.version>5.4.4</vpro.shared.version>
 
     <checker.version>3.48.1</checker.version>
     <!-- External Artifacts -->
@@ -30,7 +30,7 @@
     <guava.version>33.4.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
-    <meeuw.i18n.bom.version>2.0.0</meeuw.i18n.bom.version>
+    <meeuw.i18n.bom.version>2.2.0</meeuw.i18n.bom.version>
     <micrometer.version>1.14.1</micrometer.version>
     <meeuw.math.version>0.14.0</meeuw.math.version>
 
