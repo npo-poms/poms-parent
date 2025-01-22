@@ -645,7 +645,7 @@
         </repository>
       </distributionManagement>
     </profile>
-    <profile>
+   <!-- <profile>
       <id>github</id>
       <distributionManagement>
         <snapshotRepository>
@@ -657,7 +657,7 @@
           <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
         </repository>
       </distributionManagement>
-    </profile>
+    </profile>-->
     <profile>
       <id>vpro</id>
       <distributionManagement>
