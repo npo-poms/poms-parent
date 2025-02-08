@@ -62,7 +62,7 @@
     <bytebuddy.version>1.15.11</bytebuddy.version>
     <assertj.version>3.27.2</assertj.version>
     <xmlunit.version>2.10.0</xmlunit.version>
-    <wiremock.version>3.10.0</wiremock.version>
+    <wiremock.version>3.11.0</wiremock.version>
 
 
     <resteasy.version>7.0.0.Alpha4</resteasy.version>
