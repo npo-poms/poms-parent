@@ -26,7 +26,7 @@
     <camel.version>4.8.3</camel.version> <!-- lets limit to even minors (LTS), so 4.8.x for now -->
     <cxf.version>4.0.5</cxf.version>
     <awssdk.version>2.27.19</awssdk.version><!-- version  used by camel -->
-    <kafka-clients.version>3.8.0</kafka-clients.version>
+    <kafka-clients.version>3.9.0</kafka-clients.version>
     <guava.version>33.4.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
