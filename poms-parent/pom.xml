@@ -345,7 +345,7 @@
       <dependency>
         <groupId>org.meeuw.util</groupId>
         <artifactId>kafkadumpreader</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
         <scope>test</scope>
       </dependency>
       <dependency>
