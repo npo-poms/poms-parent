@@ -1,0 +1,147 @@
+= POMS
+:toc:
+:revealjs_theme: sky
+:source-highlighter: highlight.js
+:customcss: presentation.css
+
+== History
+
+Poms is 'Publieke Omroep Media Services'. Initiated around 2010 at  VPRO to offer a hub for unified media metadata.
+
+Stack
+
+- Java
+- Spring
+- Hibernate
+- PostgreSQL
+- Elasticsearch (originally Couchdb)
+- Resteasy
+- JAXB
+- Jackson
+- Apache Camel
+- ActiveMQ
+- Keycloak (originally GoSA/LDAP)
+- bash/python for scripting
+
+Consisting of a CMS (angular, original extjs), backend rest apis, frontend rest api. 'Publisher Applications'. Integration
+with NPO/NEP backend systems (even GTAA)
+
+=== Versioning, deployment, ci/cd originally
+
+It was hosted in the NPO 'community hosting setup' ('netboot').
+
+- subversion
+- jenkins
+- deployment scripts in jenkins (just move wars to 'upload server', unzip and restart the tomcats). Tomcat maintained by NPO
+- VPRO things were deployed via ansible. Poms never was, iirc.
+- releasing was manual, I think, or maybe also that had some jenkins scripts.
+- nexus.vpro.nl for all artifacts
+
+Things like PostgreSQL, Elasticsearch, ActiveMQ were managed by NPO, and taken 'as a service'.
+
+=== Open sourcing
+
+During the years several components where migrated and open sourced in github.
+
+- To make the source and domain classes available to broadcasters. VPRO was using them, so others should be able to see them too.
+   *  https:///github.com/vpro[vpro organization] for non POMS specific stuff. https:///github.com/vpro/vpro-shared[Mainly 'vpro-shared'].
+   * https://github.com/npo-poms[npo-poms organization] for poms specific stuff. Mainly domain classes and similar things in https://github.com/npo-poms/poms-shared['poms-shared']
+- github actions to build those.
+- maven central/sonatype could just be used for artifacts
+
+=== Later (2021-ish) until now
+
+==== Git
+VPRO migrated to gitlab.
+I think originally the jenkins pipeline stayed in place, and gitlab was just a replacement for subversion
+
+==== Openshift
+NPO was phasing out netboot, and moving to openshift. 'Community Hosting Platform'. An AWS hosted openshift deployment, managed by NPO.
+POMS (and VPRO ) applications needed to migrate.
+
+- gitlab was chosen as replacement for pipelines in jenkins
+  * kaniko to build docker images from maven artifacts
+    ** no extra permissions needed
+    ** faster
+    ** smaller images
+  * helm is used to deploy to openshift (called from gitlab)
+    ** package manager for kubernetes.
+    ** 'charts' are used to describe the deployment
+    ** applications place their 'values' and override
+    ** Helm calculates the actual kubernetes resources and applies them
+    ** go templates are awful.
+  * nexus could still be used for (private) maven artifacts
+- NPO provides a harbor registry for docker images (at least they do now, may be in the beginning it was different)
+
+Things like PostgreSQL, Elasticsearch, ActiveMQ are still taken as a service. All of these can be acquired from AWS. But
+that still was (and is) set up and managed by NPO hosting.
+
+
+
+== Current situation End of Life of POMS @ VPRO
+
+In 2024 it became clearer that POMS will have no real future at NPO/VPRO. NPO decided to take the ideas of poms of 15 years ago, but build a new system from scratch, which is in the process of happening now.
+
+I decided to leave VPRO then. To be able to still maintain POMS for the remainder of its life the following changes were made:
+
+- Since gitlab was available at https://gitlab.com/npo-identity/poms/[NPO], the POMS repositories could be easily transferred, including the pipelines
+- The generic repositories related to pipelines which were shared with VPRO projects ('charts' and 'gitlab-templates') where just forked.
+- Most other 'shared' modules were already on the public 'npo-poms' and vpro github so posed no problem
+- A few modules and project remained. One project was transferred to a private github repository, and few modules of the api (which are used by VPRO api too) where moved to that project.
+- Since it is not a VPRO project anymore, nexus.vpro.nl could not be available anymore. Most things are 'end products' so don't actually need it.
+- There are 2 or 3 exceptions:
+   - if on gitlab, gitlab can server as maven repository
+    -if on github, github packages can be used
+
+=== Noticable
+
+- https://gitlab.com/npo-identity/poms/poms-monitoring[monitoring/alerting].
+- forward pod
+  * forwarding of AWS service for local development inspecting
+- JMX and debugging are enabled for all pods, and are easily accessible via port forwarding if needed too
+
+=== Docker images
+- Some docker images, which still lived in vpro gitlab were also just put on github, and are distributed via ghcr.io. They don't contain anything secret after all.
+
+  - https://github.com/vpro/tomcat:[A custom 'tomcat' docker image].
+    * nicer shell setup, and some utility scripts
+    * some choices of setting up tomcat, especially for running in an openshift environment, a custom startup script, memory settings.
+    * ON BUILD layers for deploying the actual wars in it.
+    *  Set up jmx/debugging
+  - Custom images used during the build
+    * https://github.com/npo-poms/kaniko:[kaniko image]
+    * https://github.com/vpro/openshift-helm[helm image]
+    ** an ubuntu with helm and oc-cli installed, also contains some wrapper script to call helm in a pipeline
+  - https://github.com/npo-poms/linux-im7[Image to copy imagemagick from]. There is an image server, which needs imagemagick, which we need to build from source. This takes a long time.
+  - https://github.com/vpro/garbage-cleaner/[garbage cleaner image]. A simple alpine image that is used as a 'sidecar' on all our stateful sets. It has 'supercronic'.
+    * cleaning up logs
+    * cleaning other temporary files.
+
+
+Most of these images just extend from the 'official' images.
+
+
+== What would be even better?
+
+=== Simpler is better
+Everything was migrated more or less 'as is' from the original 'netboot' setup. But in an openshift environment, this does not make much sense anymore
+
+- Move away from stateful sets. It was never an issue, but on an openshift environment I think statefulness is kind of a defeat.
+- Move away from tomcat. (e.g. use spring boot). Faster startup times, smaller images.  This is stuff which becomes important on an environment like openshift.
+- Make smaller applications. NPO was hard to deal with, and sometimes it was just simpler to add endpoints to an existing application then to convince them to make a new deployment. But these kind of things are _simple_ in openshift.
+
+
+=== Or?
+
+Just move away from most of this again.
+
+There is not much wrong with self-hosting simple applications. I don't exactly know about the costs of running everything @ aws, but I guess it got considerably more expensive.
+I think I heard that I heard that there are some plans to do some things just in aws instances. But of course _that_ is simple to take to a (European?) competitor, so that would be a plus!
+
+On the other hand IMHO the cost of migrating all this kind of stuff, several times in just a few years, with such a small team, was ridiculous.
+
+Having things in docker is a relief on one hand, because updating kernels (and such) is an annoying thing to do, but we didn't do that often anyway, and actually it is pretty straightforward.
+
+Gitlab CI/CD is a pain to maintain, and it is also a vendor lock. It is a lot of work, and in the end you end up looking at nice pages (I grant that), to do stuff you painfully automated, but which was never very hard to do, actually. Most of the time such things go even faster on a modern laptop, which you have anyway. (Though of course, it amounts to _something_ that it happens in a controlled, clean environment, but hey, if that is important, build it in docker then!).
+
+That 'everybody' could now do it was never proven to be the case, I think in 99% of the time the only ones using all this gui were the developers of those scripts themselves, which would have been able to do it in a terminal anyway.
