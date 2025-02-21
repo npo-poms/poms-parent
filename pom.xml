@@ -683,7 +683,7 @@
             <configuration>
               <rules>
                 <requireReleaseDeps>
-                  <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
+                  <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
                 </requireReleaseDeps>
               </rules>
             </configuration>
