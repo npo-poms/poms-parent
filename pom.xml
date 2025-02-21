@@ -683,7 +683,10 @@
             <configuration>
               <rules>
                 <requireReleaseDeps>
-                  <failWhenParentIsSnapshot>false</failWhenParentIsSnapshot>
+                  <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
+                  <excludes>
+                    <exclude>${project.groupId}:*</exclude>
+                  </excludes>
                 </requireReleaseDeps>
               </rules>
             </configuration>
