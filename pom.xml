@@ -79,6 +79,10 @@
     <url>https://github.com/npo-poms/poms-parent.git</url>
     <tag>HEAD</tag>
   </scm>
+
+  <!-- on default the distribution management is
+  to the repositories own maven.pkg.
+  -->
   <distributionManagement>
     <snapshotRepository>
       <id>github</id>
