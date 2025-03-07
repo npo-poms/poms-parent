@@ -25,7 +25,7 @@
     <aspectj.version>1.9.22.1</aspectj.version>
     <camel.version>4.10.1</camel.version> <!-- lets limit to even minors (LTS), so 4.10.x for now -->
     <cxf.version>4.0.5</cxf.version>
-    <awssdk.version>2.27.19</awssdk.version><!-- version  used by camel -->
+    <awssdk.version>2.30.15</awssdk.version><!-- version  used by camel -->
     <kafka-clients.version>3.9.0</kafka-clients.version>
     <guava.version>33.4.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
