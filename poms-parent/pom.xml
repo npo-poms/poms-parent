@@ -30,7 +30,7 @@
     <guava.version>33.4.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
-    <meeuw.i18n.bom.version>2.3.0</meeuw.i18n.bom.version>
+    <meeuw.i18n.bom.version>2.3.1</meeuw.i18n.bom.version>
     <micrometer.version>1.14.1</micrometer.version>
     <meeuw.math.version>0.14.0</meeuw.math.version>
 
