@@ -74,7 +74,7 @@
 
     <spring.version>6.1.15</spring.version>
     <spring.web.version>6.1.15</spring.web.version>
-    <spring-security.version>6.3.7</spring-security.version> <!-- try downgrade to check issues with / -->
+    <spring-security.version>6.4.3</spring-security.version>
 
     <!-- upgrading to 26 gives some issues in user project so look out with that -->
     <keycloak.version>25.0.6</keycloak.version>
