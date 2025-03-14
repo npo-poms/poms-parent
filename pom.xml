@@ -21,7 +21,7 @@
 
     <!-- these are private artifacts -->
     <poms.shared.backend.version>8.6-SNAPSHOT</poms.shared.backend.version> <!-- at github/npo-poms -->
-    <user.version>8.5.0</user.version> <!-- at gitlab -->
+    <user.version>8.6-SNAPSHOT</user.version> <!-- at gitlab -->
     <api.version>8.6-SNAPSHOT</api.version> <!-- at gitlab -->
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
