@@ -17,7 +17,7 @@
     <poms.shared.version>8.6-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
     <api.client.version>8.5.0</api.client.version>
-    <thesaurus.version>8.2.0</thesaurus.version>
+    <thesaurus.version>8.5.0</thesaurus.version>
 
     <!-- these are private artifacts -->
     <poms.shared.backend.version>8.6-SNAPSHOT</poms.shared.backend.version> <!-- at github/npo-poms -->
