@@ -17,9 +17,9 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.6-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.6.0</vpro.shared.version>
 
-    <checker.version>3.48.1</checker.version>
+    <checker.version>3.49.1</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.1.6</activemq.version>
     <aspectj.version>1.9.22.1</aspectj.version>
