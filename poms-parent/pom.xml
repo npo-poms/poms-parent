@@ -350,6 +350,11 @@
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
+        <artifactId>i18n-iso-639</artifactId>
+        <version>3.8</version>
+      </dependency>
+      <dependency>
+        <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-regions-bom</artifactId>
         <version>${meeuw.i18n.bom.version}</version>
         <type>pom</type>
