@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.7.1</vpro.shared.version>
+    <vpro.shared.version>5.7.2</vpro.shared.version>
 
     <checker.version>3.49.1</checker.version>
     <!-- External Artifacts -->
