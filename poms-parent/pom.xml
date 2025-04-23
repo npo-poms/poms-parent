@@ -17,16 +17,16 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.8-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.8.0</vpro.shared.version>
 
-    <checker.version>3.49.1</checker.version>
+    <checker.version>3.49.2</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.1.6</activemq.version>
-    <aspectj.version>1.9.22.1</aspectj.version>
-    <camel.version>4.10.2</camel.version> <!-- lets limit to even minors (LTS), so 4.10.x for now -->
+    <aspectj.version>1.9.24</aspectj.version>
+    <camel.version>4.10.3</camel.version> <!-- lets limit to even minors (LTS), so 4.10.x for now -->
     <cxf.version>4.0.6</cxf.version>
     <awssdk.version>2.30.15</awssdk.version><!-- version  used by camel -->
-    <kafka-clients.version>3.9.0</kafka-clients.version>
+    <kafka-clients.version>3.8.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.4.8-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
@@ -66,16 +66,16 @@
     <wiremock.version>3.11.0</wiremock.version>
 
 
-    <resteasy.version>7.0.0.Alpha4</resteasy.version>
+    <resteasy.version>7.0.0.Beta1</resteasy.version>
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
-    <log4j2.version>2.23.1</log4j2.version>
+    <log4j2.version>2.24.3</log4j2.version>
 
 
-    <spring.version>6.1.15</spring.version>
-    <spring.web.version>6.1.15</spring.web.version>
-    <spring-security.version>6.4.4</spring-security.version>
+    <spring.version>6.2.6</spring.version>
+    <spring.web.version>6.2.6</spring.web.version>
+    <spring-security.version>6.4.5</spring-security.version>
 
     <!-- upgrading to 26 gives some issues in user project so look out with that -->
     <keycloak.version>25.0.6</keycloak.version>
@@ -380,7 +380,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-collections4</artifactId>
-        <version>4.4</version>
+        <version>4.5.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
