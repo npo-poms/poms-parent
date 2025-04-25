@@ -49,22 +49,10 @@
   </organization>
   <developers>
     <developer>
-      <name>soarten</name>
-      <email>***@vpro.nl</email>
-      <organization>VPRO</organization>
-      <organizationUrl>https://www.vpro.nl/</organizationUrl>
-    </developer>
-    <developer>
-      <name>Nils Breunese</name>
-      <email>***@vpro.nl</email>
-      <organization>VPRO</organization>
-      <organizationUrl>https://www.vpro.nl/</organizationUrl>
-    </developer>
-    <developer>
       <name>Michiel Meeuwissen</name>
-      <email>***@vpro.nl</email>
-      <organization>VPRO</organization>
-      <organizationUrl>https://www.vpro.nl/</organizationUrl>
+      <email>ppoms@mmprogrami.nl</email>
+      <organization>MMProgrami</organization>
+      <organizationUrl>https://mmprogrami.nl/</organizationUrl>
     </developer>
   </developers>
   <licenses>
