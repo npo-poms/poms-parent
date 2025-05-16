@@ -20,9 +20,9 @@
     <thesaurus.version>8.6.1</thesaurus.version>
 
     <!-- these are private artifacts -->
-    <poms.shared.backend.version>8.6.0</poms.shared.backend.version> <!-- at github/npo-poms -->
-    <user.version>8.6.0</user.version> <!-- at gitlab -->
-    <api.version>8.6.0</api.version> <!-- at gitlab -->
+    <poms.shared.backend.version>8.9-SNAPSHOT</poms.shared.backend.version> <!-- at github/npo-poms -->
+    <user.version>8.9-SNAPSHOT</user.version> <!-- at gitlab -->
+    <api.version>8.9-SNAPSHOT</api.version> <!-- at gitlab -->
 
     <delombok.output>${project.build.directory}/delombok</delombok.output>
 
