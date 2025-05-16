@@ -66,7 +66,7 @@
     <wiremock.version>3.11.0</wiremock.version>
 
 
-    <resteasy.version>7.0.0.Beta1</resteasy.version>
+    <resteasy.version>6.2.12.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
