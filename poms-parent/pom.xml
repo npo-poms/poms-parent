@@ -78,8 +78,8 @@
     <spring-security.version>6.4.5</spring-security.version>
 
     <!-- upgrading to 26 gives some issues in user project so look out with that -->
-    <keycloak.version>25.0.6</keycloak.version>
-    <keycloak.admin.client.version>25.0.6</keycloak.admin.client.version>
+    <keycloak.version>26.2.4</keycloak.version>
+    <keycloak.admin.client.version>26.0.5</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
