@@ -31,7 +31,7 @@
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.4.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.14.1</micrometer.version>
+    <micrometer.version>1.15.0</micrometer.version>
     <meeuw.math.version>0.14.0</meeuw.math.version>
 
     <hibernate.version>6.6.4.Final</hibernate.version>
@@ -57,12 +57,12 @@
     <junit.version>5.12.1</junit.version>
     <testcontainers.version>1.20.6</testcontainers.version>
     <s3mock.version>4.0.0</s3mock.version>
-    <mockito.version>5.17.0</mockito.version>
+    <mockito.version>5.18.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
     <bytebuddy.version>1.17.2</bytebuddy.version>
     <assertj.version>3.27.3</assertj.version>
-    <xmlunit.version>2.10.0</xmlunit.version>
+    <xmlunit.version>2.10.2</xmlunit.version>
     <wiremock.version>3.11.0</wiremock.version>
 
 
