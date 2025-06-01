@@ -101,7 +101,7 @@
         <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-bom</artifactId>
         <type>pom</type>
-        <scope>immport</scope>
+        <scope>import</scope>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
