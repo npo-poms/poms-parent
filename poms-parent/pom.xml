@@ -338,11 +338,15 @@
         <version>1.11</version>
       </dependency>
       <dependency>
-        <groupId>org.meeuw.math</groupId>
-        <artifactId>mihxil-bom</artifactId>
+        <groupId>org.meeuw</groupId>
+        <artifactId>mihxil-theories</artifactId>
         <version>${mihxil.math.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.meeuw.math</groupId>
+        <artifactId>mihxil-statistics</artifactId>
+        <version>${mihxil.math.version}</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.util</groupId>
