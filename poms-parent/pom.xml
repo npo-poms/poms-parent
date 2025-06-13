@@ -89,8 +89,8 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.29</swagger3.version>
-    <swagger3-parser.version>2.1.25</swagger3-parser.version>
+    <swagger3.version>2.2.33</swagger3.version>
+    <swagger3-parser.version>2.1.27</swagger3-parser.version>
 
     <ehcache3.version>3.10.8</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
