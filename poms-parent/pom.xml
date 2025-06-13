@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>6.1.6</activemq.version>
     <aspectj.version>1.9.24</aspectj.version>
-    <camel.version>4.10.4</camel.version> <!-- lets limit to even minors (LTS), so 4.10.x for now -->
+    <camel.version>4.12.0</camel.version> <!-- lets limit to even minors (LTS), so 4.12.x for now -->
     <cxf.version>4.0.6</cxf.version>
     <awssdk.version>2.30.15</awssdk.version><!-- version  used by camel -->
     <kafka-clients.version>3.8.1</kafka-clients.version><!-- version used by camel -->
@@ -31,7 +31,7 @@
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.4.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.15.0</micrometer.version>
+    <micrometer.version>1.15.1</micrometer.version>
     <meeuw.math.version>0.15.0</meeuw.math.version>
 
     <hibernate.version>6.6.4.Final</hibernate.version>
@@ -47,15 +47,15 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.3.3</flyway.version>
+    <flyway.version>11.9.1</flyway.version>
 
     <jackson2.version>2.19.0</jackson2.version>
     <jaxb.version>4.0.5</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
-    <junit.version>5.12.1</junit.version>
-    <testcontainers.version>1.20.6</testcontainers.version>
+    <junit.version>5.13.1</junit.version>
+    <testcontainers.version>1.21.6</testcontainers.version>
     <s3mock.version>4.0.0</s3mock.version>
     <mockito.version>5.18.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
@@ -75,7 +75,7 @@
 
     <spring.version>6.2.6</spring.version>
     <spring.web.version>6.2.6</spring.web.version>
-    <spring-security.version>6.4.5</spring-security.version>
+    <spring-security.version>6.5.0</spring-security.version>
 
     <!-- upgrading to 26 gives some issues in user project so look out with that -->
     <keycloak.version>26.2.4</keycloak.version>
@@ -106,7 +106,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.5</postgresql.version>
+    <postgresql.version>42.7.7</postgresql.version>
 
     <commons.lang3.version>3.17.0</commons.lang3.version>
     <jsonwebtoken.version>0.12.6</jsonwebtoken.version>
@@ -268,7 +268,7 @@
       <dependency>
         <groupId>com.google.re2j</groupId>
         <artifactId>re2j</artifactId>
-        <version>1.7</version>
+        <version>1.8</version>
       </dependency>
       <dependency>
         <groupId>io.github.natty-parser</groupId>
@@ -339,9 +339,10 @@
       </dependency>
       <dependency>
         <groupId>org.meeuw.math</groupId>
-        <artifactId>mihxil-theories</artifactId>
-        <version>0.14.0</version>
-        <scope>test</scope>
+        <artifactId>mihxil-bom</artifactId>
+        <version>${mihxil.math.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.meeuw.util</groupId>
@@ -361,11 +362,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.meeuw.math</groupId>
-        <artifactId>mihxil-statistics</artifactId>
-        <version>${meeuw.math.version}</version>
-      </dependency>
+
 
       <dependency>
         <groupId>javax.xml.stream</groupId>
@@ -400,7 +397,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.10.1</version>
+        <version>0.11.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -431,7 +428,7 @@
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
-        <version>1.10.1</version>
+        <version>1.11.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
