@@ -17,9 +17,9 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.10-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.10.0</vpro.shared.version>
 
-    <checker.version>3.49.3</checker.version>
+    <checker.version>3.49.4</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.1.6</activemq.version>
     <aspectj.version>1.9.24</aspectj.version>
@@ -47,15 +47,15 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.9.1</flyway.version>
+    <flyway.version>11.9.2</flyway.version>
 
-    <jackson2.version>2.19.0</jackson2.version>
+    <jackson2.version>2.19.1</jackson2.version>
     <jaxb.version>4.0.5</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>5.13.1</junit.version>
-    <testcontainers.version>1.21.1</testcontainers.version>
+    <testcontainers.version>1.21.2</testcontainers.version>
     <s3mock.version>4.0.0</s3mock.version>
     <mockito.version>5.18.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
@@ -63,7 +63,7 @@
     <bytebuddy.version>1.17.2</bytebuddy.version>
     <assertj.version>3.27.3</assertj.version>
     <xmlunit.version>2.10.2</xmlunit.version>
-    <wiremock.version>3.11.0</wiremock.version>
+    <wiremock.version>3.13.1</wiremock.version>
 
 
     <resteasy.version>6.2.12.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
@@ -75,9 +75,8 @@
 
     <spring.version>6.2.6</spring.version>
     <spring.web.version>6.2.6</spring.web.version>
-    <spring-security.version>6.5.0</spring-security.version>
+    <spring-security.version>6.5.1</spring-security.version>
 
-    <!-- upgrading to 26 gives some issues in user project so look out with that -->
     <keycloak.version>26.2.4</keycloak.version>
     <keycloak.admin.client.version>26.0.5</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
@@ -339,14 +338,10 @@
       </dependency>
       <dependency>
         <groupId>org.meeuw.math</groupId>
-        <artifactId>mihxil-theories</artifactId>
-        <version>${meeuw.math.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.meeuw.math</groupId>
-        <artifactId>mihxil-statistics</artifactId>
-        <version>${meeuw.math.version}</version>
+        <artifactId>mihxil-bom</artifactId>
+        <version>0.17.0</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.meeuw.util</groupId>
