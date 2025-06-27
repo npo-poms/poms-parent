@@ -566,7 +566,7 @@
           <failOnError>false</failOnError>
           <detectLinks>true</detectLinks>
           <links combine.children="append">
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/package-list</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/package-list</link>
             <link>https://javadoc.io/doc/javax.validation/validation-api/${validation.api.version}/package-list</link>
           </links>
         </configuration>
