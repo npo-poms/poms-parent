@@ -33,6 +33,7 @@
     <meeuw.i18n.bom.version>2.4.0</meeuw.i18n.bom.version>
     <micrometer.version>1.15.1</micrometer.version>
     <meeuw.math.version>0.18.0</meeuw.math.version>
+    <meeuw.utils.version>1.12</meeuw.utils.version>
 
     <hibernate.version>6.6.4.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
@@ -338,6 +339,11 @@
         <version>${meeuw.math.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.meeuw.util</groupId>
+        <artifactId>mihxil-functional</artifactId>
+        <version>${meeuw.utils.version}</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.util</groupId>
