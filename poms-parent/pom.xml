@@ -32,7 +32,7 @@
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.4.0</meeuw.i18n.bom.version>
     <micrometer.version>1.15.1</micrometer.version>
-    <meeuw.math.version>0.18.0</meeuw.math.version>
+    <meeuw.math.version>0.18.1</meeuw.math.version>
     <meeuw.utils.version>1.12</meeuw.utils.version>
 
     <hibernate.version>6.6.4.Final</hibernate.version>
@@ -138,17 +138,17 @@
           <failOnError>false</failOnError>
           <detectLinks>true</detectLinks>
           <links combine.children="append">
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-i18n/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-test/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-validation/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-xml/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch-client/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-configuration/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-hibernate/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/nl.vpro.shared/vpro-shared-jackson2/${vpro.shared.version}/</link>
-            <link>https://www.javadoc.io/doc/org.meeuw.i18n/i18n-regions-countries/${meeuw.i18n.bom.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-util/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-i18n/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-test/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-validation/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-xml/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-elasticsearch-client/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-configuration/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-hibernate/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/nl.vpro.shared/vpro-shared-jackson2/${vpro.shared.version}/</link>
+            <link>https://javadoc.io/doc/org.meeuw.i18n/i18n-regions-countries/${meeuw.i18n.bom.version}/</link>
 
           </links>
         </configuration>
