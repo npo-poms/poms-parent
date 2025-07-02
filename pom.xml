@@ -16,7 +16,7 @@
     <!-- poms shared is expected to receive upgrades on most iterations -->
     <poms.shared.version>8.10-SNAPSHOT</poms.shared.version>
     <!-- these may not have -->
-    <api.client.version>8.10-SNAPSHOT-SNAPSHOT</api.client.version>
+    <api.client.version>8.10-SNAPSHOT</api.client.version>
     <thesaurus.version>8.6.1</thesaurus.version>
 
     <!-- these are private artifacts -->
@@ -629,6 +629,19 @@
           <url>https://maven.pkg.github.com/npo-poms/poms-parent</url>
         </repository>
       </distributionManagement>
+      <repositories>
+         <repository>
+           <!-- needs credentials -->
+           <id>github-poms-shared-backend</id>
+           <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
+           <releases>
+             <enabled>true</enabled>
+           </releases>
+           <snapshots>
+             <enabled>true</enabled>
+           </snapshots>
+         </repository>
+      </repositories>
     </profile>
     <profile>
       <id>vpro</id>
@@ -679,16 +692,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <!-- needs credentials -->
-      <id>github-poms-shared-backend</id>
-      <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+
   </repositories>
 </project>
