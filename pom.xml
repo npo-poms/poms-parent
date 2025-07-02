@@ -82,8 +82,8 @@
     </repository>
   </distributionManagement>
   <issueManagement>
-    <system>JIRA</system>
-    <url>https://jira.vpro.nl/</url>
+    <system>github</system>
+    <url>https://github.com/npo-poms/poms-parent/issues/</url>
   </issueManagement>
   <dependencyManagement>
     <dependencies>
