@@ -27,7 +27,7 @@ jobs:
         name: 'github $GITHUB_ACTOR'
         token: '${{ secrets.GITHUB_TOKEN  }}'
     - name: Release
-      run: mvn -Pdeploy,ossrh --batch-mode   release:prepare release:perform
+      run: mvn -Pdeploy,central --batch-mode   release:prepare release:perform
       env:
         CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
         CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}

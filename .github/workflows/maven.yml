@@ -28,7 +28,7 @@ jobs:
         gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
         gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
     - name: Build with Maven
-      run: mvn -U -B -Possrh deploy --file pom.xml  -Dgpg.skip=false
+      run: mvn -U -B -Pcentral deploy --file pom.xml  -Dgpg.skip=false
       env:
         CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
         CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
