@@ -6,7 +6,7 @@
 
 image:https://github.com/npo-poms/poms-parent/workflows/build/badge.svg?[Build Status,link=https://github.com/npo-poms/poms-parent/actions?query=workflow%3Abuild]
 image:https://img.shields.io/maven-central/v/nl.vpro.poms/poms-parent.svg?label=Maven%20Central[Maven Central,link=https://search.maven.org/search?q=g:%22nl.vpro.poms%22%20AND%20a:%22poms-parent%22]
-image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/poms/poms-parent/]
+//image:https://img.shields.io/nexus/s/https/oss.sonatype.org/nl.vpro.poms/poms-parent.svg[snapshots,link=https://oss.sonatype.org/content/repositories/snapshots/nl/vpro/poms/poms-parent/]
 
 ifndef::htmled[]
 link:https://npo-poms.github.io/poms-parent/[This page in on github pages]
