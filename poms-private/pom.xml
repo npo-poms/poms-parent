@@ -15,6 +15,12 @@
 
   <profiles>
     <profile>
+      <id>github-private-repos</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <profile>
       <id>gitlab-com</id>
       <activation>
         <file>
