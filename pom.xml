@@ -623,10 +623,10 @@
       </distributionManagement>
     </profile>
     <profile>
-      <id>github</id>
+      <id>github-poms-parent</id>
       <!--
-       prepare for deployment to github packages
-            -->
+       prepares for deployment to github packages
+      -->
       <distributionManagement>
         <snapshotRepository>
           <id>github</id>
@@ -639,6 +639,7 @@
       </distributionManagement>
     </profile>
     <profile>
+      <!-- enables downloading from github private packages -->
       <id>github-private-repos</id>
       <repositories>
         <repository>
