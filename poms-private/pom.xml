@@ -10,22 +10,17 @@
   <packaging>pom</packaging>
   <name>poms-parent-private</name>
   <url>https://github.com/npo-poms/poms-parent/</url>
-  <description>Parent POM for private poms projects</description>
+  <description>Parent POM for private poms projects (at gitlab)</description>
 
 
   <profiles>
     <profile>
-      <id>github-private-repos</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-    </profile>
-    <profile>
       <id>gitlab-com</id>
       <activation>
-        <file>
-          <missing>.skipGitlabComProfile</missing>
-        </file>
+        <property>
+          <name>env.GITLAB_CI</name>
+          <value>true</value>
+        </property>
       </activation>
       <distributionManagement>
         <snapshotRepository>

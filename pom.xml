@@ -641,6 +641,12 @@
     <profile>
       <!-- enables downloading from github private packages -->
       <id>github-private-repos</id>
+      <activation>
+        <property>
+          <name>env.GITLAB_CI</name>
+          <value>true</value>
+        </property>
+      </activation>
       <repositories>
         <repository>
           <!-- needs credentials -->
