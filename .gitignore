@@ -4,3 +4,5 @@ target
 /release/poms-shared/
 /release/user/
 /release/vpro-shared/
+/presentations/.bundle/
+/presentations/Gemfile.lock
