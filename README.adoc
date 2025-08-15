@@ -137,4 +137,4 @@ The rights matrix of the POMs GUI can be found link:https://npo-poms.github.io/p
 
 == Presentation
 
-See link:presentations/POMS[here]
+See link:https://npo-poms.github.io/poms-parent/presentations/POMS[here]
