@@ -1,0 +1,182 @@
+digraph poms_universe {
+
+    label="Deployments relevant for POMS"
+    edge [
+      color=gray
+    ]
+
+    poms [ label="POMS" href="https://poms.omroep.nl/" fontcolor=blue ]
+    poms_backend [ label="POMS backend API" href="https://api.poms.omroep.nl/" fontcolor=blue ]
+    api [ label = "NPO Frontend API" href="https://rs.poms.omroep.nl/" fontcolor=blue ]
+    pages_publish [ label = "Pages Publisher"     href="https://publish.pages.omroep.nl/" fontcolor=blue ]
+    media_publish [ label = "Media Publisher" ]
+    images_frontend [ label = "Images" href="https://images.poms.omroep.nl" fontcolor=blue]
+    images_backend [ label = "Images Backend" href="https://poms.omroep.nl/images/" fontcolor=blue ]
+    gtaa [ label ="B&G Thesaurus"  href="http://gtaa.beeldengeluid.nl/" fontcolor=blue]
+
+
+
+    subgraph cluster_0  {
+      label="Generic backend services"
+      labelloc=b
+      bgcolor=azure
+      postgresql_media
+      postgresql_image
+      elasticsearch
+      jms [ label = "JMS ActiveMQ" ]
+    }
+
+
+subgraph cluster_3  {
+  label="World"
+  users
+  backendsystems
+  editors
+  api_tests
+  fitnesse_tests
+subgraph cluster_2  {
+  label="VPRO"
+  magnolia_frontend
+  magnolia_backend
+  amara_importer
+}
+
+}
+subgraph cluster_4  {
+  label="POMS  Services"
+  bgcolor=azure
+  poms
+  poms_backend
+  pages_publish
+  media_publish
+  api
+  images_frontend
+  images_backend
+}
+
+subgraph cluster_5  {
+  label="NPO Services"
+  labelloc=b
+  pd
+  rcrs
+  miranda
+  pluto
+  nep
+  sourcing_service
+  keycloak [ label = "Keycloak" href="https://ident.poms.omroep.nl/auth/" fontcolor=blue]
+}
+
+subgraph cluster_6 {
+  label="Auxiliary API's"
+  labelloc=b
+  gtaa
+  thineye
+  wikimedia
+  pixabay
+  flickr
+  amara
+}
+
+editors -> {
+  magnolia_backend
+  poms
+  keycloak
+}
+
+users -> {
+  magnolia_frontend
+  api
+  images_frontend
+}
+
+backendsystems -> {
+  poms_backend
+  pages_publish
+}
+
+poms -> {
+  postgresql_media
+  jms
+  keycloak
+  miranda
+  pd
+  pluto
+  nep
+  sourcing_service
+  gtaa
+}[color=blue]
+
+poms_backend -> {
+  postgresql_media
+  jms
+  nep
+  keycloak
+}[color=darkorange1]
+
+sourcing_service -> {
+  poms_backend
+}[color=darkorange1]
+
+rcrs -> {
+  poms_backend
+}[color=darkorange1]
+
+api -> {
+  elasticsearch
+  gtaa
+}[color=cornflowerblue]
+
+pages_publish-> {
+  elasticsearch
+  keycloak
+  gtaa
+}[color=darkseagreen]
+
+media_publish -> {
+  elasticsearch
+  jms
+}[color=darkorchid1]
+
+
+images_frontend -> {
+  postgresql_image
+}[color=darkolivegreen1]
+
+images_backend -> {
+  postgresql_image
+  jms
+  keycloak
+  thineye
+  wikimedia
+  pixabay
+  flickr
+}[color=darkolivegreen1]
+
+magnolia_backend -> {
+  poms_backend
+  pages_publish
+}
+
+magnolia_frontend -> {
+  api
+}
+
+api_tests -> {
+  poms_backend
+  pages_publish
+  api
+}
+
+fitnesse_tests -> {
+  poms_backend
+  poms
+  api
+}
+
+
+amara_importer -> {
+  poms_backend
+  amara
+}
+
+}
