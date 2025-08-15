@@ -133,3 +133,8 @@ This contains the code to talk to keycloak to acquire user roles/groups
 == Rights
 
 The rights matrix of the POMs GUI can be found link:https://npo-poms.github.io/poms-parent/RIGHTS.html[here]
+
+
+== Presentation
+
+See link:presentations/POMS[here]
