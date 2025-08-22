@@ -26,12 +26,12 @@
     <camel.version>4.14.0</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
     <cxf.version>4.0.6</cxf.version>
     <awssdk.version>2.30.15</awssdk.version><!-- version used by camel -->
-    <kafka-clients.version>3.8.1</kafka-clients.version><!-- version used by camel -->
+    <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.4.8-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.3.2</quartz.version>
     <meeuw.i18n.bom.version>2.4.0</meeuw.i18n.bom.version>
-    <micrometer.version>1.15.1</micrometer.version>
+    <micrometer.version>1.15.3</micrometer.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
     <meeuw.utils.version>1.14</meeuw.utils.version>
 
