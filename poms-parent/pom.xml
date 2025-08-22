@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>6.1.7</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.24</aspectj.version>
-    <camel.version>4.12.0</camel.version> <!-- let's limit to even minors (LTS), so 4.12.x for now -->
+    <camel.version>4.14.0</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
     <cxf.version>4.0.6</cxf.version>
     <awssdk.version>2.30.15</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.8.1</kafka-clients.version><!-- version used by camel -->
@@ -55,15 +55,15 @@
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
-    <junit.version>5.13.1</junit.version>
-    <testcontainers.version>1.21.2</testcontainers.version>
+    <junit.version>5.13.4</junit.version>
+    <testcontainers.version>1.21.3</testcontainers.version>
     <s3mock.version>4.0.0</s3mock.version>
-    <mockito.version>5.18.0</mockito.version>
+    <mockito.version>5.19.0</mockito.version>
     <spock.version>2.4-M1-groovy-4.0</spock.version>
     <groovy.version>4.0.18</groovy.version>
     <bytebuddy.version>1.17.6</bytebuddy.version>
-    <assertj.version>3.27.3</assertj.version>
-    <xmlunit.version>2.10.2</xmlunit.version>
+    <assertj.version>3.27.4</assertj.version>
+    <xmlunit.version>2.10.3</xmlunit.version>
     <wiremock.version>3.13.1</wiremock.version>
 
 
@@ -71,28 +71,28 @@
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
-    <log4j2.version>2.24.3</log4j2.version>
+    <log4j2.version>2.25.1</log4j2.version>
 
 
     <spring.version>6.2.8</spring.version>
     <spring.web.version>6.2.8</spring.web.version>
-    <spring-security.version>6.5.1</spring-security.version>
+    <spring-security.version>6.5.3</spring-security.version>
 
     <keycloak.version>26.2.4</keycloak.version>
     <keycloak.admin.client.version>26.0.5</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>3.3.5</spring-data-jpa.version>
-    <spring-data-commons.version>3.3.5</spring-data-commons.version>
+    <spring-data-jpa.version>3.5.3</spring-data-jpa.version>
+    <spring-data-commons.version>3.5.3</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.34</swagger3.version>
+    <swagger3.version>2.2.36</swagger3.version>
     <swagger3-parser.version>2.1.27</swagger3-parser.version>
 
-    <ehcache3.version>3.10.8</ehcache3.version>
+    <ehcache3.version>3.11.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.8</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
@@ -109,7 +109,7 @@
     <postgresql.version>42.7.7</postgresql.version>
 
     <commons.lang3.version>3.18.0</commons.lang3.version>
-    <jsonwebtoken.version>0.12.6</jsonwebtoken.version>
+    <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -417,7 +417,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.18.0</version>
+        <version>1.19.0</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -1162,7 +1162,7 @@
         <!-- unmarkdown -->
         <groupId>org.commonmark</groupId>
         <artifactId>commonmark</artifactId>
-        <version>0.24.0</version>
+        <version>0.25.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
