@@ -99,9 +99,33 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>frontend-api-client</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>media-backend-api-client</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>client-extras</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>pages-backend-api-client</artifactId>
+        <version>${api.client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
+        <artifactId>client-core</artifactId>
+        <version>${client.version.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-bom</artifactId>
         <type>pom</type>
-        <scope>import</scope>
         <version>${api.client.version}</version>
       </dependency>
       <dependency>
