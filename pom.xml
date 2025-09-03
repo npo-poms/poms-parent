@@ -120,7 +120,7 @@
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
         <artifactId>client-core</artifactId>
-        <version>${client.version.version}</version>
+        <version>${api.client.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.poms.api-clients</groupId>
