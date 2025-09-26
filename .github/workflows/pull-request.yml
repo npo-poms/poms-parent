@@ -34,7 +34,7 @@ jobs:
           gpg-passphrase: GPG_SECRET_KEY_PASSPHRASE
       - name: Build with Maven
         run: |
-          mvn -B -Dchangelist=.${GITHUB_HEAD_REF##*/}-SNAPSHOT -Pdeploy,ossrh deploy  -Dgpg.skip=false
+          mvn -B -Dchangelist=.${GITHUB_HEAD_REF##*/}-SNAPSHOT -Pdeploy,central deploy  -Dgpg.skip=false
         env:
           CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
           CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
