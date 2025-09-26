@@ -19,7 +19,7 @@
     <events.version>3.0</events.version>
     <vpro.shared.version>5.12-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.51.1</checker.version>
+    <checker.version>3.51.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.1.7</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.24</aspectj.version>
