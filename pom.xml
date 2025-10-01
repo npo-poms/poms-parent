@@ -435,7 +435,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.14.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
@@ -469,7 +469,7 @@
          </plugin>
          <plugin>
            <artifactId>maven-javadoc-plugin</artifactId>
-           <version>3.11.2</version>
+           <version>3.12.0</version>
          </plugin>
       </plugins>
     </pluginManagement>
@@ -477,7 +477,7 @@
 
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.1</version>
         <executions>
           <execution>
             <id>enforce-maven</id>
@@ -497,8 +497,7 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
+          <release>${java.version}</release>
           <encoding>UTF-8</encoding>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
