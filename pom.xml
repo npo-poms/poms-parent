@@ -496,7 +496,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <release>${java.version}</release>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
           <encoding>UTF-8</encoding>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
