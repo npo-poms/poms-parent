@@ -79,13 +79,13 @@
     <spring.web.version>6.2.11</spring.web.version>
     <spring-security.version>6.5.5</spring-security.version>
 
-    <keycloak.version>26.2.4</keycloak.version>
-    <keycloak.admin.client.version>26.0.5</keycloak.admin.client.version>
+    <keycloak.version>26.4.0</keycloak.version>
+    <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>3.5.4</spring-data-jpa.version>
-    <spring-data-commons.version>3.5.3</spring-data-commons.version>
+    <spring-data-commons.version>3.5.4</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
