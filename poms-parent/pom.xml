@@ -49,7 +49,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.13.2</flyway.version>
+    <flyway.version>11.13.3</flyway.version>
 
     <jackson2.version>2.20.0</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -61,7 +61,7 @@
     <s3mock.version>4.0.0</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
-    <groovy.version>4.0.18</groovy.version>
+    <groovy.version>5.0.1</groovy.version>
     <bytebuddy.version>1.17.7</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
     <xmlunit.version>2.10.4</xmlunit.version>
@@ -76,7 +76,7 @@
 
 
     <spring.version>6.2.11</spring.version>
-    <spring.web.version>6.2.10</spring.web.version>
+    <spring.web.version>6.2.11</spring.web.version>
     <spring-security.version>6.5.5</spring-security.version>
 
     <keycloak.version>26.2.4</keycloak.version>
@@ -84,7 +84,7 @@
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>3.5.3</spring-data-jpa.version>
+    <spring-data-jpa.version>3.5.4</spring-data-jpa.version>
     <spring-data-commons.version>3.5.3</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
@@ -107,7 +107,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.7</postgresql.version>
+    <postgresql.version>42.7.8</postgresql.version>
 
     <commons.lang3.version>3.19.0</commons.lang3.version>
     <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
@@ -1022,7 +1022,7 @@
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-core</artifactId>
-        <version>2.2</version>
+        <version>3.0</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -1555,7 +1555,7 @@
        <dependency>
          <groupId>com.fasterxml</groupId>
          <artifactId>classmate</artifactId>
-         <version>1.7.0</version>
+         <version>1.7.1</version>
        </dependency>
        <dependency>
          <groupId>org.apache.santuario</groupId>
