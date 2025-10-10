@@ -25,7 +25,7 @@
     <aspectj.version>1.9.24</aspectj.version>
     <camel.version>4.14.1</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.35.2</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.35.4</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -49,7 +49,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.13.3</flyway.version>
+    <flyway.version>11.14.0</flyway.version>
 
     <jackson2.version>2.20.0</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -62,7 +62,7 @@
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
-    <bytebuddy.version>1.17.7</bytebuddy.version>
+    <bytebuddy.version>1.17.8</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
     <xmlunit.version>2.10.4</xmlunit.version>
     <wiremock.version>3.13.1</wiremock.version>
@@ -348,7 +348,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-iso-639</artifactId>
-        <version>3.10</version>
+        <version>3.11</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
