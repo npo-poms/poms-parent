@@ -25,12 +25,12 @@
     <aspectj.version>1.9.24</aspectj.version>
     <camel.version>4.14.1</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.35.4</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.35.6</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.0</quartz.version>
-    <micrometer.version>1.15.4</micrometer.version>
+    <micrometer.version>1.15.5</micrometer.version>
 
     <meeuw.i18n.bom.version>3.0.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
@@ -90,8 +90,8 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.38</swagger3.version>
-    <swagger3-parser.version>2.1.34</swagger3-parser.version>
+    <swagger3.version>2.2.39</swagger3.version>
+    <swagger3-parser.version>2.1.35</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
