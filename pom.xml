@@ -686,6 +686,18 @@
             <enabled>true</enabled>
           </snapshots>
         </repository>
+        <repository>
+          <!-- needs credentials -->
+          <id>github-media-gui</id>
+          <url>https://maven.pkg.github.com/npo-poms/media-gui</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+
       </repositories>
     </profile>
     <profile>
