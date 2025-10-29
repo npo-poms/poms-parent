@@ -677,8 +677,8 @@
       <repositories>
         <repository>
           <!-- needs credentials -->
-          <id>github-poms-shared-backend</id>
-          <url>https://maven.pkg.github.com/npo-poms/poms-shared-backend</url>
+          <id>github-npopoms-repositories</id>
+          <url>https://maven.pkg.github.com/npo-poms/poms-parent</url> <!-- it doesn't realy matter which project is specified here https://stackoverflow.com/questions/63041402/github-packages-single-maven-repository-for-github-organization -->
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -686,18 +686,6 @@
             <enabled>true</enabled>
           </snapshots>
         </repository>
-        <repository>
-          <!-- needs credentials -->
-          <id>github-media-gui</id>
-          <url>https://maven.pkg.github.com/npo-poms/media-gui</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
-
       </repositories>
     </profile>
     <profile>
