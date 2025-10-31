@@ -21,15 +21,15 @@
 
     <checker.version>3.51.1</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.1.7</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.1.8</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.24</aspectj.version>
     <camel.version>4.14.1</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.35.8</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.37.2</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
-    <quartz.version>2.5.0</quartz.version>
+    <quartz.version>2.5.1</quartz.version>
     <micrometer.version>1.15.5</micrometer.version>
 
     <meeuw.i18n.bom.version>3.0.0</meeuw.i18n.bom.version>
@@ -51,7 +51,7 @@
 
     <flyway.version>11.14.1</flyway.version>
 
-    <jackson2.version>2.20.0</jackson2.version>
+    <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
@@ -64,7 +64,7 @@
     <groovy.version>5.0.1</groovy.version>
     <bytebuddy.version>1.17.8</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
-    <xmlunit.version>2.10.4</xmlunit.version>
+    <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.1</wiremock.version>
 
 
@@ -77,20 +77,20 @@
 
     <spring.version>6.2.12</spring.version>
     <spring.web.version>6.2.12</spring.web.version>
-    <spring-security.version>6.5.5</spring-security.version>
+    <spring-security.version>6.5.6</spring-security.version>
 
     <keycloak.version>26.4.0</keycloak.version>
     <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>3.5.4</spring-data-jpa.version>
-    <spring-data-commons.version>3.5.4</spring-data-commons.version>
+    <spring-data-jpa.version>3.5.5</spring-data-jpa.version>
+    <spring-data-commons.version>3.5.5</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.39</swagger3.version>
+    <swagger3.version>2.2.40</swagger3.version>
     <swagger3-parser.version>2.1.35</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
