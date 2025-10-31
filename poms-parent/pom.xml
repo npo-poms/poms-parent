@@ -49,7 +49,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.14.1</flyway.version>
+    <flyway.version>11.15.0</flyway.version>
 
     <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -58,7 +58,7 @@
 
     <junit.version>6.0.0</junit.version>
     <testcontainers.version>1.21.3</testcontainers.version>
-    <s3mock.version>4.0.0</s3mock.version>
+    <s3mock.version>4.9.1</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
@@ -81,7 +81,7 @@
 
     <keycloak.version>26.4.0</keycloak.version>
     <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
-    <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
+    <testcontainers-keycloak.version>3.9.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>3.5.5</spring-data-jpa.version>
@@ -93,7 +93,7 @@
     <swagger3.version>2.2.40</swagger3.version>
     <swagger3-parser.version>2.1.35</swagger3-parser.version>
 
-    <ehcache3.version>3.11.1</ehcache3.version>
+    <ehcache3.version>3.12.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.9</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
@@ -641,7 +641,7 @@
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path</artifactId>
-        <version>2.9.0</version>
+        <version>2.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
