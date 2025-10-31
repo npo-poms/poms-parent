@@ -57,7 +57,7 @@
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>6.0.0</junit.version>
-    <testcontainers.version>1.21.3</testcontainers.version>
+    <testcontainers.version>2.0.1</testcontainers.version>
     <s3mock.version>4.9.1</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
@@ -534,29 +534,12 @@
         <version>${junit.version}</version>
         <scope>import</scope>
       </dependency>
-      <dependency>
+       <dependency>
         <groupId>org.testcontainers</groupId>
-        <artifactId>testcontainers</artifactId>
+        <artifactId>testcontainers-bom</artifactId>
+        <type>pom</type>
         <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>kafka</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.github.dasniko</groupId>
