@@ -93,7 +93,7 @@
     <swagger3.version>2.2.40</swagger3.version>
     <swagger3-parser.version>2.1.35</swagger3-parser.version>
 
-    <ehcache3.version>3.12.0</ehcache3.version>
+    <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.9</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
