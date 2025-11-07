@@ -30,7 +30,7 @@
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.1</quartz.version>
-    <micrometer.version>1.15.5</micrometer.version>
+    <micrometer.version>1.16.0</micrometer.version>
 
     <meeuw.i18n.bom.version>3.0.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
@@ -49,7 +49,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.15.0</flyway.version>
+    <flyway.version>11.16.0</flyway.version>
 
     <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
