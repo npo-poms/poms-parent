@@ -57,7 +57,7 @@
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>6.0.1</junit.version>
-    <testcontainers.version>2.0.1</testcontainers.version>
+    <testcontainers.version>2.0.2</testcontainers.version>
     <s3mock.version>4.9.1</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
@@ -274,7 +274,7 @@
       <dependency>
         <groupId>io.github.natty-parser</groupId>
         <artifactId>natty</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
       </dependency>
 
 
