@@ -21,11 +21,11 @@
 
     <checker.version>3.52.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.1.8</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.2.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25</aspectj.version>
     <camel.version>4.16.0</camel.version> <!-- let's limit to even minors (LTS), so 4.16.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.38.3</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.38.6</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -49,7 +49,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.16.0</flyway.version>
+    <flyway.version>11.17.0</flyway.version>
 
     <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -58,11 +58,11 @@
 
     <junit.version>6.0.1</junit.version>
     <testcontainers.version>2.0.2</testcontainers.version>
-    <s3mock.version>4.9.1</s3mock.version>
+    <s3mock.version>4.10.0</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
-    <bytebuddy.version>1.18.0</bytebuddy.version>
+    <bytebuddy.version>1.18.1</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.1</wiremock.version>
@@ -79,7 +79,7 @@
     <spring.web.version>6.2.12</spring.web.version>
     <spring-security.version>6.5.6</spring-security.version>
 
-    <keycloak.version>26.4.0</keycloak.version>
+    <keycloak.version>26.4.5</keycloak.version>
     <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
     <testcontainers-keycloak.version>3.9.0</testcontainers-keycloak.version>
 
@@ -402,7 +402,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.20.0</version>
+        <version>2.21.0</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
