@@ -670,7 +670,7 @@
       <id>github-private-repos</id>
       <activation>
         <property>
-          <name>GITHUB_PRIVATE_REPOS</name>
+          <name>env.GITHUB_PRIVATE_REPOS</name>
           <value>true</value>
         </property>
       </activation>
