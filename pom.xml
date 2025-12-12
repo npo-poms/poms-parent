@@ -439,7 +439,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.6.1</version>
+          <version>3.6.2</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
@@ -479,7 +479,6 @@
       </plugins>
     </pluginManagement>
     <plugins>
-
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
@@ -712,14 +711,11 @@
         <plugins>
           <plugin>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>3.5.0</version>
             <configuration>
               <rules>
                 <requireReleaseDeps>
+                  <ignoreReactor>true</ignoreReactor>
                   <failWhenParentIsSnapshot>true</failWhenParentIsSnapshot>
-                  <excludes>
-                    <exclude>${project.groupId}:*</exclude>
-                  </excludes>
                 </requireReleaseDeps>
               </rules>
             </configuration>
