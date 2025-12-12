@@ -711,6 +711,13 @@
         <plugins>
           <plugin>
             <artifactId>maven-enforcer-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.maven.enforcer</groupId>
+                <artifactId>enforcer-rules</artifactId>
+                <version>3.6.2</version>
+              </dependency>
+            </dependencies>
             <configuration>
               <rules>
                 <requireReleaseDeps>
