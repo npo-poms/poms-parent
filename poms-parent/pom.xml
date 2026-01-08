@@ -3,7 +3,7 @@
   <parent>
     <groupId>nl.vpro.poms</groupId>
     <artifactId>poms-bom</artifactId>
-    <version>8.11-SNAPSHOT</version>
+    <version>8.12-SNAPSHOT</version>
   </parent>
   <artifactId>poms-parent</artifactId>
   <packaging>pom</packaging>
@@ -17,20 +17,20 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.0</events.version>
-    <vpro.shared.version>5.13-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.14-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.51.1</checker.version>
+    <checker.version>3.52.1</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.1.7</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
-    <aspectj.version>1.9.24</aspectj.version>
-    <camel.version>4.14.1</camel.version> <!-- let's limit to even minors (LTS), so 4.14.x for now -->
+    <activemq.version>6.2.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <aspectj.version>1.9.25</aspectj.version>
+    <camel.version>4.16.0</camel.version> <!-- let's limit to even minors (LTS), so 4.16.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.35.8</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.40.3</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
-    <quartz.version>2.5.0</quartz.version>
-    <micrometer.version>1.15.5</micrometer.version>
+    <quartz.version>2.5.2</quartz.version>
+    <micrometer.version>1.16.0</micrometer.version>
 
     <meeuw.i18n.bom.version>3.1-SNAPSHOT</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
@@ -49,23 +49,23 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.14.1</flyway.version>
+    <flyway.version>11.17.0</flyway.version>
 
-    <jackson2.version>2.20.0</jackson2.version>
+    <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
-    <junit.version>6.0.0</junit.version>
-    <testcontainers.version>1.21.3</testcontainers.version>
-    <s3mock.version>4.0.0</s3mock.version>
+    <junit.version>6.0.1</junit.version>
+    <testcontainers.version>2.0.2</testcontainers.version>
+    <s3mock.version>4.10.0</s3mock.version>
     <mockito.version>5.20.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
-    <bytebuddy.version>1.17.8</bytebuddy.version>
+    <bytebuddy.version>1.18.1</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
-    <xmlunit.version>2.10.4</xmlunit.version>
-    <wiremock.version>3.13.1</wiremock.version>
+    <xmlunit.version>2.11.0</xmlunit.version>
+    <wiremock.version>3.13.2</wiremock.version>
 
 
     <resteasy.version>7.0.0.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
@@ -77,27 +77,27 @@
 
     <spring.version>6.2.12</spring.version>
     <spring.web.version>6.2.12</spring.web.version>
-    <spring-security.version>6.5.5</spring-security.version>
+    <spring-security.version>6.5.6</spring-security.version>
 
-    <keycloak.version>26.4.0</keycloak.version>
+    <keycloak.version>26.4.7</keycloak.version>
     <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
-    <testcontainers-keycloak.version>3.4.0</testcontainers-keycloak.version>
+    <testcontainers-keycloak.version>3.9.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>3.5.4</spring-data-jpa.version>
-    <spring-data-commons.version>3.5.4</spring-data-commons.version>
+    <spring-data-jpa.version>3.5.5</spring-data-jpa.version>
+    <spring-data-commons.version>3.5.5</spring-data-commons.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.39</swagger3.version>
+    <swagger3.version>2.2.41</swagger3.version>
     <swagger3-parser.version>2.1.35</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
     <saxon.version>12.9</saxon.version>
     <javassist.version>3.30.2-GA</javassist.version>
-    <scala.version>2.13.17</scala.version>
+    <scala.version>2.13.18</scala.version>
 
     <!-- https://github.com/elastic/elasticsearch-py/issues/1639 -->
 
@@ -274,7 +274,7 @@
       <dependency>
         <groupId>io.github.natty-parser</groupId>
         <artifactId>natty</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
       </dependency>
 
 
@@ -402,7 +402,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.20.0</version>
+        <version>2.21.0</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
@@ -418,7 +418,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.19.0</version>
+        <version>1.20.0</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -534,29 +534,12 @@
         <version>${junit.version}</version>
         <scope>import</scope>
       </dependency>
-      <dependency>
+       <dependency>
         <groupId>org.testcontainers</groupId>
-        <artifactId>testcontainers</artifactId>
+        <artifactId>testcontainers-bom</artifactId>
+        <type>pom</type>
         <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.testcontainers</groupId>
-        <artifactId>kafka</artifactId>
-        <version>${testcontainers.version}</version>
-        <scope>test</scope>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.github.dasniko</groupId>
@@ -641,7 +624,7 @@
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path</artifactId>
-        <version>2.9.0</version>
+        <version>2.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
@@ -707,28 +690,10 @@
 
       <dependency>
         <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-pool</artifactId>
+        <artifactId>activemq-bom</artifactId>
+        <type>pom</type>
         <version>${activemq.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-spring</artifactId>
-        <version>${activemq.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-broker</artifactId>
-        <version>${activemq.version}</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>activemq-kahadb-store</artifactId>
-        <version>${activemq.version}</version>
-        <scope>test</scope>
+        <scope>import</scope>
       </dependency>
 
 
