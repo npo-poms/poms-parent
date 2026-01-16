@@ -19,18 +19,18 @@
     <events.version>3.0</events.version>
     <vpro.shared.version>5.14-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.52.1</checker.version>
+    <checker.version>3.53.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.2.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
-    <aspectj.version>1.9.25</aspectj.version>
+    <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.16.0</camel.version> <!-- let's limit to even minors (LTS), so 4.16.x for now -->
     <cxf.version>4.0.9</cxf.version>
-    <awssdk.version>2.40.3</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.41.9</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.16.0</micrometer.version>
+    <micrometer.version>1.16.2</micrometer.version>
 
     <meeuw.i18n.bom.version>3.1-SNAPSHOT</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
@@ -49,20 +49,20 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.17.0</flyway.version>
+    <flyway.version>11.20.2</flyway.version>
 
     <jackson2.version>2.20.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
-    <junit.version>6.0.1</junit.version>
+    <junit.version>6.0.2</junit.version>
     <testcontainers.version>2.0.2</testcontainers.version>
     <s3mock.version>4.10.0</s3mock.version>
-    <mockito.version>5.20.0</mockito.version>
+    <mockito.version>5.21.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
-    <bytebuddy.version>1.18.1</bytebuddy.version>
+    <bytebuddy.version>1.18.4</bytebuddy.version>
     <assertj.version>3.27.6</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
@@ -72,7 +72,7 @@
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
-    <log4j2.version>2.25.2</log4j2.version>
+    <log4j2.version>2.25.3</log4j2.version>
 
 
     <spring.version>6.2.12</spring.version>
@@ -91,7 +91,7 @@
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
     <swagger3.version>2.2.41</swagger3.version>
-    <swagger3-parser.version>2.1.35</swagger3-parser.version>
+    <swagger3-parser.version>2.1.37</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -109,7 +109,7 @@
 
     <postgresql.version>42.7.8</postgresql.version>
 
-    <commons.lang3.version>3.19.0</commons.lang3.version>
+    <commons.lang3.version>3.20.0</commons.lang3.version>
     <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -377,7 +377,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.12.0</version>
+        <version>2.13.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -705,7 +705,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
-        <version>1.14.0</version>
+        <version>1.15.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -1530,12 +1530,12 @@
        <dependency>
          <groupId>org.bouncycastle</groupId>
          <artifactId>bcprov-jdk18on</artifactId>
-         <version>1.82</version>
+         <version>1.83</version>
        </dependency>
        <dependency>
          <groupId>org.bouncycastle</groupId>
          <artifactId>bcpkix-jdk18on</artifactId>
-         <version>1.82</version>
+         <version>1.83</version>
        </dependency>
        <dependency>
          <groupId>com.hierynomus</groupId>
