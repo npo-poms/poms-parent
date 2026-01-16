@@ -745,6 +745,12 @@
         <version>${kafka-clients.version}</version>
       </dependency>
       <dependency>
+        <!-- dependency of kafka-clients -->
+        <groupId>org.lz4</groupId>
+        <artifactId>lz4-java</artifactId>
+        <version>1.8.1</version>  <!-- resolves CVE-issue -->
+      </dependency>
+      <dependency>
         <groupId>software.amazon.msk</groupId>
         <artifactId>aws-msk-iam-auth</artifactId>
         <version>2.2.0</version>
