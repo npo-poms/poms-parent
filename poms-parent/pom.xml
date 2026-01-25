@@ -36,7 +36,7 @@
     <meeuw.math.version>0.18.1</meeuw.math.version>
     <meeuw.utils.version>1.15</meeuw.utils.version>
 
-    <hibernate.version>6.6.4.Final</hibernate.version>
+    <hibernate.version>6.6.41.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
     <lucene.version>9.11.1</lucene.version>
 
