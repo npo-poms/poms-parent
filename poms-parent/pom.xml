@@ -57,8 +57,8 @@
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>6.0.2</junit.version>
-    <testcontainers.version>2.0.2</testcontainers.version>
-    <s3mock.version>4.10.0</s3mock.version>
+    <testcontainers.version>2.0.3</testcontainers.version>
+    <s3mock.version>4.11.0</s3mock.version>
     <mockito.version>5.21.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
@@ -107,7 +107,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.8</postgresql.version>
+    <postgresql.version>42.7.9</postgresql.version>
 
     <commons.lang3.version>3.20.0</commons.lang3.version>
     <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
@@ -348,7 +348,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-iso-639</artifactId>
-        <version>4.3-SNAPSHOT</version>
+        <version>4.3</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
@@ -418,7 +418,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.20.0</version>
+        <version>1.21.0</version>
       </dependency>
       <dependency>
         <groupId>commons-beanutils</groupId>
@@ -1128,7 +1128,7 @@
         <!-- unhtml -->
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.21.2</version>
+        <version>1.22.1</version>
       </dependency>
       <dependency>
         <!-- unmarkdown -->
@@ -1526,7 +1526,7 @@
        <dependency>
          <groupId>com.fasterxml</groupId>
          <artifactId>classmate</artifactId>
-         <version>1.7.1</version>
+         <version>1.7.3</version>
        </dependency>
        <dependency>
          <groupId>org.apache.santuario</groupId>
