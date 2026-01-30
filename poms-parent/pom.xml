@@ -25,7 +25,7 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.16.0</camel.version> <!-- let's limit to even minors (LTS), so 4.16.x for now -->
     <cxf.version>4.0.10</cxf.version>
-    <awssdk.version>2.41.9</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.41.18</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -51,7 +51,7 @@
 
     <flyway.version>11.20.2</flyway.version>
 
-    <jackson2.version>2.20.1</jackson2.version>
+    <jackson2.version>2.21.0</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
@@ -63,7 +63,7 @@
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.1</groovy.version>
     <bytebuddy.version>1.18.4</bytebuddy.version>
-    <assertj.version>3.27.6</assertj.version>
+    <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
 
