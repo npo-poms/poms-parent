@@ -21,7 +21,7 @@
 
     <checker.version>3.53.1</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.2.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.2.1</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.10</cxf.version>
@@ -49,9 +49,9 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>11.20.2</flyway.version>
+    <flyway.version>12.0.2</flyway.version>
 
-    <jackson2.version>2.21.0</jackson2.version>
+    <jackson2.version>2.21.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
@@ -61,8 +61,8 @@
     <s3mock.version>4.11.0</s3mock.version>
     <mockito.version>5.21.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
-    <groovy.version>5.0.1</groovy.version>
-    <bytebuddy.version>1.18.4</bytebuddy.version>
+    <groovy.version>5.0.4</groovy.version>
+    <bytebuddy.version>1.18.5</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
@@ -91,7 +91,7 @@
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
     <swagger3.version>2.2.43</swagger3.version>
-    <swagger3-parser.version>2.1.37</swagger3-parser.version>
+    <swagger3-parser.version>2.1.38</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -392,7 +392,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.11.2</version>
+        <version>0.12.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -624,12 +624,12 @@
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path</artifactId>
-        <version>2.10.0</version>
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path-assert</artifactId>
-        <version>2.9.0</version>
+        <version>3.0.0</version>
         <scope>test</scope>
       </dependency>
 
@@ -1108,7 +1108,7 @@
       <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>metro-bom</artifactId>
-        <version>4.0.4</version>
+        <version>4.0.5</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
