@@ -19,22 +19,22 @@
     <events.version>3.0</events.version>
     <vpro.shared.version>5.15-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.53.0</checker.version>
+    <checker.version>3.53.1</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.2.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
-    <camel.version>4.16.0</camel.version> <!-- let's limit to even minors (LTS), so 4.16.x for now -->
+    <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.10</cxf.version>
-    <awssdk.version>2.41.18</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.3</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.16.2</micrometer.version>
+    <micrometer.version>1.16.3</micrometer.version>
 
     <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
-    <meeuw.utils.version>1.15</meeuw.utils.version>
+    <meeuw.utils.version>1.17</meeuw.utils.version>
 
     <hibernate.version>6.6.41.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
@@ -56,7 +56,7 @@
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
-    <junit.version>6.0.2</junit.version>
+    <junit.version>6.0.3</junit.version>
     <testcontainers.version>2.0.3</testcontainers.version>
     <s3mock.version>4.11.0</s3mock.version>
     <mockito.version>5.21.0</mockito.version>
@@ -90,7 +90,7 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.41</swagger3.version>
+    <swagger3.version>2.2.43</swagger3.version>
     <swagger3-parser.version>2.1.37</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
@@ -107,7 +107,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.9</postgresql.version>
+    <postgresql.version>42.7.10</postgresql.version>
 
     <commons.lang3.version>3.20.0</commons.lang3.version>
     <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
