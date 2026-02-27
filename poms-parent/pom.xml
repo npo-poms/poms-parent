@@ -35,6 +35,7 @@
     <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
     <meeuw.utils.version>1.17</meeuw.utils.version>
+    <setup.log4j2.version>1.1</setup.log4j2.version>
 
     <hibernate.version>6.6.41.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
@@ -525,6 +526,19 @@
         <artifactId>jakarta.servlet-api</artifactId>
         <version>6.0.0</version>
         <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.mmprogrami</groupId>
+        <artifactId>setup-log4j2</artifactId>
+        <version>${setup.log4j2.version}</version>
+        <classifier>test</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>nl.mmprogrami</groupId>
+        <artifactId>${setup.log4j2.version}</artifactId>
+        <version>1.1</version>
       </dependency>
 
       <dependency>
