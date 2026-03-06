@@ -19,13 +19,13 @@
     <events.version>3.0</events.version>
     <vpro.shared.version>5.15-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>3.53.1</checker.version>
+    <checker.version>3.54.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.2.1</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.10</cxf.version>
-    <awssdk.version>2.42.3</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.7</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -41,7 +41,7 @@
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
     <lucene.version>9.11.1</lucene.version>
 
-    <hibernate.validator.version>9.0.1.Final</hibernate.validator.version>
+    <hibernate.validator.version>9.1.0.Final</hibernate.validator.version>
 
 
     <!--
@@ -50,7 +50,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>12.0.2</flyway.version>
+    <flyway.version>12.0.3</flyway.version>
 
     <jackson2.version>2.21.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -60,7 +60,7 @@
     <junit.version>6.0.3</junit.version>
     <testcontainers.version>2.0.3</testcontainers.version>
     <s3mock.version>4.11.0</s3mock.version>
-    <mockito.version>5.21.0</mockito.version>
+    <mockito.version>5.22.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.4</groovy.version>
     <bytebuddy.version>1.18.5</bytebuddy.version>
@@ -69,7 +69,7 @@
     <wiremock.version>3.13.2</wiremock.version>
 
 
-    <resteasy.version>7.0.0.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
+    <resteasy.version>7.0.1.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
@@ -91,7 +91,7 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.43</swagger3.version>
+    <swagger3.version>2.2.44</swagger3.version>
     <swagger3-parser.version>2.1.38</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
