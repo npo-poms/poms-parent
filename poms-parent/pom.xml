@@ -25,12 +25,12 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.42.7</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.12</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.16.3</micrometer.version>
+    <micrometer.version>1.16.4</micrometer.version>
 
     <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
@@ -50,7 +50,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>12.0.3</flyway.version>
+    <flyway.version>12.1.0</flyway.version>
 
     <jackson2.version>2.21.1</jackson2.version>
     <jaxb.version>4.0.6</jaxb.version>
@@ -60,10 +60,10 @@
     <junit.version>6.0.3</junit.version>
     <testcontainers.version>2.0.3</testcontainers.version>
     <s3mock.version>4.11.0</s3mock.version>
-    <mockito.version>5.22.0</mockito.version>
+    <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.4</groovy.version>
-    <bytebuddy.version>1.18.5</bytebuddy.version>
+    <bytebuddy.version>1.18.7</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
@@ -91,8 +91,8 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.44</swagger3.version>
-    <swagger3-parser.version>2.1.38</swagger3-parser.version>
+    <swagger3.version>2.2.45</swagger3.version>
+    <swagger3-parser.version>2.1.39</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -414,7 +414,7 @@
       <dependency>
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
-        <version>1.3.5</version>
+        <version>1.3.6</version>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
@@ -1148,7 +1148,7 @@
         <!-- unmarkdown -->
         <groupId>org.commonmark</groupId>
         <artifactId>commonmark</artifactId>
-        <version>0.25.1</version>
+        <version>0.27.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
