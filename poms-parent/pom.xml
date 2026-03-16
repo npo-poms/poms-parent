@@ -25,7 +25,7 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.42.12</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.13</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -37,7 +37,7 @@
     <meeuw.utils.version>1.17</meeuw.utils.version>
     <setup.log4j2.version>1.1</setup.log4j2.version>
 
-    <hibernate.version>6.6.41.Final</hibernate.version>
+    <hibernate.version>6.6.44.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
     <lucene.version>9.11.1</lucene.version>
 
@@ -53,7 +53,7 @@
     <flyway.version>12.1.0</flyway.version>
 
     <jackson2.version>2.21.1</jackson2.version>
-    <jaxb.version>4.0.6</jaxb.version>
+    <jaxb.version>4.0.7</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
