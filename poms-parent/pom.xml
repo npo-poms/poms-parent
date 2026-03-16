@@ -76,9 +76,9 @@
     <log4j2.version>2.25.3</log4j2.version>
 
 
-    <spring.version>6.2.12</spring.version>
-    <spring.web.version>6.2.12</spring.web.version>
-    <spring-security.version>6.5.6</spring-security.version>
+    <spring.version>6.2.17</spring.version>
+    <spring.web.version>6.2.17</spring.web.version>
+    <spring-security.version>6.5.8</spring-security.version>
 
     <keycloak.version>26.4.7</keycloak.version>
     <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
@@ -1117,7 +1117,7 @@
       <dependency>
         <groupId>jakarta.xml.ws</groupId>
         <artifactId>jakarta.xml.ws-api</artifactId>
-        <version>4.0.2</version>
+        <version>4.0.3</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.metro</groupId>
