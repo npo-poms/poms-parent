@@ -132,11 +132,14 @@
       </plugin>
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.11.3</version>
+        <version>3.12.0</version>
         <configuration>
           <doclint>none</doclint>
           <additionalJOption>-quiet</additionalJOption>
           <additionalJOption>-J-Dhttp.agent=maven-javadoc-plugin-${project.name}</additionalJOption>
+          <additionalOptions>
+            <additionalOption>--link-modularity-mismatch=info</additionalOption>
+          </additionalOptions>
           <failOnError>false</failOnError>
           <detectLinks>true</detectLinks>
           <links combine.children="append">
