@@ -540,8 +540,8 @@
       </dependency>
       <dependency>
         <groupId>nl.mmprogrami</groupId>
-        <artifactId>${setup.log4j2.version}</artifactId>
-        <version>1.1</version>
+        <artifactId>setup-log4j2</artifactId>
+        <version>${setup.log4j2.version}</version>
       </dependency>
 
       <dependency>
