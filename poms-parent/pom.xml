@@ -21,11 +21,11 @@
 
     <checker.version>3.54.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.2.1</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.2.2</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
-    <camel.version>4.18.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
+    <camel.version>4.18.1</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.42.13</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.23</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -50,19 +50,19 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>12.1.0</flyway.version>
+    <flyway.version>12.2.0</flyway.version>
 
-    <jackson2.version>2.21.1</jackson2.version>
+    <jackson2.version>2.21.2</jackson2.version>
     <jaxb.version>4.0.7</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>6.0.3</junit.version>
-    <testcontainers.version>2.0.3</testcontainers.version>
+    <testcontainers.version>2.0.4</testcontainers.version>
     <s3mock.version>4.11.0</s3mock.version>
     <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
-    <groovy.version>5.0.4</groovy.version>
+    <groovy.version>5.0.5</groovy.version>
     <bytebuddy.version>1.18.7</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
@@ -1125,7 +1125,7 @@
       <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>metro-bom</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
