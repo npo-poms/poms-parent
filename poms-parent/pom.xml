@@ -21,11 +21,11 @@
 
     <checker.version>3.54.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.2.2</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.2.3</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.1</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.42.23</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.42.25</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.5.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -35,7 +35,7 @@
     <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.18.1</meeuw.math.version>
     <meeuw.utils.version>1.17</meeuw.utils.version>
-    <setup.log4j2.version>1.1</setup.log4j2.version>
+    <setup.log4j2.version>1.2</setup.log4j2.version>
 
     <hibernate.version>6.6.44.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
@@ -50,7 +50,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>12.2.0</flyway.version>
+    <flyway.version>12.3.0</flyway.version>
 
     <jackson2.version>2.21.2</jackson2.version>
     <jaxb.version>4.0.7</jaxb.version>
@@ -63,7 +63,7 @@
     <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.5</groovy.version>
-    <bytebuddy.version>1.18.7</bytebuddy.version>
+    <bytebuddy.version>1.18.8</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.11.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
@@ -73,7 +73,7 @@
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.17</slf4j.version>
-    <log4j2.version>2.25.3</log4j2.version>
+    <log4j2.version>2.25.4</log4j2.version>
 
 
     <spring.version>6.2.17</spring.version>
@@ -81,8 +81,8 @@
     <spring-security.version>6.5.8</spring-security.version>
 
     <keycloak.version>26.4.7</keycloak.version>
-    <keycloak.admin.client.version>26.0.7</keycloak.admin.client.version>
-    <testcontainers-keycloak.version>3.9.0</testcontainers-keycloak.version>
+    <keycloak.admin.client.version>26.0.8</keycloak.admin.client.version>
+    <testcontainers-keycloak.version>4.1.1</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data-jpa.version>3.5.5</spring-data-jpa.version>
@@ -91,7 +91,7 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.45</swagger3.version>
+    <swagger3.version>2.2.46</swagger3.version>
     <swagger3-parser.version>2.1.39</swagger3-parser.version>
 
     <ehcache3.version>3.11.1</ehcache3.version>
@@ -511,7 +511,7 @@
       <dependency>
         <groupId>jakarta.servlet.jsp</groupId>
         <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>3.1.1</version>
+        <version>4.0.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -527,7 +527,7 @@
       <dependency>
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
-        <version>6.0.0</version>
+        <version>6.1.0</version>
         <scope>provided</scope>
       </dependency>
 
