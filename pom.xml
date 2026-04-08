@@ -553,6 +553,9 @@
           <excludes>
             <exclude>**/*ITest.java</exclude>
           </excludes>
+          <systemPropertyVariables>
+            <log4j2.pattern>%d{HH:mm:ss.SS} %highlight{%5.5p}  %c{1}.%M&#x09;%m%n</log4j2.pattern>
+          </systemPropertyVariables>
           <argLine>${EXTRA_TEST_OPTS}  -javaagent:${org.mockito:mockito-core:jar}</argLine>
         </configuration>
       </plugin>
@@ -564,6 +567,9 @@
           <includes>
             <include>**/*ITest.java</include>
           </includes>
+          <systemPropertyVariables>
+            <log4j2.pattern>%d{HH:mm:ss.SS} %highlight{%5.5p}  %c{1}.%M&#x09;%m%n</log4j2.pattern>
+          </systemPropertyVariables>
         </configuration>
         <executions>
           <execution>
