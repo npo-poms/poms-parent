@@ -202,7 +202,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-berlijn</artifactId>
-        <version>${poms.shared.version}</version>
+        <version>8.12.2</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
