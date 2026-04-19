@@ -510,13 +510,11 @@
           <encoding>UTF-8</encoding>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
+          <parameters>true</parameters><!-- helps some frameworks (hibernat validator, jaxrs) to recognized parameter names. -->
           <compilerArgs>
             <!-- would this help intellij? It seems not.
             <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
             -->
-            <arg>-parameters</arg>
-            <!-- helps hibernate validator to recognize names  -->
-            <arg>-Xlint:none</arg>
           </compilerArgs>
         </configuration>
         <!-- https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9
