@@ -21,7 +21,7 @@
 
     <checker.version>4.1.0</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.2.4</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.2.5</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.20.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
@@ -53,12 +53,12 @@
     <flyway.version>12.4.0</flyway.version>
 
     <jackson2.version>2.21.3</jackson2.version>
-    <jaxb.version>4.0.7</jaxb.version>
+    <jaxb.version>4.0.8</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
 
     <junit.version>6.0.3</junit.version>
-    <testcontainers.version>2.0.4</testcontainers.version>
+    <testcontainers.version>2.0.5</testcontainers.version>
     <s3mock.version>4.12.4</s3mock.version> <!-- I guess 5.0 is jackson 3-->
     <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
@@ -381,7 +381,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.13.0</version>
+        <version>2.14.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -396,7 +396,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.12.0</version>
+        <version>0.13.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -406,7 +406,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.21.0</version>
+        <version>2.22.0</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
