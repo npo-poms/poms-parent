@@ -19,13 +19,13 @@
     <events.version>3.2</events.version>
     <vpro.shared.version>5.16-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>4.0.0</checker.version>
+    <checker.version>4.1.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.2.4</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
-    <camel.version>4.18.1</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
+    <camel.version>4.20.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.42.36</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.44.2</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.6.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -52,7 +52,7 @@
 
     <flyway.version>12.4.0</flyway.version>
 
-    <jackson2.version>2.21.2</jackson2.version>
+    <jackson2.version>2.21.3</jackson2.version>
     <jaxb.version>4.0.7</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
@@ -91,8 +91,8 @@
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
-    <swagger3.version>2.2.48</swagger3.version>
-    <swagger3-parser.version>2.1.40</swagger3-parser.version>
+    <swagger3.version>2.2.49</swagger3.version>
+    <swagger3-parser.version>2.1.41</swagger3-parser.version>
 
     <ehcache3.version>3.12.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -108,7 +108,7 @@
     <lucene.elasticsearch.version>8.8.2</lucene.elasticsearch.version>
     <lucene.spatial.version>8.4.1</lucene.spatial.version>
 
-    <postgresql.version>42.7.10</postgresql.version>
+    <postgresql.version>42.7.11</postgresql.version>
 
     <commons.lang3.version>3.20.0</commons.lang3.version>
     <jsonwebtoken.version>0.13.0</jsonwebtoken.version>
