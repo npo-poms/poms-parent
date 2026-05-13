@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>6.2.5</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
-    <camel.version>4.20.0</camel.version> <!-- let's limit to even minors (LTS), so 4.18.x for now -->
+    <camel.version>4.20.0</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.0.11</cxf.version>
     <awssdk.version>2.44.2</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
@@ -76,8 +76,8 @@
     <log4j2.version>2.25.4</log4j2.version>
 
 
-    <spring.version>6.2.17</spring.version>
-    <spring.web.version>6.2.17</spring.web.version>
+    <spring.version>7.0.7</spring.version>
+    <spring.web.version>7.0.7</spring.web.version>
     <spring-security.version>6.5.8</spring-security.version>
 
     <keycloak.version>26.4.7</keycloak.version>
@@ -199,7 +199,6 @@
               <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-tx</artifactId>
-                <version>${spring.version}</version>
               </dependency>
             </dependencies>
             <configuration>
@@ -248,6 +247,21 @@
         <scope>import</scope>
         <version>${vpro.shared.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>${spring.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-bom</artifactId>
+        <version>${spring-security.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <dependency>
         <groupId>cglib</groupId>
         <artifactId>cglib</artifactId>
@@ -1213,110 +1227,7 @@
         <scope>test</scope>
       </dependency>
 
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-aop</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-aspects</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context-support</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-expression</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jms</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-orm</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-oxm</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-test</artifactId>
-        <version>${spring.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-tx</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-web</artifactId>
-        <version>${spring.web.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-       <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-messaging</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-websocket</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.data</groupId>
-        <artifactId>spring-data-jpa</artifactId>
-        <version>${spring-data-jpa.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.data</groupId>
-        <artifactId>spring-data-commons</artifactId>
-        <version>${spring-data-commons.version}</version>
-      </dependency>
 
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-bom</artifactId>
-        <version>${spring-security.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
 
       <dependency>
         <groupId>jakarta.jms</groupId>
