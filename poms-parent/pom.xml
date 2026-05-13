@@ -23,7 +23,7 @@
     <!-- External Artifacts -->
     <activemq.version>6.2.5</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
-    <camel.version>4.20.0</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
+    <camel.version>4.18.2</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.0.11</cxf.version>
     <awssdk.version>2.44.2</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.1</kafka-clients.version><!-- version used by camel -->
@@ -76,8 +76,7 @@
     <log4j2.version>2.25.4</log4j2.version>
 
 
-    <spring.version>7.0.7</spring.version>
-    <spring.web.version>7.0.7</spring.web.version>
+    <spring.version>6.2.18</spring.version>
     <spring-security.version>6.5.8</spring-security.version>
 
     <keycloak.version>26.4.7</keycloak.version>
@@ -85,8 +84,7 @@
     <testcontainers-keycloak.version>4.1.1</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data-jpa.version>3.5.5</spring-data-jpa.version>
-    <spring-data-commons.version>3.5.5</spring-data-commons.version>
+    <spring-data.version>2025.0.10</spring-data.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
@@ -258,6 +256,13 @@
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-bom</artifactId>
         <version>${spring-security.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-bom</artifactId>
+        <version>${spring-data.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
