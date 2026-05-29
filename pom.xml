@@ -537,7 +537,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.5</version>
+        <version>3.5.6</version>
         <configuration>
           <forkCount>${surefire.forkCount}</forkCount>
           <systemPropertyVariables>
@@ -556,7 +556,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.5.5</version>
+        <version>3.5.6</version>
         <configuration>
           <skipITs>${skipITs}</skipITs>
           <includes>
