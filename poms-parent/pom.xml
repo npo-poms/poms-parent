@@ -63,9 +63,9 @@
     <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-M6-groovy-4.0</spock.version>
     <groovy.version>5.0.5</groovy.version>
-    <bytebuddy.version>1.18.8</bytebuddy.version>
+    <bytebuddy.version>1.18.9</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
-    <xmlunit.version>2.11.0</xmlunit.version>
+    <xmlunit.version>2.12.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
 
 
@@ -94,7 +94,7 @@
 
     <ehcache3.version>3.12.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
-    <saxon.version>12.9</saxon.version>
+    <saxon.version>12.9</saxon.version> <!-- 12.x is stable 'Saxon /12/ is still considered the most stable and reliable release.' -->
     <javassist.version>3.30.2-GA</javassist.version>
     <scala.version>2.13.18</scala.version>
 

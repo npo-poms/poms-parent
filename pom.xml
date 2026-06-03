@@ -202,7 +202,7 @@
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-berlijn</artifactId>
-        <version>8.13.0</version>
+        <version>8.13.6</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
@@ -283,7 +283,7 @@
       <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-npoplayer</artifactId>
-        <version>8.13.0</version>
+        <version>8.13.6</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.poms</groupId>
