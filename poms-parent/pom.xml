@@ -17,7 +17,7 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.2</events.version>
-    <vpro.shared.version>6.0-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.16.0</vpro.shared.version>
 
     <checker.version>4.2.0</checker.version>
     <!-- External Artifacts -->
@@ -50,7 +50,7 @@
     -->
     <!-- linked to hibernate search -->
 
-    <flyway.version>12.8.1</flyway.version>
+    <flyway.version>11.20.3</flyway.version> <!-- flyway 12 is jackson3, not ready for that yet -->
 
     <jackson2.version>2.21.4</jackson2.version>
     <jackson-annotations.version>2.22</jackson-annotations.version>
@@ -603,7 +603,11 @@
         <version>${wiremock.version}</version>
         <scope>test</scope>
       </dependency>
-
+      <dependency>
+        <groupId>com.networknt</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>3.0.4</version>
+      </dependency>
       <dependency>
         <groupId>io.micrometer</groupId>
         <artifactId>micrometer-bom</artifactId>
