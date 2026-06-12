@@ -25,17 +25,17 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.2</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.46.1</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.46.9</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.6.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.16.5</micrometer.version>
+    <micrometer.version>1.17.0</micrometer.version>
 
     <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.19.0</meeuw.math.version>
     <meeuw.utils.version>1.17</meeuw.utils.version>
-    <setup.log4j2.version>1.4</setup.log4j2.version>
+    <setup.log4j2.version>1.5</setup.log4j2.version>
 
     <hibernate.version>6.6.44.Final</hibernate.version>
     <hibernate.search.version>7.2.1.Final</hibernate.search.version>
@@ -416,7 +416,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.13.0</version>
+        <version>0.14.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -790,7 +790,7 @@
       <dependency>
         <groupId>software.amazon.msk</groupId>
         <artifactId>aws-msk-iam-auth</artifactId>
-        <version>2.2.0</version>
+        <version>2.3.7</version>
       </dependency>
 
 
@@ -1145,7 +1145,7 @@
       <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>metro-bom</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.7</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
