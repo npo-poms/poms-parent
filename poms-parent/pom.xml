@@ -32,8 +32,8 @@
     <quartz.version>2.5.2</quartz.version>
     <micrometer.version>1.17.0</micrometer.version>
 
-    <meeuw.i18n.bom.version>3.1.0</meeuw.i18n.bom.version>
-    <meeuw.math.version>0.19.0</meeuw.math.version>
+    <meeuw.i18n.bom.version>3.2-SNAPSHOT</meeuw.i18n.bom.version>
+    <meeuw.math.version>0.20-SNAPSHOT</meeuw.math.version>
     <meeuw.utils.version>1.17</meeuw.utils.version>
     <setup.log4j2.version>1.5</setup.log4j2.version>
 
