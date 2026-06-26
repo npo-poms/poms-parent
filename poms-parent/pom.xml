@@ -25,7 +25,7 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.2</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.46.9</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.46.17</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.6.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
