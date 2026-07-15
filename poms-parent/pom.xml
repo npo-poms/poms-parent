@@ -25,7 +25,7 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.3</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.0.11</cxf.version>
-    <awssdk.version>2.47.4</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.48.0</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.6.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -1491,12 +1491,12 @@
        <dependency>
          <groupId>org.bouncycastle</groupId>
          <artifactId>bcprov-jdk18on</artifactId>
-         <version>1.84</version>
+         <version>1.85</version>
        </dependency>
        <dependency>
          <groupId>org.bouncycastle</groupId>
          <artifactId>bcpkix-jdk18on</artifactId>
-         <version>1.84</version>
+         <version>1.85</version>
        </dependency>
        <dependency>
          <groupId>com.hierynomus</groupId>
