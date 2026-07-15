@@ -843,6 +843,11 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency><!-- used by cxf, but fixes CVE-2026-42401/CVE-2026-42402 -->
+        <groupId>org.apache.neethi</groupId>
+        <artifactId>neethi</artifactId>
+        <version>3.2.2</version>
+      </dependency>
       <dependency>
         <!-- seems to be used by resteasy ? -->
         <groupId>org.jboss.logging</groupId>
