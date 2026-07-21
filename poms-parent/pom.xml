@@ -52,7 +52,7 @@
 
     <flyway.version>11.20.3</flyway.version> <!-- flyway 12 is jackson3, not ready for that yet -->
 
-    <jackson2.version>2.21.5</jackson2.version>
+    <jackson2.version>2.22.1</jackson2.version>
     <jackson-annotations.version>2.22</jackson-annotations.version>
     <jaxb.version>4.0.9</jaxb.version>
 
