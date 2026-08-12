@@ -158,11 +158,7 @@
         <artifactId>media-projectm</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
-      <dependency>
-        <groupId>nl.vpro.media</groupId>
-        <artifactId>media-nep</artifactId>
-        <version>${poms.shared.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-sourcingservice</artifactId>
@@ -198,6 +194,11 @@
         <groupId>nl.vpro.media</groupId>
         <artifactId>media-tva</artifactId>
         <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nl.vpro.media</groupId>
+        <artifactId>media-nep</artifactId>
+        <version>8.14.2</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
