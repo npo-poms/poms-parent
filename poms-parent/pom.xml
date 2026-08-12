@@ -85,7 +85,7 @@
     <testcontainers-keycloak.version>4.1.1</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
-    <spring-data.version>2025.0.10</spring-data.version>
+    <spring-data.version>2025.0.13</spring-data.version>
 
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
