@@ -272,6 +272,11 @@
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
+        <groupId>nl.vpro.image</groupId>
+        <artifactId>image-ws</artifactId>
+        <version>${poms.shared.version}</version>
+      </dependency>
+      <dependency>
         <groupId>nl.vpro.poms</groupId>
         <artifactId>poms-shared</artifactId>
         <version>${poms.shared.version}</version>
