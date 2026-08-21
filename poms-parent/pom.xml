@@ -87,8 +87,11 @@
     <cglib.version>3.3.0</cglib.version>
     <spring-data.version>2025.0.13</spring-data.version>
 
+
     <httpcomponents.version>4.5.14</httpcomponents.version>
     <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
+
+    <httpcomponentscore5.version>5.4.3</httpcomponentscore5.version>
 
     <swagger3.version>2.2.53</swagger3.version>
     <swagger3-parser.version>2.1.46</swagger3-parser.version>
@@ -378,7 +381,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-iso-639</artifactId>
-        <version>4.4</version>
+        <version>4.5</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
@@ -925,7 +928,7 @@
         <artifactId>derby</artifactId>
         <version>10.17.1.1</version>
       </dependency>
-
+<!--
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
@@ -936,6 +939,7 @@
         <artifactId>httpclient-cache</artifactId>
         <version>${httpcomponents.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpmime</artifactId>
@@ -945,6 +949,14 @@
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
         <version>${httpcomponentscore.version}</version>
+      </dependency>
+
+
+      -->
+      <dependency>
+        <groupId>org.apache.httpcomponents.core5</groupId>
+        <artifactId>httpcore5</artifactId>
+        <version>${httpcomponentscore5.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.wss4j</groupId>
