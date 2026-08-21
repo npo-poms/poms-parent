@@ -16,7 +16,7 @@ jobs:
     env:
       MAVEN_ARGS: '--no-transfer-progress --color always'
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
@@ -39,8 +39,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    if: false # disabled since not used afaik
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: actions/setup-java@v5
         with:
             distribution: 'temurin'
