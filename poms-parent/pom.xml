@@ -953,11 +953,14 @@
 
 
       -->
+
+      <!-- used by camel, but managed for CVE fixes -->
       <dependency>
         <groupId>org.apache.httpcomponents.core5</groupId>
         <artifactId>httpcore5</artifactId>
         <version>${httpcomponentscore5.version}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.wss4j</groupId>
         <artifactId>wss4j-ws-security-dom</artifactId>

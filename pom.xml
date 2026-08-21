@@ -187,13 +187,13 @@
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
-        <artifactId>media-odi</artifactId>
+        <artifactId>media-tva</artifactId>
         <version>${poms.shared.version}</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
-        <artifactId>media-tva</artifactId>
-        <version>${poms.shared.version}</version>
+        <artifactId>media-odi</artifactId>
+        <version>8.14.2</version>
       </dependency>
       <dependency>
         <groupId>nl.vpro.media</groupId>
