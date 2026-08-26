@@ -13,14 +13,10 @@ jobs:
       MAVEN_ARGS: '--no-transfer-progress --color always'
     steps:
     - uses: actions/checkout@v7
-    - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-      with:
-        global: true
-        name: 'github $GITHUB_ACTOR'
-        email: 'digitaal-techniek@vpro.nl'
-        token: '${{ secrets.GITHUB_TOKEN  }}'
     - name: Release branch with Maven
       run: |
+        git config --global user.name 'github actions'
+        git config --global user.email 'github@mmprogrami.nl'
         VERSION=`mvn help:evaluate -Dexpression=project.version -q -DforceStdout`
         RELEASE_VERSION=`echo $VERSION | sed -r 's/-SNAPSHOT/.0-SNAPSHOT/'`
         DEVELOPMENT_VERSION=`echo $VERSION | gawk 'match($1, /([0-9]+)\.([0-9]+)([\.-])(.*)/, a) {print a[1]"."(a[2]+1)a[3]a[4]}'`
