@@ -25,12 +25,12 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.4</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.8</cxf.version>
-    <awssdk.version>2.54.1</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.54.4</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.7.1-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.17.0</micrometer.version>
+    <micrometer.version>1.17.1</micrometer.version>
 
     <meeuw.i18n.bom.version>3.2.0</meeuw.i18n.bom.version>
     <meeuw.math.version>0.19.0</meeuw.math.version>
@@ -94,7 +94,7 @@
     <httpcomponentscore5.version>5.4.3</httpcomponentscore5.version>
 
     <swagger3.version>2.2.54</swagger3.version>
-    <swagger3-parser.version>2.1.46</swagger3-parser.version>
+    <swagger3-parser.version>2.1.47</swagger3-parser.version>
 
     <ehcache3.version>3.12.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
@@ -1206,7 +1206,7 @@
         <!-- unhtml -->
         <groupId>org.jsoup</groupId>
         <artifactId>jsoup</artifactId>
-        <version>1.23.1</version>
+        <version>1.23.2</version>
       </dependency>
       <dependency>
         <!-- unmarkdown -->
