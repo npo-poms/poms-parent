@@ -24,7 +24,7 @@
     <activemq.version>6.3.1</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.4</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
-    <cxf.version>4.1.8</cxf.version>
+    <cxf.version>4.0.11</cxf.version><!-- upgrading to 4.1.x caused failire in image uploads via backend api -->
     <awssdk.version>2.54.4</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.7.1-jre</guava.version>
