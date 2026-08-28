@@ -644,6 +644,8 @@
               <publishingServerId>central</publishingServerId>
               <autoPublish>true</autoPublish>
               <waitUntil>published</waitUntil>
+              <ignorePublishedComponents>true</ignorePublishedComponents>
+              <waitMaxTime>3600</waitMaxTime>
             </configuration>
           </plugin>
           <plugin>
