@@ -21,7 +21,7 @@
 
     <checker.version>4.2.2</checker.version>
     <!-- External Artifacts -->
-    <activemq.version>6.3.1</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
+    <activemq.version>6.3.2</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.4</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.8</cxf.version>
@@ -64,14 +64,14 @@
     <s3mock.version>4.12.4</s3mock.version> <!-- I guess 5.0 is jackson 3-->
     <mockito.version>5.23.0</mockito.version>
     <spock.version>2.4-groovy-5.0</spock.version>
-    <groovy.version>5.0.8</groovy.version>
-    <bytebuddy.version>1.18.12</bytebuddy.version>
+    <groovy.version>5.1.1</groovy.version>
+    <bytebuddy.version>1.18.13</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.13.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
 
 
-    <resteasy.version>7.0.3.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
+    <resteasy.version>7.0.4.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.18</slf4j.version>
@@ -93,7 +93,7 @@
 
     <httpcomponentscore5.version>5.4.3</httpcomponentscore5.version>
 
-    <swagger3.version>2.2.54</swagger3.version>
+    <swagger3.version>2.2.55</swagger3.version>
     <swagger3-parser.version>2.1.47</swagger3-parser.version>
 
     <ehcache3.version>3.12.0</ehcache3.version>
