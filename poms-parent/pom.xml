@@ -25,7 +25,7 @@
     <aspectj.version>1.9.25.1</aspectj.version>
     <camel.version>4.18.4</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.8</cxf.version>
-    <awssdk.version>2.54.11</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.54.12</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.7.1-jre</guava.version>
     <guice.version>7.0.0</guice.version>
@@ -81,15 +81,11 @@
     <spring-security.version>6.5.11</spring-security.version>
 
     <keycloak.version>26.4.7</keycloak.version>
-    <keycloak.admin.client.version>26.0.8</keycloak.admin.client.version>
+    <keycloak.admin.client.version>26.0.12</keycloak.admin.client.version>
     <testcontainers-keycloak.version>4.1.1</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data.version>2025.0.13</spring-data.version>
-
-
-    <httpcomponents.version>4.5.14</httpcomponents.version>
-    <httpcomponentscore.version>4.4.16</httpcomponentscore.version>
 
     <httpcomponentscore5.version>5.4.3</httpcomponentscore5.version>
 
@@ -430,7 +426,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.14.1</version>
+        <version>0.14.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -927,31 +923,7 @@
         <artifactId>derby</artifactId>
         <version>10.17.1.1</version>
       </dependency>
-<!--
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>${httpcomponents.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient-cache</artifactId>
-        <version>${httpcomponents.version}</version>
-      </dependency>
 
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpmime</artifactId>
-        <version>${httpcomponents.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpcore</artifactId>
-        <version>${httpcomponentscore.version}</version>
-      </dependency>
-
-
-      -->
 
       <!-- used by camel, but managed for CVE fixes -->
       <dependency>
