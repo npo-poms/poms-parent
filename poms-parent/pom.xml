@@ -19,10 +19,10 @@
     <events.version>3.2</events.version>
     <vpro.shared.version>5.19-SNAPSHOT</vpro.shared.version>
 
-    <checker.version>4.2.3</checker.version>
+    <checker.version>4.3.1</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.4.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
-    <aspectj.version>1.9.25.1</aspectj.version>
+    <aspectj.version>1.9.26</aspectj.version>
     <camel.version>4.18.5</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.9</cxf.version>
     <awssdk.version>2.57.5</awssdk.version><!-- version used by camel -->
@@ -843,7 +843,7 @@
       <dependency><!-- used by cxf, but fixes CVE-2026-42401/CVE-2026-42402 -->
         <groupId>org.apache.neethi</groupId>
         <artifactId>neethi</artifactId>
-        <version>3.2.3</version>
+        <version>3.2.4</version>
       </dependency>
       <dependency>
         <!-- seems to be used by resteasy ? -->
@@ -1471,7 +1471,7 @@
        <dependency>
          <groupId>com.fasterxml</groupId>
          <artifactId>classmate</artifactId>
-         <version>1.7.3</version>
+         <version>1.8.0</version>
        </dependency>
        <dependency>
          <groupId>org.apache.santuario</groupId>
