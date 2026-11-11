@@ -17,12 +17,12 @@
     <!-- dependency provided by VPRO -->
     <vpro-camel.version>2.1.0</vpro-camel.version>
     <events.version>3.2</events.version>
-    <vpro.shared.version>5.20-SNAPSHOT</vpro.shared.version>
+    <vpro.shared.version>5.20.0</vpro.shared.version>
 
     <checker.version>4.4.0</checker.version>
     <!-- External Artifacts -->
     <activemq.version>6.4.0</activemq.version> <!-- server is 5.x, this seems to work though; otherwise we get javax.jms stuff in, giving client side errors  -->
-    <aspectj.version>1.9.26</aspectj.version>
+    <aspectj.version>1.9.27</aspectj.version>
     <camel.version>4.18.5</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.9</cxf.version>
     <awssdk.version>2.57.13</awssdk.version><!-- version used by camel -->
@@ -52,8 +52,8 @@
 
     <flyway.version>11.20.3</flyway.version> <!-- flyway 12 is jackson3, not ready for that yet -->
 
-    <jackson2.version>2.22.4</jackson2.version>
-    <jackson-annotations.version>2.22</jackson-annotations.version>
+    <jackson2.version>2.23.0</jackson2.version>
+    <jackson-annotations.version>2.23</jackson-annotations.version>
     <jaxb.version>4.0.9</jaxb.version>
 
     <ws.rs-api.version>3.1.0</ws.rs-api.version>
@@ -64,14 +64,14 @@
     <s3mock.version>4.12.4</s3mock.version> <!-- I guess 5.0 is jackson 3-->
     <mockito.version>5.24.0</mockito.version>
     <spock.version>2.5-groovy-5.0</spock.version>
-    <groovy.version>5.1.1</groovy.version>
+    <groovy.version>6.0.0</groovy.version>
     <bytebuddy.version>1.18.17</bytebuddy.version>
     <assertj.version>3.27.7</assertj.version>
     <xmlunit.version>2.14.0</xmlunit.version>
     <wiremock.version>3.13.2</wiremock.version>
 
 
-    <resteasy.version>7.0.5.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
+    <resteasy.version>7.0.6.Final</resteasy.version> <!-- look out with keycloak admin client ! -->
     <weld.version>2.4.8.Final</weld.version>
     <ejb.version>4.0.1</ejb.version>
     <slf4j.version>2.0.20</slf4j.version>
@@ -381,7 +381,7 @@
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
         <artifactId>i18n-iso-639</artifactId>
-        <version>4.6</version>
+        <version>4.7</version>
       </dependency>
       <dependency>
         <groupId>org.meeuw.i18n</groupId>
@@ -425,7 +425,7 @@
       <dependency>
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
-        <version>0.14.2</version>
+        <version>0.15.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -614,7 +614,7 @@
       <dependency>
         <groupId>com.networknt</groupId>
         <artifactId>json-schema-validator</artifactId>
-        <version>3.0.8</version>
+        <version>3.0.9</version>
       </dependency>
       <dependency>
         <groupId>io.micrometer</groupId>
