@@ -1030,7 +1030,12 @@
       <dependency>
         <groupId>jakarta.el</groupId>
         <artifactId>jakarta.el-api</artifactId>
-        <version>5.0.1</version>
+        <version>6.0.1</version> <!-- hibernate-validator 9 needs EL 6 (jakarta.el.RecordELResolver) -->
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.expressly</groupId>
+        <artifactId>expressly</artifactId>
+        <version>6.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
