@@ -12,6 +12,10 @@
   <url>https://github.com/npo-poms/poms-parent/</url>
   <description>Parent POM for private poms projects (at gitlab)</description>
 
+  <properties>
+    <vpro.shared.version>5.20.4</vpro.shared.version>
+  </properties>
+
 
   <profiles>
     <profile>
