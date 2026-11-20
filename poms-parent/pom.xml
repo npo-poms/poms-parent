@@ -25,12 +25,12 @@
     <aspectj.version>1.9.27</aspectj.version>
     <camel.version>4.18.5</camel.version> <!-- let's limit to even minors (LTS), so 4.20.x for now , 4.20 seems to require spring 7 -->
     <cxf.version>4.1.9</cxf.version>
-    <awssdk.version>2.58.0</awssdk.version><!-- version used by camel -->
+    <awssdk.version>2.59.5</awssdk.version><!-- version used by camel -->
     <kafka-clients.version>3.9.2</kafka-clients.version><!-- version used by camel -->
     <guava.version>33.8.0-jre</guava.version>
     <guice.version>7.0.0</guice.version>
     <quartz.version>2.5.2</quartz.version>
-    <micrometer.version>1.17.2</micrometer.version>
+    <micrometer.version>1.18.0</micrometer.version>
 
     <meeuw.i18n.bom.version>3.3.1</meeuw.i18n.bom.version>
     <meeuw.math.version>0.23.0</meeuw.math.version>
@@ -82,7 +82,7 @@
 
     <keycloak.version>26.4.7</keycloak.version>
     <keycloak.admin.client.version>26.0.12</keycloak.admin.client.version>
-    <testcontainers-keycloak.version>4.1.1</testcontainers-keycloak.version>
+    <testcontainers-keycloak.version>4.4.0</testcontainers-keycloak.version>
 
     <cglib.version>3.3.0</cglib.version>
     <spring-data.version>2025.0.13</spring-data.version>
@@ -90,7 +90,7 @@
     <httpcomponentscore5.version>5.4.4</httpcomponentscore5.version>
 
     <swagger3.version>2.2.55</swagger3.version> <!-- 3.0 is jackson 3? -->
-    <swagger3-parser.version>2.1.48</swagger3-parser.version>
+    <swagger3-parser.version>2.1.49</swagger3-parser.version>
 
     <ehcache3.version>3.12.0</ehcache3.version>
     <wss4j.version>2.2.1</wss4j.version> <!-- cxf version depends -->
