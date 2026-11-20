@@ -1,10 +1,20 @@
 ---
 name: build
+run-name: build ${{ github.ref_name }} -> ${{ inputs.publishTo || 'central' }}
 
 on:
   push:
     branches: [ main, "REL-*" ]
   workflow_dispatch:
+    inputs:
+      publishTo:
+        description: 'Where to deploy to (maven central has a monthly limit on number of releases)'
+        required: true
+        default: 'central'
+        type: choice
+        options:
+          - central
+          - github
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -13,8 +23,16 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     env:
       MAVEN_ARGS: '--no-transfer-progress --color always'
+      # on push events there are no inputs: deploy to central as always
+      PUBLISH_TO: ${{ inputs.publishTo || 'central' }}
+      # the 'central' profile configures the central publishing plugin, gpg signing and the central repository.
+      # Without it, the default distributionManagement is used: https://maven.pkg.github.com/npo-poms/poms-parent
+      PUBLISH_PROFILE: ${{ (inputs.publishTo || 'central') == 'central' && '-Pcentral' || '' }}
     steps:
     - uses: actions/checkout@v7
     - uses: actions/setup-java@v6
@@ -22,19 +40,21 @@ jobs:
         distribution: 'temurin'
         java-version: 11
         cache: maven
-        server-id: central
-        server-username-env-var: CENTRAL_USERNAME
-        server-password-env-var: CENTRAL_PASSWORD
+        server-id: ${{ inputs.publishTo || 'central' }}
+        server-username-env-var: MAVEN_USERNAME
+        server-password-env-var: MAVEN_PASSWORD
         gpg-private-key: ${{ secrets.GPG_SECRET_KEY }}
     - uses: stCarolas/setup-maven@v5
       # https://github.com/mavenplugins/central-publishing-maven-plugin/issues/78
       with:
         maven-version: 3.9.16
     - name: Build with Maven
-      run: mvn -U -B -Pcentral deploy --file pom.xml  -Dgpg.skip=false
+      run: |
+        echo "${{ github.ref }} -> $PUBLISH_TO ($PUBLISH_PROFILE)"
+        mvn -U -B ${PUBLISH_PROFILE} deploy --file pom.xml  -Dgpg.skip=false
       env:
-        CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
-        CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
+        MAVEN_USERNAME: ${{ inputs.publishTo == 'github' && github.actor || secrets.CENTRAL_USERNAME }}
+        MAVEN_PASSWORD: ${{ inputs.publishTo == 'github' && (secrets.GH_PACKAGES_TOKEN || secrets.GITHUB_TOKEN) || secrets.CENTRAL_PASSWORD }}
         GPG_PASSPHRASE: ${{ secrets.GPG_SECRET_KEY_PASSPHRASE }}
   github_packages:
     runs-on: ubuntu-latest
