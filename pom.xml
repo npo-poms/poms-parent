@@ -560,7 +560,6 @@
           <systemPropertyVariables>
             <projectArtifactId>${project.artifactId}</projectArtifactId>
             <jqwik.hideAntiAiClause>true</jqwik.hideAntiAiClause>
-            <jqwik.database />
           </systemPropertyVariables>
           <includes>
             <include>**/*Test.java</include>
